@@ -120,7 +120,8 @@ d:\portfolio
 │       ├── personal-finance.png   # FinPulse finance ledger preview
 │       ├── bill-generator.png     # Enterprise billing automation preview
 │       ├── humanoid-robotics.png  # Physical AI robotics book preview
-│       └── wedding-wishes.png     # Full-stack event portal preview
+│       ├── wedding-wishes.png     # Full-stack event portal preview
+│       └── shm-real-estate.png    # SHM Real Estate AI Lead Engine preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts
@@ -160,7 +161,7 @@ d:\portfolio
 
 ## 🛰️ Featured Project Ecosystem & Architectural Domains
 
-The portfolio aggregates 10 flagship engineering systems across four distinct specialization domains:
+The portfolio aggregates 11 flagship engineering systems across four distinct specialization domains:
 
 ### 1. Loop Engineering & Deterministic Agent Architectures
 - **Autonomous Self-Healing AI Agent:** Evaluator-optimizer pipeline that validates intermediate tool outputs against Pydantic schemas, achieving **96.4% autonomous recovery rate** without human intervention.
@@ -177,6 +178,7 @@ The portfolio aggregates 10 flagship engineering systems across four distinct sp
 - **Production Streamlit AI Suite (9 Apps):** Deployed cloud utilities with $50,000+$ aggregate user sessions.
 
 ### 4. Full-Stack Web & Physical AI
+- **SHM Real Estate AI Lead Generation & Qualification System:** Production client acquisition platform with 24/7 conversational AI advisors, dynamic intent & budget screening, multi-channel automated follow-ups, and calendar booking (<45s response speed).
 - **Autonomous Humanoid Robotics & Physical AI Handbook:** Docusaurus-powered open curriculum covering ROS 2, NVIDIA Isaac Sim, Unity 3D digital twins, and Vision-Language-Action (VLA) foundation models.
 - **Next.js Agentic Workspace & Control Plane:** Observability dashboard with real-time stream tracing, token latency monitors, and relational session storage.
 - **Wedding Wishes Live Event Portal:** Production guestbook running on Next.js App Router, Supabase real-time database, and Cloudinary media compression.

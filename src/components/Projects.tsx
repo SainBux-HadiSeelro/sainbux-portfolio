@@ -22,6 +22,7 @@ import {
   TrendingUp,
   Rocket,
   Satellite,
+  Building2,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -37,6 +38,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "fullstack-agentic-platform": Terminal,
   "personal-finance-dashboard": TrendingUp,
   "wedding-wishes-app": Heart,
+  "shm-real-estate-agency": Building2,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,

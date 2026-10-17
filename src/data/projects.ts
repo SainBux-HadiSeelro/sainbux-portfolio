@@ -371,6 +371,33 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "shm-real-estate-agency",
+    title: "SHM Real Estate — AI Lead Generation & Qualification System",
+    subtitle: "Autonomous Real Estate Funnel, 24/7 AI Qualification & Appointment Booking Engine",
+    badge: "AI Lead Engine & Automation",
+    description:
+      "A turnkey enterprise real estate client acquisition platform powered by 24/7 conversational AI advisors that engage, screen, and qualify high-intent property buyers and sellers with instant CRM calendar booking.",
+    problem:
+      "Traditional real estate brokerages lose up to 78% of potential clients due to slow response times (4+ hours), unorganized follow-ups, and agents spending valuable hours touring with unqualified window shoppers.",
+    solution:
+      "Architected an automated 9-stage lead conversion engine with instant 24/7 AI lead capture, real-time budget and timeline intent scoring, multi-channel automated drip follow-ups, and live agent calendar sync.",
+    result:
+      "Reduced lead response time from 4+ hours to <45 seconds, increased lead-to-appointment conversion by +45%, eliminated lead leakage by 99%, and boosted agent deal capacity by 3.5x.",
+    highlights: [
+      "Instant <45s Conversational AI lead capture & 24/7 qualification",
+      "Dynamic intent scoring (budget, location, buying timeline & financing preference)",
+      "Automated property viewing booking directly to agent calendars",
+      "Unified 9-stage lead funnel with multi-channel automated follow-up sequences",
+    ],
+    tech: ["Next.js 15", "TypeScript", "Tailwind CSS", "Conversational AI", "CRM Automation", "Lucide React"],
+    liveUrl: "https://shm-real-state-agency.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/SHM-real-state-agency",
+    image: "/projects/shm-real-estate.png",
+    imageLabel: "Live Real Estate AI Lead Platform",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
