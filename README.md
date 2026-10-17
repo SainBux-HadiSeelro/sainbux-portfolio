@@ -76,28 +76,6 @@ This portfolio is an enterprise reference application built with:
 
 ---
 
-## 💻 Local Development & Setup
-
-Clone the repository and launch the local development server:
-
-```bash
-# Clone the repository
-git clone https://github.com/SainBux-HadiSeelro/sainbux-portfolio.git
-
-# Enter project directory
-cd sainbux-portfolio
-
-# Install dependencies
-npm install
-
-# Start development server with Turbopack
-npm run dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) in your browser.
-
----
-
 ## 📬 Open for Opportunities & Client Projects
 
 Whether you are looking for a **Forward Deployed Engineer**, an **Agentic AI Engineer**, or need a **high-impact custom AI/Web application** built to enterprise standards, let's connect:
