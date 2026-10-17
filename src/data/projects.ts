@@ -392,6 +392,8 @@ export const projectsData: Project[] = [
     tech: ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Folium", "Pandas"],
     liveUrl: "https://spacex-launch-predictor-hadi.streamlit.app/",
     repoUrl: "https://github.com/SainBux-HadiSeelro/spacex-launch-predictor",
+    image: "/projects/spacex-launch-predictor.png",
+    imageLabel: "Live ML & Telemetry Dashboard",
     featured: true,
     category: "streamlit",
   },
