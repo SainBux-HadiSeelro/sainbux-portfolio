@@ -21,6 +21,7 @@ import {
   Receipt,
   TrendingUp,
   Rocket,
+  Satellite,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -38,6 +39,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "wedding-wishes-app": Heart,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
+  "orbit-iq": Satellite,
 };
 
 const getEmbedUrl = (url: string) => {

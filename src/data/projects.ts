@@ -397,6 +397,33 @@ export const projectsData: Project[] = [
     featured: true,
     category: "streamlit",
   },
+  {
+    id: "orbit-iq",
+    title: "OrbitIQ — Mission Risk & Booster Recovery Intelligence",
+    subtitle: "Aerospace Predictive Analytics, Reusability Economics & ML Classification",
+    badge: "Aerospace & ML Intelligence",
+    description:
+      "A mission-critical predictive intelligence engine combining orbital flight telemetry, regularized machine learning, and multi-million dollar aerospace financial modeling to forecast booster landing viability and cost retention.",
+    problem:
+      "Determining orbital launch viability, atmospheric booster recovery dynamics, and pad risk involves non-linear multi-variable dynamics where rocket loss costs upwards of $60M+ per expendable mission.",
+    solution:
+      "Engineered an end-to-end decision-support platform featuring calibrated flight risk scoring, multi-scenario mission presets (Starlink, GTO, Deep Space), Explainable AI (XAI) feature attribution, and an aerospace economic ROI calculator.",
+    result:
+      "Instant confidence-calibrated flight risk classification, sub-second landing inference, and dynamic quantification of $35M+ cost retention through booster and payload fairing reuse.",
+    highlights: [
+      "Calibrated probability scores & tiered flight risk classification (Low / Moderate / Critical)",
+      "Aerospace Economic ROI Engine ($35M+ savings breakdown per refurbished core & fairing)",
+      "Mission Profile Presets: Starlink Mega-Constellation, Commercial GTO & Deep Space Probes",
+      "Explainable AI (XAI) with transparent logistic weights & global fleet telemetry benchmarks",
+    ],
+    tech: ["Python", "Streamlit", "Scikit-Learn", "Machine Learning", "Pandas", "Aerospace Analytics"],
+    liveUrl: "https://orbit-iq.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/orbit-iq",
+    image: "/projects/orbit-iq.png",
+    imageLabel: "Live Aerospace Intelligence Platform",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {
