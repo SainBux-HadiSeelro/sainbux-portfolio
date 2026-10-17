@@ -20,6 +20,7 @@ import {
   Loader2,
   Receipt,
   TrendingUp,
+  Rocket,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -36,6 +37,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "personal-finance-dashboard": TrendingUp,
   "wedding-wishes-app": Heart,
   "bill-generator": Receipt,
+  "spacex-launch-predictor": Rocket,
 };
 
 const getEmbedUrl = (url: string) => {

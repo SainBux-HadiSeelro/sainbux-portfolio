@@ -370,6 +370,31 @@ export const projectsData: Project[] = [
     featured: true,
     category: "websites",
   },
+  {
+    id: "spacex-launch-predictor",
+    title: "SpaceX Launch Analysis & ML Prediction Dashboard",
+    subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
+    badge: "Machine Learning & Geospatial",
+    description:
+      "A full-lifecycle Data Science and Machine Learning platform analyzing 200+ historical SpaceX missions with geospatial launchpad telemetry and an interactive Random Forest classifier predicting launch success probability.",
+    problem:
+      "Orbital rocket launches cost upwards of $60M+ per mission with extreme environmental and mechanical variables, making launch success factors complex to evaluate without unified predictive modeling.",
+    solution:
+      "Engineered a reactive Streamlit platform with Pandas telemetry aggregation, Folium geospatial launchpad mapping, and a trained Scikit-Learn Random Forest Classifier that computes live mission success probability based on payload mass, vehicle type, launch site, and target orbit.",
+    result:
+      "Sub-second prediction inference with dynamic confidence scoring, interactive multi-site geodetic mapping across all SpaceX complexes, and comprehensive historical EDA.",
+    highlights: [
+      "Interactive Folium geospatial map for SpaceX launch complexes (Cape Canaveral, Vandenberg, Kwajalein)",
+      "Trained Scikit-Learn Random Forest Classifier with real-time launch probability scoring",
+      "Historical telemetry analytics & dynamic KPI metrics across 200+ orbital launches",
+      "Interactive mission simulator: payload mass, orbit target, launch site & vehicle selection",
+    ],
+    tech: ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Folium", "Pandas"],
+    liveUrl: "https://spacex-launch-predictor-hadi.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/spacex-launch-predictor",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {

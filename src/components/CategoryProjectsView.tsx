@@ -24,6 +24,7 @@ import {
   ArrowLeft,
   Globe,
   RefreshCw,
+  Rocket,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project, ProjectCategory } from "@/data/projects";
@@ -39,6 +40,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "personal-finance-dashboard": TrendingUp,
   "wedding-wishes-app": Heart,
   "bill-generator": Receipt,
+  "spacex-launch-predictor": Rocket,
 };
 
 const getEmbedUrl = (url: string) => {
