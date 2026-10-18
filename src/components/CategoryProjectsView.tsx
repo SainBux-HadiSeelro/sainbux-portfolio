@@ -47,6 +47,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "shm-real-estate-agency": Building2,
   "forge-fitness-gym": Dumbbell,
   "beautylira-aesthetic-clinic": Sparkles,
+  "elite-studio-clinic": Sparkles,
   "beauty-aura-spa": Flower2,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,

@@ -124,6 +124,7 @@ d:\portfolio
 │       ├── shm-real-estate.png    # SHM Real Estate AI Lead Engine preview
 │       ├── forge-fitness.png      # Forge Fitness GYM web app preview
 │       ├── beautylira-clinic.png  # BeautyLira clinic experience preview
+│       ├── elite-studio-clinic.png # Elite Studio Clinic luxury dentistry preview
 │       └── beauty-aura-spa.png    # BeautyAura luxury retreat preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
