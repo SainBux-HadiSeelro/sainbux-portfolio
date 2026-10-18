@@ -482,6 +482,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "lumina-dental-clinic",
+    title: "Lumina Dental Clinics — High-Tech Precision Dentistry & 24/7 AI Concierge",
+    subtitle: "Next-Gen Clinical Platform, React 19, Tailwind v4, Gemini 2.5 Flash & 24/7 AI Dental Concierge",
+    badge: "High-Tech Dentistry & AI",
+    description:
+      "A futuristic, high-precision clinical web platform engineered for modern boutique dentistry. Features an autonomous 24/7 AI Dental Concierge ('LUMINA-AI'), interactive Before/After Smile Transformation Simulator, dynamic treatment cost estimator, and comprehensive clinical hardware specs matrix.",
+    problem:
+      "Traditional dental clinic websites lack transparent healthcare economics, leave patient pain and procedural inquiries unanswered outside business hours, and fail to showcase high-tech clinical capabilities.",
+    solution:
+      "Engineered an ultra-fast React 19 and Vite 6 platform with Tailwind CSS v4, hardware-accelerated Motion micro-interactions, an interactive Before/After Smile Transformation Simulator, a real-time Treatment Cost & Insurance Estimator, and a dual-engine 24/7 AI Dental Concierge ('LUMINA-AI') powered by Google Gemini 2.5 Flash with deterministic clinical fallback.",
+    result:
+      "Sub-second page navigation, zero-latency clinical triage, 100% type-safe compilation (0 TS errors), and automated 24/7 patient inquiry qualification and instant booking.",
+    highlights: [
+      "24/7 Autonomous AI Dental Concierge ('LUMINA-AI') with Gemini 2.5 Flash & deterministic fallback",
+      "Interactive Before/After Smile Transformation Simulator with draggable split-view inspection",
+      "Dynamic Treatment Cost & Insurance Estimator with live monthly installment calculators",
+      "Comprehensive Clinical & Hardware Tech Specs Matrix (CBCT, 3D Intraoral scanners, CAD/CAM)",
+      "React 19, TypeScript 5.8, Tailwind CSS v4, Motion 12 & Vite 6 architecture",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
+    liveUrl: "https://lumina-dental-clinic-navy.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumina_Dental_clinic",
+    image: "/projects/lumina-dental-clinic.png",
+    imageLabel: "Live High-Tech Dental Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "beauty-aura-spa",
     title: "BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic",
     subtitle: "Quiet-Luxury Aesthetic Medicine, Next.js 16 App Router & 24/7 Live AI Concierge",
