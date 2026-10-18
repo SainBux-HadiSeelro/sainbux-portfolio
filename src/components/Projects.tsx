@@ -24,6 +24,7 @@ import {
   Satellite,
   Building2,
   Dumbbell,
+  Sparkles,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -41,6 +42,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "wedding-wishes-app": Heart,
   "shm-real-estate-agency": Building2,
   "forge-fitness-gym": Dumbbell,
+  "beautylira-aesthetic-clinic": Sparkles,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,

@@ -426,6 +426,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "beautylira-aesthetic-clinic",
+    title: "BeautyLira — Luxury Aesthetic Clinic & 24/7 AI Concierge",
+    subtitle: "Harley Street Medical Aesthetics, Next.js 16 App Router & 24/7 Live AI Concierge",
+    badge: "Luxury Medical Aesthetics & AI",
+    description:
+      "A high-converting digital platform engineered for a premier Harley Street aesthetic medicine clinic. Features editorial British luxury design language, medical-grade procedure showcases, zero-downtime treatment protocols, and an always-on 24/7 Live AI Aesthetic Concierge with clinic intelligence.",
+    problem:
+      "High-end aesthetic clinics struggle to convert affluent online visitors who hesitate over treatment downtime, pain levels, and procedural nuances outside regular clinic hours.",
+    solution:
+      "Engineered an ultra-refined Next.js 16 web application with an editorial warm ivory/espresso/rose-gold aesthetic, interactive procedure comparison matrices, and an embedded 24/7 Live AI Concierge that triages client queries, explains downtime, and drives consultation bookings in real time.",
+    result:
+      "Sub-second page navigation, zero build latency via Turbopack, seamless 24/7 automated patient inquiry triage, and high-conversion consultation capture for Harley Street medical aesthetic services.",
+    highlights: [
+      "24/7 Live AI Aesthetic Concierge ('Lira AI') with full clinical triage knowledge",
+      "Editorial British luxury aesthetics: Warm Ivory, Deep Espresso & Champagne Rose-Gold",
+      "Comprehensive procedure showcases: HIFU, PDO Threads, Laser Resurfacing & Dermal Fillers",
+      "Next.js 16 App Router, React 19, Turbopack & Framer Motion micro-interactions",
+      "Interactive Before/After clinical transformation showcase & instant consultation booking",
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "AI Concierge", "Turbopack"],
+    liveUrl: "https://beaty-lira-aesthetic-clinic.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic",
+    image: "/projects/beautylira-clinic.png",
+    imageLabel: "Live Luxury Aesthetic Clinic Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
