@@ -454,6 +454,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "beauty-aura-spa",
+    title: "BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic",
+    subtitle: "Quiet-Luxury Aesthetic Medicine, Next.js 16 App Router & 24/7 Live AI Concierge",
+    badge: "Luxury Aesthetic Retreat & AI",
+    description:
+      "A serene, editorial-grade web application engineered for high-end aesthetic clinics and luxury medical retreats. Embraces quiet luxury with warm earth tones, bespoke glassmorphism, restorative treatment showcases, and an always-on 24/7 Live AI Aesthetic Concierge ('Aura') that handles inquiries and consultation bookings in real time.",
+    problem:
+      "High-end wellness and aesthetic retreat clients seek discreet, pressure-free guidance on delicate skin therapies and treatment downtimes outside standard consultation hours.",
+    solution:
+      "Engineered an ultra-refined Next.js 16 web application with React 19, custom stone palette, fluid Framer Motion micro-interactions, an interactive consultation booking engine, and an embedded 24/7 AI Concierge with specialized aesthetic clinic intelligence.",
+    result:
+      "Sub-second page navigation with Turbopack and pre-rendered SSG routes, high-converting consultation pipeline, and 24/7 automated guest inquiry triage with zero human overhead.",
+    highlights: [
+      "24/7 Live AI Concierge ('Aura') with clinical aesthetic triage knowledge & instant guidance",
+      "Quiet-luxury aesthetic: warm stone palette (#F6F1EA), glassmorphism & editorial typography",
+      "Dedicated treatment deep-dives: HIFU Natural Lift, Laser Glow & Skin Rejuvenation",
+      "Interactive consultation booking engine with real-time state management",
+      "Next.js 16 App Router, React 19, TypeScript & Turbopack architecture",
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "AI Concierge", "Turbopack"],
+    liveUrl: "https://beaty-aura-spa-iota.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Beaty_Aura_spa",
+    image: "/projects/beauty-aura-spa.png",
+    imageLabel: "Live Luxury Aesthetic Retreat Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",

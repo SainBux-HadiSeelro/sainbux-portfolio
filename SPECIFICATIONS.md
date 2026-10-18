@@ -121,7 +121,10 @@ d:\portfolio
 │       ├── bill-generator.png     # Enterprise billing automation preview
 │       ├── humanoid-robotics.png  # Physical AI robotics book preview
 │       ├── wedding-wishes.png     # Full-stack event portal preview
-│       └── shm-real-estate.png    # SHM Real Estate AI Lead Engine preview
+│       ├── shm-real-estate.png    # SHM Real Estate AI Lead Engine preview
+│       ├── forge-fitness.png      # Forge Fitness GYM web app preview
+│       ├── beautylira-clinic.png  # BeautyLira clinic experience preview
+│       └── beauty-aura-spa.png    # BeautyAura luxury retreat preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts
@@ -178,6 +181,9 @@ The portfolio aggregates 11 flagship engineering systems across four distinct sp
 - **Production Streamlit AI Suite (9 Apps):** Deployed cloud utilities with $50,000+$ aggregate user sessions.
 
 ### 4. Full-Stack Web & Physical AI
+- **BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic:** Quiet-luxury web application engineered with Next.js 16 App Router, React 19, Turbopack, and an embedded 24/7 Live AI Concierge ('Aura') providing aesthetic clinic triage and appointment guidance.
+- **BeautyLira — Luxury Aesthetic Clinic & 24/7 AI Concierge:** British luxury medical aesthetics platform built on Next.js 16 App Router, Framer Motion, and 24/7 conversational triage AI.
+- **Forge Fitness — Premium Athletic Facility & AI Gym:** High-conversion strength facility web platform with Next.js 16, React 19, Framer Motion parallax interactions, and 24/7 AI membership concierge.
 - **SHM Real Estate AI Lead Generation & Qualification System:** Production client acquisition platform with 24/7 conversational AI advisors, dynamic intent & budget screening, multi-channel automated follow-ups, and calendar booking (<45s response speed).
 - **Autonomous Humanoid Robotics & Physical AI Handbook:** Docusaurus-powered open curriculum covering ROS 2, NVIDIA Isaac Sim, Unity 3D digital twins, and Vision-Language-Action (VLA) foundation models.
 - **Next.js Agentic Workspace & Control Plane:** Observability dashboard with real-time stream tracing, token latency monitors, and relational session storage.
