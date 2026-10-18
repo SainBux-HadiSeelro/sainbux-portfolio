@@ -398,6 +398,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "forge-fitness-gym",
+    title: "Forge Fitness — Premium Athletic Facility & AI Gym Web App",
+    subtitle: "Next.js 16 App Router, React 19, Framer Motion & 24/7 AI Concierge",
+    badge: "Full-Stack Web App",
+    description:
+      "A cutting-edge, high-conversion web application for an elite strength and performance athletic facility. Features aggressive dark obsidian UI, dynamic parallax scroll, interactive membership calculator, and an embedded 24/7 AI Concierge assistant.",
+    problem:
+      "Traditional gym websites suffer from static, uninspiring layouts, clunky booking forms, and lack immediate automated answers for membership queries and program recommendations.",
+    solution:
+      "Engineered an ultra-fast Next.js 16 web platform with React 19 and Framer Motion micro-interactions, custom CSS design tokens, interactive monthly/annual membership toggles, and an intelligent 24/7 AI chatbot with contextual gym intelligence.",
+    result:
+      "Sub-second page load times with zero-latency TTFB via Turbopack, seamless multi-device responsiveness, and automated 24/7 visitor engagement and trial consultation capture.",
+    highlights: [
+      "24/7 AI Concierge Agent with contextual gym knowledge & consultation booking",
+      "Next.js 16 App Router & Turbopack architecture for near-instant TTFB",
+      "Framer Motion parallax hero, staggered entrance & interactive testimonial slider",
+      "Interactive Monthly vs Annual membership toggle with automatic 25% discount calculator",
+      "Aggressive high-end obsidian dark aesthetic (#080808) with blazing orange accents (#FF4500)",
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Framer Motion", "AI Chatbot", "Turbopack", "Tailwind CSS"],
+    liveUrl: "https://forge-fitness-gym-seven.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM",
+    image: "/projects/forge-fitness.png",
+    imageLabel: "Live Premium Gym Web Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
