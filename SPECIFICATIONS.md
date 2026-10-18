@@ -127,7 +127,8 @@ d:\portfolio
 │       ├── elite-studio-clinic.png # Elite Studio Clinic luxury dentistry preview
 │       ├── lumina-dental-clinic.png # Lumina Dental Clinics high-tech precision preview
 │       ├── beauty-aura-spa.png    # BeautyAura luxury retreat preview
-│       └── lumiere-hotel-reservation.png # Lumiere Palace Paris luxury hotel preview
+│       ├── lumiere-hotel-reservation.png # Lumiere Palace Paris luxury hotel preview
+│       └── lumina-beauty-parlour.png # Lumina Beauty Parlour luxury sanctuary preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts
@@ -184,6 +185,7 @@ The portfolio aggregates 11 flagship engineering systems across four distinct sp
 - **Production Streamlit AI Suite (9 Apps):** Deployed cloud utilities with $50,000+$ aggregate user sessions.
 
 ### 4. Full-Stack Web & Physical AI
+- **Lumina Beauty Parlour — Luxury Sanctuary & 24/7 AI Beauty Concierge:** Haute aesthetic salon & spa web platform engineered with React 19, Vite 6, Tailwind CSS v4, Motion choreography, smart URL-prefilled reservation desk, and an always-on 24/7 AI Beauty Concierge powered by Google Gemini 1.5 Flash with local deterministic NLU fallback.
 - **Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform:** Bespoke 5-star French hospitality platform engineered with React 19, Vite 6, Tailwind CSS v4, Motion 12, an interactive 4-step suite reservation engine with date-range duration math and instant digital voucher generation, and a dual-engine 24/7 AI Concierge powered by Google Gemini 2.5 Flash with deterministic offline fallback.
 - **Lumina Dental Clinics — High-Tech Precision Dentistry & 24/7 AI Concierge:** Next-generation clinical web platform built with React 19, Tailwind CSS v4, Motion 12, an interactive Before/After Smile Transformation Simulator, dynamic treatment cost estimator, and dual-engine 24/7 AI Dental Concierge ('LUMINA-AI') powered by Google Gemini 2.5 Flash.
 - **Elite Studio Clinic — Luxury Aesthetic Dentistry & 24/7 AI Concierge:** Manhattan aesthetic & restorative dentistry platform with React 19, Vite 6, Tailwind CSS 4, Before/After Smile Transformation Studio, and 24/7 autonomous dental triage AI ('Aura AI').

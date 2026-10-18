@@ -49,6 +49,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "lumina-dental-clinic": Sparkles,
   "beauty-aura-spa": Flower2,
   "lumiere-hotel-reservation": Hotel,
+  "lumina-beauty-parlour": Sparkles,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,

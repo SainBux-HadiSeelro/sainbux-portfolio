@@ -566,6 +566,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "lumina-beauty-parlour",
+    title: "Lumina — Luxury Beauty Parlour & Aesthetic Sanctuary",
+    subtitle: "Haute Aesthetic Salon Platform, React 19, Tailwind v4 & 24/7 Live AI Beauty Concierge",
+    badge: "Luxury Aesthetics & AI",
+    description:
+      "An ultra-premium aesthetic salon and spa web platform engineered with editorial elegance, fluid micro-interactions, dark obsidian & champagne gold glassmorphism, dynamic service booking with URL pre-selection, and a native 24/7 Live AI Beauty Concierge agent powered by Google Gemini 1.5 Flash with offline NLU resilience.",
+    problem:
+      "High-end beauty clients require immediate guidance on ritual ingredients, bridal styling packages, and transparent pricing at any hour, while standard salon websites rely on static menus, manual inquiry forms, and slow phone triage.",
+    solution:
+      "Architected a cutting-edge React 19 and Vite 6 platform styled with Tailwind CSS v4 and Motion choreography, featuring smart query-param pre-filled reservations, dynamic lookbook gallery, and an always-on 24/7 AI Beauty Concierge equipped with dual-engine Google Gemini 1.5 Flash and local deterministic fallback.",
+    result:
+      "100% uninterrupted 24/7 multilingual guest consultation (English & Urdu/Roman Urdu), sub-second page performance with zero build latency via Vite 6, and seamless conversion from AI recommendations to pre-filled booking reservations.",
+    highlights: [
+      "24/7 Live AI Concierge Agent with Google Gemini 1.5 Flash & deterministic local NLU fallback",
+      "Multilingual conversational intelligence supporting English, Urdu, and Roman Urdu queries",
+      "Smart deep-linked reservation desk with URL query parameter pre-selection and dynamic feedback",
+      "Haute Obsidian Jet (#0C0C0C) & Champagne Gold (#C5A059) glassmorphism aesthetic",
+      "React 19, TypeScript 5.8, Tailwind CSS v4, Motion & Web Audio API synthesizer chimes",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
+    liveUrl: "https://lumina-beaty-parlour-pi.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour",
+    image: "/projects/lumina-beauty-parlour.png",
+    imageLabel: "Live Luxury Beauty Parlour Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
