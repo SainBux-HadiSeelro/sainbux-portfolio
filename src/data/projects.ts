@@ -454,6 +454,32 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "elite-studio-clinic",
+    title: "Elite Studio Clinic — Luxury Aesthetic Dentistry & 24/7 AI Concierge",
+    subtitle: "Manhattan Aesthetic Medicine, React 19, Obsidian Glassmorphism & 24/7 Live AI Concierge",
+    badge: "Luxury Dental Clinic & AI",
+    description:
+      "A high-converting digital platform engineered for a premier Manhattan aesthetic & restorative dental clinic. Features quiet obsidian glassmorphism design language, interactive smile transformation showcases, transparent fee matrices, and an always-on 24/7 Live AI Clinic Concierge ('Aura AI') that triages patient inquiries and books consultations in real time.",
+    problem:
+      "Affluent patients researching high-ticket smile makeovers (porcelain veneers, Invisalign, 3D guided implants) abandon clunky booking forms when fee schedules, downtime, and pain management are not answered immediately outside clinic hours.",
+    solution:
+      "Architected an ultra-fast React 19 and Vite 6 platform with Tailwind CSS 4, hardware-accelerated Motion micro-interactions, an interactive Before/After Smile Transformation Studio, and an autonomous 24/7 AI Concierge with comprehensive dental triage intelligence and 1-click emergency routing.",
+    result:
+      "Zero-latency (<1s) clinical triage, sub-second page navigation, 100% type-safe compilation (0 TS errors), and automated 24/7 patient inquiry qualification and VIP consultation booking.",
+    highlights: [
+      "24/7 Live AI Clinic Concierge ('Aura AI') with comprehensive dental triage & fee intelligence",
+      "Interactive Smile Transformation Studio with verified before-and-after case outcomes",
+      "Quiet obsidian glassmorphic aesthetic (#0c1219) with luminous brand glow (#4fd1c5)",
+      "VIP Concierge Appointment Booking Engine with instant calendar slot synchronization",
+      "React 19, TypeScript 5.8, Tailwind CSS 4, Motion 12 & Vite 6 architecture",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Motion", "AI Concierge", "Vite 6"],
+    liveUrl: "https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "beauty-aura-spa",
     title: "BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic",
     subtitle: "Quiet-Luxury Aesthetic Medicine, Next.js 16 App Router & 24/7 Live AI Concierge",
