@@ -538,6 +538,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "lumiere-hotel-reservation",
+    title: "Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform",
+    subtitle: "Haute French Hospitality, React 19, Tailwind v4 & 24/7 Gemini AI Concierge",
+    badge: "Luxury Hospitality & AI",
+    description:
+      "A bespoke, production-grade luxury hospitality web platform engineered for 5-star Parisian palaces and boutique resorts. Features haute dark obsidian glassmorphism, Champagne Gold accents, interactive 4-step suite reservation engine with dynamic voucher generation, and an always-on 24/7 AI Concierge powered by Gemini 2.5 Flash.",
+    problem:
+      "Luxury travelers demand immediate answers regarding suite amenities, Michelin gastronomy, and bespoke itineraries outside concierge working hours, while standard booking engines are rigid, slow, and lack personalized high-touch hospitality.",
+    solution:
+      "Engineered an ultra-fast React 19 and Vite 6 platform with Tailwind CSS v4, Motion micro-interactions, an interactive multi-step booking engine with date-range duration math and instant digital voucher generation, and a dual-engine 24/7 AI Concierge powered by Google Gemini 2.5 Flash with deterministic offline fallback.",
+    result:
+      "Sub-second page navigation, zero build latency via Vite 6, 100% uninterrupted 24/7 guest concierge availability with zero human overhead, and frictionless luxury reservation flow with verified confirmation tokens.",
+    highlights: [
+      "24/7 Live AI Concierge with Google Gemini 2.5 Flash & zero-latency deterministic fallback",
+      "Interactive 4-step luxury reservation engine with dynamic stay duration & price calculation",
+      "Curated suites catalog (Classic, Deluxe, Royal) with live amenity breakdown & instant booking tokens",
+      "Haute dark obsidian (#0A0A0B) & Champagne Gold (#C5A059) glassmorphism aesthetic",
+      "React 19, TypeScript 5.8, Tailwind CSS v4, Motion 12 & Vite 6 architecture",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
+    liveUrl: "https://lumiere-hotel-reservation.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumiere_Hotel_Reservation",
+    image: "/projects/lumiere-hotel-reservation.png",
+    imageLabel: "Live Luxury Hotel Reservation Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",

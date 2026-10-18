@@ -30,6 +30,7 @@ import {
   Dumbbell,
   Sparkles,
   Flower2,
+  Hotel,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project, ProjectCategory } from "@/data/projects";
@@ -50,6 +51,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "elite-studio-clinic": Sparkles,
   "lumina-dental-clinic": Sparkles,
   "beauty-aura-spa": Flower2,
+  "lumiere-hotel-reservation": Hotel,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,
