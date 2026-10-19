@@ -678,6 +678,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "ironpulse-fitness-hub",
+    title: "IRONPULSE — Ultra-Premium Fitness & 24/7 Performance Hub",
+    subtitle: "Next.js 16 App Router, React 19, Tailwind v4 & 24/7 Live PulseAI Concierge",
+    badge: "Full-Stack Athletic Web Platform",
+    description:
+      "A high-octane, production-grade fitness web application engineered for elite strength athletes and powerlifters. Features competition-grade facility specs, live gym telemetry indexing, interactive biometric BMI calculator, dynamic training class rosters, and an embedded 24/7 Live AI Gym Concierge ('PulseAI').",
+    problem:
+      "Modern athletic facilities struggle to convey complex equipment specs, dynamic floor capacity, and personal coaching philosophies online while lacking immediate 24/7 triage for membership pass inquiries and training schedules.",
+    solution:
+      "Engineered an ultra-fast Next.js 16 web platform styled with Tailwind CSS v4 and Framer Motion micro-interactions, complete with real-time facility telemetry benchmarks (occupancy, AQI, temperature), an interactive biometric BMI & health assessment engine, and an autonomous 24/7 Live AI Concierge ('PulseAI') with instant verifiable VIP pass generation (#PULSE-XXXX).",
+    result:
+      "Zero-latency TTFB via Turbopack, sub-second interactive client calculations, 100% uninterrupted 24/7 lead capture and VIP trial pass distribution with verified digital confirmation tokens.",
+    highlights: [
+      "24/7 Live AI Concierge Agent ('PulseAI') with instant VIP trial pass generation (#PULSE-XXXX)",
+      "Interactive 4-category Facility Specs Matrix (15,000+ sq ft floor, HEPA-14, 650 Lux lighting, Eleiko steel)",
+      "Real-time Gym Telemetry Index tracking floor capacity, AQI air quality & temperature",
+      "Interactive Client-Side Biometric BMI & Metabolic Health Calculator with tailored output",
+      "Next.js 16.1.6 App Router, React 19.2.3, Tailwind CSS v4, Framer Motion 12 & Turbopack",
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS 4", "Framer Motion", "PulseAI Agent", "Turbopack"],
+    liveUrl: "https://ironpulse-hadi-com.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/ironpulse-hadi.com",
+    image: "/projects/ironpulse-fitness.png",
+    imageLabel: "Live Ultra-Premium Fitness Hub & PulseAI",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
