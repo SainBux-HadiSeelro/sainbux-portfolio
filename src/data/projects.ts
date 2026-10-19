@@ -594,6 +594,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "aura-atelier-beauty-parlour",
+    title: "Aura Atelier — Haute Coiffure, Aesthetic Rituals & 24/7 AI Concierge",
+    subtitle: "Manhattan Luxury Concept Sanctuary, React 19, Tailwind v4 & Dual-Intelligence Gemini 2.5 Flash AI",
+    badge: "Haute Aesthetics & AI Concierge",
+    description:
+      "A cutting-edge, editorial luxury beauty salon web platform and client management portal engineered for high-fashion aesthetics. Features warm parchment tones, glassmorphism blur effects, bespoke multi-step booking modal with instant confirmation codes, interactive lightbox portfolio, and a 24/7 Live AI Beauty Concierge powered by Google Gemini 2.5 Flash with offline resilience.",
+    problem:
+      "High-end beauty clients require immediate guidance on ritual formulations, bridal packages, and artist availability at any hour, while traditional salon websites rely on static menus, manual inquiry forms, and slow phone triage.",
+    solution:
+      "Architected an ultra-fast React 19 and Vite 6 platform styled with Tailwind CSS v4 and editorial French typography (Cormorant Garamond & Inter), featuring multi-category ritual curation, seamless master artist selection, interactive before/after lightbox studio, and an always-on 24/7 AI Beauty Concierge equipped with dual-engine Google Gemini 2.5 Flash and deterministic local fallback.",
+    result:
+      "100% uninterrupted 24/7 client triage with sub-second page performance, frictionless multi-step appointment bookings with instant confirmation codes, and automated conversion from AI beauty recommendations to reserved visits.",
+    highlights: [
+      "24/7 Live AI Beauty Concierge with Google Gemini 2.5 Flash & deterministic offline fallback",
+      "Bespoke multi-step appointment booking engine with service filters & confirmation codes",
+      "Interactive Lightbox Portfolio showcasing haute coiffure, bridal couture & clinical facials",
+      "Editorial atelier aesthetics: warm ivory (#F4F1EE), deep espresso & glassmorphic accents",
+      "React 19, TypeScript 5.8, Tailwind CSS v4, Vite 6 & hardware-accelerated micro-interactions",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini 2.5 Flash", "Vite 6"],
+    liveUrl: "https://aura-atelier-beaty-parlours-lyart.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Aura_Atelier_Beaty_Parlours",
+    image: "/projects/aura-atelier-beauty-parlour.png",
+    imageLabel: "Live Luxury Atelier & AI Concierge Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",

@@ -128,7 +128,8 @@ d:\portfolio
 │       ├── lumina-dental-clinic.png # Lumina Dental Clinics high-tech precision preview
 │       ├── beauty-aura-spa.png    # BeautyAura luxury retreat preview
 │       ├── lumiere-hotel-reservation.png # Lumiere Palace Paris luxury hotel preview
-│       └── lumina-beauty-parlour.png # Lumina Beauty Parlour luxury sanctuary preview
+│       ├── lumina-beauty-parlour.png # Lumina Beauty Parlour luxury sanctuary preview
+│       └── aura-atelier-beauty-parlour.png # Aura Atelier luxury beauty sanctuary preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts
