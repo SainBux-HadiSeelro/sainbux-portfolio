@@ -622,6 +622,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "luvia-ecommerce",
+    title: "LUVIA — Minimalist Luxury eCommerce & 24/7 AI Concierge",
+    subtitle: "Ethereal Luxury Design Objects, React 19, Tailwind v4 & 24/7 Live AI Customer Concierge",
+    badge: "Luxury eCommerce & AI",
+    description:
+      "A portfolio-grade, high-performance minimalist luxury eCommerce web application exploring the intersection of raw materiality, ethereal design, detailed technical product specifications, and an intelligent 24/7 AI Customer Support Concierge with direct in-chat shopping actions.",
+    problem:
+      "Modern luxury e-commerce demands instant assistance for complex technical specifications, dimensions, finishes, and VIP checkout flows without clunky forms or slow human email response loops.",
+    solution:
+      "Engineered an ultra-fast React 19 and Vite 6 platform styled with Tailwind CSS v4 and Framer Motion micro-interactions, complete with persistent cart state, VIP promo validation ('LUVIA15'), detailed architectural spec tables, and an embedded 24/7 AI Concierge with dual-mode Google Gemini and deterministic local intelligence.",
+    result:
+      "Sub-second client-side catalog navigation, zero checkout friction with instant cart actions, and 24/7 real-time AI product guidance with direct in-chat purchase cards.",
+    highlights: [
+      "24/7 Live AI Customer Concierge with product knowledge base & instant in-chat purchase actions",
+      "Ethereal luxury glassmorphism design with Playfair Display & Plus Jakarta Sans typography",
+      "Deep technical product specifications (dimensions, materials, acoustic drivers, certifications)",
+      "Reactive e-commerce workflow: persistent cart, live search/filtering & VIP coupon engine ('LUVIA15')",
+      "React 19, TypeScript 5.8, Tailwind CSS v4, Framer Motion 12 & Vite 6 architecture",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Framer Motion", "Vite 6"],
+    liveUrl: "https://luvia-e-commerce.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Luvia-eCommerce",
+    image: "/projects/luvia-ecommerce.png",
+    imageLabel: "Live Luxury eCommerce & AI Concierge Experience",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
