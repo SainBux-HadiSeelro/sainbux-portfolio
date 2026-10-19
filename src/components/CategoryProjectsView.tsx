@@ -12,7 +12,6 @@ import {
   ExternalLink,
   Terminal,
   Activity,
-  Bot,
   LayoutDashboard,
   Heart,
   CheckCircle2,
@@ -38,12 +37,7 @@ import { Project, ProjectCategory } from "@/data/projects";
 import { SectionPill, CircuitLineDecoration } from "./SignatureElements";
 
 const projectIcons: Record<string, React.ElementType> = {
-  "autonomous-ai-agent": Bot,
-  "multi-agent-automation": Activity,
-  "chainlit-ai-assistant": Terminal,
   "loop-engineering-series": Layers,
-  "streamlit-production-apps": LayoutDashboard,
-  "fullstack-agentic-platform": Terminal,
   "personal-finance-dashboard": TrendingUp,
   "wedding-wishes-app": Heart,
   "shm-real-estate-agency": Building2,

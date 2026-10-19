@@ -11,8 +11,6 @@ import {
   ExternalLink,
   Terminal,
   Activity,
-  Bot,
-  LayoutDashboard,
   Heart,
   CheckCircle2,
   Eye,
@@ -35,12 +33,7 @@ import { SectionPill, CircuitLineDecoration } from "./SignatureElements";
 import { socialLinks } from "@/data/socials";
 
 const projectIcons: Record<string, React.ElementType> = {
-  "autonomous-ai-agent": Bot,
-  "multi-agent-automation": Activity,
-  "chainlit-ai-assistant": Terminal,
   "loop-engineering-series": Layers,
-  "streamlit-production-apps": LayoutDashboard,
-  "fullstack-agentic-platform": Terminal,
   "personal-finance-dashboard": TrendingUp,
   "wedding-wishes-app": Heart,
   "shm-real-estate-agency": Building2,
