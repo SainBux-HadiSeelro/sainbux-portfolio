@@ -56,6 +56,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "lumina-beauty-parlour": Sparkles,
   "aura-atelier-beauty-parlour": Sparkles,
   "luvia-ecommerce": ShoppingBag,
+  "welltrack-ai": Activity,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,

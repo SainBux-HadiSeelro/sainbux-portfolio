@@ -130,7 +130,8 @@ d:\portfolio
 │       ├── lumiere-hotel-reservation.png # Lumiere Palace Paris luxury hotel preview
 │       ├── lumina-beauty-parlour.png # Lumina Beauty Parlour luxury sanctuary preview
 │       ├── aura-atelier-beauty-parlour.png # Aura Atelier luxury beauty sanctuary preview
-│       └── luvia-ecommerce.png    # LUVIA luxury eCommerce & 24/7 AI concierge preview
+│       ├── luvia-ecommerce.png    # LUVIA luxury eCommerce & 24/7 AI concierge preview
+│       └── welltrack-ai.png       # WellTrack AI wellness & biometrics companion preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts

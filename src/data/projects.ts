@@ -650,6 +650,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "welltrack-ai",
+    title: "WellTrack AI — Complete Intelligent Wellness & Health Companion",
+    subtitle: "AI Biometrics, Nutrition Planning, Sleep Analytics & 24/7 Wellness Coach",
+    badge: "AI Health & Wellness Platform",
+    description:
+      "A comprehensive, intelligent health and wellness platform combining AI-driven vitality scoring, personalized nutrition guidance, sleep rhythm analysis, daily habit tracking, and an interactive 24/7 AI wellness coach.",
+    problem:
+      "Personal wellness metrics are typically scattered across fragmented tracking tools without synthesized guidance, leaving individuals without actionable or personalized health insights.",
+    solution:
+      "Engineered a unified wellness web ecosystem featuring dynamic 0-100 Vitality scoring, circadian sleep telemetry, personalized hydration & macro targets, daily journal reflections, and an always-on 24/7 AI health assistant.",
+    result:
+      "Seamless biometric synchronization, sub-second responsive interaction across devices, personalized daily recovery tips, and unified all-in-one health habit tracking.",
+    highlights: [
+      "24/7 Live AI Wellness Coach delivering real-time advice and actionable habit tips",
+      "Dynamic Daily Vitality Score (0–100) aggregating sleep, hydration, resting HR & activity",
+      "Intelligent Nutrition & Meal Planner with dietary customization & calorie tracking",
+      "Circadian Sleep & Recovery Telemetry with optimal schedule recommendations",
+      "Sleek light & dark aesthetic, encrypted local storage, and responsive modern UI",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS", "Vite", "AI Assistant", "Lucide React"],
+    liveUrl: "https://welltrack-ai-path.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/welltrack-ai-path",
+    image: "/projects/welltrack-ai.png",
+    imageLabel: "Live AI Health & Wellness Platform",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
