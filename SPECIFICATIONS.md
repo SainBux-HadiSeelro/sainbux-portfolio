@@ -132,7 +132,8 @@ d:\portfolio
 │       ├── aura-atelier-beauty-parlour.png # Aura Atelier luxury beauty sanctuary preview
 │       ├── luvia-ecommerce.png    # LUVIA luxury eCommerce & 24/7 AI concierge preview
 │       ├── welltrack-ai.png       # WellTrack AI wellness & biometrics companion preview
-│       └── ironpulse-fitness.png  # IRONPULSE ultra-premium athletic hub & PulseAI preview
+│       ├── ironpulse-fitness.png  # IRONPULSE ultra-premium athletic hub & PulseAI preview
+│       └── elite-fitness-gym.png  # ELITE FITNESS multi-agent autonomous gym platform preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts

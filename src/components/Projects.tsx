@@ -48,6 +48,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "luvia-ecommerce": ShoppingBag,
   "welltrack-ai": Activity,
   "ironpulse-fitness-hub": Dumbbell,
+  "elite-fitness-gym": Dumbbell,
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,

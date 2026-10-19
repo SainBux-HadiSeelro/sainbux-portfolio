@@ -563,6 +563,34 @@ export const projectsData: Project[] = [
     category: "websites",
   },
   {
+    id: "elite-fitness-gym",
+    title: "ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym",
+    subtitle: "React 18, TypeScript, Multi-Agent Swarm Orchestrator & Live Tool Calling Engine",
+    badge: "Autonomous Multi-Agent AI Platform",
+    description:
+      "An enterprise-grade, high-ticket luxury fitness platform powered by an Autonomous Multi-Agent AI Swarm (Nova, Titan, MacroCore, BioScan), transparent reasoning execution traces, real-time computational tool calling, and Olympic-grade facility specifications.",
+    problem:
+      "Conventional fitness websites rely on static forms and rigid scripted chatbots that cannot collaborate dynamically, perform biometric math, synthesize customized workout protocols, or provide transparent reasoning execution traces.",
+    solution:
+      "Engineered an autonomous multi-agent orchestration architecture featuring a semantic router dispatcher, four specialized domain agents, live tool-calling engines (<100ms latency), and interactive luxury UI with biometric calculators and VIP booking pipelines.",
+    result:
+      "Sub-100ms tool execution latency, transparent multi-agent reasoning logs, 100% automated VIP trial pass issuance, and high-conversion luxury athletic facility engagement.",
+    highlights: [
+      "Autonomous 4-Agent Swarm: Orchestrator, Nova (Concierge), Titan (Workouts), MacroCore (Nutrition) & BioScan AI",
+      "Live Tool-Calling Engine: calculate_biometrics, generate_workout_protocol, formulate_macronutrients & book_vip_trial_pass",
+      "Transparent Agent Reasoning: Real-time thinking traces, intent classification & tool execution logs",
+      "Interactive Luxury Experience: Biometric BMI Engine, Technogym facility specs & interactive membership passes",
+      "Modern Production Stack: React 18, Strict TypeScript, Tailwind CSS, Vite 5 & Lucide React",
+    ],
+    tech: ["React 18", "TypeScript", "Multi-Agent Swarm", "Tool Calling", "Tailwind CSS", "Vite 5", "Lucide React"],
+    liveUrl: "https://elite-fitness-gym-two.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM",
+    image: "/projects/elite-fitness-gym.png",
+    imageLabel: "Live Autonomous Multi-Agent AI Gym",
+    featured: true,
+    category: "websites",
+  },
+  {
     id: "spacex-launch-predictor",
     title: "SpaceX Launch Analysis & ML Prediction Dashboard",
     subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
