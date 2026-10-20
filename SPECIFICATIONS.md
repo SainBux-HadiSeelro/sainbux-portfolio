@@ -133,7 +133,8 @@ d:\portfolio
 │       ├── luvia-ecommerce.png    # LUVIA luxury eCommerce & 24/7 AI concierge preview
 │       ├── welltrack-ai.png       # WellTrack AI wellness & biometrics companion preview
 │       ├── ironpulse-fitness.png  # IRONPULSE ultra-premium athletic hub & PulseAI preview
-│       └── elite-fitness-gym.png  # ELITE FITNESS multi-agent autonomous gym platform preview
+│       ├── elite-fitness-gym.png  # ELITE FITNESS multi-agent autonomous gym platform preview
+│       └── agentic-story-studio.png # NexusNarrative multi-agent story studio preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts
@@ -185,6 +186,7 @@ The portfolio aggregates 11 flagship engineering systems across four distinct sp
 - **SpaceX Launch Analysis & Prediction Dashboard:** 200+ mission EDA suite with Folium geospatial launchpad mapping and trained Random Forest outcome classifiers.
 
 ### 3. Production Streamlit Cloud Utilities
+- **NexusNarrative (Smart Multi-Agent Story Studio):** Creative AI-assisted storytelling pipeline and Mad Libs engine featuring four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant), instant one-click theme presets, real-time quality scorecard analytics, and direct Markdown/TXT export.
 - **FinPulse (Personal Finance & Analytics Tracker):** Zero-DB flatfile ledger architecture running strict 64-bit integer micro-currency arithmetic, eliminating floating-point rounding drift.
 - **Commercial Invoice & Bill Generator:** Dynamic line-item billing dashboard generating vector-grade print-ready A4 PDF invoices via ReportLab in $< 30\text{ seconds}$.
 - **Production Streamlit AI Suite (9 Apps):** Deployed cloud utilities with $50,000+$ aggregate user sessions.

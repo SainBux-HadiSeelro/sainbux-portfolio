@@ -644,6 +644,33 @@ export const projectsData: Project[] = [
     featured: true,
     category: "streamlit",
   },
+  {
+    id: "agentic-story-studio",
+    title: "NexusNarrative — Smart Multi-Agent Story Studio",
+    subtitle: "Autonomous Multi-Agent Story Pipeline, Dynamic Mad Libs Engine & Story Analytics",
+    badge: "Smart Multi-Agent Studio",
+    description:
+      "A creative AI-assisted storytelling platform and multi-agent pipeline featuring an Input Assistant, Director Assistant, Story Writer, and Reviewer Assistant with one-click presets, real-time quality scoring, and instant Markdown export.",
+    problem:
+      "Traditional Mad Libs games and generative prompt toys rely on brittle string concatenation without lexical validation, contextual role specialization, or automated narrative evaluation.",
+    solution:
+      "Architected a modular multi-agent pipeline with four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant), Glassmorphism dark UI with glowing highlights, instant theme presets, and automated story scorecard analytics.",
+    result:
+      "Seamless multi-agent story synthesis with automated quality scoring, reading time analytics, session history vault, and one-click Markdown/TXT export pipeline.",
+    highlights: [
+      "Multi-Agent Pipeline: Input Assistant, Director Assistant, Story Writer & Reviewer Assistant",
+      "One-Click Curated Presets: AI Researcher, Senior Programmer, Space Explorer & Fantasy",
+      "Dynamic Story Scorecard: Word count analytics, story quality score & estimated reading time",
+      "Modern Glassmorphism Dark UI with glowing lexical badges & instant Markdown (.md) / TXT export",
+    ],
+    tech: ["Python", "Streamlit", "Multi-Agent Pipeline", "NLP", "UV Package Manager", "Session State"],
+    liveUrl: "https://agentic-story-studio.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-story-studio",
+    image: "/projects/agentic-story-studio.png",
+    imageLabel: "Live Multi-Agent Story Studio",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {
