@@ -27,6 +27,7 @@ import {
   Hotel,
   ShoppingBag,
   BookOpen,
+  Brain,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -54,6 +55,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,
   "agentic-story-studio": BookOpen,
+  "nexus-mind-platform": Brain,
 };
 
 const getEmbedUrl = (url: string) => {

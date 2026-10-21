@@ -671,6 +671,41 @@ export const projectsData: Project[] = [
     featured: true,
     category: "streamlit",
   },
+  {
+    id: "nexus-mind-platform",
+    title: "Nexus Mind — Autonomous Multi-Agent Gaming & Intelligence Platform",
+    subtitle: "Autonomous Multi-Agent Swarm, Shannon Entropy Telemetry & 24/7 Contextual AI Concierge",
+    badge: "Autonomous Multi-Agent System",
+    description:
+      "A high-performance agentic platform transforming number deduction into a coordinated Multi-Agent System (MAS) featuring Nexus Arbiter, Oracle Telemetry computing Shannon Entropy in real time, and Nova — a 24/7 bilingual live contextual AI concierge with dual-engine fallback.",
+    problem:
+      "Traditional interactive guessing utilities rely on procedural scripts with no state intelligence, lacking agentic coordination, telemetry metrics, or resilient AI assistance.",
+    solution:
+      "Engineered an autonomous multi-agent architecture with three specialized agents: Nexus Arbiter (dynamic boundaries & AI rival engine), Oracle Telemetry (real-time Shannon Entropy H=log2(N) & O(log N) search efficiency), and Nova 24/7 live AI concierge backed by a zero-downtime dual-engine architecture (Offline Heuristic RAG + OpenAI GPT-4o).",
+    result:
+      "Sub-millisecond state synchronization across dual engines, real-time Shannon Entropy telemetry in bits, bilingual English/Roman Urdu support, and turn-based Human vs Autonomous AI duel gameplay.",
+    highlights: [
+      "Autonomous Multi-Agent Core: Nexus Arbiter, Oracle Telemetry & Nova 24/7 AI Concierge",
+      "Real-Time Information Theory: Shannon Entropy (H = log2 N bits) & logarithmic search efficiency metrics",
+      "Nova 24/7 Dual-Engine AI Concierge: Live context injection with zero-downtime offline heuristic RAG fallback",
+      "Human vs AI Duel & Challenge Modes: Turn-based competitive deduction with live agent reasoning event streams",
+    ],
+    tech: [
+      "Python",
+      "Streamlit",
+      "Multi-Agent System",
+      "Information Theory",
+      "Shannon Entropy",
+      "OpenAI SDK",
+      "Session State",
+    ],
+    liveUrl: "https://nexus-mind-agentic-platform.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform",
+    image: "/projects/nexus-mind-platform.png",
+    imageLabel: "Live Autonomous Multi-Agent Gaming Platform",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {
