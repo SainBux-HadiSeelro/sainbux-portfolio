@@ -135,7 +135,8 @@ d:\portfolio
 │       ├── ironpulse-fitness.png  # IRONPULSE ultra-premium athletic hub & PulseAI preview
 │       ├── elite-fitness-gym.png  # ELITE FITNESS multi-agent autonomous gym platform preview
 │       ├── agentic-story-studio.png # NexusNarrative multi-agent story studio preview
-│       └── nexus-mind-platform.png # Nexus Mind autonomous multi-agent gaming & intelligence platform preview
+│       ├── nexus-mind-platform.png # Nexus Mind autonomous multi-agent gaming & intelligence platform preview
+│       └── apex-rps-platform.png  # ApexRPS autonomous agentic decision platform & AI concierge preview
 ├── src/
 │   ├── app/                       # Next.js App Router root
 │   │   ├── layout.tsx             # Root document wrapper, SEO metadata, fonts
@@ -187,6 +188,7 @@ The portfolio aggregates 11 flagship engineering systems across four distinct sp
 - **SpaceX Launch Analysis & Prediction Dashboard:** 200+ mission EDA suite with Folium geospatial launchpad mapping and trained Random Forest outcome classifiers.
 
 ### 3. Production Streamlit Cloud Utilities
+- **ApexRPS (Autonomous Agentic Decision Platform & 24/7 Live AI Concierge):** Game theory and statistical ML platform elevating Rock-Paper-Scissors into an agentic multi-agent arena. Features 1st and 2nd-order Markov transition matrices, psychological Win-Stay Lose-Shift (WSLS) heuristics, dynamic Bayesian ensemble synthesis, transparent real-time Chain-of-Thought (CoT) telemetry streaming probability distributions ($P(\text{Rock})$, $P(\text{Paper})$, $P(\text{Scissors})$), player cognitive entropy profiling, session telemetry JSON exports, and an embedded 24/7 AI concierge with dual local-heuristic/cloud-LLM fallback.
 - **Nexus Mind (Autonomous Multi-Agent Gaming & Intelligence Platform):** Production multi-agent demonstration orchestrating three synchronized agents (Nexus Arbiter, Oracle Telemetry computing real-time Shannon Entropy $H = \log_2 N$ bits and search efficiency $E$, and Nova 24/7 bilingual live AI concierge with dual-engine fallback), featuring Glassmorphism dark UI, turn-based Human vs AI duel races, and live agent reasoning logs.
 - **NexusNarrative (Smart Multi-Agent Story Studio):** Creative AI-assisted storytelling pipeline and Mad Libs engine featuring four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant), instant one-click theme presets, real-time quality scorecard analytics, and direct Markdown/TXT export.
 - **FinPulse (Personal Finance & Analytics Tracker):** Zero-DB flatfile ledger architecture running strict 64-bit integer micro-currency arithmetic, eliminating floating-point rounding drift.

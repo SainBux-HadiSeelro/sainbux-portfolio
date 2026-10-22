@@ -33,6 +33,7 @@ import {
   ShoppingBag,
   BookOpen,
   Brain,
+  Swords,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project, ProjectCategory } from "@/data/projects";
@@ -60,6 +61,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "orbit-iq": Satellite,
   "agentic-story-studio": BookOpen,
   "nexus-mind-platform": Brain,
+  "apex-game": Swords,
 };
 
 const getEmbedUrl = (url: string) => {

@@ -706,6 +706,41 @@ export const projectsData: Project[] = [
     featured: true,
     category: "streamlit",
   },
+  {
+    id: "apex-game",
+    title: "ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge",
+    subtitle: "Markov Transition State Engine, Win-Stay Lose-Shift Heuristics & 24/7 Contextual AI Concierge",
+    badge: "Agentic AI & Game Theory",
+    description:
+      "An enterprise-grade agentic decision platform elevating Rock-Paper-Scissors into a high-performance demonstration of Statistical Machine Learning, Behavioral Game Theory, and Multi-Agent Systems. Features Markov Transition matrices, Win-Stay Lose-Shift (WSLS) heuristics, real-time Chain-of-Thought (CoT) telemetry, and a 24/7 live AI concierge with hybrid cloud/offline fallback.",
+    problem:
+      "Conventional Rock-Paper-Scissors implementations rely on trivial pseudorandom choice scripts with zero cognitive intelligence, absent probabilistic telemetry, and no stateful human behavioral modeling.",
+    solution:
+      "Architected a multi-agent decision engine synthesizing 1st and 2nd-order Markov transition matrices with bounded-rationality WSLS psychological heuristics and dynamic Bayesian ensemble weighting. Implemented real-time Bayesian probability streaming across all choices, an automated cognitive entropy profiling engine (Predictable Pattern, Dynamic Shifter, Adaptive Strategist), and an embedded 24/7 contextual concierge agent with dual local-heuristic and cloud LLM execution.",
+    result:
+      "Empirical behavioral anticipation outperforming random baselines, transparent sub-second Chain-of-Thought reasoning, real-time player archetype telemetry, and continuous zero-downtime AI concierge assistance.",
+    highlights: [
+      "Multi-Agent Decision Core: Ensemble synthesizing 1st/2nd-order Markov transitions and WSLS psychological heuristics",
+      "Real-Time Chain-of-Thought (CoT): Dynamic Bayesian probability distribution streaming (P(R), P(P), P(S)) and tactical move confidence",
+      "Cognitive Profiling & Telemetry: Session entropy classification categorizing player heuristics into behavioral archetypes with JSON export",
+      "24/7 Contextual AI Concierge: Live session-injected conversational agent with zero-downtime offline heuristic RAG and Cloud LLM fallback",
+    ],
+    tech: [
+      "Python",
+      "Streamlit",
+      "Multi-Agent System",
+      "Game Theory",
+      "Markov Chains",
+      "Bayesian Inference",
+      "OpenAI SDK",
+    ],
+    liveUrl: "https://apex-game.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/apex-game",
+    image: "/projects/apex-rps-platform.png",
+    imageLabel: "Live Agentic Decision HUD & AI Concierge",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {
