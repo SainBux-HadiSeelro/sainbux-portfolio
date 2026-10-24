@@ -29,6 +29,7 @@ import {
   BookOpen,
   Brain,
   Swords,
+  Gamepad2,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -58,6 +59,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "agentic-story-studio": BookOpen,
   "nexus-mind-platform": Brain,
   "apex-game": Swords,
+  "agentic-hangman": Gamepad2,
 };
 
 const getEmbedUrl = (url: string) => {

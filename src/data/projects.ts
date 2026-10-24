@@ -741,6 +741,41 @@ export const projectsData: Project[] = [
     featured: true,
     category: "streamlit",
   },
+  {
+    id: "agentic-hangman",
+    title: "Hangman: Modern AI Edition & 24/7 NEXUS AI Assistant",
+    subtitle: "Cyberpunk Word Deduction, Reactive State Machine & Embedded Resident Agent",
+    badge: "Agentic AI & Gaming",
+    description:
+      "A next-generation cyberpunk word deduction web application engineered with Python and Streamlit, featuring NEXUS-7 — an embedded 24/7 autonomous resident AI agent delivering contextual non-spoilery hints, multi-domain knowledge retrieval, and interactive developer intelligence.",
+    problem:
+      "Conventional word-guessing games rely on static terminal scripts with zero contextual guidance, punitive penalty loops, and no intelligent resident assistance when users encounter cognitive bottlenecks.",
+    solution:
+      "Architected a reactive event-driven state machine with dynamic heart-life telemetry and ASCII visual containment, integrated with an autonomous resident AI agent (NEXUS AI) operating via an offline-first heuristic neural knowledge base and cloud LLM fallback.",
+    result:
+      "100% accessible zero-downtime gameplay across 4 curated knowledge domains (Tech & AI, Animals, Countries, Movies), instant 1-click agent hint triggers, dynamic streak scoring, and interactive candidate profile intelligence.",
+    highlights: [
+      "Autonomous Resident Agent (NEXUS AI): 24/7 conversational assistant for real-time contextual hints and developer profile queries",
+      "Event-Driven State Engine: Reactive turn-based lifecycle with dynamic heart lives telemetry (❤️) and ASCII containment visuals",
+      "Virtual Cyber Keypad (A-Z): Interactive on-screen keypad with real-time state feedback (correct ✓, incorrect ✗, disabled)",
+      "Multi-Domain Knowledge Matrix: Curated vocabularies across Tech & AI, Global Geography, Zoology, and Cinema",
+    ],
+    tech: [
+      "Python",
+      "Streamlit",
+      "Autonomous Agents",
+      "State Machines",
+      "Knowledge Retrieval",
+      "Event-Driven UI",
+      "Cyberpunk CSS",
+    ],
+    liveUrl: "https://agentic-hangman.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0",
+    image: "/projects/agentic-hangman.png",
+    imageLabel: "Live Agentic Hangman & NEXUS AI",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {
