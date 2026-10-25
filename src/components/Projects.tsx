@@ -30,6 +30,7 @@ import {
   Brain,
   Swords,
   Gamepad2,
+  FileSpreadsheet,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project } from "@/data/projects";
@@ -60,6 +61,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "nexus-mind-platform": Brain,
   "apex-game": Swords,
   "agentic-hangman": Gamepad2,
+  "excel-ai-agent": FileSpreadsheet,
 };
 
 const getEmbedUrl = (url: string) => {

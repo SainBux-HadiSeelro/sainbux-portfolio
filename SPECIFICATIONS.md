@@ -193,6 +193,8 @@ The portfolio aggregates 11 flagship engineering systems across four distinct sp
 - **NexusNarrative (Smart Multi-Agent Story Studio):** Creative AI-assisted storytelling pipeline and Mad Libs engine featuring four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant), instant one-click theme presets, real-time quality scorecard analytics, and direct Markdown/TXT export.
 - **FinPulse (Personal Finance & Analytics Tracker):** Zero-DB flatfile ledger architecture running strict 64-bit integer micro-currency arithmetic, eliminating floating-point rounding drift.
 - **Commercial Invoice & Bill Generator:** Dynamic line-item billing dashboard generating vector-grade print-ready A4 PDF invoices via ReportLab in $< 30\text{ seconds}$.
+- **Excel AI Agent (Autonomous Multilingual Spreadsheet Assistant):** Autonomous 15-step agentic execution loop engineered in Python and Streamlit, interpreting natural language prompts in both English and Roman Urdu ('total sales nikalo', 'duplicates hata do', 'region ke hisaab se chart banao') to execute 15+ deterministic openpyxl/pandas tools on Excel (.xlsx) files with non-destructive session snapshots, instant undo, post-write verification, and destructive action guards.
+- **Hangman (Modern AI Edition & 24/7 NEXUS AI Assistant):** Cyberpunk-themed word deduction platform featuring NEXUS-7 resident agent with offline-first heuristic neural knowledge base, reactive state machine, and ASCII visual containment telemetry.
 - **Production Streamlit AI Suite (9 Apps):** Deployed cloud utilities with $50,000+$ aggregate user sessions.
 
 ### 4. Full-Stack Web & Physical AI

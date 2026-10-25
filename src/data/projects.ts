@@ -776,6 +776,42 @@ export const projectsData: Project[] = [
     featured: true,
     category: "streamlit",
   },
+  {
+    id: "excel-ai-agent",
+    title: "Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant",
+    subtitle: "Bilingual Natural Language Execution (English & Roman Urdu), 15+ Deterministic Tools & Non-Destructive Sandbox",
+    badge: "Autonomous Agent & Spreadsheets",
+    description:
+      "A production-grade autonomous spreadsheet assistant engineered with Python and Streamlit, interpreting natural language prompts in both English and Roman Urdu (e.g., 'total sales nikalo', 'duplicates hata do', 'region ke hisaab se chart banao') to safely execute formulas, analytics, deduplication, and charting on Excel (.xlsx) files.",
+    problem:
+      "Non-technical teams and regional users face severe barriers writing nested formulas and navigating complex multi-sheet workbooks in English-only interfaces, frequently risking data corruption without safety sandboxes or undo mechanisms.",
+    solution:
+      "Architected an autonomous 15-step agentic execution loop powered by 15+ deterministic openpyxl/pandas tools, bilingual prompt parsing (English & Roman Urdu), non-destructive isolated workspace sessions with automatic version snapshotting, post-write cell verification, and confirmation guards for destructive operations.",
+    result:
+      "Zero accidental data loss through automated version rollbacks, 100% test pass rate across 23 comprehensive pytest suites, sub-second live formula evaluation, and seamless accessibility across both an interactive Streamlit Web UI and terminal CLI REPL.",
+    highlights: [
+      "Bilingual Natural Language Processing: Native understanding of English & Roman Urdu prompts (e.g. 'total sales nikalo', 'duplicates hata do')",
+      "15+ Specialized Spreadsheet Tools: Formula injection, multi-column deduplication, pivot summaries, sheet merging, and native Excel charts",
+      "100% Non-Destructive Isolated Sandbox: Automatic session snapshots before each write with 1-click instant undo restoration",
+      "Destructive Action Guards & Verification: Explicit user confirmation required before row/sheet deletion with automated post-write cell read-backs",
+    ],
+    tech: [
+      "Python",
+      "Streamlit",
+      "OpenPyXL",
+      "Pandas",
+      "Autonomous Agents",
+      "Tool Calling",
+      "Gemini API",
+      "Roman Urdu NLP",
+    ],
+    liveUrl: "https://excel-agent-ai.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/excel-ai-agent",
+    image: "/projects/excel-ai-agent.png",
+    imageLabel: "Live Bilingual Spreadsheet AI Agent",
+    featured: true,
+    category: "streamlit",
+  },
 ];
 
 export const categoriesInfo = {
