@@ -1,4 +1,3 @@
-import Link from "next/link";
 import { ArrowUp } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 import { TaglineBlock, CircuitLineDecoration } from "./SignatureElements";

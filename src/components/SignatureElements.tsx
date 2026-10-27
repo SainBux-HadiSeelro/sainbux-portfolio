@@ -19,7 +19,7 @@ export function SectionPill({ title, className = "" }: SectionPillProps) {
         {cleanTitle}
       </span>
       <span className="text-[#1EA7FF] font-black text-sm tracking-tighter select-none font-mono">
-        //
+        {"//"}
       </span>
     </div>
   );
@@ -29,8 +29,8 @@ export function TaglineBlock({ className = "" }: { className?: string }) {
   return (
     <div className={`flex items-center gap-3 ${className}`}>
       <div className="w-1.5 h-8 sm:h-12 bg-[#1EA7FF] rounded-full shadow-[0_0_12px_#1EA7FF] flex-shrink-0" />
-      <div className="font-heading uppercase font-bold text-[11px] sm:text-sm md:text-base tracking-[0.14em] sm:tracking-[0.22em] text-white leading-snug">
-        Building Intelligent Solutions For A Smarter Tomorrow
+      <div className="font-heading font-bold text-[11px] sm:text-sm md:text-base tracking-[0.12em] sm:tracking-[0.18em] text-white leading-snug">
+        I build AI agents that plan, act, and correct themselves.
       </div>
     </div>
   );

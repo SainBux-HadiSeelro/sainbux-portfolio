@@ -95,6 +95,7 @@ export default function Skills() {
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0B1F5C]">
               Skills &amp; Frameworks
             </h2>
+            {/* TODO: verify 50+ workflows claim */}
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
               Strictly battle-tested tools utilized across 50+ deployed agentic workflows and production systems.
             </p>

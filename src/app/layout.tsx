@@ -22,12 +22,15 @@ const jetbrainsMono = JetBrains_Mono({
   display: "swap",
 });
 
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://sainbux.vercel.app";
+
 export const metadata: Metadata = {
-  metadataBase: new URL("https://sainbux.dev"),
+  metadataBase: new URL(siteUrl),
   title: {
     default: "Sain Bux | Agentic AI Engineer & Forward Deployed Engineer",
     template: "%s | Sain Bux",
   },
+  // TODO: verify 50+ repositories claim
   description:
     "I build AI agents that plan, act, and correct themselves. Explore 50+ AI & automation projects, 12 Loop Engineering repositories, and production multi-agent systems.",
   keywords: [
@@ -48,13 +51,14 @@ export const metadata: Metadata = {
   authors: [{ name: "Sain Bux", url: "https://github.com/SainBux-HadiSeelro" }],
   creator: "Sain Bux",
   alternates: {
-    canonical: "https://sainbux.dev",
+    canonical: siteUrl,
   },
   openGraph: {
     type: "website",
     locale: "en_US",
-    url: "https://sainbux.dev",
+    url: siteUrl,
     title: "Sain Bux | Agentic AI Engineer & Forward Deployed Engineer",
+    // TODO: verify 50+ repositories claim
     description:
       "I build AI agents that plan, act, and correct themselves. 50+ AI and automation projects, 12 on Loop Engineering.",
     siteName: "Sain Bux Portfolio",
@@ -84,7 +88,7 @@ const jsonLd = {
   "@type": "Person",
   name: "Sain Bux",
   jobTitle: "Agentic AI Engineer & Forward Deployed Engineer",
-  url: "https://sainbux.dev",
+  url: siteUrl,
   sameAs: [
     socialLinks.github,
     socialLinks.linkedin,

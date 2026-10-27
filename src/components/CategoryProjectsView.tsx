@@ -38,7 +38,7 @@ import {
   FileSpreadsheet,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
-import { Project, ProjectCategory } from "@/data/projects";
+import { Project } from "@/data/projects";
 import { SectionPill, CircuitLineDecoration } from "./SignatureElements";
 
 const projectIcons: Record<string, React.ElementType> = {
@@ -78,7 +78,7 @@ const getEmbedUrl = (url: string) => {
 };
 
 interface CategoryProjectsViewProps {
-  categoryKey: ProjectCategory;
+  categoryKey: string;
   name: string;
   title: string;
   subtitle: string;
