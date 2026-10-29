@@ -20,6 +20,7 @@ export default function Education() {
     {
       title: "Advance Python",
       organization: "Aptech Shahrah-e-Faisal",
+      period: "May 2023 – Aug 2023",
       description:
         "Comprehensive training in advanced Python paradigms, object-oriented design, modular programming, data processing, and backend automation.",
       badge: "Python Specialist",
@@ -27,6 +28,7 @@ export default function Education() {
     {
       title: "SMIT Agentic AI Specialized Course",
       organization: "Saylani Mass IT Training (SMIT)",
+      period: "Feb 2025 – Dec 2025",
       description:
         "Intensive hands-on track covering autonomous agents, multi-agent coordination, loop engineering, and tool execution pipelines.",
       badge: "Agentic AI",
@@ -34,6 +36,7 @@ export default function Education() {
     {
       title: "Governor Sindh IT Initiative (GIAIC)",
       organization: "GenAI, Web3 & Metaverse Program",
+      period: "Feb 2024 – Present",
       description:
         "Applied Generative AI development, modern Next.js ecosystem, TypeScript, and LLM application engineering.",
       badge: "GenAI & Cloud",
@@ -41,6 +44,7 @@ export default function Education() {
     {
       title: "Presidential Initiative for AI & Computing (PIAIC)",
       organization: "PIAIC",
+      period: "Nov 2024 – Sep 2026",
       description:
         "Foundational and advanced artificial intelligence, cloud-native computing, Python systems, and microservices.",
       badge: "AI & Computing",
@@ -128,8 +132,12 @@ export default function Education() {
                     </span>
                   </div>
 
-                  <div className="text-xs font-mono font-bold text-[#1553C7] mb-2.5">
-                    {cert.organization}
+                  <div className="flex flex-wrap items-center justify-between gap-2 text-xs font-mono mb-2.5">
+                    <span className="font-bold text-[#1553C7]">{cert.organization}</span>
+                    <span className="flex items-center gap-1.5 font-semibold text-[#5B6B8C]">
+                      <Calendar className="w-3.5 h-3.5 text-[#1553C7]" />
+                      {cert.period}
+                    </span>
                   </div>
 
                   <p className="text-xs text-[#5B6B8C] leading-relaxed">
