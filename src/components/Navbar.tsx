@@ -2,6 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { AnimatePresence, motion } from "framer-motion";
 import {
   Menu,
@@ -41,16 +42,18 @@ const projectCategories = [
   },
 ];
 
+// Navigation links with Projects positioned at the end
 const navLinks = [
   { id: "about", label: "About", href: "/#about" },
   { id: "skills", label: "Skills", href: "/#skills" },
-  { id: "projects", label: "Projects", href: "/#projects", isDropdown: true },
   { id: "experience", label: "Experience", href: "/#experience" },
   { id: "education", label: "Education", href: "/#education" },
   { id: "contact", label: "Contact", href: "/#contact" },
+  { id: "projects", label: "Projects", href: "/projects", isDropdown: true },
 ];
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isScrolled, setIsScrolled] = useState(false);
   const [activeSection, setActiveSection] = useState<string>("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -58,9 +61,20 @@ export default function Navbar() {
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(true);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
-  // Scroll Spy to detect current section and header styling
+  // Scroll Spy to detect current section on home, or highlight active route
   useEffect(() => {
-    const sectionIds = ["about", "skills", "projects", "experience", "education", "contact"];
+    // If on /projects page or its subpages, highlight Projects
+    if (pathname.startsWith("/projects")) {
+      setActiveSection("projects");
+      const handleProjectsScroll = () => {
+        setIsScrolled(window.scrollY > 20);
+      };
+      window.addEventListener("scroll", handleProjectsScroll, { passive: true });
+      handleProjectsScroll();
+      return () => window.removeEventListener("scroll", handleProjectsScroll);
+    }
+
+    const sectionIds = ["about", "skills", "experience", "education", "contact"];
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -75,7 +89,7 @@ export default function Navbar() {
         return;
       }
 
-      // Check which section is in view
+      // Check which section is currently in view
       const scrollPosition = window.scrollY + 160;
       let current = "";
 
@@ -95,9 +109,9 @@ export default function Navbar() {
     };
 
     window.addEventListener("scroll", handleScroll, { passive: true });
-    handleScroll(); // Initial evaluation on load
+    handleScroll(); // Initial evaluation on mount
     return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+  }, [pathname]);
 
   // Close dropdown on outside click
   useEffect(() => {
@@ -133,7 +147,7 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Navigation with Active Scroll Indicator */}
+        {/* Desktop Navigation with Projects at the end */}
         <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-xs font-mono">
           {navLinks.map((link) => {
             const isActive = activeSection === link.id;
@@ -156,7 +170,7 @@ export default function Navbar() {
                         : "text-[#5B6B8C] hover:text-[#1553C7]"
                     }`}
                   >
-                    <Link href="/#projects" onClick={(e) => e.stopPropagation()}>
+                    <Link href="/projects" onClick={(e) => e.stopPropagation()}>
                       Projects
                     </Link>
                     <ChevronDown
@@ -195,7 +209,7 @@ export default function Navbar() {
                             Categories
                           </span>
                           <Link
-                            href="/#projects"
+                            href="/projects"
                             onClick={() => setProjectsDropdownOpen(false)}
                             className="text-[11px] text-[#5B6B8C] hover:text-[#1553C7] font-semibold flex items-center gap-1"
                           >
@@ -237,7 +251,7 @@ export default function Navbar() {
 
                         <div className="mt-2 pt-2 border-t border-[#EAF4FF]">
                           <Link
-                            href="/#projects"
+                            href="/projects"
                             onClick={() => setProjectsDropdownOpen(false)}
                             className="flex items-center justify-between px-3 py-2 rounded-xl bg-[#F7FAFD] hover:bg-[#EAF4FF] text-xs font-semibold text-[#0B1F5C] transition-colors"
                           >
@@ -356,55 +370,6 @@ export default function Navbar() {
               )}
             </Link>
 
-            {/* Mobile Projects with Submenu */}
-            <div className={`py-1 px-3 rounded-xl transition-all ${
-              activeSection === "projects" ? "bg-[#EAF4FF]/60 border-l-4 border-[#1EA7FF]" : ""
-            }`}>
-              <div className="flex items-center justify-between">
-                <Link
-                  href="/#projects"
-                  onClick={() => setMobileMenuOpen(false)}
-                  className={`py-1 transition-colors ${
-                    activeSection === "projects"
-                      ? "text-[#1553C7] font-bold"
-                      : "text-[#1E2A44] hover:text-[#1553C7] font-semibold"
-                  }`}
-                >
-                  Projects
-                </Link>
-                <button
-                  type="button"
-                  onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
-                  className="p-1 text-[#1553C7]"
-                >
-                  <ChevronDown
-                    className={`w-4 h-4 transition-transform duration-200 ${
-                      mobileProjectsOpen ? "rotate-180" : ""
-                    }`}
-                  />
-                </button>
-              </div>
-
-              {mobileProjectsOpen && (
-                <div className="mt-2.5 ml-3 pl-3 border-l-2 border-[#CFE6FF] space-y-2">
-                  {projectCategories.map((cat) => {
-                    const Icon = cat.icon;
-                    return (
-                      <Link
-                        key={cat.name}
-                        href={cat.href}
-                        onClick={() => setMobileMenuOpen(false)}
-                        className="flex items-center gap-2 py-1 text-[#5B6B8C] hover:text-[#1553C7] transition-colors"
-                      >
-                        <Icon className="w-3.5 h-3.5 text-[#1553C7]" />
-                        <span>{cat.name}</span>
-                      </Link>
-                    );
-                  })}
-                </div>
-              )}
-            </div>
-
             <Link
               href="/#experience"
               onClick={() => setMobileMenuOpen(false)}
@@ -449,6 +414,63 @@ export default function Navbar() {
                 <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
               )}
             </Link>
+
+            {/* Mobile Projects with Submenu - Positioned Last */}
+            <div className={`py-1 px-3 rounded-xl transition-all ${
+              activeSection === "projects" ? "bg-[#EAF4FF]/60 border-l-4 border-[#1EA7FF]" : ""
+            }`}>
+              <div className="flex items-center justify-between">
+                <Link
+                  href="/projects"
+                  onClick={() => setMobileMenuOpen(false)}
+                  className={`py-1 transition-colors ${
+                    activeSection === "projects"
+                      ? "text-[#1553C7] font-bold"
+                      : "text-[#1E2A44] hover:text-[#1553C7] font-semibold"
+                  }`}
+                >
+                  Projects
+                </Link>
+                <button
+                  type="button"
+                  onClick={() => setMobileProjectsOpen(!mobileProjectsOpen)}
+                  className="p-1 text-[#1553C7]"
+                >
+                  <ChevronDown
+                    className={`w-4 h-4 transition-transform duration-200 ${
+                      mobileProjectsOpen ? "rotate-180" : ""
+                    }`}
+                  />
+                </button>
+              </div>
+
+              {mobileProjectsOpen && (
+                <div className="mt-2.5 ml-3 pl-3 border-l-2 border-[#CFE6FF] space-y-2">
+                  <Link
+                    href="/projects"
+                    onClick={() => setMobileMenuOpen(false)}
+                    className="flex items-center gap-2 py-1 text-xs font-bold text-[#1553C7] hover:text-[#0B1F5C] transition-colors"
+                  >
+                    <Layers className="w-3.5 h-3.5 text-[#1EA7FF]" />
+                    <span>All 25 Projects</span>
+                  </Link>
+                  {projectCategories.map((cat) => {
+                    const Icon = cat.icon;
+                    return (
+                      <Link
+                        key={cat.name}
+                        href={cat.href}
+                        onClick={() => setMobileMenuOpen(false)}
+                        className="flex items-center gap-2 py-1 text-[#5B6B8C] hover:text-[#1553C7] transition-colors"
+                      >
+                        <Icon className="w-3.5 h-3.5 text-[#1553C7]" />
+                        <span>{cat.name}</span>
+                      </Link>
+                    );
+                  })}
+                </div>
+              )}
+            </div>
           </nav>
 
           <div className="pt-4 border-t border-[#DCEBFC] flex items-center justify-between">

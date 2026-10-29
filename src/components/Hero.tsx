@@ -59,7 +59,7 @@ export default function Hero() {
             {/* 2 Focused Buttons: Primary (Royal Blue) & Secondary (Outline) */}
             <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3.5 w-full sm:w-auto">
               <a
-                href="#projects"
+                href="/projects"
                 className="inline-flex items-center justify-center gap-2.5 px-8 py-3.5 rounded-full text-sm font-semibold text-white bg-[#1553C7] hover:bg-[#0B1F5C] shadow-lg shadow-[#1553C7]/30 hover:shadow-[0_0_25px_#1EA7FF] transition-all transform active:scale-98"
               >
                 <span>View Projects</span>

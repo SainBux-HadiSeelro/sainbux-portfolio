@@ -31,20 +31,23 @@ export default function Footer() {
 
           {/* Nav links */}
           <nav className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-[#CFE6FF]">
-            <a href="#about" className="hover:text-white transition-colors">
+            <a href="/#about" className="hover:text-white transition-colors">
               About
             </a>
-            <a href="#skills" className="hover:text-white transition-colors">
+            <a href="/#skills" className="hover:text-white transition-colors">
               Skills
             </a>
-            <a href="#projects" className="hover:text-white transition-colors">
-              Projects
-            </a>
-            <a href="#experience" className="hover:text-white transition-colors">
+            <a href="/#experience" className="hover:text-white transition-colors">
               Experience
             </a>
-            <a href="#contact" className="hover:text-white transition-colors">
+            <a href="/#education" className="hover:text-white transition-colors">
+              Education
+            </a>
+            <a href="/#contact" className="hover:text-white transition-colors">
               Contact
+            </a>
+            <a href="/projects" className="hover:text-white transition-colors">
+              Projects
             </a>
           </nav>
 

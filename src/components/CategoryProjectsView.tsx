@@ -138,7 +138,7 @@ export default function CategoryProjectsView({
   };
 
   const categoryTabs = [
-    { key: "all", name: "All Projects", href: "/#projects", icon: Layers },
+    { key: "all", name: "All Projects", href: "/projects", icon: Layers },
     { key: "websites", name: "Websites", href: "/projects/websites", icon: Globe },
     { key: "loop-engineering", name: "Loop Engineering", href: "/projects/loop-engineering", icon: RefreshCw },
     { key: "streamlit", name: "Streamlit", href: "/projects/streamlit", icon: LayoutDashboard },
@@ -155,7 +155,7 @@ export default function CategoryProjectsView({
         {/* Navigation Breadcrumb & Back Link */}
         <div className="flex flex-wrap items-center justify-between gap-4 mb-8">
           <Link
-            href="/#projects"
+            href="/projects"
             className="inline-flex items-center gap-2 text-xs font-mono font-semibold text-[#1553C7] hover:text-[#0B1F5C] bg-[#EAF4FF] hover:bg-[#D8EBFF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] transition-colors"
           >
             <ArrowLeft className="w-3.5 h-3.5" />
@@ -167,7 +167,7 @@ export default function CategoryProjectsView({
               Home
             </Link>
             <span>/</span>
-            <Link href="/#projects" className="hover:text-[#1553C7] transition-colors">
+            <Link href="/projects" className="hover:text-[#1553C7] transition-colors">
               Projects
             </Link>
             <span>/</span>
