@@ -41,18 +41,61 @@ const projectCategories = [
   },
 ];
 
+const navLinks = [
+  { id: "about", label: "About", href: "/#about" },
+  { id: "skills", label: "Skills", href: "/#skills" },
+  { id: "projects", label: "Projects", href: "/#projects", isDropdown: true },
+  { id: "experience", label: "Experience", href: "/#experience" },
+  { id: "education", label: "Education", href: "/#education" },
+  { id: "contact", label: "Contact", href: "/#contact" },
+];
+
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState<string>("");
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [projectsDropdownOpen, setProjectsDropdownOpen] = useState(false);
   const [mobileProjectsOpen, setMobileProjectsOpen] = useState(true);
   const dropdownRef = useRef<HTMLDivElement>(null);
 
+  // Scroll Spy to detect current section and header styling
   useEffect(() => {
+    const sectionIds = ["about", "skills", "projects", "experience", "education", "contact"];
+
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
+
+      // Check if user reached bottom of page (activate Contact)
+      const isAtBottom =
+        window.innerHeight + Math.round(window.scrollY) >=
+        document.documentElement.scrollHeight - 70;
+
+      if (isAtBottom) {
+        setActiveSection("contact");
+        return;
+      }
+
+      // Check which section is in view
+      const scrollPosition = window.scrollY + 160;
+      let current = "";
+
+      for (const id of sectionIds) {
+        const el = document.getElementById(id);
+        if (el) {
+          const top = el.offsetTop;
+          const height = el.offsetHeight;
+          if (scrollPosition >= top && scrollPosition < top + height) {
+            current = id;
+            break;
+          }
+        }
+      }
+
+      setActiveSection(current);
     };
-    window.addEventListener("scroll", handleScroll);
+
+    window.addEventListener("scroll", handleScroll, { passive: true });
+    handleScroll(); // Initial evaluation on load
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
@@ -90,134 +133,153 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Desktop Navigation */}
-        <nav className="hidden lg:flex items-center gap-7 text-xs font-mono text-[#5B6B8C]">
-          <Link
-            href="/#about"
-            className="hover:text-[#1553C7] transition-colors py-1 font-semibold tracking-wider relative group"
-          >
-            <span>About</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1EA7FF] transition-all duration-200 group-hover:w-full" />
-          </Link>
+        {/* Desktop Navigation with Active Scroll Indicator */}
+        <nav className="hidden lg:flex items-center gap-6 xl:gap-7 text-xs font-mono">
+          {navLinks.map((link) => {
+            const isActive = activeSection === link.id;
 
-          <Link
-            href="/#skills"
-            className="hover:text-[#1553C7] transition-colors py-1 font-semibold tracking-wider relative group"
-          >
-            <span>Skills</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1EA7FF] transition-all duration-200 group-hover:w-full" />
-          </Link>
-
-          {/* Projects Dropdown Menu */}
-          <div
-            ref={dropdownRef}
-            className="relative"
-            onMouseEnter={() => setProjectsDropdownOpen(true)}
-            onMouseLeave={() => setProjectsDropdownOpen(false)}
-          >
-            <button
-              type="button"
-              onClick={() => setProjectsDropdownOpen(!projectsDropdownOpen)}
-              className="flex items-center gap-1.5 hover:text-[#1553C7] transition-colors py-1 font-semibold tracking-wider relative group cursor-pointer"
-            >
-              <Link href="/#projects" onClick={(e) => e.stopPropagation()}>
-                Projects
-              </Link>
-              <ChevronDown
-                className={`w-3.5 h-3.5 transition-transform duration-200 ${
-                  projectsDropdownOpen ? "rotate-180 text-[#1553C7]" : "text-[#5B6B8C]"
-                }`}
-              />
-              <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1EA7FF] transition-all duration-200 group-hover:w-full" />
-            </button>
-
-            <AnimatePresence>
-              {projectsDropdownOpen && (
-                <motion.div
-                  initial={{ opacity: 0, y: 8, scale: 0.98 }}
-                  animate={{ opacity: 1, y: 0, scale: 1 }}
-                  exit={{ opacity: 0, y: 6, scale: 0.98 }}
-                  transition={{ duration: 0.15 }}
-                  className="absolute top-full -left-4 mt-2 w-72 p-2 bg-white/95 backdrop-blur-md rounded-2xl border border-[#CFE6FF] shadow-xl shadow-[#1553C7]/10 z-50 font-mono"
+            if (link.isDropdown) {
+              return (
+                <div
+                  key={link.id}
+                  ref={dropdownRef}
+                  className="relative"
+                  onMouseEnter={() => setProjectsDropdownOpen(true)}
+                  onMouseLeave={() => setProjectsDropdownOpen(false)}
                 >
-                  <div className="px-3 py-2 border-b border-[#EAF4FF] mb-1.5 flex items-center justify-between">
-                    <span className="text-[10px] font-bold text-[#1553C7] uppercase tracking-wider">
-                      Categories
-                    </span>
-                    <Link
-                      href="/#projects"
-                      onClick={() => setProjectsDropdownOpen(false)}
-                      className="text-[11px] text-[#5B6B8C] hover:text-[#1553C7] font-semibold flex items-center gap-1"
-                    >
-                      <span>View All</span>
-                      <ArrowUpRight className="w-3 h-3 text-[#1EA7FF]" />
+                  <button
+                    type="button"
+                    onClick={() => setProjectsDropdownOpen(!projectsDropdownOpen)}
+                    className={`flex items-center gap-1.5 py-1 font-semibold tracking-wider relative group cursor-pointer transition-colors ${
+                      isActive
+                        ? "text-[#1553C7] font-bold"
+                        : "text-[#5B6B8C] hover:text-[#1553C7]"
+                    }`}
+                  >
+                    <Link href="/#projects" onClick={(e) => e.stopPropagation()}>
+                      Projects
                     </Link>
-                  </div>
+                    <ChevronDown
+                      className={`w-3.5 h-3.5 transition-transform duration-200 ${
+                        projectsDropdownOpen
+                          ? "rotate-180 text-[#1553C7]"
+                          : isActive
+                          ? "text-[#1553C7]"
+                          : "text-[#5B6B8C]"
+                      }`}
+                    />
 
-                  <div className="space-y-1">
-                    {projectCategories.map((cat) => {
-                      const Icon = cat.icon;
-                      return (
-                        <Link
-                          key={cat.name}
-                          href={cat.href}
-                          onClick={() => setProjectsDropdownOpen(false)}
-                          className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#F0F7FF] transition-colors group/item"
-                        >
-                          <div className="w-8 h-8 rounded-lg bg-[#EAF4FF] group-hover/item:bg-[#1553C7] group-hover/item:text-white text-[#1553C7] flex items-center justify-center shrink-0 transition-colors">
-                            <Icon className="w-4 h-4" />
-                          </div>
-                          <div className="flex-1 min-w-0">
-                            <div className="flex items-center justify-between">
-                              <span className="text-xs font-bold text-[#0B1F5C] group-hover/item:text-[#1553C7] transition-colors">
-                                {cat.name}
-                              </span>
-                              <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-[#EAF4FF] text-[#1553C7] font-bold">
-                                {cat.badge}
-                              </span>
+                    {/* Active Underline Indicator */}
+                    {isActive ? (
+                      <motion.span
+                        layoutId="activeNavIndicator"
+                        className="absolute -bottom-1 left-0 right-0 h-[2.5px] bg-gradient-to-r from-[#1EA7FF] to-[#1553C7] rounded-full shadow-[0_0_8px_rgba(30,167,255,0.7)]"
+                        transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                      />
+                    ) : (
+                      <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#1EA7FF]/60 transition-all duration-200 group-hover:w-full rounded-full" />
+                    )}
+                  </button>
+
+                  <AnimatePresence>
+                    {projectsDropdownOpen && (
+                      <motion.div
+                        initial={{ opacity: 0, y: 8, scale: 0.98 }}
+                        animate={{ opacity: 1, y: 0, scale: 1 }}
+                        exit={{ opacity: 0, y: 6, scale: 0.98 }}
+                        transition={{ duration: 0.15 }}
+                        className="absolute top-full -left-4 mt-2 w-72 p-2 bg-white/95 backdrop-blur-md rounded-2xl border border-[#CFE6FF] shadow-xl shadow-[#1553C7]/10 z-50 font-mono"
+                      >
+                        <div className="px-3 py-2 border-b border-[#EAF4FF] mb-1.5 flex items-center justify-between">
+                          <span className="text-[10px] font-bold text-[#1553C7] uppercase tracking-wider">
+                            Categories
+                          </span>
+                          <Link
+                            href="/#projects"
+                            onClick={() => setProjectsDropdownOpen(false)}
+                            className="text-[11px] text-[#5B6B8C] hover:text-[#1553C7] font-semibold flex items-center gap-1"
+                          >
+                            <span>View All</span>
+                            <ArrowUpRight className="w-3 h-3 text-[#1EA7FF]" />
+                          </Link>
+                        </div>
+
+                        <div className="space-y-1">
+                          {projectCategories.map((cat) => {
+                            const Icon = cat.icon;
+                            return (
+                              <Link
+                                key={cat.name}
+                                href={cat.href}
+                                onClick={() => setProjectsDropdownOpen(false)}
+                                className="flex items-start gap-3 p-2.5 rounded-xl hover:bg-[#F0F7FF] transition-colors group/item"
+                              >
+                                <div className="w-8 h-8 rounded-lg bg-[#EAF4FF] group-hover/item:bg-[#1553C7] group-hover/item:text-white text-[#1553C7] flex items-center justify-center shrink-0 transition-colors">
+                                  <Icon className="w-4 h-4" />
+                                </div>
+                                <div className="flex-1 min-w-0">
+                                  <div className="flex items-center justify-between">
+                                    <span className="text-xs font-bold text-[#0B1F5C] group-hover/item:text-[#1553C7] transition-colors">
+                                      {cat.name}
+                                    </span>
+                                    <span className="text-[9px] px-1.5 py-0.5 rounded-full bg-[#EAF4FF] text-[#1553C7] font-bold">
+                                      {cat.badge}
+                                    </span>
+                                  </div>
+                                  <p className="text-[11px] text-[#5B6B8C] truncate mt-0.5">
+                                    {cat.desc}
+                                  </p>
+                                </div>
+                              </Link>
+                            );
+                          })}
+                        </div>
+
+                        <div className="mt-2 pt-2 border-t border-[#EAF4FF]">
+                          <Link
+                            href="/#projects"
+                            onClick={() => setProjectsDropdownOpen(false)}
+                            className="flex items-center justify-between px-3 py-2 rounded-xl bg-[#F7FAFD] hover:bg-[#EAF4FF] text-xs font-semibold text-[#0B1F5C] transition-colors"
+                          >
+                            <div className="flex items-center gap-2">
+                              <Layers className="w-3.5 h-3.5 text-[#1553C7]" />
+                              <span>All Engineered Projects</span>
                             </div>
-                            <p className="text-[11px] text-[#5B6B8C] truncate mt-0.5">
-                              {cat.desc}
-                            </p>
-                          </div>
-                        </Link>
-                      );
-                    })}
-                  </div>
+                            <ArrowUpRight className="w-3.5 h-3.5 text-[#1553C7]" />
+                          </Link>
+                        </div>
+                      </motion.div>
+                    )}
+                  </AnimatePresence>
+                </div>
+              );
+            }
 
-                  <div className="mt-2 pt-2 border-t border-[#EAF4FF]">
-                    <Link
-                      href="/#projects"
-                      onClick={() => setProjectsDropdownOpen(false)}
-                      className="flex items-center justify-between px-3 py-2 rounded-xl bg-[#F7FAFD] hover:bg-[#EAF4FF] text-xs font-semibold text-[#0B1F5C] transition-colors"
-                    >
-                      <div className="flex items-center gap-2">
-                        <Layers className="w-3.5 h-3.5 text-[#1553C7]" />
-                        <span>All Engineered Projects</span>
-                      </div>
-                      <ArrowUpRight className="w-3.5 h-3.5 text-[#1553C7]" />
-                    </Link>
-                  </div>
-                </motion.div>
-              )}
-            </AnimatePresence>
-          </div>
+            return (
+              <Link
+                key={link.id}
+                href={link.href}
+                className={`relative py-1 font-semibold tracking-wider transition-colors group ${
+                  isActive
+                    ? "text-[#1553C7] font-bold"
+                    : "text-[#5B6B8C] hover:text-[#1553C7]"
+                }`}
+              >
+                <span>{link.label}</span>
 
-          <Link
-            href="/#experience"
-            className="hover:text-[#1553C7] transition-colors py-1 font-semibold tracking-wider relative group"
-          >
-            <span>Experience</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1EA7FF] transition-all duration-200 group-hover:w-full" />
-          </Link>
-
-          <Link
-            href="/#contact"
-            className="hover:text-[#1553C7] transition-colors py-1 font-semibold tracking-wider relative group"
-          >
-            <span>Contact</span>
-            <span className="absolute bottom-0 left-0 w-0 h-0.5 bg-[#1EA7FF] transition-all duration-200 group-hover:w-full" />
-          </Link>
+                {/* Active Underline Indicator */}
+                {isActive ? (
+                  <motion.span
+                    layoutId="activeNavIndicator"
+                    className="absolute -bottom-1 left-0 right-0 h-[2.5px] bg-gradient-to-r from-[#1EA7FF] to-[#1553C7] rounded-full shadow-[0_0_8px_rgba(30,167,255,0.7)]"
+                    transition={{ type: "spring", stiffness: 380, damping: 30 }}
+                  />
+                ) : (
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-[#1EA7FF]/60 transition-all duration-200 group-hover:w-full rounded-full" />
+                )}
+              </Link>
+            );
+          })}
         </nav>
 
         {/* CTA & Socials (Desktop) */}
@@ -263,29 +325,50 @@ export default function Navbar() {
       {/* Mobile dropdown */}
       {mobileMenuOpen && (
         <div className="lg:hidden bg-white border-b border-[#DCEBFC] px-6 py-6 space-y-4 shadow-xl">
-          <nav className="flex flex-col space-y-3 font-mono text-xs">
+          <nav className="flex flex-col space-y-2 font-mono text-xs">
             <Link
               href="/#about"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-[#1E2A44] hover:text-[#1553C7] font-semibold py-1 transition-colors"
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "about"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
             >
-              About
+              <span>About</span>
+              {activeSection === "about" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
             </Link>
+
             <Link
               href="/#skills"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-[#1E2A44] hover:text-[#1553C7] font-semibold py-1 transition-colors"
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "skills"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
             >
-              Skills
+              <span>Skills</span>
+              {activeSection === "skills" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
             </Link>
 
             {/* Mobile Projects with Submenu */}
-            <div className="py-1">
+            <div className={`py-1 px-3 rounded-xl transition-all ${
+              activeSection === "projects" ? "bg-[#EAF4FF]/60 border-l-4 border-[#1EA7FF]" : ""
+            }`}>
               <div className="flex items-center justify-between">
                 <Link
                   href="/#projects"
                   onClick={() => setMobileMenuOpen(false)}
-                  className="text-[#1E2A44] hover:text-[#1553C7] font-bold transition-colors"
+                  className={`py-1 transition-colors ${
+                    activeSection === "projects"
+                      ? "text-[#1553C7] font-bold"
+                      : "text-[#1E2A44] hover:text-[#1553C7] font-semibold"
+                  }`}
                 >
                   Projects
                 </Link>
@@ -325,16 +408,46 @@ export default function Navbar() {
             <Link
               href="/#experience"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-[#1E2A44] hover:text-[#1553C7] font-semibold py-1 transition-colors"
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "experience"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
             >
-              Experience
+              <span>Experience</span>
+              {activeSection === "experience" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
             </Link>
+
+            <Link
+              href="/#education"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "education"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
+            >
+              <span>Education</span>
+              {activeSection === "education" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
+            </Link>
+
             <Link
               href="/#contact"
               onClick={() => setMobileMenuOpen(false)}
-              className="text-[#1E2A44] hover:text-[#1553C7] font-semibold py-1 transition-colors"
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "contact"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
             >
-              Contact
+              <span>Contact</span>
+              {activeSection === "contact" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
             </Link>
           </nav>
 
