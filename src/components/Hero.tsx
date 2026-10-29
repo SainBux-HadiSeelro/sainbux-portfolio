@@ -84,12 +84,12 @@ export default function Hero() {
               </a>
 
               <a
-                href="/cv.pdf"
-                download="Sain_Bux_CV.pdf"
+                href="/sainbux_resume.pdf"
+                download="sainbux_resume.pdf"
                 className="inline-flex items-center justify-center gap-2 px-7 py-3.5 rounded-full text-sm font-mono font-medium text-[#1553C7] bg-white border-2 border-[#1553C7]/40 hover:border-[#1553C7] hover:bg-[#F0F7FF] transition-all shadow-xs"
               >
                 <Download className="w-4 h-4 text-[#1553C7]" />
-                <span>Download CV</span>
+                <span>Download Resume</span>
               </a>
             </div>
           </div>

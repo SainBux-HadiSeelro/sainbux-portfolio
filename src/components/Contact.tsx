@@ -210,12 +210,12 @@ export default function Contact() {
               </button>
 
               <a
-                href="/cv.pdf"
-                download="Sain_Bux_CV.pdf"
+                href="/sainbux_resume.pdf"
+                download="sainbux_resume.pdf"
                 className="p-3.5 rounded-xl border border-white/15 bg-white/10 hover:bg-white/20 text-white font-mono text-xs flex items-center justify-center gap-2 transition-all"
               >
                 <Download className="w-4 h-4 text-[#1EA7FF]" />
-                <span>Download CV</span>
+                <span>Download Resume</span>
               </a>
             </div>
 
