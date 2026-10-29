@@ -35,7 +35,6 @@ import {
 import { GithubIcon } from "./Icons";
 import { projectsData, Project, ProjectCategory } from "@/data/projects";
 import { SectionPill, CircuitLineDecoration } from "./SignatureElements";
-import { socialLinks } from "@/data/socials";
 
 const projectIcons: Record<string, React.ElementType> = {
   "loop-engineering-series": Layers,
@@ -595,29 +594,6 @@ export default function Projects() {
             </div>
           </div>
         )}
-
-        {/* GitHub Banner */}
-        {/* TODO: verify 50+ repositories claim */}
-        <div className="mt-14 p-6 sm:p-8 rounded-2xl border border-[#CFE6FF] bg-gradient-to-r from-[#F0F7FF] to-[#E4F1FF] flex flex-col sm:flex-row items-center justify-between gap-5 text-center sm:text-left shadow-sm">
-          <div>
-            <h4 className="font-heading text-lg font-extrabold text-[#0B1F5C]">
-              50+ Autonomous AI &amp; Automation Repositories
-            </h4>
-            <p className="text-xs text-[#5B6B8C] mt-1 max-w-xl">
-              Inspect open-source multi-agent workflows, MCP servers, prompt evaluators, and production codebases on GitHub.
-            </p>
-          </div>
-          <a
-            href={socialLinks.github}
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-5 py-3 rounded-full text-xs font-mono font-bold bg-white hover:bg-[#0B1F5C] text-[#0B1F5C] hover:text-white border border-[#CFE6FF] shadow-sm transition-all flex-shrink-0 group"
-          >
-            <GithubIcon className="w-4 h-4 text-[#1553C7] group-hover:text-[#1EA7FF]" />
-            <span>github.com/SainBux-HadiSeelro</span>
-            <ExternalLink className="w-3.5 h-3.5 text-[#5B6B8C] group-hover:text-white" />
-          </a>
-        </div>
       </div>
 
       {/* Live Preview Modal */}
