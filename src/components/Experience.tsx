@@ -53,7 +53,6 @@ export default function Experience() {
       role: "Forward Deployed AI Engineer",
       company: "Autonomous AI & Automation Delivery",
       type: "Global Remote",
-      period: "2024 – 2026",
       isCurrent: false,
       tag: "Forward Deployed",
       tagColor: "text-[#1553C7] bg-[#EAF4FF] border-[#CFE6FF]",
@@ -210,10 +209,12 @@ export default function Experience() {
                     </div>
                   </div>
 
-                  <div className="font-mono text-xs text-[#5B6B8C] font-semibold flex items-center gap-2 self-start sm:self-auto bg-[#F0F7FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF]">
-                    <Calendar className="w-3.5 h-3.5 text-[#1553C7]" />
-                    <span>{exp.period}</span>
-                  </div>
+                  {exp.period && (
+                    <div className="font-mono text-xs text-[#5B6B8C] font-semibold flex items-center gap-2 self-start sm:self-auto bg-[#F0F7FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF]">
+                      <Calendar className="w-3.5 h-3.5 text-[#1553C7]" />
+                      <span>{exp.period}</span>
+                    </div>
+                  )}
                 </div>
 
                 <p className="text-sm text-[#1E2A44] leading-relaxed mb-6 font-medium">
