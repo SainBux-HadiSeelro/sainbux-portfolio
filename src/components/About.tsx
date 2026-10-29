@@ -50,9 +50,9 @@ export default function About() {
       border: "border-[#CFE6FF]",
     },
     {
-      label: "Production Track Record",
-      value: "50+ Projects Delivered",
-      sub: "Autonomous AI, Multi-Agent & Automation",
+      label: "Architecture Focus",
+      value: "Autonomous AI & Agents",
+      sub: "Multi-Agent Pipelines & Systems",
       icon: Sparkles,
       color: "text-[#1EA7FF]",
       bg: "bg-[#F0F7FF]",
@@ -174,7 +174,7 @@ export default function About() {
             </p>
 
             <p>
-              Having delivered <strong className="text-[#1553C7] font-bold">50+ AI and automation projects</strong>, I am also a daily power user of modern agentic CLI tools—including Claude Code, OpenCode, Antigravity, and Gemini CLI—integrating them into my forward-deployed delivery workflows.
+              Specializing in autonomous agent architectures and production automation, I am also a daily power user of modern agentic CLI tools—including Claude Code, OpenCode, Antigravity, and Gemini CLI—integrating them into my forward-deployed delivery workflows.
             </p>
 
             {/* Tech Badges Strip */}

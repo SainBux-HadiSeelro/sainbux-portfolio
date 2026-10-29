@@ -30,9 +30,8 @@ export const metadata: Metadata = {
     default: "Sain Bux | Agentic AI Engineer & Forward Deployed Engineer",
     template: "%s | Sain Bux",
   },
-  // TODO: verify 50+ repositories claim
   description:
-    "I build AI agents that plan, act, and correct themselves. Explore 50+ AI & automation projects, 12 Loop Engineering repositories, and production multi-agent systems.",
+    "I build AI agents that plan, act, and correct themselves. Explore autonomous AI & automation projects, 12 Loop Engineering repositories, and production multi-agent systems.",
   keywords: [
     "Sain Bux",
     "Agentic AI Engineer",
@@ -58,9 +57,8 @@ export const metadata: Metadata = {
     locale: "en_US",
     url: siteUrl,
     title: "Sain Bux | Agentic AI Engineer & Forward Deployed Engineer",
-    // TODO: verify 50+ repositories claim
     description:
-      "I build AI agents that plan, act, and correct themselves. 50+ AI and automation projects, 12 on Loop Engineering.",
+      "I build AI agents that plan, act, and correct themselves. Autonomous AI and automation projects with deterministic loop engineering.",
     siteName: "Sain Bux Portfolio",
   },
   twitter: {

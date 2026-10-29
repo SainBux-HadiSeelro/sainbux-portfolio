@@ -116,7 +116,7 @@ export default function Skills() {
               Technical Skills &amp; Stack
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Production-grade technologies utilized across 50+ deployed agentic workflows and full-stack systems.
+              Production-grade technologies utilized across deployed agentic workflows and full-stack systems.
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">
