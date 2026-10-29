@@ -9,7 +9,7 @@ export default function Education() {
     {
       degree: "BS Software Engineering",
       institution: "Virtual University of Pakistan",
-      period: "2022 – 2026",
+      period: "2023 – 2027",
       status: "Final Year",
       details:
         "Focus on distributed software architecture, systems programming, data structures, algorithms, and applied machine learning.",
