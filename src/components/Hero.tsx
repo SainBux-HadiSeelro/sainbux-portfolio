@@ -1,28 +1,11 @@
 "use client";
 
-import { useState, useEffect } from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { ArrowRight, Download, Terminal, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Download } from "lucide-react";
 import { TaglineBlock, CircuitLineDecoration } from "./SignatureElements";
 
-const loopPhases = [
-  { id: "plan", label: "01. Plan", desc: "Decompose prompt into DAG task graph", status: "Resolved", latency: "140ms" },
-  { id: "act", label: "02. Act", desc: "Dispatch MCP tool `query_database`", status: "Executing", latency: "210ms" },
-  { id: "verify", label: "03. Verify", desc: "Validate response against Pydantic schema", status: "Schema Check", latency: "35ms" },
-  { id: "correct", label: "04. Self-Correct", desc: "Detect token drift & auto-heal trace", status: "Pass (0 drift)", latency: "80ms" },
-];
-
 export default function Hero() {
-  const [activeStep, setActiveStep] = useState(0);
-
-  useEffect(() => {
-    const timer = setInterval(() => {
-      setActiveStep((prev) => (prev + 1) % loopPhases.length);
-    }, 2800);
-    return () => clearInterval(timer);
-  }, []);
-
   return (
     <section className="relative pt-28 sm:pt-36 pb-0 overflow-hidden bg-gradient-to-b from-white via-[#F0F7FF] to-[#DCEBFC]/60">
       {/* Subtle background tech accents */}
@@ -39,7 +22,7 @@ export default function Hero() {
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6 relative z-10">
         {/* Main Hero Grid: Left Content, Right Hands Graphic */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-12">
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 lg:gap-12 items-center mb-16 sm:mb-20">
           {/* Left Column: Name, Spaced Titles, Action Buttons */}
           <div className="lg:col-span-7 flex flex-col items-start w-full">
             {/* Live Status Badge */}
@@ -124,64 +107,6 @@ export default function Hero() {
               <div className="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#1EA7FF]/50 blur-md animate-ping pointer-events-none" />
               <div className="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white shadow-[0_0_20px_#1EA7FF] pointer-events-none" />
             </motion.div>
-          </div>
-        </div>
-
-        {/* Deterministic Agent Loop Visual Card */}
-        <div className="tech-card rounded-2xl p-5 sm:p-7 mb-14 bg-white/95 backdrop-blur-xs border border-[#DCEBFC]">
-          {/* Header */}
-          <div className="flex items-center justify-between pb-3.5 border-b border-[#E8F1FC] mb-4">
-            <div className="flex items-center gap-2 font-mono text-xs text-[#0B1F5C] font-semibold">
-              <Terminal className="w-4 h-4 text-[#1553C7]" />
-              <span>agent_loop_runtime.py</span>
-            </div>
-            <div className="flex items-center gap-2 text-[11px] font-mono text-[#5B6B8C]">
-              <span className="w-2 h-2 rounded-full bg-[#1EA7FF] animate-pulse" />
-              <span className="hidden sm:inline">Autonomous Feedback Loop</span>
-            </div>
-          </div>
-
-          {/* 4 Loop Stages */}
-          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3 mb-4">
-            {loopPhases.map((phase, idx) => {
-              const isActive = activeStep === idx;
-              return (
-                <div
-                  key={phase.id}
-                  onClick={() => setActiveStep(idx)}
-                  className={`p-3.5 rounded-xl border transition-all cursor-pointer ${
-                    isActive
-                      ? "bg-[#EAF4FF] border-[#1553C7] shadow-xs shadow-[#1553C7]/20"
-                      : "bg-[#F8FBFF] border-[#E2EEFC] hover:border-[#CFE6FF] hover:bg-white"
-                  }`}
-                >
-                  <div className="flex items-center justify-between mb-1.5">
-                    <span className={`font-mono text-xs font-bold ${isActive ? "text-[#1553C7]" : "text-[#0B1F5C]"}`}>
-                      {phase.label}
-                    </span>
-                    <span className="font-mono text-[11px] text-[#5B6B8C]">
-                      {phase.latency}
-                    </span>
-                  </div>
-                  <p className="text-xs text-[#1E2A44] leading-relaxed">
-                    {phase.desc}
-                  </p>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Runtime Status Bar */}
-          <div className="p-3 rounded-xl bg-[#F0F7FF] border border-[#D3E7FC] flex flex-col sm:flex-row sm:items-center justify-between gap-2 font-mono text-xs">
-            <div className="flex items-center gap-2 text-[#0B1F5C] truncate">
-              <span className="text-[#1553C7] font-bold">&gt;</span>
-              <span className="text-[#5B6B8C]">state:</span>
-              <span className="font-semibold text-[#0B1F5C] truncate">{loopPhases[activeStep].desc}</span>
-            </div>
-            <div className="flex items-center gap-1.5 text-emerald-600 text-xs font-bold flex-shrink-0">
-              <CheckCircle2 className="w-4 h-4 text-emerald-500" />
-              <span>Verified contract</span>
-            </div>
           </div>
         </div>
       </div>
