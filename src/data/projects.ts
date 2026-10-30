@@ -269,6 +269,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "agentic",
   },
+  {
+    id: "chronoflow-ai",
+    title: "ChronoFlow-AI — Modern Agentic Focus Orchestrator & 24/7 AI Assistant",
+    subtitle: "Zero-Latency 60 FPS Non-Blocking SVG Engine, NLP Mission Dispatcher & Resident AI Concierge",
+    badge: "Agentic",
+    summary:
+      "Decouples temporal execution into a client-side 60 FPS SVG engine, paired with an NLP mission dispatcher and 24/7 live resident AI assistant.",
+    description:
+      "A next-generation deep work focus orchestrator engineered with Python and Streamlit, featuring a zero-latency client-side SVG circular timer, regex semantic NLP tokenizer for natural language time parsing, browser-native Web Audio API harmonic chime alerts, and a floating 24/7 bilingual resident AI assistant.",
+    problem:
+      "Traditional Streamlit countdown timers rely on server-side sleep loops (time.sleep) that block threads, freeze the UI, prevent live pausing, drop frames, and crash upon user interaction.",
+    solution:
+      "Architected an event-driven client-side SVG HUD engine running at 60 FPS with instant pause/resume controls, coupled with an NLP mission dispatcher, zero-dependency Web Audio synthesizer, and a permanent bottom-right resident AI support widget.",
+    result:
+      "Zero UI freeze latency, fluid 60 FPS circular dash-offset animations without thread-blocking, and 24/7 offline-first bilingual productivity triage.",
+    highlights: [
+      "Client-side 60 FPS non-blocking circular SVG HUD with dynamic stroke-dashoffset transitions",
+      "24/7 floating corner resident AI assistant with bilingual support (English & Roman Urdu)",
+      "Natural language mission dispatcher extracting composite time units and focus targets",
+      "Zero-dependency Web Audio API harmonic chime synthesizer (C5–E5–G5–C6)",
+    ],
+    tech: ["Python", "Streamlit", "Autonomous Agents", "SVG Animations", "Web Audio API", "NLP Tokenizer"],
+    liveUrl: "https://chronoflow-ai.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/chronoflow-ai",
+    image: "/projects/chronoflow-ai.png",
+    imageLabel: "Live ChronoFlow-AI Timer & HUD",
+    featured: true,
+    category: "agentic",
+  },
 
   // =========================================================================
   // GROUP B: AI-Integrated Apps
