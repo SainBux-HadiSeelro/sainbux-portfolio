@@ -37,6 +37,7 @@ import {
   Gamepad2,
   FileSpreadsheet,
   Timer,
+  ShieldCheck,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project } from "@/data/projects";
@@ -68,6 +69,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "agentic-hangman": Gamepad2,
   "excel-ai-agent": FileSpreadsheet,
   "chronoflow-ai": Timer,
+  "agentic-password-sentinel": ShieldCheck,
 };
 
 const getEmbedUrl = (url: string) => {

@@ -298,6 +298,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "agentic",
   },
+  {
+    id: "agentic-password-sentinel",
+    title: "CipherSentinel AI — Next-Gen Cryptographic Password Suite & 24/7 Autonomous Security Agent",
+    subtitle: "CSPRNG Kernel Entropy, Real-Time Shannon Bit-Entropy, NIST SP 800-63B & 24/7 Resident AI Auditor",
+    badge: "Agentic",
+    summary:
+      "Eliminates vulnerable pseudo-random credential generation by combining OS kernel CSPRNG entropy, Shannon bit-entropy telemetry, and a 24/7 resident cybersecurity agent.",
+    description:
+      "An enterprise-grade cryptographic password suite and autonomous cybersecurity defense hub built with Python and Streamlit. Utilizes OS-level CSPRNG entropy, Fisher-Yates shuffling, real-time Shannon bit-entropy telemetry, GPU brute-force crack modeling, and an embedded 24/7 autonomous security advisor verifying NIST SP 800-63B and OWASP ASVS compliance.",
+    problem:
+      "Standard password tools rely on weak pseudo-random algorithms (random) vulnerable to seed reconstruction, lack mathematical entropy metrics, and fail to provide continuous cryptographic compliance guidance.",
+    solution:
+      "Engineered a zero-knowledge cryptographic engine using secrets CSPRNG kernel entropy, Fisher-Yates unbiased shuffling, real-time Shannon bit-entropy math (E = L * log2(R)), 100B hash/sec GPU brute-force estimation, and an offline-first 24/7 autonomous security agent.",
+    result:
+      "Zero credential persistence with volatile RAM execution, guaranteed character diversity with zero positional bias, and instant NIST SP 800-63B/OWASP ASVS automated compliance verification.",
+    highlights: [
+      "Kernel-level CSPRNG entropy generator with Fisher-Yates unbiased shuffle and zero-knowledge volatile RAM execution",
+      "Real-time Shannon bit-entropy calculator and 100 Billion hash/sec GPU cluster brute-force resistance estimator",
+      "24/7 autonomous cybersecurity advisor auditing credentials against NIST SP 800-63B and OWASP ASVS standards",
+      "Multi-mode generator supporting military-grade passwords, Diceware memorable passphrases, and hardware PIN codes",
+    ],
+    tech: ["Python 3.12+", "Streamlit", "CSPRNG Secrets", "Shannon Entropy", "Autonomous AI Agent", "NIST SP 800-63B", "OWASP ASVS"],
+    liveUrl: "https://agentic-password-sentinel.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-password-sentinel",
+    image: "/projects/agentic-password-sentinel.png",
+    imageLabel: "Live CipherSentinel AI Security HUD & Cryptographic Studio",
+    featured: true,
+    category: "agentic",
+  },
 
   // =========================================================================
   // GROUP B: AI-Integrated Apps
