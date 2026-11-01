@@ -151,6 +151,7 @@ d:\portfolio
 │   ├── cv.pdf                             # Downloadable Curriculum Vitae
 │   ├── hero-hands.png                     # Visual hero branding asset
 │   └── projects/                          # High-resolution (1280x800) project preview assets
+│       ├── agentic-bmi-health-assistant.png # VitalAI Health & BMI Platform preview
 │       ├── agentic-hangman.png            # Hangman 2.0 NEXUS AI preview
 │       ├── agentic-story-studio.png       # NexusNarrative story studio preview
 │       ├── apex-rps-platform.png          # ApexRPS decision platform preview
@@ -326,6 +327,16 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Stack:** Python, Streamlit, Multi-Agent Pipeline, NLP, UV Package Manager, Session State
 - **Live Deployment:** [https://agentic-story-studio.streamlit.app/](https://agentic-story-studio.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-story-studio](https://github.com/SainBux-HadiSeelro/agentic-story-studio)
+
+#### 7. VitalAI — Autonomous Health & BMI Intelligence Platform
+- **Designation:** Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Eliminates naive static BMI formulas by coupling clinical anthropometrics and metabolic forecasting with a 24/7 context-aware autonomous health copilot.
+- **Architectural Solution:** Production-grade clinical calculation core with unit-normalized anthropometrics, interactive WHO visual spectrum meter, and a synchronized 24/7 VitalAI Agentic Copilot with heuristic reasoning and state persistence.
+- **Verified Metrics:** Sub-second clinical biometric inference, zero-latency offline-first agentic reasoning, personalized 7-day nutritional guidance, and 1-click clinical JSON/text exports.
+- **Stack:** Python 3.12+, Streamlit, Agentic AI Copilot, Clinical Biometrics, Pandas, Glassmorphic CSS3
+- **Live Deployment:** [https://agentic-bmi-health-assistant.streamlit.app/](https://agentic-bmi-health-assistant.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant](https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant)
 
 ---
 

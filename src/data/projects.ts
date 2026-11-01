@@ -327,6 +327,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "agentic",
   },
+  {
+    id: "agentic-bmi-health-assistant",
+    title: "VitalAI — Autonomous Health & BMI Intelligence Platform",
+    subtitle: "Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot",
+    badge: "Agentic",
+    summary:
+      "Transforms static BMI calculators into an autonomous health decision system combining clinical anthropometrics, metabolic forecasting, and a 24/7 context-aware AI health copilot.",
+    description:
+      "A production-grade autonomous health and biometric intelligence platform engineered with Python and Streamlit. Features precision Quetelet BMI analytics, Mifflin-St Jeor metabolic forecasting (BMR/TDEE), Deurenberg body fat estimation, WHO comorbidity risk profiling, and an embedded 24/7 autonomous health copilot with biometric memory synchronization.",
+    problem:
+      "Conventional BMI calculators are static 20-line scripts that deliver raw numbers without clinical risk context, fail to track basal or activity-adjusted caloric expenditure (BMR/TDEE), and provide zero personalized dietary or workout coaching.",
+    solution:
+      "Architected an enterprise health intelligence platform featuring unit-normalized anthropometrics (Metric & Imperial), interactive WHO visual spectrum meters, macronutrient distribution matrices, and a synchronized 24/7 VitalAI Agentic Copilot with heuristic reasoning and state persistence.",
+    result:
+      "Sub-second clinical biometric inference, zero-latency offline-first agentic reasoning, personalized 7-day nutritional and training guidance, and 1-click structured clinical JSON and text dossier exports.",
+    highlights: [
+      "24/7 context-aware VitalAI agentic copilot maintaining biometric memory for tailored nutrition and workout coaching",
+      "Comprehensive clinical suite: Quetelet BMI, Mifflin-St Jeor BMR/TDEE, Deurenberg Body Fat %, and hydration protocols",
+      "Interactive WHO visual spectrum meter with real-time comorbidity risk classifications",
+      "Cybernetic glassmorphic UI with dynamic metric telemetry and 1-click clinical JSON/text dossier exports",
+    ],
+    tech: ["Python 3.12+", "Streamlit", "Agentic AI Copilot", "Clinical Biometrics", "Pandas", "Glassmorphic CSS3"],
+    liveUrl: "https://agentic-bmi-health-assistant.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant",
+    image: "/projects/agentic-bmi-health-assistant.png",
+    imageLabel: "Live VitalAI Health & BMI Platform",
+    featured: true,
+    category: "agentic",
+  },
 
   // =========================================================================
   // GROUP B: AI-Integrated Apps

@@ -33,6 +33,7 @@ import {
   FileSpreadsheet,
   Timer,
   ShieldCheck,
+  HeartPulse,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project, ProjectCategory } from "@/data/projects";
@@ -65,6 +66,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "excel-ai-agent": FileSpreadsheet,
   "chronoflow-ai": Timer,
   "agentic-password-sentinel": ShieldCheck,
+  "agentic-bmi-health-assistant": HeartPulse,
 };
 
 const getEmbedUrl = (url: string) => {
