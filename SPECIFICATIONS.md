@@ -260,27 +260,7 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 ### 🌟 GROUP A: Featured Agentic Systems (`category: "agentic"`)
 *Autonomous agent pipelines featuring recursive self-correction, schema contract enforcement, evaluator-optimizer loops, and multi-agent coordination.*
 
-#### 1. Loop Engineering Series (12 Projects)
-- **Designation:** Complete Collection of Self-Correcting Agent Architectures
-- **Badge:** `Agentic` | **Category:** `agentic` | **Collection:** `true` (12 Sub-Projects)
-- **Technical Summary:** Eliminates non-deterministic LLM failures using modular self-correction loops, schema validation interceptors, and autonomous retry pipelines.
-- **Architectural Solution:** 12 modular repositories illustrating progressive loop engineering paradigms:
-  1. *Basic Self-Correction Loop:* Schema validation interceptor retrying outputs until valid JSON schema is met.
-  2. *Tool Output Evaluator:* Evaluator node checking execution return codes and synthesizing recovery steps.
-  3. *Code Sandbox & Syntax Fixer:* Executes generated Python in isolated runtime; feeds tracebacks to agent.
-  4. *Web Scraper Self-Healing Extractor:* Auto-rewrites CSS/XPath selectors upon DOM mutation.
-  5. *Multi-Turn Planning Graph:* Dynamic DAG planner pruning invalid branch steps during execution.
-  6. *SQL Query Self-Corrector:* Validates SQL against live database schemas to fix syntax & FK mismatches.
-  7. *Reflection & Critique Agent:* Two-agent critic loop scoring drafts until threshold $\ge 9.0/10$.
-  8. *API Rate-Limit & Backoff Manager:* Exponential backoff loop with dynamic payload truncation.
-  9. *Document Chunking & Re-Ranker Loop:* Self-correcting RAG loop evaluating context relevance before generation.
-  10. *Memory Guard & State Compactor:* Sliding memory compactor preventing context window bloat.
-  11. *Human-in-the-Loop (HITL) Interceptor:* State suspension at high-stakes action boundaries awaiting verification.
-  12. *End-to-End Autonomous Agentic Pipeline:* Unified framework synthesizing all 11 patterns.
-- **Stack:** Python, OpenAI SDK, Loop Engineering, Structured Outputs, Pytest, AsyncIO
-- **Repository:** [https://github.com/SainBux-HadiSeelro/loop-engineering-series](https://github.com/SainBux-HadiSeelro/loop-engineering-series)
-
-#### 2. Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant
+#### 1. Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant
 - **Designation:** Bilingual Natural Language Execution (English & Roman Urdu) with Deterministic Tool Calling
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Interprets bilingual natural language prompts ('total sales nikalo', 'duplicates hata do') to execute 15+ deterministic openpyxl/pandas operations within an isolated sandbox.
@@ -290,7 +270,7 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://excel-agent-ai.streamlit.app/](https://excel-agent-ai.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/excel-ai-agent](https://github.com/SainBux-HadiSeelro/excel-ai-agent)
 
-#### 3. ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym
+#### 2. ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym
 - **Designation:** Multi-Agent Swarm Orchestrator & Live Tool Calling Engine
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Replaces static gym forms with a 4-agent swarm coordinating biometric calculations, workout protocols, and VIP pass issuance.
@@ -300,7 +280,7 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://elite-fitness-gym-two.vercel.app/](https://elite-fitness-gym-two.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM](https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM)
 
-#### 4. Nexus Mind — Autonomous Multi-Agent Gaming & Intelligence Platform
+#### 3. Nexus Mind — Autonomous Multi-Agent Gaming & Intelligence Platform
 - **Designation:** Multi-Agent Swarm, Shannon Entropy Telemetry & 24/7 Contextual AI Concierge
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Coordinates 3 synchronized agents (Nexus Arbiter, Oracle Telemetry computing Shannon Entropy $H = \log_2 N$, Nova 24/7 bilingual live AI concierge) for turn-based Human vs AI duel gameplay.
@@ -309,7 +289,7 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://nexus-mind-agentic-platform.streamlit.app/](https://nexus-mind-agentic-platform.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform](https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform)
 
-#### 5. ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge
+#### 4. ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge
 - **Designation:** Markov Transition State Engine, Win-Stay Lose-Shift Heuristics & Real-Time Probability Telemetry
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Transforms Rock-Paper-Scissors into a high-performance demonstration of Statistical Machine Learning, Behavioral Game Theory, and Multi-Agent Systems.
@@ -319,7 +299,7 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://apex-game.streamlit.app/](https://apex-game.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/apex-game](https://github.com/SainBux-HadiSeelro/apex-game)
 
-#### 6. NexusNarrative — Smart Multi-Agent Story Studio
+#### 5. NexusNarrative — Smart Multi-Agent Story Studio
 - **Designation:** Multi-Agent Story Pipeline, Dynamic Mad Libs Engine & Story Scorecard Analytics
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Solves brittle generative storytelling by coordinating four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant) with automated narrative quality scorecards.
@@ -328,7 +308,7 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://agentic-story-studio.streamlit.app/](https://agentic-story-studio.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-story-studio](https://github.com/SainBux-HadiSeelro/agentic-story-studio)
 
-#### 7. VitalAI — Autonomous Health & BMI Intelligence Platform
+#### 6. VitalAI — Autonomous Health & BMI Intelligence Platform
 - **Designation:** Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Eliminates naive static BMI formulas by coupling clinical anthropometrics and metabolic forecasting with a 24/7 context-aware autonomous health copilot.
