@@ -533,7 +533,11 @@ export default function Projects() {
                   onClick={() => setShowClientDemos(!showClientDemos)}
                   className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-bold bg-[#EAF4FF] hover:bg-[#D8EBFF] text-[#1553C7] border border-[#CFE6FF] transition-all self-start sm:self-auto shadow-2xs cursor-pointer"
                 >
-                  <span>{showClientDemos ? "Hide client demos" : "Show all 9 demos"}</span>
+                  <span>
+                    {showClientDemos
+                      ? "Hide client demos"
+                      : `Show all ${clientDemoProjects.length} demos`}
+                  </span>
                   {showClientDemos ? (
                     <ChevronUp className="w-3.5 h-3.5 text-[#1553C7]" />
                   ) : (

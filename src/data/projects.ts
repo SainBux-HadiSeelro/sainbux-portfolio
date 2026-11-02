@@ -35,35 +35,6 @@ export const projectsData: Project[] = [
   // GROUP A: Featured Agentic Systems
   // =========================================================================
   {
-    id: "excel-ai-agent",
-    title: "Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant",
-    subtitle: "Bilingual Natural Language Execution (English & Roman Urdu) with Deterministic Tool Calling",
-    badge: "Agentic",
-    summary:
-      "Bridges spreadsheet barriers by interpreting bilingual natural language prompts into deterministic Excel operations within an isolated sandbox.",
-    description:
-      "A production-grade autonomous spreadsheet assistant engineered with Python and Streamlit, interpreting natural language prompts in both English and Roman Urdu to safely execute formulas, analytics, deduplication, and charting on Excel (.xlsx) files.",
-    problem:
-      "Non-technical teams and regional users face severe barriers writing nested formulas and navigating complex multi-sheet workbooks in English-only interfaces, risking data corruption without safety sandboxes.",
-    solution:
-      "Architected an autonomous agentic execution loop powered by 15+ deterministic openpyxl/pandas tools, bilingual prompt parsing, isolated workspace sessions with version snapshotting, and destructive action guards.",
-    // TODO: add metric for formula execution accuracy and user time saved
-    result:
-      "Zero accidental data loss through automated version rollbacks, 100% test pass rate across 23 pytest suites, and sub-second live formula evaluation.",
-    highlights: [
-      "15+ deterministic openpyxl tools executing formulas, deduplication, and pivot tables",
-      "Isolated sandbox sessions with snapshot backups and instant rollback protection",
-      "Bilingual natural language parser supporting English and Roman Urdu instructions",
-    ],
-    tech: ["Python", "Streamlit", "OpenPyXL", "Pandas", "Gemini API", "Tool Calling"],
-    liveUrl: "https://excel-agent-ai.streamlit.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/excel-ai-agent",
-    image: "/projects/excel-ai-agent.png",
-    imageLabel: "Live Bilingual Spreadsheet AI Agent",
-    featured: true,
-    category: "agentic",
-  },
-  {
     id: "elite-fitness-gym",
     title: "ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym",
     subtitle: "React 18, Strict TypeScript, Multi-Agent Swarm Orchestrator & Live Tool Calling Engine",
@@ -89,6 +60,35 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM",
     image: "/projects/elite-fitness-gym.png",
     imageLabel: "Live Autonomous Multi-Agent AI Gym",
+    featured: true,
+    category: "agentic",
+  },
+  {
+    id: "excel-ai-agent",
+    title: "Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant",
+    subtitle: "Bilingual Natural Language Execution (English & Roman Urdu) with Deterministic Tool Calling",
+    badge: "Agentic",
+    summary:
+      "Bridges spreadsheet barriers by interpreting bilingual natural language prompts into deterministic Excel operations within an isolated sandbox.",
+    description:
+      "A production-grade autonomous spreadsheet assistant engineered with Python and Streamlit, interpreting natural language prompts in both English and Roman Urdu to safely execute formulas, analytics, deduplication, and charting on Excel (.xlsx) files.",
+    problem:
+      "Non-technical teams and regional users face severe barriers writing nested formulas and navigating complex multi-sheet workbooks in English-only interfaces, risking data corruption without safety sandboxes.",
+    solution:
+      "Architected an autonomous agentic execution loop powered by 15+ deterministic openpyxl/pandas tools, bilingual prompt parsing, isolated workspace sessions with version snapshotting, and destructive action guards.",
+    // TODO: add metric for formula execution accuracy and user time saved
+    result:
+      "Zero accidental data loss through automated version rollbacks, 100% test pass rate across 23 pytest suites, and sub-second live formula evaluation.",
+    highlights: [
+      "15+ deterministic openpyxl tools executing formulas, deduplication, and pivot tables",
+      "Isolated sandbox sessions with snapshot backups and instant rollback protection",
+      "Bilingual natural language parser supporting English and Roman Urdu instructions",
+    ],
+    tech: ["Python", "Streamlit", "OpenPyXL", "Pandas", "Gemini API", "Tool Calling"],
+    liveUrl: "https://excel-agent-ai.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/excel-ai-agent",
+    image: "/projects/excel-ai-agent.png",
+    imageLabel: "Live Bilingual Spreadsheet AI Agent",
     featured: true,
     category: "agentic",
   },
@@ -122,6 +122,35 @@ export const projectsData: Project[] = [
     category: "agentic",
   },
   {
+    id: "agentic-password-sentinel",
+    title: "CipherSentinel AI — Next-Gen Cryptographic Password Suite & 24/7 Autonomous Security Agent",
+    subtitle: "CSPRNG Kernel Entropy, Real-Time Shannon Bit-Entropy, NIST SP 800-63B & 24/7 Resident AI Auditor",
+    badge: "Agentic",
+    summary:
+      "Eliminates vulnerable pseudo-random credential generation by combining OS kernel CSPRNG entropy, Shannon bit-entropy telemetry, and a 24/7 resident cybersecurity agent.",
+    description:
+      "An enterprise-grade cryptographic password suite and autonomous cybersecurity defense hub built with Python and Streamlit. Utilizes OS-level CSPRNG entropy, Fisher-Yates shuffling, real-time Shannon bit-entropy telemetry, GPU brute-force crack modeling, and an embedded 24/7 autonomous security advisor verifying NIST SP 800-63B and OWASP ASVS compliance.",
+    problem:
+      "Standard password tools rely on weak pseudo-random algorithms (random) vulnerable to seed reconstruction, lack mathematical entropy metrics, and fail to provide continuous cryptographic compliance guidance.",
+    solution:
+      "Engineered a zero-knowledge cryptographic engine using secrets CSPRNG kernel entropy, Fisher-Yates unbiased shuffling, real-time Shannon bit-entropy math (E = L * log2(R)), 100B hash/sec GPU brute-force estimation, and an offline-first 24/7 autonomous security agent.",
+    result:
+      "Zero credential persistence with volatile RAM execution, guaranteed character diversity with zero positional bias, and instant NIST SP 800-63B/OWASP ASVS automated compliance verification.",
+    highlights: [
+      "Kernel-level CSPRNG entropy generator with Fisher-Yates unbiased shuffle and zero-knowledge volatile RAM execution",
+      "Real-time Shannon bit-entropy calculator and 100 Billion hash/sec GPU cluster brute-force resistance estimator",
+      "24/7 autonomous cybersecurity advisor auditing credentials against NIST SP 800-63B and OWASP ASVS standards",
+      "Multi-mode generator supporting military-grade passwords, Diceware memorable passphrases, and hardware PIN codes",
+    ],
+    tech: ["Python 3.12+", "Streamlit", "CSPRNG Secrets", "Shannon Entropy", "Autonomous AI Agent", "NIST SP 800-63B", "OWASP ASVS"],
+    liveUrl: "https://agentic-password-sentinel.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-password-sentinel",
+    image: "/projects/agentic-password-sentinel.png",
+    imageLabel: "Live CipherSentinel AI Security HUD & Cryptographic Studio",
+    featured: true,
+    category: "agentic",
+  },
+  {
     id: "apex-game",
     title: "ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge",
     subtitle: "Markov Transition State Engine, Win-Stay Lose-Shift Heuristics & 24/7 Contextual AI Concierge",
@@ -147,6 +176,35 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/SainBux-HadiSeelro/apex-game",
     image: "/projects/apex-rps-platform.png",
     imageLabel: "Live Agentic Decision HUD & AI Concierge",
+    featured: true,
+    category: "agentic",
+  },
+  {
+    id: "agentic-bmi-health-assistant",
+    title: "VitalAI — Autonomous Health & BMI Intelligence Platform",
+    subtitle: "Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot",
+    badge: "Agentic",
+    summary:
+      "Transforms static BMI calculators into an autonomous health decision system combining clinical anthropometrics, metabolic forecasting, and a 24/7 context-aware AI health copilot.",
+    description:
+      "A production-grade autonomous health and biometric intelligence platform engineered with Python and Streamlit. Features precision Quetelet BMI analytics, Mifflin-St Jeor metabolic forecasting (BMR/TDEE), Deurenberg body fat estimation, WHO comorbidity risk profiling, and an embedded 24/7 autonomous health copilot with biometric memory synchronization.",
+    problem:
+      "Conventional BMI calculators are static 20-line scripts that deliver raw numbers without clinical risk context, fail to track basal or activity-adjusted caloric expenditure (BMR/TDEE), and provide zero personalized dietary or workout coaching.",
+    solution:
+      "Architected an enterprise health intelligence platform featuring unit-normalized anthropometrics (Metric & Imperial), interactive WHO visual spectrum meters, macronutrient distribution matrices, and a synchronized 24/7 VitalAI Agentic Copilot with heuristic reasoning and state persistence.",
+    result:
+      "Sub-second clinical biometric inference, zero-latency offline-first agentic reasoning, personalized 7-day nutritional and training guidance, and 1-click structured clinical JSON and text dossier exports.",
+    highlights: [
+      "24/7 context-aware VitalAI agentic copilot maintaining biometric memory for tailored nutrition and workout coaching",
+      "Comprehensive clinical suite: Quetelet BMI, Mifflin-St Jeor BMR/TDEE, Deurenberg Body Fat %, and hydration protocols",
+      "Interactive WHO visual spectrum meter with real-time comorbidity risk classifications",
+      "Cybernetic glassmorphic UI with dynamic metric telemetry and 1-click clinical JSON/text dossier exports",
+    ],
+    tech: ["Python 3.12+", "Streamlit", "Agentic AI Copilot", "Clinical Biometrics", "Pandas", "Glassmorphic CSS3"],
+    liveUrl: "https://agentic-bmi-health-assistant.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant",
+    image: "/projects/agentic-bmi-health-assistant.png",
+    imageLabel: "Live VitalAI Health & BMI Platform",
     featured: true,
     category: "agentic",
   },
@@ -208,94 +266,36 @@ export const projectsData: Project[] = [
     featured: true,
     category: "agentic",
   },
-  {
-    id: "agentic-password-sentinel",
-    title: "CipherSentinel AI — Next-Gen Cryptographic Password Suite & 24/7 Autonomous Security Agent",
-    subtitle: "CSPRNG Kernel Entropy, Real-Time Shannon Bit-Entropy, NIST SP 800-63B & 24/7 Resident AI Auditor",
-    badge: "Agentic",
-    summary:
-      "Eliminates vulnerable pseudo-random credential generation by combining OS kernel CSPRNG entropy, Shannon bit-entropy telemetry, and a 24/7 resident cybersecurity agent.",
-    description:
-      "An enterprise-grade cryptographic password suite and autonomous cybersecurity defense hub built with Python and Streamlit. Utilizes OS-level CSPRNG entropy, Fisher-Yates shuffling, real-time Shannon bit-entropy telemetry, GPU brute-force crack modeling, and an embedded 24/7 autonomous security advisor verifying NIST SP 800-63B and OWASP ASVS compliance.",
-    problem:
-      "Standard password tools rely on weak pseudo-random algorithms (random) vulnerable to seed reconstruction, lack mathematical entropy metrics, and fail to provide continuous cryptographic compliance guidance.",
-    solution:
-      "Engineered a zero-knowledge cryptographic engine using secrets CSPRNG kernel entropy, Fisher-Yates unbiased shuffling, real-time Shannon bit-entropy math (E = L * log2(R)), 100B hash/sec GPU brute-force estimation, and an offline-first 24/7 autonomous security agent.",
-    result:
-      "Zero credential persistence with volatile RAM execution, guaranteed character diversity with zero positional bias, and instant NIST SP 800-63B/OWASP ASVS automated compliance verification.",
-    highlights: [
-      "Kernel-level CSPRNG entropy generator with Fisher-Yates unbiased shuffle and zero-knowledge volatile RAM execution",
-      "Real-time Shannon bit-entropy calculator and 100 Billion hash/sec GPU cluster brute-force resistance estimator",
-      "24/7 autonomous cybersecurity advisor auditing credentials against NIST SP 800-63B and OWASP ASVS standards",
-      "Multi-mode generator supporting military-grade passwords, Diceware memorable passphrases, and hardware PIN codes",
-    ],
-    tech: ["Python 3.12+", "Streamlit", "CSPRNG Secrets", "Shannon Entropy", "Autonomous AI Agent", "NIST SP 800-63B", "OWASP ASVS"],
-    liveUrl: "https://agentic-password-sentinel.streamlit.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-password-sentinel",
-    image: "/projects/agentic-password-sentinel.png",
-    imageLabel: "Live CipherSentinel AI Security HUD & Cryptographic Studio",
-    featured: true,
-    category: "agentic",
-  },
-  {
-    id: "agentic-bmi-health-assistant",
-    title: "VitalAI — Autonomous Health & BMI Intelligence Platform",
-    subtitle: "Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot",
-    badge: "Agentic",
-    summary:
-      "Transforms static BMI calculators into an autonomous health decision system combining clinical anthropometrics, metabolic forecasting, and a 24/7 context-aware AI health copilot.",
-    description:
-      "A production-grade autonomous health and biometric intelligence platform engineered with Python and Streamlit. Features precision Quetelet BMI analytics, Mifflin-St Jeor metabolic forecasting (BMR/TDEE), Deurenberg body fat estimation, WHO comorbidity risk profiling, and an embedded 24/7 autonomous health copilot with biometric memory synchronization.",
-    problem:
-      "Conventional BMI calculators are static 20-line scripts that deliver raw numbers without clinical risk context, fail to track basal or activity-adjusted caloric expenditure (BMR/TDEE), and provide zero personalized dietary or workout coaching.",
-    solution:
-      "Architected an enterprise health intelligence platform featuring unit-normalized anthropometrics (Metric & Imperial), interactive WHO visual spectrum meters, macronutrient distribution matrices, and a synchronized 24/7 VitalAI Agentic Copilot with heuristic reasoning and state persistence.",
-    result:
-      "Sub-second clinical biometric inference, zero-latency offline-first agentic reasoning, personalized 7-day nutritional and training guidance, and 1-click structured clinical JSON and text dossier exports.",
-    highlights: [
-      "24/7 context-aware VitalAI agentic copilot maintaining biometric memory for tailored nutrition and workout coaching",
-      "Comprehensive clinical suite: Quetelet BMI, Mifflin-St Jeor BMR/TDEE, Deurenberg Body Fat %, and hydration protocols",
-      "Interactive WHO visual spectrum meter with real-time comorbidity risk classifications",
-      "Cybernetic glassmorphic UI with dynamic metric telemetry and 1-click clinical JSON/text dossier exports",
-    ],
-    tech: ["Python 3.12+", "Streamlit", "Agentic AI Copilot", "Clinical Biometrics", "Pandas", "Glassmorphic CSS3"],
-    liveUrl: "https://agentic-bmi-health-assistant.streamlit.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant",
-    image: "/projects/agentic-bmi-health-assistant.png",
-    imageLabel: "Live VitalAI Health & BMI Platform",
-    featured: true,
-    category: "agentic",
-  },
 
   // =========================================================================
   // GROUP B: AI-Integrated Apps
   // =========================================================================
   {
-    id: "agentic-hangman",
-    title: "Hangman: Modern AI Edition & 24/7 NEXUS AI Assistant",
-    subtitle: "Cyberpunk Word Deduction, Reactive State Machine & Embedded Resident Agent",
+    id: "luvia-ecommerce",
+    title: "LUVIA — Minimalist Luxury eCommerce & 24/7 AI Concierge",
+    subtitle: "Ethereal Luxury Design Objects, React 19, Tailwind v4 & 24/7 Live AI Customer Concierge",
     badge: "AI-Integrated",
     summary:
-      "Transforms classic word deduction by embedding an autonomous resident AI agent for contextual, spoiler-free gameplay hints.",
+      "Streamlines luxury product evaluation with architectural spec tables and an AI shopping concierge enabling direct in-chat purchases.",
     description:
-      "A next-generation cyberpunk word deduction web application engineered with Python and Streamlit, featuring NEXUS-7 — an embedded 24/7 autonomous resident AI agent delivering contextual non-spoilery hints, multi-domain knowledge retrieval, and interactive developer intelligence.",
+      "A high-performance minimalist luxury eCommerce web application exploring the intersection of raw materiality, ethereal design, detailed technical product specifications, and an intelligent 24/7 AI Customer Support Concierge with direct in-chat shopping actions.",
     problem:
-      "Conventional word-guessing games rely on static terminal scripts with zero contextual guidance, punitive penalty loops, and no intelligent resident assistance when users encounter cognitive bottlenecks.",
+      "Modern luxury e-commerce demands instant assistance for complex technical specifications, dimensions, finishes, and VIP checkout flows without clunky forms or slow human email loops.",
     solution:
-      "Architected a reactive event-driven state machine with dynamic heart-life telemetry and ASCII visual containment, integrated with an autonomous resident AI agent (NEXUS AI) operating via an offline-first heuristic neural knowledge base and cloud LLM fallback.",
-    // TODO: add metric on hint accuracy rate across test sessions
+      "Engineered an ultra-fast React 19 and Vite 6 platform styled with Tailwind CSS v4 and Framer Motion micro-interactions, persistent cart state, VIP promo validation, and an embedded 24/7 AI Concierge.",
+    // TODO: add metric on in-chat purchase conversion lift
     result:
-      "100% accessible zero-downtime gameplay across 4 curated knowledge domains, instant 1-click agent hint triggers, and dynamic streak scoring.",
+      "Sub-second client-side catalog navigation, zero checkout friction with instant cart actions, and 24/7 real-time AI product guidance with direct in-chat purchase cards.",
     highlights: [
-      "Embedded resident AI agent (NEXUS-7) delivering contextual hints via offline-first heuristics",
-      "Reactive turn-based state machine tracking life telemetry and ASCII visual containment",
-      "Interactive virtual cyber keypad with real-time state feedback and keyboard listeners",
+      "24/7 AI concierge with domain knowledge base and direct in-chat cart checkout actions",
+      "Persistent client cart state with dynamic search and coupon discount verification",
+      "Detailed architectural specifications matrix and responsive image showcase",
     ],
-    tech: ["Python", "Streamlit", "Autonomous Agents", "State Machines", "Knowledge Retrieval", "Cyberpunk CSS"],
-    liveUrl: "https://agentic-hangman.streamlit.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0",
-    image: "/projects/agentic-hangman.png",
-    imageLabel: "Live Agentic Hangman & NEXUS AI",
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Framer Motion", "Vite 6"],
+    liveUrl: "https://luvia-e-commerce.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Luvia-eCommerce",
+    image: "/projects/luvia-ecommerce.png",
+    imageLabel: "Live Luxury eCommerce & AI Concierge Experience",
     featured: true,
     category: "ai-integrated",
   },
@@ -329,31 +329,31 @@ export const projectsData: Project[] = [
     category: "ai-integrated",
   },
   {
-    id: "luvia-ecommerce",
-    title: "LUVIA — Minimalist Luxury eCommerce & 24/7 AI Concierge",
-    subtitle: "Ethereal Luxury Design Objects, React 19, Tailwind v4 & 24/7 Live AI Customer Concierge",
+    id: "welltrack-ai",
+    title: "WellTrack AI — Complete Intelligent Wellness & Health Companion",
+    subtitle: "AI Biometrics, Nutrition Planning, Sleep Analytics & 24/7 Wellness Coach",
     badge: "AI-Integrated",
     summary:
-      "Streamlines luxury product evaluation with architectural spec tables and an AI shopping concierge enabling direct in-chat purchases.",
+      "Consolidates fragmented health tracking by combining vitality scoring, circadian sleep telemetry, and an interactive 24/7 AI coach.",
     description:
-      "A high-performance minimalist luxury eCommerce web application exploring the intersection of raw materiality, ethereal design, detailed technical product specifications, and an intelligent 24/7 AI Customer Support Concierge with direct in-chat shopping actions.",
+      "A comprehensive, intelligent health and wellness platform combining AI-driven vitality scoring, personalized nutrition guidance, sleep rhythm analysis, daily habit tracking, and an interactive 24/7 AI wellness coach.",
     problem:
-      "Modern luxury e-commerce demands instant assistance for complex technical specifications, dimensions, finishes, and VIP checkout flows without clunky forms or slow human email loops.",
+      "Personal wellness metrics are typically scattered across fragmented tracking tools without synthesized guidance, leaving individuals without actionable health insights.",
     solution:
-      "Engineered an ultra-fast React 19 and Vite 6 platform styled with Tailwind CSS v4 and Framer Motion micro-interactions, persistent cart state, VIP promo validation, and an embedded 24/7 AI Concierge.",
-    // TODO: add metric on in-chat purchase conversion lift
+      "Engineered a unified wellness web ecosystem featuring dynamic 0-100 Vitality scoring, circadian sleep telemetry, personalized hydration & macro targets, daily journal reflections, and an always-on 24/7 AI health assistant.",
+    // TODO: add metric on user habit adherence tracking
     result:
-      "Sub-second client-side catalog navigation, zero checkout friction with instant cart actions, and 24/7 real-time AI product guidance with direct in-chat purchase cards.",
+      "Seamless biometric synchronization, sub-second responsive interaction across devices, personalized daily recovery tips, and unified all-in-one health habit tracking.",
     highlights: [
-      "24/7 AI concierge with domain knowledge base and direct in-chat cart checkout actions",
-      "Persistent client cart state with dynamic search and coupon discount verification",
-      "Detailed architectural specifications matrix and responsive image showcase",
+      "24/7 interactive wellness coach offering real-time habit recommendations",
+      "Composite vitality scoring algorithm aggregating sleep, activity, and hydration metrics",
+      "Circadian recovery telemetry with personalized hydration and macro planning",
     ],
-    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Framer Motion", "Vite 6"],
-    liveUrl: "https://luvia-e-commerce.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/Luvia-eCommerce",
-    image: "/projects/luvia-ecommerce.png",
-    imageLabel: "Live Luxury eCommerce & AI Concierge Experience",
+    tech: ["React 19", "TypeScript", "Tailwind CSS", "Vite", "AI Assistant", "Lucide React"],
+    liveUrl: "https://welltrack-ai-path.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/welltrack-ai-path",
+    image: "/projects/welltrack-ai.png",
+    imageLabel: "Live AI Health & Wellness Platform",
     featured: true,
     category: "ai-integrated",
   },
@@ -386,94 +386,65 @@ export const projectsData: Project[] = [
     featured: true,
     category: "ai-integrated",
   },
+  {
+    id: "agentic-hangman",
+    title: "Hangman: Modern AI Edition & 24/7 NEXUS AI Assistant",
+    subtitle: "Cyberpunk Word Deduction, Reactive State Machine & Embedded Resident Agent",
+    badge: "AI-Integrated",
+    summary:
+      "Transforms classic word deduction by embedding an autonomous resident AI agent for contextual, spoiler-free gameplay hints.",
+    description:
+      "A next-generation cyberpunk word deduction web application engineered with Python and Streamlit, featuring NEXUS-7 — an embedded 24/7 autonomous resident AI agent delivering contextual non-spoilery hints, multi-domain knowledge retrieval, and interactive developer intelligence.",
+    problem:
+      "Conventional word-guessing games rely on static terminal scripts with zero contextual guidance, punitive penalty loops, and no intelligent resident assistance when users encounter cognitive bottlenecks.",
+    solution:
+      "Architected a reactive event-driven state machine with dynamic heart-life telemetry and ASCII visual containment, integrated with an autonomous resident AI agent (NEXUS AI) operating via an offline-first heuristic neural knowledge base and cloud LLM fallback.",
+    // TODO: add metric on hint accuracy rate across test sessions
+    result:
+      "100% accessible zero-downtime gameplay across 4 curated knowledge domains, instant 1-click agent hint triggers, and dynamic streak scoring.",
+    highlights: [
+      "Embedded resident AI agent (NEXUS-7) delivering contextual hints via offline-first heuristics",
+      "Reactive turn-based state machine tracking life telemetry and ASCII visual containment",
+      "Interactive virtual cyber keypad with real-time state feedback and keyboard listeners",
+    ],
+    tech: ["Python", "Streamlit", "Autonomous Agents", "State Machines", "Knowledge Retrieval", "Cyberpunk CSS"],
+    liveUrl: "https://agentic-hangman.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0",
+    image: "/projects/agentic-hangman.png",
+    imageLabel: "Live Agentic Hangman & NEXUS AI",
+    featured: true,
+    category: "ai-integrated",
+  },
 
   // =========================================================================
   // GROUP C: Client Demos & Web Platforms
   // =========================================================================
   {
-    id: "forge-fitness-gym",
-    title: "Forge Fitness — Premium Athletic Facility & AI Gym Web App",
-    subtitle: "Next.js 16 App Router, React 19, Framer Motion & 24/7 AI Concierge",
+    id: "lumiere-hotel-reservation",
+    title: "Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform",
+    subtitle: "Haute French Hospitality, React 19, Tailwind v4 & 24/7 Gemini AI Concierge",
     badge: "Client Demo",
     summary:
-      "Replaces static gym brochures with an interactive membership calculator and a 24/7 AI concierge for trial consultation booking.",
+      "Replaces rigid hotel reservation systems with a multi-step booking engine and a 24/7 Gemini-powered Parisian concierge.",
     description:
-      "A cutting-edge web application for an elite strength and performance athletic facility. Features aggressive dark obsidian UI, dynamic parallax scroll, interactive membership calculator, and an embedded 24/7 AI Concierge assistant.",
+      "A bespoke luxury hospitality web platform engineered for 5-star Parisian palaces and boutique resorts. Features haute dark obsidian glassmorphism, Champagne Gold accents, interactive 4-step suite reservation engine with dynamic voucher generation, and an always-on 24/7 AI Concierge.",
     problem:
-      "Traditional gym websites suffer from static layouts and lack immediate automated answers for membership queries and program recommendations.",
+      "Luxury travelers demand immediate answers regarding suite amenities and bespoke itineraries outside concierge working hours, while standard booking engines are rigid and slow.",
     solution:
-      "Engineered an ultra-fast Next.js 16 web platform with React 19 and Framer Motion micro-interactions, interactive monthly/annual membership toggles, and an intelligent 24/7 AI chatbot.",
-    // TODO: add metric for consultation conversion rate
+      "Engineered an ultra-fast React 19 and Vite 6 platform with Tailwind CSS v4, Motion micro-interactions, interactive multi-step booking engine with date-range duration math, and a dual-engine 24/7 AI Concierge powered by Google Gemini 2.5 Flash.",
+    // TODO: add metric on digital voucher confirmation speed
     result:
-      "Sub-second page load times with zero-latency TTFB via Turbopack and automated 24/7 visitor engagement and trial consultation capture.",
+      "Sub-second page navigation, zero build latency via Vite 6, 100% uninterrupted 24/7 guest concierge availability, and frictionless luxury reservation flow.",
     highlights: [
-      "Context-aware 24/7 AI concierge chatbot handling membership queries and trial bookings",
-      "Interactive billing calculator with instant monthly versus annual discount toggling",
-      "Hardware-accelerated Framer Motion parallax scroll and fluid micro-interactions",
+      "24/7 luxury hospitality concierge powered by Gemini 2.5 Flash with offline fallback",
+      "Interactive 4-step suite reservation workflow with dynamic stay duration calculations",
+      "Instant digital booking voucher generation with verified confirmation tokens",
     ],
-    tech: ["Next.js 16", "React 19", "TypeScript", "Framer Motion", "Tailwind CSS", "Turbopack"],
-    liveUrl: "https://forge-fitness-gym-seven.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM",
-    image: "/projects/forge-fitness.png",
-    imageLabel: "Live Premium Gym Web Experience",
-    featured: true,
-    category: "client-demo",
-  },
-  {
-    id: "beautylira-aesthetic-clinic",
-    title: "BeautyLira — Luxury Aesthetic Clinic & 24/7 AI Concierge",
-    subtitle: "Harley Street Medical Aesthetics, Next.js 16 App Router & 24/7 Live AI Concierge",
-    badge: "Client Demo",
-    summary:
-      "Addresses patient downtime hesitations using clinical procedure comparisons and an embedded 24/7 medical aesthetics AI concierge.",
-    description:
-      "A high-converting digital platform engineered for a premier Harley Street aesthetic medicine clinic. Features editorial British luxury design language, medical-grade procedure showcases, and an always-on 24/7 Live AI Aesthetic Concierge.",
-    problem:
-      "High-end aesthetic clinics struggle to convert online visitors who hesitate over treatment downtime, pain levels, and procedural nuances outside regular clinic hours.",
-    solution:
-      "Engineered a Next.js 16 web application with an editorial warm ivory aesthetic, interactive procedure comparison matrices, and an embedded 24/7 Live AI Concierge that triages patient queries.",
-    // TODO: add metric for patient intake qualification rate
-    result:
-      "Sub-second page navigation, zero build latency via Turbopack, and seamless 24/7 automated patient inquiry triage.",
-    highlights: [
-      "Embedded 24/7 clinical concierge agent triaging procedures, downtime, and pain levels",
-      "Interactive before-and-after transformation galleries and procedure comparison matrices",
-      "Optimized Next.js 16 App Router architecture with SSG pre-rendering and Turbopack",
-    ],
-    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "Turbopack"],
-    liveUrl: "https://beaty-lira-aesthetic-clinic.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic",
-    image: "/projects/beautylira-clinic.png",
-    imageLabel: "Live Luxury Aesthetic Clinic Experience",
-    featured: true,
-    category: "client-demo",
-  },
-  {
-    id: "elite-studio-clinic",
-    title: "Elite Studio Clinic — Luxury Aesthetic Dentistry & 24/7 AI Concierge",
-    subtitle: "Manhattan Aesthetic Medicine, React 19, Obsidian Glassmorphism & 24/7 Live AI Concierge",
-    badge: "Client Demo",
-    summary:
-      "Removes patient booking hesitation for cosmetic dentistry with interactive smile simulation and a 24/7 clinical triage concierge.",
-    description:
-      "A digital platform engineered for a premier Manhattan aesthetic & restorative dental clinic. Features obsidian glassmorphism design language, interactive smile transformation showcases, transparent fee matrices, and an always-on 24/7 Live AI Clinic Concierge ('Aura AI').",
-    problem:
-      "Patients researching high-ticket smile makeovers abandon clunky booking forms when fee schedules, downtime, and pain management are not answered immediately outside clinic hours.",
-    solution:
-      "Architected an ultra-fast React 19 and Vite 6 platform with Tailwind CSS 4, hardware-accelerated Motion micro-interactions, Before/After Smile Transformation Studio, and an autonomous 24/7 AI Concierge.",
-    // TODO: add metric on consultation appointment requests
-    result:
-      "Sub-second page navigation, 100% type-safe compilation (0 TS errors), and automated 24/7 patient inquiry qualification and VIP consultation booking.",
-    highlights: [
-      "24/7 dental triage concierge (Aura AI) with transparent fee schedule intelligence",
-      "Interactive smile transformation studio displaying verified before-and-after case outcomes",
-      "VIP consultation appointment engine with instant calendar slot synchronization",
-    ],
-    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Motion", "AI Concierge", "Vite 6"],
-    liveUrl: "https://elite-studio-clinic-beta.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic",
-    image: "/projects/elite-studio-clinic.png",
-    imageLabel: "Live Luxury Aesthetic Dentistry Experience",
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
+    liveUrl: "https://lumiere-hotel-reservation.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumiere_Hotel_Reservation",
+    image: "/projects/lumiere-hotel-reservation.png",
+    imageLabel: "Live Luxury Hotel Reservation Experience",
     featured: true,
     category: "client-demo",
   },
@@ -507,6 +478,64 @@ export const projectsData: Project[] = [
     category: "client-demo",
   },
   {
+    id: "elite-studio-clinic",
+    title: "Elite Studio Clinic — Luxury Aesthetic Dentistry & 24/7 AI Concierge",
+    subtitle: "Manhattan Aesthetic Medicine, React 19, Obsidian Glassmorphism & 24/7 Live AI Concierge",
+    badge: "Client Demo",
+    summary:
+      "Removes patient booking hesitation for cosmetic dentistry with interactive smile simulation and a 24/7 clinical triage concierge.",
+    description:
+      "A digital platform engineered for a premier Manhattan aesthetic & restorative dental clinic. Features obsidian glassmorphism design language, interactive smile transformation showcases, transparent fee matrices, and an always-on 24/7 Live AI Clinic Concierge ('Aura AI').",
+    problem:
+      "Patients researching high-ticket smile makeovers abandon clunky booking forms when fee schedules, downtime, and pain management are not answered immediately outside clinic hours.",
+    solution:
+      "Architected an ultra-fast React 19 and Vite 6 platform with Tailwind CSS 4, hardware-accelerated Motion micro-interactions, Before/After Smile Transformation Studio, and an autonomous 24/7 AI Concierge.",
+    // TODO: add metric on consultation appointment requests
+    result:
+      "Sub-second page navigation, 100% type-safe compilation (0 TS errors), and automated 24/7 patient inquiry qualification and VIP consultation booking.",
+    highlights: [
+      "24/7 dental triage concierge (Aura AI) with transparent fee schedule intelligence",
+      "Interactive smile transformation studio displaying verified before-and-after case outcomes",
+      "VIP consultation appointment engine with instant calendar slot synchronization",
+    ],
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Motion", "AI Concierge", "Vite 6"],
+    liveUrl: "https://elite-studio-clinic-beta.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic",
+    image: "/projects/elite-studio-clinic.png",
+    imageLabel: "Live Luxury Aesthetic Dentistry Experience",
+    featured: true,
+    category: "client-demo",
+  },
+  {
+    id: "beautylira-aesthetic-clinic",
+    title: "BeautyLira — Luxury Aesthetic Clinic & 24/7 AI Concierge",
+    subtitle: "Harley Street Medical Aesthetics, Next.js 16 App Router & 24/7 Live AI Concierge",
+    badge: "Client Demo",
+    summary:
+      "Addresses patient downtime hesitations using clinical procedure comparisons and an embedded 24/7 medical aesthetics AI concierge.",
+    description:
+      "A high-converting digital platform engineered for a premier Harley Street aesthetic medicine clinic. Features editorial British luxury design language, medical-grade procedure showcases, and an always-on 24/7 Live AI Aesthetic Concierge.",
+    problem:
+      "High-end aesthetic clinics struggle to convert online visitors who hesitate over treatment downtime, pain levels, and procedural nuances outside regular clinic hours.",
+    solution:
+      "Engineered a Next.js 16 web application with an editorial warm ivory aesthetic, interactive procedure comparison matrices, and an embedded 24/7 Live AI Concierge that triages patient queries.",
+    // TODO: add metric for patient intake qualification rate
+    result:
+      "Sub-second page navigation, zero build latency via Turbopack, and seamless 24/7 automated patient inquiry triage.",
+    highlights: [
+      "Embedded 24/7 clinical concierge agent triaging procedures, downtime, and pain levels",
+      "Interactive before-and-after transformation galleries and procedure comparison matrices",
+      "Optimized Next.js 16 App Router architecture with SSG pre-rendering and Turbopack",
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Tailwind CSS", "Framer Motion", "Turbopack"],
+    liveUrl: "https://beaty-lira-aesthetic-clinic.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic",
+    image: "/projects/beautylira-clinic.png",
+    imageLabel: "Live Luxury Aesthetic Clinic Experience",
+    featured: true,
+    category: "client-demo",
+  },
+  {
     id: "beauty-aura-spa",
     title: "BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic",
     subtitle: "Quiet-Luxury Aesthetic Medicine, Next.js 16 App Router & 24/7 Live AI Concierge",
@@ -532,64 +561,6 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/SainBux-HadiSeelro/Beaty_Aura_spa",
     image: "/projects/beauty-aura-spa.png",
     imageLabel: "Live Luxury Aesthetic Retreat Experience",
-    featured: true,
-    category: "client-demo",
-  },
-  {
-    id: "lumiere-hotel-reservation",
-    title: "Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform",
-    subtitle: "Haute French Hospitality, React 19, Tailwind v4 & 24/7 Gemini AI Concierge",
-    badge: "Client Demo",
-    summary:
-      "Replaces rigid hotel reservation systems with a multi-step booking engine and a 24/7 Gemini-powered Parisian concierge.",
-    description:
-      "A bespoke luxury hospitality web platform engineered for 5-star Parisian palaces and boutique resorts. Features haute dark obsidian glassmorphism, Champagne Gold accents, interactive 4-step suite reservation engine with dynamic voucher generation, and an always-on 24/7 AI Concierge.",
-    problem:
-      "Luxury travelers demand immediate answers regarding suite amenities and bespoke itineraries outside concierge working hours, while standard booking engines are rigid and slow.",
-    solution:
-      "Engineered an ultra-fast React 19 and Vite 6 platform with Tailwind CSS v4, Motion micro-interactions, interactive multi-step booking engine with date-range duration math, and a dual-engine 24/7 AI Concierge powered by Google Gemini 2.5 Flash.",
-    // TODO: add metric on digital voucher confirmation speed
-    result:
-      "Sub-second page navigation, zero build latency via Vite 6, 100% uninterrupted 24/7 guest concierge availability, and frictionless luxury reservation flow.",
-    highlights: [
-      "24/7 luxury hospitality concierge powered by Gemini 2.5 Flash with offline fallback",
-      "Interactive 4-step suite reservation workflow with dynamic stay duration calculations",
-      "Instant digital booking voucher generation with verified confirmation tokens",
-    ],
-    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
-    liveUrl: "https://lumiere-hotel-reservation.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumiere_Hotel_Reservation",
-    image: "/projects/lumiere-hotel-reservation.png",
-    imageLabel: "Live Luxury Hotel Reservation Experience",
-    featured: true,
-    category: "client-demo",
-  },
-  {
-    id: "lumina-beauty-parlour",
-    title: "Lumina — Luxury Beauty Parlour & Aesthetic Sanctuary",
-    subtitle: "Haute Aesthetic Salon Platform, React 19, Tailwind v4 & 24/7 Live AI Beauty Concierge",
-    badge: "Client Demo",
-    summary:
-      "Eliminates booking friction with deep-linked treatment URLs and an embedded multilingual salon concierge supporting English and Urdu.",
-    description:
-      "An ultra-premium aesthetic salon and spa web platform engineered with editorial elegance, fluid micro-interactions, dark obsidian & champagne gold glassmorphism, dynamic service booking with URL pre-selection, and a native 24/7 Live AI Beauty Concierge agent.",
-    problem:
-      "High-end beauty clients require immediate guidance on ritual ingredients, bridal styling packages, and pricing at any hour, while standard salon websites rely on static menus.",
-    solution:
-      "Architected a React 19 and Vite 6 platform styled with Tailwind CSS v4 and Motion choreography, featuring smart query-param pre-filled reservations, dynamic lookbook gallery, and an always-on 24/7 AI Beauty Concierge equipped with Gemini 1.5 Flash.",
-    // TODO: add metric on multilingual query completion rate
-    result:
-      "Uninterrupted 24/7 multilingual guest consultation (English & Urdu/Roman Urdu), sub-second page performance, and seamless conversion from AI recommendations to pre-filled reservations.",
-    highlights: [
-      "Multilingual 24/7 concierge agent supporting English, Urdu, and Roman Urdu queries",
-      "Smart reservation desk pre-filling treatments from query parameters and lookbook picks",
-      "Vite 6 architecture styled with Tailwind CSS v4 and Web Audio API chime feedback",
-    ],
-    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
-    liveUrl: "https://lumina-beaty-parlour-pi.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour",
-    image: "/projects/lumina-beauty-parlour.png",
-    imageLabel: "Live Luxury Beauty Parlour Experience",
     featured: true,
     category: "client-demo",
   },
@@ -623,31 +594,60 @@ export const projectsData: Project[] = [
     category: "client-demo",
   },
   {
-    id: "welltrack-ai",
-    title: "WellTrack AI — Complete Intelligent Wellness & Health Companion",
-    subtitle: "AI Biometrics, Nutrition Planning, Sleep Analytics & 24/7 Wellness Coach",
+    id: "lumina-beauty-parlour",
+    title: "Lumina — Luxury Beauty Parlour & Aesthetic Sanctuary",
+    subtitle: "Haute Aesthetic Salon Platform, React 19, Tailwind v4 & 24/7 Live AI Beauty Concierge",
     badge: "Client Demo",
     summary:
-      "Consolidates fragmented health tracking by combining vitality scoring, circadian sleep telemetry, and an interactive 24/7 AI coach.",
+      "Eliminates booking friction with deep-linked treatment URLs and an embedded multilingual salon concierge supporting English and Urdu.",
     description:
-      "A comprehensive, intelligent health and wellness platform combining AI-driven vitality scoring, personalized nutrition guidance, sleep rhythm analysis, daily habit tracking, and an interactive 24/7 AI wellness coach.",
+      "An ultra-premium aesthetic salon and spa web platform engineered with editorial elegance, fluid micro-interactions, dark obsidian & champagne gold glassmorphism, dynamic service booking with URL pre-selection, and a native 24/7 Live AI Beauty Concierge agent.",
     problem:
-      "Personal wellness metrics are typically scattered across fragmented tracking tools without synthesized guidance, leaving individuals without actionable health insights.",
+      "High-end beauty clients require immediate guidance on ritual ingredients, bridal styling packages, and pricing at any hour, while standard salon websites rely on static menus.",
     solution:
-      "Engineered a unified wellness web ecosystem featuring dynamic 0-100 Vitality scoring, circadian sleep telemetry, personalized hydration & macro targets, daily journal reflections, and an always-on 24/7 AI health assistant.",
-    // TODO: add metric on user habit adherence tracking
+      "Architected a React 19 and Vite 6 platform styled with Tailwind CSS v4 and Motion choreography, featuring smart query-param pre-filled reservations, dynamic lookbook gallery, and an always-on 24/7 AI Beauty Concierge equipped with Gemini 1.5 Flash.",
+    // TODO: add metric on multilingual query completion rate
     result:
-      "Seamless biometric synchronization, sub-second responsive interaction across devices, personalized daily recovery tips, and unified all-in-one health habit tracking.",
+      "Uninterrupted 24/7 multilingual guest consultation (English & Urdu/Roman Urdu), sub-second page performance, and seamless conversion from AI recommendations to pre-filled reservations.",
     highlights: [
-      "24/7 interactive wellness coach offering real-time habit recommendations",
-      "Composite vitality scoring algorithm aggregating sleep, activity, and hydration metrics",
-      "Circadian recovery telemetry with personalized hydration and macro planning",
+      "Multilingual 24/7 concierge agent supporting English, Urdu, and Roman Urdu queries",
+      "Smart reservation desk pre-filling treatments from query parameters and lookbook picks",
+      "Vite 6 architecture styled with Tailwind CSS v4 and Web Audio API chime feedback",
     ],
-    tech: ["React 19", "TypeScript", "Tailwind CSS", "Vite", "AI Assistant", "Lucide React"],
-    liveUrl: "https://welltrack-ai-path.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/welltrack-ai-path",
-    image: "/projects/welltrack-ai.png",
-    imageLabel: "Live AI Health & Wellness Platform",
+    tech: ["React 19", "TypeScript", "Tailwind CSS 4", "Gemini AI", "Motion", "Vite 6"],
+    liveUrl: "https://lumina-beaty-parlour-pi.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour",
+    image: "/projects/lumina-beauty-parlour.png",
+    imageLabel: "Live Luxury Beauty Parlour Experience",
+    featured: true,
+    category: "client-demo",
+  },
+  {
+    id: "forge-fitness-gym",
+    title: "Forge Fitness — Premium Athletic Facility & AI Gym Web App",
+    subtitle: "Next.js 16 App Router, React 19, Framer Motion & 24/7 AI Concierge",
+    badge: "Client Demo",
+    summary:
+      "Replaces static gym brochures with an interactive membership calculator and a 24/7 AI concierge for trial consultation booking.",
+    description:
+      "A cutting-edge web application for an elite strength and performance athletic facility. Features aggressive dark obsidian UI, dynamic parallax scroll, interactive membership calculator, and an embedded 24/7 AI Concierge assistant.",
+    problem:
+      "Traditional gym websites suffer from static layouts and lack immediate automated answers for membership queries and program recommendations.",
+    solution:
+      "Engineered an ultra-fast Next.js 16 web platform with React 19 and Framer Motion micro-interactions, interactive monthly/annual membership toggles, and an intelligent 24/7 AI chatbot.",
+    // TODO: add metric for consultation conversion rate
+    result:
+      "Sub-second page load times with zero-latency TTFB via Turbopack and automated 24/7 visitor engagement and trial consultation capture.",
+    highlights: [
+      "Context-aware 24/7 AI concierge chatbot handling membership queries and trial bookings",
+      "Interactive billing calculator with instant monthly versus annual discount toggling",
+      "Hardware-accelerated Framer Motion parallax scroll and fluid micro-interactions",
+    ],
+    tech: ["Next.js 16", "React 19", "TypeScript", "Framer Motion", "Tailwind CSS", "Turbopack"],
+    liveUrl: "https://forge-fitness-gym-seven.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM",
+    image: "/projects/forge-fitness.png",
+    imageLabel: "Live Premium Gym Web Experience",
     featured: true,
     category: "client-demo",
   },
@@ -655,6 +655,64 @@ export const projectsData: Project[] = [
   // =========================================================================
   // GROUP D: Data, ML & Utilities
   // =========================================================================
+  {
+    id: "orbit-iq",
+    title: "OrbitIQ — Mission Risk & Booster Recovery Intelligence",
+    subtitle: "Aerospace Predictive Analytics, Reusability Economics & ML Classification",
+    badge: "Data & ML",
+    summary:
+      "Forecasts orbital booster recovery viability and refurbishment economics using telemetry data and calibrated machine learning models.",
+    description:
+      "A mission-critical predictive intelligence engine combining orbital flight telemetry, regularized machine learning, and multi-million dollar aerospace financial modeling to forecast booster landing viability and cost retention.",
+    problem:
+      "Determining orbital launch viability and booster recovery dynamics involves non-linear multi-variable dynamics where rocket loss costs tens of millions of dollars.",
+    solution:
+      "Engineered an end-to-end decision-support platform featuring calibrated flight risk scoring, multi-scenario mission presets, Explainable AI (XAI) feature attribution, and an aerospace economic ROI calculator.",
+    // TODO: add metric on predicted cost retention accuracy
+    result:
+      "Instant confidence-calibrated flight risk classification, sub-second landing inference, and dynamic quantification of cost retention through booster and fairing reuse.",
+    highlights: [
+      "Calibrated landing probability classification with low, moderate, and critical risk tiers",
+      "Aerospace financial engine calculating multi-million dollar savings from booster reuse",
+      "Explainable AI (XAI) feature attribution revealing flight metric influence",
+    ],
+    tech: ["Python", "Streamlit", "Scikit-Learn", "Machine Learning", "Pandas", "Aerospace Analytics"],
+    liveUrl: "https://orbit-iq.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/orbit-iq",
+    image: "/projects/orbit-iq.png",
+    imageLabel: "Live Aerospace Intelligence Platform",
+    featured: true,
+    category: "data-utility",
+  },
+  {
+    id: "spacex-launch-predictor",
+    title: "SpaceX Launch Analysis & ML Prediction Dashboard",
+    subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
+    badge: "Data & ML",
+    summary:
+      "Evaluates multi-variable orbital launch risks using historical telemetry analysis and an interactive Random Forest classifier.",
+    description:
+      "A full-lifecycle Data Science and Machine Learning platform analyzing 200+ historical SpaceX missions with geospatial launchpad telemetry and an interactive Random Forest classifier predicting launch success probability.",
+    problem:
+      "Orbital rocket launches cost upwards of $60M+ per mission with extreme environmental variables, making launch success factors complex to evaluate without unified predictive modeling.",
+    solution:
+      "Engineered a reactive Streamlit platform with Pandas telemetry aggregation, Folium geospatial launchpad mapping, and a trained Scikit-Learn Random Forest Classifier that computes live mission success probability.",
+    // TODO: add metric on model validation accuracy score
+    result:
+      "Sub-second prediction inference with dynamic confidence scoring, interactive multi-site geodetic mapping across all SpaceX complexes, and comprehensive historical EDA.",
+    highlights: [
+      "Trained Scikit-Learn Random Forest model predicting mission success probability",
+      "Interactive Folium geospatial mapping for Cape Canaveral, Vandenberg, and Kwajalein",
+      "Mission simulator testing variables across payload mass, orbit target, and launch site",
+    ],
+    tech: ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Folium", "Pandas"],
+    liveUrl: "https://spacex-launch-predictor-hadi.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/spacex-launch-predictor",
+    image: "/projects/spacex-launch-predictor.png",
+    imageLabel: "Live ML & Telemetry Dashboard",
+    featured: true,
+    category: "data-utility",
+  },
   {
     id: "agentic-humanoid-robotics-book",
     title: "Autonomous Humanoid Robotics & Physical AI Handbook",
@@ -768,64 +826,6 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/SainBux-HadiSeelro/Murtaza",
     image: "/projects/wedding-wishes.png",
     imageLabel: "Live Guest Submission Portal",
-    featured: true,
-    category: "data-utility",
-  },
-  {
-    id: "spacex-launch-predictor",
-    title: "SpaceX Launch Analysis & ML Prediction Dashboard",
-    subtitle: "Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier",
-    badge: "Data & ML",
-    summary:
-      "Evaluates multi-variable orbital launch risks using historical telemetry analysis and an interactive Random Forest classifier.",
-    description:
-      "A full-lifecycle Data Science and Machine Learning platform analyzing 200+ historical SpaceX missions with geospatial launchpad telemetry and an interactive Random Forest classifier predicting launch success probability.",
-    problem:
-      "Orbital rocket launches cost upwards of $60M+ per mission with extreme environmental variables, making launch success factors complex to evaluate without unified predictive modeling.",
-    solution:
-      "Engineered a reactive Streamlit platform with Pandas telemetry aggregation, Folium geospatial launchpad mapping, and a trained Scikit-Learn Random Forest Classifier that computes live mission success probability.",
-    // TODO: add metric on model validation accuracy score
-    result:
-      "Sub-second prediction inference with dynamic confidence scoring, interactive multi-site geodetic mapping across all SpaceX complexes, and comprehensive historical EDA.",
-    highlights: [
-      "Trained Scikit-Learn Random Forest model predicting mission success probability",
-      "Interactive Folium geospatial mapping for Cape Canaveral, Vandenberg, and Kwajalein",
-      "Mission simulator testing variables across payload mass, orbit target, and launch site",
-    ],
-    tech: ["Python", "Streamlit", "Scikit-Learn", "Random Forest", "Folium", "Pandas"],
-    liveUrl: "https://spacex-launch-predictor-hadi.streamlit.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/spacex-launch-predictor",
-    image: "/projects/spacex-launch-predictor.png",
-    imageLabel: "Live ML & Telemetry Dashboard",
-    featured: true,
-    category: "data-utility",
-  },
-  {
-    id: "orbit-iq",
-    title: "OrbitIQ — Mission Risk & Booster Recovery Intelligence",
-    subtitle: "Aerospace Predictive Analytics, Reusability Economics & ML Classification",
-    badge: "Data & ML",
-    summary:
-      "Forecasts orbital booster recovery viability and refurbishment economics using telemetry data and calibrated machine learning models.",
-    description:
-      "A mission-critical predictive intelligence engine combining orbital flight telemetry, regularized machine learning, and multi-million dollar aerospace financial modeling to forecast booster landing viability and cost retention.",
-    problem:
-      "Determining orbital launch viability and booster recovery dynamics involves non-linear multi-variable dynamics where rocket loss costs tens of millions of dollars.",
-    solution:
-      "Engineered an end-to-end decision-support platform featuring calibrated flight risk scoring, multi-scenario mission presets, Explainable AI (XAI) feature attribution, and an aerospace economic ROI calculator.",
-    // TODO: add metric on predicted cost retention accuracy
-    result:
-      "Instant confidence-calibrated flight risk classification, sub-second landing inference, and dynamic quantification of cost retention through booster and fairing reuse.",
-    highlights: [
-      "Calibrated landing probability classification with low, moderate, and critical risk tiers",
-      "Aerospace financial engine calculating multi-million dollar savings from booster reuse",
-      "Explainable AI (XAI) feature attribution revealing flight metric influence",
-    ],
-    tech: ["Python", "Streamlit", "Scikit-Learn", "Machine Learning", "Pandas", "Aerospace Analytics"],
-    liveUrl: "https://orbit-iq.streamlit.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/orbit-iq",
-    image: "/projects/orbit-iq.png",
-    imageLabel: "Live Aerospace Intelligence Platform",
     featured: true,
     category: "data-utility",
   },

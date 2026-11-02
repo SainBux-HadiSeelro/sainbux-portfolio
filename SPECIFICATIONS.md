@@ -253,24 +253,14 @@ export interface Project {
 
 ---
 
-## 🛰️ 8. Comprehensive 25-Project Engineering Ecosystem
+## 🛰️ 8. Comprehensive 27-Project Engineering Ecosystem
 
-The portfolio aggregates **25 flagship production systems** categorized into 4 core architectural groups:
+The portfolio aggregates **27 flagship production systems** categorized into 4 core architectural groups:
 
 ### 🌟 GROUP A: Featured Agentic Systems (`category: "agentic"`)
 *Autonomous agent pipelines featuring recursive self-correction, schema contract enforcement, evaluator-optimizer loops, and multi-agent coordination.*
 
-#### 1. Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant
-- **Designation:** Bilingual Natural Language Execution (English & Roman Urdu) with Deterministic Tool Calling
-- **Badge:** `Agentic` | **Category:** `agentic`
-- **Technical Summary:** Interprets bilingual natural language prompts ('total sales nikalo', 'duplicates hata do') to execute 15+ deterministic openpyxl/pandas operations within an isolated sandbox.
-- **Architectural Solution:** Autonomous agentic loop with session version snapshotting, non-destructive rollbacks, and post-write verification guards.
-- **Verified Metrics:** 100% test pass rate across 23 pytest suites, zero accidental data loss, sub-second formula evaluation.
-- **Stack:** Python, Streamlit, OpenPyXL, Pandas, Gemini API, Tool Calling
-- **Live Deployment:** [https://excel-agent-ai.streamlit.app/](https://excel-agent-ai.streamlit.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/excel-ai-agent](https://github.com/SainBux-HadiSeelro/excel-ai-agent)
-
-#### 2. ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym
+#### 1. ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym
 - **Designation:** Multi-Agent Swarm Orchestrator & Live Tool Calling Engine
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Replaces static gym forms with a 4-agent swarm coordinating biometric calculations, workout protocols, and VIP pass issuance.
@@ -279,6 +269,16 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Stack:** React 18, TypeScript, Multi-Agent Swarm, Tool Calling, Tailwind CSS, Vite 5
 - **Live Deployment:** [https://elite-fitness-gym-two.vercel.app/](https://elite-fitness-gym-two.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM](https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM)
+
+#### 2. Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant
+- **Designation:** Bilingual Natural Language Execution (English & Roman Urdu) with Deterministic Tool Calling
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Interprets bilingual natural language prompts ('total sales nikalo', 'duplicates hata do') to execute 15+ deterministic openpyxl/pandas operations within an isolated sandbox.
+- **Architectural Solution:** Autonomous agentic loop with session version snapshotting, non-destructive rollbacks, and post-write verification guards.
+- **Verified Metrics:** 100% test pass rate across 23 pytest suites, zero accidental data loss, sub-second formula evaluation.
+- **Stack:** Python, Streamlit, OpenPyXL, Pandas, Gemini API, Tool Calling
+- **Live Deployment:** [https://excel-agent-ai.streamlit.app/](https://excel-agent-ai.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/excel-ai-agent](https://github.com/SainBux-HadiSeelro/excel-ai-agent)
 
 #### 3. Nexus Mind — Autonomous Multi-Agent Gaming & Intelligence Platform
 - **Designation:** Multi-Agent Swarm, Shannon Entropy Telemetry & 24/7 Contextual AI Concierge
@@ -289,7 +289,16 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://nexus-mind-agentic-platform.streamlit.app/](https://nexus-mind-agentic-platform.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform](https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform)
 
-#### 4. ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge
+#### 4. CipherSentinel AI — Next-Gen Cryptographic Password Suite & 24/7 Autonomous Security Agent
+- **Designation:** CSPRNG Kernel Entropy, Real-Time Shannon Bit-Entropy, NIST SP 800-63B & 24/7 Resident AI Auditor
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Eliminates vulnerable pseudo-random credential generation by combining OS kernel CSPRNG entropy, Shannon bit-entropy telemetry, and a 24/7 resident cybersecurity agent.
+- **Architectural Solution:** Zero-knowledge cryptographic engine using secrets CSPRNG kernel entropy, Fisher-Yates unbiased shuffling, real-time Shannon bit-entropy math, 100B hash/sec GPU brute-force estimation, and an offline-first 24/7 autonomous security agent.
+- **Stack:** Python 3.12+, Streamlit, CSPRNG Secrets, Shannon Entropy, Autonomous AI Agent, NIST SP 800-63B, OWASP ASVS
+- **Live Deployment:** [https://agentic-password-sentinel.streamlit.app/](https://agentic-password-sentinel.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-password-sentinel](https://github.com/SainBux-HadiSeelro/agentic-password-sentinel)
+
+#### 5. ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge
 - **Designation:** Markov Transition State Engine, Win-Stay Lose-Shift Heuristics & Real-Time Probability Telemetry
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Transforms Rock-Paper-Scissors into a high-performance demonstration of Statistical Machine Learning, Behavioral Game Theory, and Multi-Agent Systems.
@@ -298,15 +307,6 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Stack:** Python, Streamlit, Markov Chains, Bayesian Inference, Game Theory, OpenAI SDK
 - **Live Deployment:** [https://apex-game.streamlit.app/](https://apex-game.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/apex-game](https://github.com/SainBux-HadiSeelro/apex-game)
-
-#### 5. NexusNarrative — Smart Multi-Agent Story Studio
-- **Designation:** Multi-Agent Story Pipeline, Dynamic Mad Libs Engine & Story Scorecard Analytics
-- **Badge:** `Agentic` | **Category:** `agentic`
-- **Technical Summary:** Solves brittle generative storytelling by coordinating four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant) with automated narrative quality scorecards.
-- **Architectural Solution:** Modular multi-agent pipeline with real-time session state management, reading-time analytics, and one-click Markdown/TXT export.
-- **Stack:** Python, Streamlit, Multi-Agent Pipeline, NLP, UV Package Manager, Session State
-- **Live Deployment:** [https://agentic-story-studio.streamlit.app/](https://agentic-story-studio.streamlit.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-story-studio](https://github.com/SainBux-HadiSeelro/agentic-story-studio)
 
 #### 6. VitalAI — Autonomous Health & BMI Intelligence Platform
 - **Designation:** Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot
@@ -318,28 +318,28 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://agentic-bmi-health-assistant.streamlit.app/](https://agentic-bmi-health-assistant.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant](https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant)
 
+#### 7. NexusNarrative — Smart Multi-Agent Story Studio
+- **Designation:** Multi-Agent Story Pipeline, Dynamic Mad Libs Engine & Story Scorecard Analytics
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Solves brittle generative storytelling by coordinating four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant) with automated narrative quality scorecards.
+- **Architectural Solution:** Modular multi-agent pipeline with real-time session state management, reading-time analytics, and one-click Markdown/TXT export.
+- **Stack:** Python, Streamlit, Multi-Agent Pipeline, NLP, UV Package Manager, Session State
+- **Live Deployment:** [https://agentic-story-studio.streamlit.app/](https://agentic-story-studio.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-story-studio](https://github.com/SainBux-HadiSeelro/agentic-story-studio)
+
+#### 8. ChronoFlow-AI — Modern Agentic Focus Orchestrator & 24/7 AI Assistant
+- **Designation:** Zero-Latency 60 FPS Non-Blocking SVG Engine, NLP Mission Dispatcher & Resident AI Concierge
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Decouples temporal execution into a client-side 60 FPS SVG engine, paired with an NLP mission dispatcher and 24/7 live resident AI assistant.
+- **Architectural Solution:** Event-driven client-side SVG HUD running at 60 FPS without thread blocking, Web Audio API harmonic synthesizer, and resident AI assistant.
+- **Stack:** Python, Streamlit, Autonomous Agents, SVG Animations, Web Audio API, NLP Tokenizer
+- **Live Deployment:** [https://chronoflow-ai.streamlit.app/](https://chronoflow-ai.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/chronoflow-ai](https://github.com/SainBux-HadiSeelro/chronoflow-ai)
+
 ---
 
 ### ⚡ GROUP B: AI-Integrated Applications (`category: "ai-integrated"`)
 *Production-grade web platforms engineered with embedded conversational AI concierges, state machines, and real-time telemetry.*
-
-#### 7. Hangman: Modern AI Edition & 24/7 NEXUS AI Assistant
-- **Designation:** Cyberpunk Word Deduction, Reactive State Machine & Embedded Resident Agent
-- **Badge:** `AI-Integrated` | **Category:** `ai-integrated`
-- **Technical Summary:** Embeds NEXUS-7, an autonomous resident AI agent delivering contextual, spoiler-free gameplay hints and multi-domain knowledge retrieval.
-- **Architectural Solution:** Reactive event-driven state machine with heart-life telemetry, ASCII visual containment, and offline-first heuristic neural knowledge base.
-- **Stack:** Python, Streamlit, Autonomous Agents, State Machines, Knowledge Retrieval, Cyberpunk CSS
-- **Live Deployment:** [https://agentic-hangman.streamlit.app/](https://agentic-hangman.streamlit.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0](https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0)
-
-#### 8. IRONPULSE — Ultra-Premium Fitness & 24/7 Performance Hub
-- **Designation:** Next.js 16 App Router, React 19, Tailwind v4 & 24/7 Live PulseAI Concierge
-- **Badge:** `AI-Integrated` | **Category:** `ai-integrated`
-- **Technical Summary:** High-octane platform for elite athletes featuring live facility telemetry indexing, interactive biometric BMI calculator, and 24/7 Live Concierge ('PulseAI').
-- **Architectural Solution:** PulseAI concierge generating verifiable digital VIP guest pass tokens on demand; sub-second Turbopack compilation.
-- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion, Turbopack
-- **Live Deployment:** [https://ironpulse-hadi-com.vercel.app/](https://ironpulse-hadi-com.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/ironpulse-hadi.com](https://github.com/SainBux-HadiSeelro/ironpulse-hadi.com)
 
 #### 9. LUVIA — Minimalist Luxury eCommerce & 24/7 AI Concierge
 - **Designation:** Ethereal Luxury Design Objects, React 19, Tailwind v4 & In-Chat Shopping Actions
@@ -350,7 +350,24 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://luvia-e-commerce.vercel.app/](https://luvia-e-commerce.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Luvia-eCommerce](https://github.com/SainBux-HadiSeelro/Luvia-eCommerce)
 
-#### 10. SHM Real Estate — AI Lead Generation & Qualification System
+#### 10. IRONPULSE — Ultra-Premium Fitness & 24/7 Performance Hub
+- **Designation:** Next.js 16 App Router, React 19, Tailwind v4 & 24/7 Live PulseAI Concierge
+- **Badge:** `AI-Integrated` | **Category:** `ai-integrated`
+- **Technical Summary:** High-octane platform for elite athletes featuring live facility telemetry indexing, interactive biometric BMI calculator, and 24/7 Live Concierge ('PulseAI').
+- **Architectural Solution:** PulseAI concierge generating verifiable digital VIP guest pass tokens on demand; sub-second Turbopack compilation.
+- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS 4, Framer Motion, Turbopack
+- **Live Deployment:** [https://ironpulse-hadi-com.vercel.app/](https://ironpulse-hadi-com.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/ironpulse-hadi.com](https://github.com/SainBux-HadiSeelro/ironpulse-hadi.com)
+
+#### 11. WellTrack AI — Complete Intelligent Wellness & Health Companion
+- **Designation:** AI Biometrics, Circadian Sleep Telemetry & 24/7 Wellness Coach
+- **Badge:** `AI-Integrated` | **Category:** `ai-integrated`
+- **Technical Summary:** All-in-one AI wellness platform with biometrics, dynamic Vitality scoring (0-100), nutrition/sleep telemetry & 24/7 AI coach.
+- **Stack:** React 19, TypeScript, Tailwind CSS, Vite, AI Assistant, Lucide React
+- **Live Deployment:** [https://welltrack-ai-path.vercel.app/](https://welltrack-ai-path.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/welltrack-ai-path](https://github.com/SainBux-HadiSeelro/welltrack-ai-path)
+
+#### 12. SHM Real Estate — AI Lead Generation & Qualification System
 - **Designation:** Autonomous Real Estate Funnel, 24/7 AI Qualification & Appointment Booking Engine
 - **Badge:** `AI-Integrated` | **Category:** `ai-integrated`
 - **Technical Summary:** Replaces traditional slow brokerage response times with an automated 9-stage lead funnel and 24/7 conversational qualification.
@@ -359,111 +376,114 @@ The portfolio aggregates **25 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://shm-real-state-agency.vercel.app/](https://shm-real-state-agency.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/SHM-real-state-agency](https://github.com/SainBux-HadiSeelro/SHM-real-state-agency)
 
+#### 13. Hangman: Modern AI Edition & 24/7 NEXUS AI Assistant
+- **Designation:** Cyberpunk Word Deduction, Reactive State Machine & Embedded Resident Agent
+- **Badge:** `AI-Integrated` | **Category:** `ai-integrated`
+- **Technical Summary:** Embeds NEXUS-7, an autonomous resident AI agent delivering contextual, spoiler-free gameplay hints and multi-domain knowledge retrieval.
+- **Architectural Solution:** Reactive event-driven state machine with heart-life telemetry, ASCII visual containment, and offline-first heuristic neural knowledge base.
+- **Stack:** Python, Streamlit, Autonomous Agents, State Machines, Knowledge Retrieval, Cyberpunk CSS
+- **Live Deployment:** [https://agentic-hangman.streamlit.app/](https://agentic-hangman.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0](https://github.com/SainBux-HadiSeelro/Agentic-Hangman-2.0)
+
 ---
 
 ### 💼 GROUP C: Client Demos & Commercial Web Platforms (`category: "client-demo"`)
 *Frontend-focused commercial builds with embedded AI concierges, high-conversion appointment funnels, and modern responsive design systems.*
 
-#### 11. Forge Fitness — Premium Athletic Facility & AI Gym Web App
-- **Designation:** Next.js 16 App Router, React 19, Framer Motion Parallax & 24/7 AI Concierge
-- **Stack:** Next.js 16, React 19, TypeScript, Framer Motion, Tailwind CSS, Turbopack
-- **Live Deployment:** [https://forge-fitness-gym-seven.vercel.app/](https://forge-fitness-gym-seven.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM](https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM)
-
-#### 12. BeautyLira — Luxury Aesthetic Clinic & 24/7 AI Concierge
-- **Designation:** Harley Street Medical Aesthetics, Procedure Matrices & 24/7 Clinical Triage
-- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS, Framer Motion, Turbopack
-- **Live Deployment:** [https://beaty-lira-aesthetic-clinic.vercel.app/](https://beaty-lira-aesthetic-clinic.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic](https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic)
-
-#### 13. Elite Studio Clinic — Luxury Aesthetic Dentistry & 24/7 AI Concierge
-- **Designation:** Manhattan Aesthetic Medicine, Before/After Smile Studio & Aura AI Concierge
-- **Stack:** React 19, TypeScript, Tailwind CSS 4, Motion, AI Concierge, Vite 6
-- **Live Deployment:** [https://elite-studio-clinic-beta.vercel.app/](https://elite-studio-clinic-beta.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic](https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic)
-
-#### 14. Lumina Dental Clinics — High-Tech Precision Dentistry & 24/7 AI Concierge
-- **Designation:** Interactive Smile Simulator, Treatment Cost Estimator & Gemini 2.5 Flash Concierge
-- **Stack:** React 19, TypeScript, Tailwind CSS 4, Gemini AI, Motion, Vite 6
-- **Live Deployment:** [https://lumina-dental-clinic-navy.vercel.app/](https://lumina-dental-clinic-navy.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Lumina_Dental_clinic](https://github.com/SainBux-HadiSeelro/Lumina_Dental_clinic)
-
-#### 15. BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic
-- **Designation:** Quiet-Luxury Aesthetic Medicine, Treatment Desk & 24/7 Live Aura Concierge
-- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS, Framer Motion, Turbopack
-- **Live Deployment:** [https://beaty-aura-spa-iota.vercel.app/](https://beaty-aura-spa-iota.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Beaty_Aura_spa](https://github.com/SainBux-HadiSeelro/Beaty_Aura_spa)
-
-#### 16. Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform
+#### 14. Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform
 - **Designation:** Haute French Hospitality, 4-Step Reservation Engine & 24/7 Gemini AI Concierge
 - **Stack:** React 19, TypeScript, Tailwind CSS 4, Gemini AI, Motion, Vite 6
 - **Live Deployment:** [https://lumiere-hotel-reservation.vercel.app/](https://lumiere-hotel-reservation.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Lumiere_Hotel_Reservation](https://github.com/SainBux-HadiSeelro/Lumiere_Hotel_Reservation)
 
-#### 17. Lumina — Luxury Beauty Parlour & Aesthetic Sanctuary
-- **Designation:** Haute Aesthetic Salon, URL-Prefilled Reservation Desk & Multilingual Concierge
+#### 15. Lumina Dental Clinics — High-Tech Precision Dentistry & 24/7 AI Concierge
+- **Designation:** Interactive Smile Simulator, Treatment Cost Estimator & Gemini 2.5 Flash Concierge
 - **Stack:** React 19, TypeScript, Tailwind CSS 4, Gemini AI, Motion, Vite 6
-- **Live Deployment:** [https://lumina-beaty-parlour-pi.vercel.app/](https://lumina-beaty-parlour-pi.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour](https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour)
+- **Live Deployment:** [https://lumina-dental-clinic-navy.vercel.app/](https://lumina-dental-clinic-navy.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Lumina_Dental_clinic](https://github.com/SainBux-HadiSeelro/Lumina_Dental_clinic)
 
-#### 18. Aura Atelier — Haute Coiffure, Aesthetic Rituals & 24/7 AI Concierge
+#### 16. Elite Studio Clinic — Luxury Aesthetic Dentistry & 24/7 AI Concierge
+- **Designation:** Manhattan Aesthetic Medicine, Before/After Smile Studio & Aura AI Concierge
+- **Stack:** React 19, TypeScript, Tailwind CSS 4, Motion, AI Concierge, Vite 6
+- **Live Deployment:** [https://elite-studio-clinic-beta.vercel.app/](https://elite-studio-clinic-beta.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic](https://github.com/SainBux-HadiSeelro/Elite_Studio_Clinic)
+
+#### 17. BeautyLira — Luxury Aesthetic Clinic & 24/7 AI Concierge
+- **Designation:** Harley Street Medical Aesthetics, Procedure Matrices & 24/7 Clinical Triage
+- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS, Framer Motion, Turbopack
+- **Live Deployment:** [https://beaty-lira-aesthetic-clinic.vercel.app/](https://beaty-lira-aesthetic-clinic.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic](https://github.com/SainBux-HadiSeelro/BeatyLira_Aesthetic_Clinic)
+
+#### 18. BeautyAura — Luxury Aesthetic Retreat & Wellness Clinic
+- **Designation:** Quiet-Luxury Aesthetic Medicine, Treatment Desk & 24/7 Live Aura Concierge
+- **Stack:** Next.js 16, React 19, TypeScript, Tailwind CSS, Framer Motion, Turbopack
+- **Live Deployment:** [https://beaty-aura-spa-iota.vercel.app/](https://beaty-aura-spa-iota.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Beaty_Aura_spa](https://github.com/SainBux-HadiSeelro/Beaty_Aura_spa)
+
+#### 19. Aura Atelier — Haute Coiffure, Aesthetic Rituals & 24/7 AI Concierge
 - **Designation:** Manhattan Concept Sanctuary, Multi-Step Artist Booking & Gemini 2.5 Flash
 - **Stack:** React 19, TypeScript, Tailwind CSS 4, Gemini 2.5 Flash, Vite 6
 - **Live Deployment:** [https://aura-atelier-beaty-parlours-lyart.vercel.app/](https://aura-atelier-beaty-parlours-lyart.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Aura_Atelier_Beaty_Parlours](https://github.com/SainBux-HadiSeelro/Aura_Atelier_Beaty_Parlours)
 
-#### 19. WellTrack AI — Complete Intelligent Wellness & Health Companion
-- **Designation:** AI Biometrics, Circadian Sleep Telemetry & 24/7 Wellness Coach
-- **Stack:** React 19, TypeScript, Tailwind CSS, Vite, AI Assistant, Lucide React
-- **Live Deployment:** [https://welltrack-ai-path.vercel.app/](https://welltrack-ai-path.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/welltrack-ai-path](https://github.com/SainBux-HadiSeelro/welltrack-ai-path)
+#### 20. Lumina — Luxury Beauty Parlour & Aesthetic Sanctuary
+- **Designation:** Haute Aesthetic Salon, URL-Prefilled Reservation Desk & Multilingual Concierge
+- **Stack:** React 19, TypeScript, Tailwind CSS 4, Gemini AI, Motion, Vite 6
+- **Live Deployment:** [https://lumina-beaty-parlour-pi.vercel.app/](https://lumina-beaty-parlour-pi.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour](https://github.com/SainBux-HadiSeelro/Lumina_Beaty_Parlour)
+
+#### 21. Forge Fitness — Premium Athletic Facility & AI Gym Web App
+- **Designation:** Next.js 16 App Router, React 19, Framer Motion Parallax & 24/7 AI Concierge
+- **Stack:** Next.js 16, React 19, TypeScript, Framer Motion, Tailwind CSS, Turbopack
+- **Live Deployment:** [https://forge-fitness-gym-seven.vercel.app/](https://forge-fitness-gym-seven.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM](https://github.com/SainBux-HadiSeelro/Forge_Fitness_GYM)
 
 ---
 
 ### 📊 GROUP D: Data Science, Machine Learning & Utilities (`category: "data-utility"`)
 *Predictive machine learning models, zero-database flatfile ledgers, vector-grade billing generators, and physical AI engineering handbooks.*
 
-#### 20. Autonomous Humanoid Robotics & Physical AI Handbook
-- **Designation:** Physical AI Engineering, ROS 2, Gazebo/Unity Digital Twins & Isaac Sim
-- **Technical Summary:** 4-module engineering roadmap bridging foundation models with physical humanoid actuation, kinematic chains, and synthetic data generation.
-- **Stack:** ROS 2, Python, NVIDIA Isaac Sim, Gazebo, Unity 3D, Docusaurus
-- **Live Deployment:** [https://agentic-humanoid-robotics-book.vercel.app/](https://agentic-humanoid-robotics-book.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book](https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book)
+#### 22. OrbitIQ — Mission Risk & Booster Recovery Intelligence
+- **Designation:** Aerospace Predictive Analytics, Reusability Economics & ML Classification
+- **Technical Summary:** Decision-support ML engine forecasting booster landing viability and multi-million dollar economic ROI analysis ($\$35\text{M}+$ reusability cost retention).
+- **Stack:** Python, Streamlit, Scikit-Learn, Machine Learning, Pandas, Aerospace Analytics
+- **Live Deployment:** [https://orbit-iq.streamlit.app/](https://orbit-iq.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/orbit-iq](https://github.com/SainBux-HadiSeelro/orbit-iq)
 
-#### 21. FinPulse — Personal Finance & Analytics Tracker
-- **Designation:** Dual-Interface Ledger, Budget Health & 64-Bit Micro-Currency Accounting
-- **Technical Summary:** Zero-DB flatfile ledger architecture running strict 64-bit integer paisa/cents arithmetic, completely eliminating floating-point rounding errors.
-- **Stack:** Python, Streamlit, Plotly, Pandas, ReportLab, Financial Analytics
-- **Live Deployment:** [https://personal-finance-dashboard-hadi.streamlit.app/](https://personal-finance-dashboard-hadi.streamlit.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/personal-finance-dashboard](https://github.com/SainBux-HadiSeelro/personal-finance-dashboard)
-
-#### 22. Commercial Invoice & Bill Generator
-- **Designation:** Enterprise Billing Automation & Vector PDF Publishing Platform
-- **Technical Summary:** Reactive billing dashboard with automated tax/freight calculation and vector-grade print-ready A4 PDF generation via ReportLab in $< 30\text{s}$.
-- **Stack:** Python, Streamlit, ReportLab, Financial Automation, PDF Engine
-- **Live Deployment:** [https://bill-generator-ap5tugma33eqg9vzj5ys7o.streamlit.app/](https://bill-generator-ap5tugma33eqg9vzj5ys7o.streamlit.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/bill-generator](https://github.com/SainBux-HadiSeelro/bill-generator)
-
-#### 23. Wedding Wishes App
-- **Designation:** Full-Stack Event Guestbook & Media Optimization System
-- **Technical Summary:** Event guestbook application running on Next.js App Router, Supabase real-time database, Cloudinary auto-compression pipeline, and admin moderation.
-- **Stack:** Next.js, Supabase, Cloudinary, Tailwind CSS, Vercel
-- **Live Deployment:** [https://murtaza-snowy.vercel.app/](https://murtaza-snowy.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/Murtaza](https://github.com/SainBux-HadiSeelro/Murtaza)
-
-#### 24. SpaceX Launch Analysis & ML Prediction Dashboard
+#### 23. SpaceX Launch Analysis & ML Prediction Dashboard
 - **Designation:** Real-Time Orbital Telemetry & Machine Learning Mission Outcome Classifier
 - **Technical Summary:** 200+ historical mission EDA platform with interactive Folium geospatial mapping and a trained Scikit-Learn Random Forest outcome classifier.
 - **Stack:** Python, Streamlit, Scikit-Learn, Random Forest, Folium, Pandas
 - **Live Deployment:** [https://spacex-launch-predictor-hadi.streamlit.app/](https://spacex-launch-predictor-hadi.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/spacex-launch-predictor](https://github.com/SainBux-HadiSeelro/spacex-launch-predictor)
 
-#### 25. OrbitIQ — Mission Risk & Booster Recovery Intelligence
-- **Designation:** Aerospace Predictive Analytics, Reusability Economics & ML Classification
-- **Technical Summary:** Decision-support ML engine forecasting booster landing viability and multi-million dollar economic ROI analysis ($\$35\text{M}+$ reusability cost retention).
-- **Stack:** Python, Streamlit, Scikit-Learn, Machine Learning, Pandas, Aerospace Analytics
-- **Live Deployment:** [https://orbit-iq.streamlit.app/](https://orbit-iq.streamlit.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/orbit-iq](https://github.com/SainBux-HadiSeelro/orbit-iq)
+#### 24. Autonomous Humanoid Robotics & Physical AI Handbook
+- **Designation:** Physical AI Engineering, ROS 2, Gazebo/Unity Digital Twins & Isaac Sim
+- **Technical Summary:** 4-module engineering roadmap bridging foundation models with physical humanoid actuation, kinematic chains, and synthetic data generation.
+- **Stack:** ROS 2, Python, NVIDIA Isaac Sim, Gazebo, Unity 3D, Docusaurus
+- **Live Deployment:** [https://agentic-humanoid-robotics-book.vercel.app/](https://agentic-humanoid-robotics-book.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book](https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book)
+
+#### 25. FinPulse — Personal Finance & Analytics Tracker
+- **Designation:** Dual-Interface Ledger, Budget Health & 64-Bit Micro-Currency Accounting
+- **Technical Summary:** Zero-DB flatfile ledger architecture running strict 64-bit integer paisa/cents arithmetic, completely eliminating floating-point rounding errors.
+- **Stack:** Python, Streamlit, Plotly, Pandas, ReportLab, Financial Analytics
+- **Live Deployment:** [https://personal-finance-dashboard-hadi.streamlit.app/](https://personal-finance-dashboard-hadi.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/personal-finance-dashboard](https://github.com/SainBux-HadiSeelro/personal-finance-dashboard)
+
+#### 26. Commercial Invoice & Bill Generator
+- **Designation:** Enterprise Billing Automation & Vector PDF Publishing Platform
+- **Technical Summary:** Reactive billing dashboard with automated tax/freight calculation and vector-grade print-ready A4 PDF generation via ReportLab in $< 30\text{s}$.
+- **Stack:** Python, Streamlit, ReportLab, Financial Automation, PDF Engine
+- **Live Deployment:** [https://bill-generator-ap5tugma33eqg9vzj5ys7o.streamlit.app/](https://bill-generator-ap5tugma33eqg9vzj5ys7o.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/bill-generator](https://github.com/SainBux-HadiSeelro/bill-generator)
+
+#### 27. Wedding Wishes App
+- **Designation:** Full-Stack Event Guestbook & Media Optimization System
+- **Technical Summary:** Event guestbook application running on Next.js App Router, Supabase real-time database, Cloudinary auto-compression pipeline, and admin moderation.
+- **Stack:** Next.js, Supabase, Cloudinary, Tailwind CSS, Vercel
+- **Live Deployment:** [https://murtaza-snowy.vercel.app/](https://murtaza-snowy.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Murtaza](https://github.com/SainBux-HadiSeelro/Murtaza)
 
 ---
 
