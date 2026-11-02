@@ -36,6 +36,7 @@ A curated selection of live, production-grade applications featured on [sainbux.
 
 | Project | Domain / Specialization | Core Architecture & Key Result | Live Demo | Repository |
 | :--- | :--- | :--- | :---: | :---: |
+| 🤖 **Aura AI-Folio** | Autonomous AI Portfolio & 24/7 Concierge | Production Streamlit AI platform featuring 24/7 Aura AI client concierge, 3-stage Multi-Agent Swarm Lab & real-time enterprise ROI calculator. | [🚀 Launch Demo](https://ai-folio.streamlit.app/) | [💻 Code](https://github.com/SainBux-HadiSeelro/ai-folio) |
 | 🦾 **ELITE FITNESS Platform** | Autonomous Multi-Agent AI Gym | Enterprise luxury gym platform powered by 4 specialized AI agents, live tool-calling traces, biometrics & 24/7 concierge. | [🚀 Launch Demo](https://elite-fitness-gym-two.vercel.app/) | [💻 Code](https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM) |
 | 📊 **Excel AI Agent** | Autonomous Agent & Spreadsheets | Bilingual natural language spreadsheet agent (English & Roman Urdu) executing 15+ deterministic tools on Excel (.xlsx) with non-destructive sandboxing & instant undo. | [🚀 Launch Demo](https://excel-agent-ai.streamlit.app/) | [💻 Code](https://github.com/SainBux-HadiSeelro/excel-ai-agent) |
 | 🧠 **Nexus Mind Platform** | Autonomous Multi-Agent Gaming & Intelligence | Multi-Agent MAS with Nexus Arbiter, Shannon Entropy ($H = \log_2 N$) telemetry & 24/7 bilingual live contextual AI concierge. | [🚀 Launch Demo](https://nexus-mind-agentic-platform.streamlit.app/) | [💻 Code](https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform) |

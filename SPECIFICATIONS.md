@@ -151,6 +151,7 @@ d:\portfolio
 │   ├── cv.pdf                             # Downloadable Curriculum Vitae
 │   ├── hero-hands.png                     # Visual hero branding asset
 │   └── projects/                          # High-resolution (1280x800) project preview assets
+│       ├── ai-folio.png                   # Aura AI-Folio Autonomous Platform preview
 │       ├── agentic-bmi-health-assistant.png # VitalAI Health & BMI Platform preview
 │       ├── agentic-hangman.png            # Hangman 2.0 NEXUS AI preview
 │       ├── agentic-story-studio.png       # NexusNarrative story studio preview
@@ -260,7 +261,17 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 ### 🌟 GROUP A: Featured Agentic Systems (`category: "agentic"`)
 *Autonomous agent pipelines featuring recursive self-correction, schema contract enforcement, evaluator-optimizer loops, and multi-agent coordination.*
 
-#### 1. ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym
+#### 1. AI-Folio — Autonomous Business Engineering Platform & 24/7 AI Concierge
+- **Designation:** Streamlit 1.42+, Dual-Engine Google Gemini REST API, Multi-Agent Swarm Lab & Real-Time ROI Engine
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Replaces static showcase portals with an active autonomous AI system featuring a 24/7 client concierge, multi-agent swarm lab, and real-time ROI modeling.
+- **Architectural Solution:** Autonomous platform combining a dual-engine conversational concierge (Google Gemini + local deterministic router), a live 3-stage Multi-Agent Swarm Lab (Researcher → Analyst → Synthesizer), and dynamic ROI mathematical modeling in a cyber-glass dark UI.
+- **Verified Metrics:** Sub-second deterministic fallback latency, 100% automated visitor lead capture with zero cross-tenant memory leakage, simulated 15+ hours/week operational savings.
+- **Stack:** Python 3.11, Streamlit 1.42+, Google Gemini API, Multi-Agent Swarms, Pandas, Custom CSS3, Session State
+- **Live Deployment:** [https://ai-folio.streamlit.app/](https://ai-folio.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/ai-folio](https://github.com/SainBux-HadiSeelro/ai-folio)
+
+#### 2. ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym
 - **Designation:** Multi-Agent Swarm Orchestrator & Live Tool Calling Engine
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Replaces static gym forms with a 4-agent swarm coordinating biometric calculations, workout protocols, and VIP pass issuance.
@@ -270,7 +281,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://elite-fitness-gym-two.vercel.app/](https://elite-fitness-gym-two.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM](https://github.com/SainBux-HadiSeelro/Elite_Fitness_GYM)
 
-#### 2. Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant
+#### 3. Excel AI Agent — Autonomous Multilingual Spreadsheet Assistant
 - **Designation:** Bilingual Natural Language Execution (English & Roman Urdu) with Deterministic Tool Calling
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Interprets bilingual natural language prompts ('total sales nikalo', 'duplicates hata do') to execute 15+ deterministic openpyxl/pandas operations within an isolated sandbox.
@@ -280,7 +291,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://excel-agent-ai.streamlit.app/](https://excel-agent-ai.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/excel-ai-agent](https://github.com/SainBux-HadiSeelro/excel-ai-agent)
 
-#### 3. Nexus Mind — Autonomous Multi-Agent Gaming & Intelligence Platform
+#### 4. Nexus Mind — Autonomous Multi-Agent Gaming & Intelligence Platform
 - **Designation:** Multi-Agent Swarm, Shannon Entropy Telemetry & 24/7 Contextual AI Concierge
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Coordinates 3 synchronized agents (Nexus Arbiter, Oracle Telemetry computing Shannon Entropy $H = \log_2 N$, Nova 24/7 bilingual live AI concierge) for turn-based Human vs AI duel gameplay.
@@ -289,7 +300,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://nexus-mind-agentic-platform.streamlit.app/](https://nexus-mind-agentic-platform.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform](https://github.com/SainBux-HadiSeelro/nexus-mind-agentic-platform)
 
-#### 4. CipherSentinel AI — Next-Gen Cryptographic Password Suite & 24/7 Autonomous Security Agent
+#### 5. CipherSentinel AI — Next-Gen Cryptographic Password Suite & 24/7 Autonomous Security Agent
 - **Designation:** CSPRNG Kernel Entropy, Real-Time Shannon Bit-Entropy, NIST SP 800-63B & 24/7 Resident AI Auditor
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Eliminates vulnerable pseudo-random credential generation by combining OS kernel CSPRNG entropy, Shannon bit-entropy telemetry, and a 24/7 resident cybersecurity agent.
@@ -298,7 +309,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://agentic-password-sentinel.streamlit.app/](https://agentic-password-sentinel.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-password-sentinel](https://github.com/SainBux-HadiSeelro/agentic-password-sentinel)
 
-#### 5. ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge
+#### 6. ApexRPS — Autonomous Agentic Decision Platform & 24/7 Live AI Concierge
 - **Designation:** Markov Transition State Engine, Win-Stay Lose-Shift Heuristics & Real-Time Probability Telemetry
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Transforms Rock-Paper-Scissors into a high-performance demonstration of Statistical Machine Learning, Behavioral Game Theory, and Multi-Agent Systems.
@@ -308,7 +319,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://apex-game.streamlit.app/](https://apex-game.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/apex-game](https://github.com/SainBux-HadiSeelro/apex-game)
 
-#### 6. VitalAI — Autonomous Health & BMI Intelligence Platform
+#### 7. VitalAI — Autonomous Health & BMI Intelligence Platform
 - **Designation:** Clinical Anthropometrics, WHO Comorbidity Profiling, Mifflin-St Jeor BMR/TDEE & 24/7 Context-Aware Copilot
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Eliminates naive static BMI formulas by coupling clinical anthropometrics and metabolic forecasting with a 24/7 context-aware autonomous health copilot.
@@ -318,7 +329,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://agentic-bmi-health-assistant.streamlit.app/](https://agentic-bmi-health-assistant.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant](https://github.com/SainBux-HadiSeelro/agentic-bmi-health-assistant)
 
-#### 7. NexusNarrative — Smart Multi-Agent Story Studio
+#### 8. NexusNarrative — Smart Multi-Agent Story Studio
 - **Designation:** Multi-Agent Story Pipeline, Dynamic Mad Libs Engine & Story Scorecard Analytics
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Solves brittle generative storytelling by coordinating four specialized agents (Input Assistant, Director Assistant, Story Writer, Reviewer Assistant) with automated narrative quality scorecards.
@@ -327,7 +338,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://agentic-story-studio.streamlit.app/](https://agentic-story-studio.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-story-studio](https://github.com/SainBux-HadiSeelro/agentic-story-studio)
 
-#### 8. ChronoFlow-AI — Modern Agentic Focus Orchestrator & 24/7 AI Assistant
+#### 9. ChronoFlow-AI — Modern Agentic Focus Orchestrator & 24/7 AI Assistant
 - **Designation:** Zero-Latency 60 FPS Non-Blocking SVG Engine, NLP Mission Dispatcher & Resident AI Concierge
 - **Badge:** `Agentic` | **Category:** `agentic`
 - **Technical Summary:** Decouples temporal execution into a client-side 60 FPS SVG engine, paired with an NLP mission dispatcher and 24/7 live resident AI assistant.

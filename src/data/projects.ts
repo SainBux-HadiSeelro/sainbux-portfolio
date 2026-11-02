@@ -35,6 +35,35 @@ export const projectsData: Project[] = [
   // GROUP A: Featured Agentic Systems
   // =========================================================================
   {
+    id: "ai-folio",
+    title: "AI-Folio — Autonomous Business Engineering Platform & 24/7 AI Concierge",
+    subtitle: "Streamlit 1.42+, Dual-Engine Google Gemini REST API, Multi-Agent Swarm Lab & Real-Time ROI Engine",
+    badge: "Agentic",
+    summary:
+      "Transforms traditional static portfolio showcases into an active autonomous AI system with an embedded 24/7 client concierge and interactive multi-agent automation lab.",
+    description:
+      "A production-grade autonomous business engineering platform built with Python and Streamlit. Features Aura AI—an autonomous 24/7 client concierge operating on a hybrid dual-engine (Google Gemini 2.5 REST API + deterministic local intent classifier)—an interactive 3-stage Multi-Agent Swarm Lab (Researcher → Analyst → Synthesizer), and dynamic enterprise ROI savings telemetry wrapped in a cyber-glass dark UI.",
+    problem:
+      "Standard static portfolios fail to demonstrate autonomous agentic reasoning in real time or qualify prospective client leads, while business decision-makers lack tangible simulations and quantitative ROI metrics before investing in bespoke AI pipelines.",
+    solution:
+      "Architected an active autonomous platform combining an ephemeral-memory conversational concierge, a live DAG-style multi-agent swarm demonstration simulating automated intelligence briefings, and a dynamic mathematical model evaluating human labor hours saved versus LLM token economics.",
+    result:
+      "Sub-second deterministic fallback latency, 100% automated visitor lead capture with zero cross-tenant memory leakage, simulated 15+ hours/week operational savings, and transparent upfront business ROI quantification.",
+    highlights: [
+      "24/7 Aura AI Client Concierge with dual-engine hybrid routing (Google Gemini + local deterministic knowledge base)",
+      "Interactive 3-stage Multi-Agent Swarm Lab executing Researcher → Analyst → Synthesizer DAG workflows",
+      "Dynamic enterprise ROI & token economics calculator evaluating staff wage savings against infrastructure overhead",
+      "High-contrast cyber-glass dark canvas engineered with custom CSS3, responsive docking, and WCAG AA compliance",
+    ],
+    tech: ["Python 3.11", "Streamlit 1.42+", "Google Gemini API", "Multi-Agent Swarms", "Pandas", "Custom CSS3", "Session State"],
+    liveUrl: "https://ai-folio.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/ai-folio",
+    image: "/projects/ai-folio.png",
+    imageLabel: "Live Aura AI Portfolio & Multi-Agent Swarm Lab",
+    featured: true,
+    category: "agentic",
+  },
+  {
     id: "elite-fitness-gym",
     title: "ELITE FITNESS — Autonomous Multi-Agent AI Luxury Gym",
     subtitle: "React 18, Strict TypeScript, Multi-Agent Swarm Orchestrator & Live Tool Calling Engine",
@@ -899,7 +928,7 @@ export const getProjectsByCategory = (category: string): Project[] => {
     return projectsData.filter((p) => p.category === "client-demo" || p.category === "ai-integrated");
   }
   if (category === "streamlit") {
-    return projectsData.filter((p) => p.category === "data-utility");
+    return projectsData.filter((p) => p.category === "data-utility" || p.id === "ai-folio");
   }
   return projectsData.filter((p) => p.category === (category as ProjectCategory));
 };

@@ -34,12 +34,14 @@ import {
   Timer,
   ShieldCheck,
   HeartPulse,
+  Bot,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project, ProjectCategory } from "@/data/projects";
 import { SectionPill, CircuitLineDecoration } from "./SignatureElements";
 
 const projectIcons: Record<string, React.ElementType> = {
+  "ai-folio": Bot,
   "loop-engineering-series": Layers,
   "personal-finance-dashboard": TrendingUp,
   "wedding-wishes-app": Heart,
