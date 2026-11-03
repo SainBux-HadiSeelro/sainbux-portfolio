@@ -153,6 +153,7 @@ d:\portfolio
 │   └── projects/                          # High-resolution (1280x800) project preview assets
 │       ├── ai-folio.png                   # Aura AI-Folio Autonomous Platform preview
 │       ├── agentic-bmi-health-assistant.png # VitalAI Health & BMI Platform preview
+│       ├── agentic-unit-converter.png     # OmniConvert AI Multilingual Intelligence preview
 │       ├── agentic-hangman.png            # Hangman 2.0 NEXUS AI preview
 │       ├── agentic-story-studio.png       # NexusNarrative story studio preview
 │       ├── apex-rps-platform.png          # ApexRPS decision platform preview
@@ -346,6 +347,15 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Stack:** Python, Streamlit, Autonomous Agents, SVG Animations, Web Audio API, NLP Tokenizer
 - **Live Deployment:** [https://chronoflow-ai.streamlit.app/](https://chronoflow-ai.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/chronoflow-ai](https://github.com/SainBux-HadiSeelro/chronoflow-ai)
+
+#### 10. OmniConvert AI — Autonomous Multilingual Unit Intelligence & 24/7 AI Copilot
+- **Designation:** Streamlit 1.42+, Canonical SI Normalization, Step-by-Step LaTeX Derivations & Bilingual ReAct Copilot (English & Roman Urdu)
+- **Badge:** `Agentic` | **Category:** `agentic`
+- **Technical Summary:** Eliminates brittle conversion dictionaries by combining canonical SI base normalization across 10 physical dimensions, step-by-step LaTeX derivations adhering to NIST SP 811 / ISO 80000, and an autonomous bilingual AI copilot ("Nova").
+- **Architectural Solution:** Mathematical dimensional engine with O(1) canonical SI normalization and strict affine temperature calculus, paired with a bilingual semantic NLU parser and a zero-downtime 24/7 ReAct copilot executing autonomous tool calls with live session audit trail exports (CSV/JSON).
+- **Stack:** Python 3.11+, Streamlit 1.42+, Autonomous ReAct Agent, Bilingual NLU, LaTeX / KaTeX, NIST SP 811, Session State
+- **Live Deployment:** [https://agentic-unit-converter.streamlit.app/](https://agentic-unit-converter.streamlit.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-unit-converter](https://github.com/SainBux-HadiSeelro/agentic-unit-converter)
 
 ---
 

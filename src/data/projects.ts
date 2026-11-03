@@ -295,6 +295,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "agentic",
   },
+  {
+    id: "agentic-unit-converter",
+    title: "OmniConvert AI — Autonomous Multilingual Unit Intelligence & 24/7 AI Copilot",
+    subtitle: "Streamlit 1.42+, Canonical SI Normalization, Step-by-Step LaTeX Derivations & Bilingual ReAct Copilot (English & Roman Urdu)",
+    badge: "Agentic",
+    summary:
+      "Eliminates brittle conversion dictionaries by combining canonical SI base normalization, step-by-step LaTeX derivations, and an autonomous bilingual AI copilot.",
+    description:
+      "A production-grade autonomous unit intelligence platform and 24/7 AI copilot built with Python and Streamlit. Features canonical SI base unit normalization across 10 physical dimensions (Length, Mass, Temperature, Digital Storage, Speed, Time, Area, Volume, Energy, Pressure), rigorous affine thermodynamic calculus, auditable step-by-step LaTeX formula derivations conforming to NIST SP 811 & ISO 80000 standards, and an embedded 24/7 autonomous copilot ('Nova') powered by a bilingual ReAct tool-calling loop understanding both English and colloquial Roman Urdu.",
+    problem:
+      "Standard conversion calculators rely on fragile pairwise dictionaries (O(N^2) complexity), crash on cross-domain or same-unit queries, lack auditable mathematical derivations, and offer zero conversational natural language understanding or regional language support.",
+    solution:
+      "Architected a dimensional mathematical engine with O(1) canonical SI normalization and strict affine temperature calculus, paired with a bilingual semantic NLU parser and a zero-downtime 24/7 ReAct copilot executing autonomous tool calls with live session audit trail exports (CSV/JSON).",
+    result:
+      "Sub-millisecond NIST-compliant mathematical precision, 100% test coverage across dimensional edge cases, seamless bilingual prompt comprehension in English and Roman Urdu, and instantaneous auditable LaTeX derivations.",
+    highlights: [
+      "Canonical SI Base Normalization ($O(1)$ complexity) across 10 physical dimensions and 50+ units",
+      "24/7 Autonomous AI Copilot ('Nova') with bilingual ReAct tool-calling in English and Roman Urdu",
+      "Auditable step-by-step LaTeX derivations adhering to NIST SP 811 and ISO 80000 standards",
+      "Live session audit trail with 1-click CSV and JSON telemetry export capabilities",
+    ],
+    tech: ["Python 3.11+", "Streamlit 1.42+", "Autonomous ReAct Agent", "Bilingual NLU", "LaTeX / KaTeX", "NIST SP 811", "Session State"],
+    liveUrl: "https://agentic-unit-converter.streamlit.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/agentic-unit-converter",
+    image: "/projects/agentic-unit-converter.png",
+    imageLabel: "Live OmniConvert AI Dashboard & Bilingual Copilot",
+    featured: true,
+    category: "agentic",
+  },
 
   // =========================================================================
   // GROUP B: AI-Integrated Apps
@@ -928,7 +957,7 @@ export const getProjectsByCategory = (category: string): Project[] => {
     return projectsData.filter((p) => p.category === "client-demo" || p.category === "ai-integrated");
   }
   if (category === "streamlit") {
-    return projectsData.filter((p) => p.category === "data-utility" || p.id === "ai-folio");
+    return projectsData.filter((p) => p.category === "data-utility" || p.id === "ai-folio" || p.id === "agentic-unit-converter");
   }
   return projectsData.filter((p) => p.category === (category as ProjectCategory));
 };

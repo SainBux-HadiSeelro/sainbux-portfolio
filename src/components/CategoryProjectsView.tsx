@@ -40,6 +40,7 @@ import {
   ShieldCheck,
   HeartPulse,
   Bot,
+  Calculator,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project } from "@/data/projects";
@@ -74,6 +75,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "chronoflow-ai": Timer,
   "agentic-password-sentinel": ShieldCheck,
   "agentic-bmi-health-assistant": HeartPulse,
+  "agentic-unit-converter": Calculator,
 };
 
 const getEmbedUrl = (url: string) => {
