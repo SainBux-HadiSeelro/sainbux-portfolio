@@ -131,6 +131,7 @@ export default function Projects() {
 
   // Group projects dynamically by category field
   const agenticProjects = projectsData.filter((p) => p.category === "agentic");
+  const loopEngineeringProjects = projectsData.filter((p) => p.category === "loop-engineering");
   const aiIntegratedProjects = projectsData.filter((p) => p.category === "ai-integrated");
   const clientDemoProjects = projectsData.filter((p) => p.category === "client-demo");
   const dataUtilityProjects = projectsData.filter((p) => p.category === "data-utility");
@@ -138,6 +139,7 @@ export default function Projects() {
   const filterTabs: { id: FilterCategory; label: string; count: number }[] = [
     { id: "all", label: "All", count: projectsData.length },
     { id: "agentic", label: "Agentic", count: agenticProjects.length },
+    { id: "loop-engineering", label: "Loop Engineering", count: loopEngineeringProjects.length },
     { id: "ai-integrated", label: "AI-Integrated", count: aiIntegratedProjects.length },
     { id: "client-demo", label: "Client Demos", count: clientDemoProjects.length },
     { id: "data-utility", label: "Data & Utilities", count: dataUtilityProjects.length },
@@ -488,7 +490,32 @@ export default function Projects() {
         )}
 
         {/* ========================================================================= */}
-        {/* GROUP B: AI-Integrated Apps (Medium Cards)                                */}
+        {/* GROUP B: Loop Engineering & Deterministic Systems (Large Cards)           */}
+        {/* ========================================================================= */}
+        {(activeFilter === "all" || activeFilter === "loop-engineering") && (
+          <div className="mb-16">
+            <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+              <div className="flex items-center gap-2.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
+                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                  Loop Engineering &amp; Deterministic Systems
+                </h3>
+              </div>
+              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
+                Group B // {loopEngineeringProjects.length} {loopEngineeringProjects.length === 1 ? "System" : "Systems"}
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {loopEngineeringProjects.map((project, idx) =>
+                renderProjectCard(project, "large", idx)
+              )}
+            </div>
+          </div>
+        )}
+
+        {/* ========================================================================= */}
+        {/* GROUP C: AI-Integrated Apps (Medium Cards)                                */}
         {/* ========================================================================= */}
         {(activeFilter === "all" || activeFilter === "ai-integrated") && (
           <div className="mb-16">
@@ -500,7 +527,7 @@ export default function Projects() {
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group B // {aiIntegratedProjects.length} Apps
+                Group C // {aiIntegratedProjects.length} Apps
               </span>
             </div>
 
@@ -513,7 +540,7 @@ export default function Projects() {
         )}
 
         {/* ========================================================================= */}
-        {/* GROUP C: Client Demos & Web Platforms (Compact Cards, Collapsible)         */}
+        {/* GROUP D: Client Demos & Web Platforms (Compact Cards, Collapsible)         */}
         {/* ========================================================================= */}
         {(activeFilter === "all" || activeFilter === "client-demo") && (
           <div className="mb-16">
@@ -586,7 +613,7 @@ export default function Projects() {
         )}
 
         {/* ========================================================================= */}
-        {/* GROUP D: Data, ML & Utilities (Compact Cards)                              */}
+        {/* GROUP E: Data, ML & Utilities (Compact Cards)                              */}
         {/* ========================================================================= */}
         {(activeFilter === "all" || activeFilter === "data-utility") && (
           <div className="mb-14">
@@ -598,7 +625,7 @@ export default function Projects() {
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group D // {dataUtilityProjects.length} Systems
+                Group E // {dataUtilityProjects.length} Systems
               </span>
             </div>
 

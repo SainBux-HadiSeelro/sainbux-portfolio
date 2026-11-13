@@ -6,7 +6,12 @@ export interface SubProject {
   tech?: string[];
 }
 
-export type ProjectCategory = "agentic" | "ai-integrated" | "client-demo" | "data-utility";
+export type ProjectCategory =
+  | "agentic"
+  | "loop-engineering"
+  | "ai-integrated"
+  | "client-demo"
+  | "data-utility";
 
 export interface Project {
   id: string;
@@ -326,7 +331,40 @@ export const projectsData: Project[] = [
   },
 
   // =========================================================================
-  // GROUP B: AI-Integrated Apps
+  // GROUP B: Loop Engineering & Deterministic Systems
+  // =========================================================================
+  {
+    id: "iss-watch-loop",
+    title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
+    subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",
+    badge: "Loop Engineering",
+    summary:
+      "Tracks the International Space Station in real time with continuous orbital telemetry, interactive Leaflet geodesics, and an unattended Python in-session loop.",
+    description:
+      "A high-precision aerospace telemetry dashboard and autonomous loop engineering demonstration. Pairs a live interactive web dashboard with an autonomous Python in-session heartbeat loop (Concept 4). Features sub-3-second polling of NASA/Open-Notify & WhereTheISS APIs, real-time geodetic coordinate mapping, live orbital velocity (~27,600 km/h) and altitude telemetry, incremental orbital distance calculation via haversine formulas, daylight/earth-shadow detection, and reverse geocoding to identify territorial airspace and ocean waters directly below astronauts in real time.",
+    problem:
+      "Monitoring high-speed orbital assets requires continuous unattended polling loops and real-time geodetic projection without degrading browser performance, overwhelming rate-limited telemetry APIs, or losing spatial trajectory state across network hiccups.",
+    solution:
+      "Architected an event-driven in-session heartbeat loop pairing an unattended terminal daemon with a client-side reactive Leaflet.js orbital projection engine, haversine incremental distance accumulation, automated reverse geocoding fallback tiers, and smooth CSS3 telemetry progress tickers.",
+    result:
+      "Sub-second orbital coordinate resolution, zero-drift haversine distance telemetry updated every 3 seconds, sub-100ms reverse geocoding responses, and 100% resilient unattended background polling cycles.",
+    highlights: [
+      "Concept 4 In-Session Loop architecture pairing an autonomous Python heartbeat daemon with a live web HUD",
+      "Real-time geodetic Leaflet.js orbital mapping with dynamic satellite marker, radar ring, and flight trajectory trail",
+      "Live orbital telemetry streaming velocity (~27,600 km/h), altitude (~420 km), and 3s delta distance tracking",
+      "Multi-tier reverse geocoding engine identifying land territories and open ocean waters beneath astronauts",
+    ],
+    tech: ["JavaScript (ES6+)", "Python 3.11", "Leaflet.js", "Loop Engineering", "Haversine Math", "REST APIs", "Tailwind CSS"],
+    liveUrl: "https://iss-watch-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/ISS-watch-loop",
+    image: "/projects/iss-watch-loop.png",
+    imageLabel: "Live ISS Orbital Tracker & Telemetry HUD",
+    featured: true,
+    category: "loop-engineering",
+  },
+
+  // =========================================================================
+  // GROUP C: AI-Integrated Apps
   // =========================================================================
   {
     id: "luvia-ecommerce",
@@ -475,7 +513,7 @@ export const projectsData: Project[] = [
   },
 
   // =========================================================================
-  // GROUP C: Client Demos & Web Platforms
+  // GROUP D: Client Demos & Web Platforms
   // =========================================================================
   {
     id: "lumiere-hotel-reservation",
@@ -711,7 +749,7 @@ export const projectsData: Project[] = [
   },
 
   // =========================================================================
-  // GROUP D: Data, ML & Utilities
+  // GROUP E: Data, ML & Utilities
   // =========================================================================
   {
     id: "orbit-iq",
@@ -768,35 +806,6 @@ export const projectsData: Project[] = [
     repoUrl: "https://github.com/SainBux-HadiSeelro/spacex-launch-predictor",
     image: "/projects/spacex-launch-predictor.png",
     imageLabel: "Live ML & Telemetry Dashboard",
-    featured: true,
-    category: "data-utility",
-  },
-  {
-    id: "iss-watch-loop",
-    title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
-    subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",
-    badge: "Loop & Telemetry",
-    summary:
-      "Tracks the International Space Station in real time with continuous orbital telemetry, interactive Leaflet geodesics, and an unattended Python in-session loop.",
-    description:
-      "A high-precision aerospace telemetry dashboard and autonomous loop engineering demonstration. Pairs a live interactive web dashboard with an autonomous Python in-session heartbeat loop (Concept 4). Features sub-3-second polling of NASA/Open-Notify & WhereTheISS APIs, real-time geodetic coordinate mapping, live orbital velocity (~27,600 km/h) and altitude telemetry, incremental orbital distance calculation via haversine formulas, daylight/earth-shadow detection, and reverse geocoding to identify territorial airspace and ocean waters directly below astronauts in real time.",
-    problem:
-      "Monitoring high-speed orbital assets requires continuous unattended polling loops and real-time geodetic projection without degrading browser performance, overwhelming rate-limited telemetry APIs, or losing spatial trajectory state across network hiccups.",
-    solution:
-      "Architected an event-driven in-session heartbeat loop pairing an unattended terminal daemon with a client-side reactive Leaflet.js orbital projection engine, haversine incremental distance accumulation, automated reverse geocoding fallback tiers, and smooth CSS3 telemetry progress tickers.",
-    result:
-      "Sub-second orbital coordinate resolution, zero-drift haversine distance telemetry updated every 3 seconds, sub-100ms reverse geocoding responses, and 100% resilient unattended background polling cycles.",
-    highlights: [
-      "Concept 4 In-Session Loop architecture pairing an autonomous Python heartbeat daemon with a live web HUD",
-      "Real-time geodetic Leaflet.js orbital mapping with dynamic satellite marker, radar ring, and flight trajectory trail",
-      "Live orbital telemetry streaming velocity (~27,600 km/h), altitude (~420 km), and 3s delta distance tracking",
-      "Multi-tier reverse geocoding engine identifying land territories and open ocean waters beneath astronauts",
-    ],
-    tech: ["JavaScript (ES6+)", "Python 3.11", "Leaflet.js", "Loop Engineering", "Haversine Math", "REST APIs", "Tailwind CSS"],
-    liveUrl: "https://iss-watch-loop.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/ISS-watch-loop",
-    image: "/projects/iss-watch-loop.png",
-    imageLabel: "Live ISS Orbital Tracker & Telemetry HUD",
     featured: true,
     category: "data-utility",
   },
@@ -962,11 +971,11 @@ export const categoriesInfo = {
   },
   "loop-engineering": {
     name: "Loop Engineering",
-    title: "Loop Engineering & Agent Systems",
-    subtitle: "Self-Healing Workflows, Deterministic Loops & Multi-Agent Orchestration",
-    badge: "Deterministic AI Systems",
+    title: "Loop Engineering & Deterministic Systems",
+    subtitle: "In-Session Heartbeat Loops, Self-Healing Systems & Autonomous Daemons",
+    badge: "Loop Engineering",
     description:
-      "Autonomous agent pipelines featuring recursive self-correction, schema contract enforcement, evaluator-optimizer loops, and Model Context Protocol (MCP) systems.",
+      "Deterministic feedback loops, in-session heartbeat daemons, and autonomous telemetry loops executing resilient, unattended cycles.",
   },
   streamlit: {
     name: "Streamlit",
@@ -980,10 +989,10 @@ export const categoriesInfo = {
 
 export const getProjectsByCategory = (category: string): Project[] => {
   if (category === "loop-engineering") {
-    return projectsData.filter((p) => p.category === "agentic" || p.id === "iss-watch-loop");
+    return projectsData.filter((p) => p.category === "loop-engineering");
   }
   if (category === "websites") {
-    return projectsData.filter((p) => p.category === "client-demo" || p.category === "ai-integrated" || p.id === "iss-watch-loop");
+    return projectsData.filter((p) => p.category === "client-demo" || p.category === "ai-integrated");
   }
   if (category === "streamlit") {
     return projectsData.filter((p) => p.category === "data-utility" || p.id === "ai-folio" || p.id === "agentic-unit-converter");

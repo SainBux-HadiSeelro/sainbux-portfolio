@@ -360,7 +360,20 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 
 ---
 
-### ⚡ GROUP B: AI-Integrated Applications (`category: "ai-integrated"`)
+### 🔁 GROUP B: Loop Engineering & Deterministic Systems (`category: "loop-engineering"`)
+*In-session heartbeat daemons, deterministic feedback loops, and real-time orbital telemetry engines executing resilient, unattended cycles.*
+
+#### 11. ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop
+- **Designation:** Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Pairs an autonomous Python in-session heartbeat loop with an interactive Leaflet.js dashboard tracking the International Space Station in real time (~27,600 km/h velocity, ~420 km altitude, daylight/earth-shadow detection, and reverse geocoding).
+- **Stack:** JavaScript (ES6+), Python 3.11, Leaflet.js, Loop Engineering, Haversine Math, REST APIs, Tailwind CSS
+- **Live Deployment:** [https://iss-watch-loop.vercel.app/](https://iss-watch-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/ISS-watch-loop](https://github.com/SainBux-HadiSeelro/ISS-watch-loop)
+
+---
+
+### ⚡ GROUP C: AI-Integrated Applications (`category: "ai-integrated"`)
 *Production-grade web platforms engineered with embedded conversational AI concierges, state machines, and real-time telemetry.*
 
 #### 9. LUVIA — Minimalist Luxury eCommerce & 24/7 AI Concierge
@@ -409,7 +422,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 
 ---
 
-### 💼 GROUP C: Client Demos & Commercial Web Platforms (`category: "client-demo"`)
+### 💼 GROUP D: Client Demos & Commercial Web Platforms (`category: "client-demo"`)
 *Frontend-focused commercial builds with embedded AI concierges, high-conversion appointment funnels, and modern responsive design systems.*
 
 #### 14. Lumière Palace Paris — Ultra-Luxury Hotel & Suites Platform
@@ -462,7 +475,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 
 ---
 
-### 📊 GROUP D: Data Science, Machine Learning & Utilities (`category: "data-utility"`)
+### 📊 GROUP E: Data Science, Machine Learning & Utilities (`category: "data-utility"`)
 *Predictive machine learning models, zero-database flatfile ledgers, vector-grade billing generators, and physical AI engineering handbooks.*
 
 #### 22. OrbitIQ — Mission Risk & Booster Recovery Intelligence
@@ -479,15 +492,7 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://spacex-launch-predictor-hadi.streamlit.app/](https://spacex-launch-predictor-hadi.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/spacex-launch-predictor](https://github.com/SainBux-HadiSeelro/spacex-launch-predictor)
 
-#### 24. ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop
-- **Designation:** Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding
-- **Badge:** `Loop & Telemetry` | **Category:** `data-utility`
-- **Technical Summary:** Pairs an autonomous Python in-session heartbeat loop with an interactive Leaflet.js dashboard tracking the International Space Station in real time (~27,600 km/h velocity, ~420 km altitude, daylight/earth-shadow detection, and reverse geocoding).
-- **Stack:** JavaScript (ES6+), Python 3.11, Leaflet.js, Loop Engineering, Haversine Math, REST APIs, Tailwind CSS
-- **Live Deployment:** [https://iss-watch-loop.vercel.app/](https://iss-watch-loop.vercel.app/)
-- **Repository:** [https://github.com/SainBux-HadiSeelro/ISS-watch-loop](https://github.com/SainBux-HadiSeelro/ISS-watch-loop)
-
-#### 25. Autonomous Humanoid Robotics & Physical AI Handbook
+#### 24. Autonomous Humanoid Robotics & Physical AI Handbook
 - **Designation:** Physical AI Engineering, ROS 2, Gazebo/Unity Digital Twins & Isaac Sim
 - **Technical Summary:** 4-module engineering roadmap bridging foundation models with physical humanoid actuation, kinematic chains, and synthetic data generation.
 - **Stack:** ROS 2, Python, NVIDIA Isaac Sim, Gazebo, Unity 3D, Docusaurus
