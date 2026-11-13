@@ -334,6 +334,35 @@ export const projectsData: Project[] = [
   // GROUP B: Loop Engineering & Deterministic Systems
   // =========================================================================
   {
+    id: "maker-checker-loop",
+    title: "Maker-Checker Autonomous Loop — Zero-Trust Dual-Agent Bugfix Protocol",
+    subtitle: "RFC-011 Protocol, Ephemeral Git Worktrees, LLM-as-Judge & Hardcode-Defeating Security Gateway",
+    badge: "Loop Engineering",
+    summary:
+      "Enforces zero-trust isolation between code synthesis and evaluation agents using ephemeral git worktrees and an adversarial LLM-as-judge security gateway.",
+    description:
+      "An autonomous multi-agent software engineering protocol and live interactive orchestrator console implementing Loop Engineering Concept 11 (Maker-Checker Architecture / RFC-011). Prevents LLM confirmation bias and adversarial cheating by isolating the synthesizer (Maker) in an ephemeral git worktree while a strictly read-only evaluator (Checker) audits patch diffs against hidden test matrices before triggering fast-forward merges or force-pruning corrupt branches.",
+    problem:
+      "When autonomous LLMs synthesize and evaluate their own code, cognitive confirmation bias leads them to approve brittle hacks, hardcoded return values faking test passes, and unhandled regression bugs into production branches.",
+    solution:
+      "Architected strict role, temporal, and environment isolation: Agent 01 (Maker) has read/write privileges restricted to isolated git worktrees, while Agent 02 (Checker) operates with zero write privileges under an adversarial rubric to inspect diffs and enforce zero-trust gateway merges.",
+    result:
+      "100% automated detection and pruning of cheating patches, zero untainted main branch leaks, fast-forward zero-conflict git merges on verified general fixes, and real-time JSONL telemetry streaming.",
+    highlights: [
+      "RFC-011 Maker-Checker architecture isolating synthesis (Maker) from evaluation (LLM Judge)",
+      "Ephemeral git worktree sandboxing preventing unverified code from polluting the main branch",
+      "Adversarial test harness catching hardcoded bypasses and IEEE 754 precision drifts",
+      "Live developer-grade web console with real-time event streaming and dual-agent thought logs",
+    ],
+    tech: ["Python 3.11", "TypeScript / HTML5", "Loop Engineering", "Multi-Agent Systems", "Git Worktrees", "LLM-as-Judge", "Zero-Trust Architecture"],
+    liveUrl: "https://maker-checker-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/maker-checker-loop",
+    image: "/projects/maker-checker-loop.png",
+    imageLabel: "Live Maker-Checker Orchestrator Console & Event Stream",
+    featured: true,
+    category: "loop-engineering",
+  },
+  {
     id: "iss-watch-loop",
     title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
     subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",

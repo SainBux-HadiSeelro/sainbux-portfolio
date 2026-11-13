@@ -168,6 +168,7 @@ d:\portfolio
 │       ├── humanoid-robotics.png          # Physical AI robotics book preview
 │       ├── ironpulse-fitness.png          # IRONPULSE athletic hub preview
 │       ├── iss-watch-loop.png             # ISS Watch Loop live tracker preview
+│       ├── maker-checker-loop.png         # Maker-Checker autonomous loop live orchestrator preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
 │       ├── lumina-beauty-parlour.png      # Lumina Beauty Parlour luxury sanctuary preview
 │       ├── lumina-dental-clinic.png       # Lumina Dental Clinics preview
@@ -370,6 +371,14 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Stack:** JavaScript (ES6+), Python 3.11, Leaflet.js, Loop Engineering, Haversine Math, REST APIs, Tailwind CSS
 - **Live Deployment:** [https://iss-watch-loop.vercel.app/](https://iss-watch-loop.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/ISS-watch-loop](https://github.com/SainBux-HadiSeelro/ISS-watch-loop)
+
+#### 12. Maker-Checker Autonomous Loop — Zero-Trust Dual-Agent Bugfix Protocol
+- **Designation:** RFC-011 Protocol, Ephemeral Git Worktrees, LLM-as-Judge & Hardcode-Defeating Security Gateway
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Implements Loop Engineering Concept 11 enforcing physical, temporal, and role isolation between the synthesis agent (Maker) running inside an isolated git worktree and a strictly read-only evaluation agent (Checker / LLM Judge) preventing confirmation bias and hardcoded cheat merges.
+- **Stack:** Python 3.11, TypeScript / HTML5, Loop Engineering, Multi-Agent Systems, Git Worktrees, LLM-as-Judge, Zero-Trust Architecture
+- **Live Deployment:** [https://maker-checker-loop.vercel.app/](https://maker-checker-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/maker-checker-loop](https://github.com/SainBux-HadiSeelro/maker-checker-loop)
 
 ---
 
