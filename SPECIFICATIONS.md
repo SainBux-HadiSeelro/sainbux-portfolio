@@ -167,6 +167,7 @@ d:\portfolio
 │       ├── forge-fitness.png              # Forge Fitness gym web app preview
 │       ├── humanoid-robotics.png          # Physical AI robotics book preview
 │       ├── ironpulse-fitness.png          # IRONPULSE athletic hub preview
+│       ├── iss-watch-loop.png             # ISS Watch Loop live tracker preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
 │       ├── lumina-beauty-parlour.png      # Lumina Beauty Parlour luxury sanctuary preview
 │       ├── lumina-dental-clinic.png       # Lumina Dental Clinics preview
@@ -478,28 +479,36 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Live Deployment:** [https://spacex-launch-predictor-hadi.streamlit.app/](https://spacex-launch-predictor-hadi.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/spacex-launch-predictor](https://github.com/SainBux-HadiSeelro/spacex-launch-predictor)
 
-#### 24. Autonomous Humanoid Robotics & Physical AI Handbook
+#### 24. ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop
+- **Designation:** Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding
+- **Badge:** `Loop & Telemetry` | **Category:** `data-utility`
+- **Technical Summary:** Pairs an autonomous Python in-session heartbeat loop with an interactive Leaflet.js dashboard tracking the International Space Station in real time (~27,600 km/h velocity, ~420 km altitude, daylight/earth-shadow detection, and reverse geocoding).
+- **Stack:** JavaScript (ES6+), Python 3.11, Leaflet.js, Loop Engineering, Haversine Math, REST APIs, Tailwind CSS
+- **Live Deployment:** [https://iss-watch-loop.vercel.app/](https://iss-watch-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/ISS-watch-loop](https://github.com/SainBux-HadiSeelro/ISS-watch-loop)
+
+#### 25. Autonomous Humanoid Robotics & Physical AI Handbook
 - **Designation:** Physical AI Engineering, ROS 2, Gazebo/Unity Digital Twins & Isaac Sim
 - **Technical Summary:** 4-module engineering roadmap bridging foundation models with physical humanoid actuation, kinematic chains, and synthetic data generation.
 - **Stack:** ROS 2, Python, NVIDIA Isaac Sim, Gazebo, Unity 3D, Docusaurus
 - **Live Deployment:** [https://agentic-humanoid-robotics-book.vercel.app/](https://agentic-humanoid-robotics-book.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book](https://github.com/SainBux-HadiSeelro/agentic-humanoid-robotics-book)
 
-#### 25. FinPulse — Personal Finance & Analytics Tracker
+#### 26. FinPulse — Personal Finance & Analytics Tracker
 - **Designation:** Dual-Interface Ledger, Budget Health & 64-Bit Micro-Currency Accounting
 - **Technical Summary:** Zero-DB flatfile ledger architecture running strict 64-bit integer paisa/cents arithmetic, completely eliminating floating-point rounding errors.
 - **Stack:** Python, Streamlit, Plotly, Pandas, ReportLab, Financial Analytics
 - **Live Deployment:** [https://personal-finance-dashboard-hadi.streamlit.app/](https://personal-finance-dashboard-hadi.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/personal-finance-dashboard](https://github.com/SainBux-HadiSeelro/personal-finance-dashboard)
 
-#### 26. Commercial Invoice & Bill Generator
+#### 27. Commercial Invoice & Bill Generator
 - **Designation:** Enterprise Billing Automation & Vector PDF Publishing Platform
 - **Technical Summary:** Reactive billing dashboard with automated tax/freight calculation and vector-grade print-ready A4 PDF generation via ReportLab in $< 30\text{s}$.
 - **Stack:** Python, Streamlit, ReportLab, Financial Automation, PDF Engine
 - **Live Deployment:** [https://bill-generator-ap5tugma33eqg9vzj5ys7o.streamlit.app/](https://bill-generator-ap5tugma33eqg9vzj5ys7o.streamlit.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/bill-generator](https://github.com/SainBux-HadiSeelro/bill-generator)
 
-#### 27. Wedding Wishes App
+#### 28. Wedding Wishes App
 - **Designation:** Full-Stack Event Guestbook & Media Optimization System
 - **Technical Summary:** Event guestbook application running on Next.js App Router, Supabase real-time database, Cloudinary auto-compression pipeline, and admin moderation.
 - **Stack:** Next.js, Supabase, Cloudinary, Tailwind CSS, Vercel

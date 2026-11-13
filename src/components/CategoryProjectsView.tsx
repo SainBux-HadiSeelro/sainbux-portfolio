@@ -67,6 +67,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "bill-generator": Receipt,
   "spacex-launch-predictor": Rocket,
   "orbit-iq": Satellite,
+  "iss-watch-loop": Satellite,
   "agentic-story-studio": BookOpen,
   "nexus-mind-platform": Brain,
   "apex-game": Swords,

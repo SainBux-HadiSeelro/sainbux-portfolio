@@ -6,7 +6,7 @@ import Projects from "@/components/Projects";
 export const metadata: Metadata = {
   title: "Projects & Agent Architectures | Sain Bux - AI Engineer",
   description:
-    "Explore 29+ engineered autonomous agent systems, deterministic feedback loops, Next.js web applications, and AI utilities built by Sain Bux.",
+    "Explore 30+ engineered autonomous agent systems, deterministic feedback loops, Next.js web applications, and AI utilities built by Sain Bux.",
 };
 
 export default function ProjectsPage() {
