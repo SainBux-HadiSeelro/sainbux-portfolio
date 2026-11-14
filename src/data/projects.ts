@@ -334,6 +334,35 @@ export const projectsData: Project[] = [
   // GROUP B: Loop Engineering & Deterministic Systems
   // =========================================================================
   {
+    id: "doorbell-loop",
+    title: "Doorbell Loop — Autonomous Agentic AI Code-Review Engine",
+    subtitle: "Event-Driven Closed Loop, AST Invariant Verification, Opencode CI Agent & Off-by-One Guard",
+    badge: "Loop Engineering",
+    summary:
+      "Intercepts algorithmic loop boundary mutations on Pull Requests using an autonomous Opencode AST review agent and an event-driven CI closed loop.",
+    description:
+      "A high-precision loop engineering platform and autonomous agentic code-review engine. Bridges software architecture loops (CI/CD automated trigger loops) with algorithmic loops (collection boundary invariants). Features an event-driven 'Doorbell Event' trigger on Pull Requests, an autonomous Opencode AI Agent evaluating code diffs at the Abstract Syntax Tree (AST) level, deterministic invariant checking catching insidious off-by-one boundary defects (range(len(items) - 1)), and an interactive Linear/Cursor-aesthetic Web HUD with a live 4-stage pipeline stepper and inventory matrix purge simulation.",
+    problem:
+      "Algorithmic off-by-one boundary mutations (such as premature loop termination) silently skip final elements without throwing exceptions, escaping conventional static linters and leaking expired or sensitive data into production.",
+    solution:
+      "Architected an event-driven closed loop pairing an autonomous AST analysis agent (Opencode) with deterministic test suites on PR gates, complemented by a developer Web HUD simulating both clean and mutated loop executions in real time.",
+    result:
+      "100% automated intercept rate on loop boundary bugs before merge, zero untainted master branch regressions, 6/6 deterministic unit test validations, and transparent real-time telemetry streaming.",
+    highlights: [
+      "Autonomous Doorbell Event loop triggered automatically on PR open/synchronize events",
+      "Opencode AST diff analysis intercepting silent off-by-one boundary mutations without runtime crashes",
+      "Algorithmic invariant enforcement preserving collection order and strict date partition purity",
+      "Interactive developer Web HUD with 4-stage review stepper, live terminal logs & inventory purge matrix",
+    ],
+    tech: ["Python 3.11", "JavaScript (ES6+)", "Loop Engineering", "GitHub Actions", "AST Parsing", "Opencode Agent", "Tailwind CSS"],
+    liveUrl: "https://doorbell-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/doorbell-loop",
+    image: "/projects/doorbell-loop.png",
+    imageLabel: "Live Doorbell Loop Review Console & AST Diff Inspector",
+    featured: true,
+    category: "loop-engineering",
+  },
+  {
     id: "maker-checker-loop",
     title: "Maker-Checker Autonomous Loop — Zero-Trust Dual-Agent Bugfix Protocol",
     subtitle: "RFC-011 Protocol, Ephemeral Git Worktrees, LLM-as-Judge & Hardcode-Defeating Security Gateway",

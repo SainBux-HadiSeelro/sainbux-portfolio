@@ -42,6 +42,7 @@ import {
   Bot,
   Calculator,
   Scale,
+  BellRing,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project } from "@/data/projects";
@@ -70,6 +71,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "orbit-iq": Satellite,
   "iss-watch-loop": Satellite,
   "maker-checker-loop": Scale,
+  "doorbell-loop": BellRing,
   "agentic-story-studio": BookOpen,
   "nexus-mind-platform": Brain,
   "apex-game": Swords,

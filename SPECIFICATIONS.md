@@ -168,6 +168,7 @@ d:\portfolio
 │       ├── humanoid-robotics.png          # Physical AI robotics book preview
 │       ├── ironpulse-fitness.png          # IRONPULSE athletic hub preview
 │       ├── iss-watch-loop.png             # ISS Watch Loop live tracker preview
+│       ├── doorbell-loop.png              # Doorbell Loop autonomous code-review HUD preview
 │       ├── maker-checker-loop.png         # Maker-Checker autonomous loop live orchestrator preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
 │       ├── lumina-beauty-parlour.png      # Lumina Beauty Parlour luxury sanctuary preview
@@ -257,9 +258,9 @@ export interface Project {
 
 ---
 
-## 🛰️ 8. Comprehensive 27-Project Engineering Ecosystem
+## 🛰️ 8. Comprehensive 28-Project Engineering Ecosystem
 
-The portfolio aggregates **27 flagship production systems** categorized into 4 core architectural groups:
+The portfolio aggregates **28 flagship production systems** categorized into 4 core architectural groups:
 
 ### 🌟 GROUP A: Featured Agentic Systems (`category: "agentic"`)
 *Autonomous agent pipelines featuring recursive self-correction, schema contract enforcement, evaluator-optimizer loops, and multi-agent coordination.*
@@ -379,6 +380,14 @@ The portfolio aggregates **27 flagship production systems** categorized into 4 c
 - **Stack:** Python 3.11, TypeScript / HTML5, Loop Engineering, Multi-Agent Systems, Git Worktrees, LLM-as-Judge, Zero-Trust Architecture
 - **Live Deployment:** [https://maker-checker-loop.vercel.app/](https://maker-checker-loop.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/maker-checker-loop](https://github.com/SainBux-HadiSeelro/maker-checker-loop)
+
+#### 13. Doorbell Loop — Autonomous Agentic AI Code-Review Engine
+- **Designation:** Event-Driven Closed Loop, AST Invariant Verification, Opencode CI Agent & Off-by-One Guard
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Implements an autonomous event-driven code-review loop triggered on Pull Requests ("Doorbell Event"). Combines software architecture CI/CD loops with algorithmic loop boundary invariants, deploying an autonomous Opencode agent to parse AST diffs, detect subtle off-by-one boundary mutations (`range(len(items) - 1)`), and block silent data retention defects before merge.
+- **Stack:** Python 3.11, JavaScript (ES6+), Loop Engineering, GitHub Actions, AST Parsing, Opencode Agent, Tailwind CSS
+- **Live Deployment:** [https://doorbell-loop.vercel.app/](https://doorbell-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/doorbell-loop](https://github.com/SainBux-HadiSeelro/doorbell-loop)
 
 ---
 
