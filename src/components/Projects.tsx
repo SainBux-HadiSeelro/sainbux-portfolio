@@ -67,6 +67,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "iss-watch-loop": Satellite,
   "maker-checker-loop": Scale,
   "doorbell-loop": BellRing,
+  "scheduled-memory-loop": Brain,
   "agentic-story-studio": BookOpen,
   "nexus-mind-platform": Brain,
   "apex-game": Swords,

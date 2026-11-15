@@ -169,6 +169,7 @@ d:\portfolio
 │       ├── ironpulse-fitness.png          # IRONPULSE athletic hub preview
 │       ├── iss-watch-loop.png             # ISS Watch Loop live tracker preview
 │       ├── doorbell-loop.png              # Doorbell Loop autonomous code-review HUD preview
+│       ├── scheduled-memory-loop.png      # Scheduled Memory Loop episodic spine & agent HUD preview
 │       ├── maker-checker-loop.png         # Maker-Checker autonomous loop live orchestrator preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
 │       ├── lumina-beauty-parlour.png      # Lumina Beauty Parlour luxury sanctuary preview
@@ -388,6 +389,14 @@ The portfolio aggregates **28 flagship production systems** categorized into 4 c
 - **Stack:** Python 3.11, JavaScript (ES6+), Loop Engineering, GitHub Actions, AST Parsing, Opencode Agent, Tailwind CSS
 - **Live Deployment:** [https://doorbell-loop.vercel.app/](https://doorbell-loop.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/doorbell-loop](https://github.com/SainBux-HadiSeelro/doorbell-loop)
+
+#### 14. Scheduled Memory Loop — Long-Term Episodic Memory Spine for Autonomous Agents
+- **Designation:** Autonomous Heartbeat Loop, Set-Theoretic Delta Extraction, Persistent Episodic Memory & Serverless Resilience
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Autonomous scheduled heartbeat loop establishing an append-only episodic memory spine (`progress.md`) for long-horizon AI agents. Perceives repository task signatures ($O_t$), extracts set-theoretic novel deltas ($\Delta_t = O_t \setminus M_t$), and guarantees state persistence across serverless reboots with zero context ballooning. Includes developer Web HUD with monospace telemetry, synthetic observation injection, and automatic `/tmp` storage fallback.
+- **Stack:** Python 3.12+, Flask 3.x, Loop Engineering, Tailwind CSS, Episodic Memory, Serverless Architecture, Unix Cron
+- **Live Deployment:** [https://scheduled-memory-loop.vercel.app/](https://scheduled-memory-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/Scheduled-memory-loop](https://github.com/SainBux-HadiSeelro/Scheduled-memory-loop)
 
 ---
 

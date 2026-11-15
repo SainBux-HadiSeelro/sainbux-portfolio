@@ -420,6 +420,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "loop-engineering",
   },
+  {
+    id: "scheduled-memory-loop",
+    title: "Scheduled Memory Loop — Long-Term Episodic Memory Spine for Autonomous Agents",
+    subtitle: "Autonomous Heartbeat Loop, Set-Theoretic Delta Extraction, Persistent Episodic Memory & Serverless Resilience",
+    badge: "Loop Engineering",
+    summary:
+      "Maintains an immutable, append-only episodic memory spine (progress.md) across extended autonomous agent operations via set-theoretic delta extraction and unattended heartbeat cycles.",
+    description:
+      "A production-grade loop engineering platform and autonomous episodic memory spine for long-horizon AI agents. Solves context ballooning and state amnesia across runtime reboots or serverless teardowns by perceiving repository task observations (TODO signatures), computing set-theoretic deltas (Δ_t = O_t \\ M_t), and appending only novel transitions to an immutable memory spine (progress.md). Features an interactive developer Web HUD with monospace real-time telemetry, live loop beat triggers, synthetic observation injection, and auto-fallback storage resilience.",
+    problem:
+      "Autonomous agents operating over extended horizons suffer from memory bloat or state loss: stuffing historical executions into LLM context windows causes explosive token costs and degradation, while stateless restarts completely wipe ongoing execution memory.",
+    solution:
+      "Architected an autonomous scheduled heartbeat loop executing a mathematical perception-diff-persist pipeline (Φ(W_t) → Δ_t = O_t \\ M_t → progress.md_t), backed by an interactive cyber-grade web console with real-time telemetry HUD, synthetic test injection, and read-only serverless auto-fallback.",
+    result:
+      "100% state persistence across serverless reboots, zero token ballooning through strict set-theoretic delta isolation, sub-second loop beat execution, and zero-configuration fallback storage resilience.",
+    highlights: [
+      "Autonomous scheduled memory loop maintaining an append-only episodic spine (progress.md)",
+      "Set-theoretic delta extraction (Δ_t = O_t \\ M_t) preventing duplicate recording and context bloat",
+      "Interactive agent HUD featuring monospace telemetry, loop beat trigger & synthetic test injection",
+      "Serverless-resilient dual-tier storage automatically falling back to /tmp on read-only runtimes",
+    ],
+    tech: ["Python 3.12+", "Flask 3.x", "Loop Engineering", "Tailwind CSS", "Episodic Memory", "Serverless Architecture", "Unix Cron"],
+    liveUrl: "https://scheduled-memory-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/Scheduled-memory-loop",
+    image: "/projects/scheduled-memory-loop.png",
+    imageLabel: "Live Autonomous Scheduled Memory Spine & Loop Agent Console",
+    featured: true,
+    category: "loop-engineering",
+  },
 
   // =========================================================================
   // GROUP C: AI-Integrated Apps
