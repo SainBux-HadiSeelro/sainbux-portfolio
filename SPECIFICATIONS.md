@@ -169,6 +169,7 @@ d:\portfolio
 │       ├── ironpulse-fitness.png          # IRONPULSE athletic hub preview
 │       ├── iss-watch-loop.png             # ISS Watch Loop live tracker preview
 │       ├── doorbell-loop.png              # Doorbell Loop autonomous code-review HUD preview
+│       ├── bugfix-loop.png                # Autonomous Bugfix Loop maker-checker HUD preview
 │       ├── scheduled-memory-loop.png      # Scheduled Memory Loop episodic spine & agent HUD preview
 │       ├── maker-checker-loop.png         # Maker-Checker autonomous loop live orchestrator preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
@@ -397,6 +398,14 @@ The portfolio aggregates **28 flagship production systems** categorized into 4 c
 - **Stack:** Python 3.12+, Flask 3.x, Loop Engineering, Tailwind CSS, Episodic Memory, Serverless Architecture, Unix Cron
 - **Live Deployment:** [https://scheduled-memory-loop.vercel.app/](https://scheduled-memory-loop.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/Scheduled-memory-loop](https://github.com/SainBux-HadiSeelro/Scheduled-memory-loop)
+
+#### 15. Autonomous Bugfix Loop — Agentic Maker-Checker Architecture for Self-Healing Software
+- **Designation:** Isolated Git Worktree Sandbox, Adversarial Probes, Anti-Cheat Verification & Strict Read-Only Checker Auditor
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Autonomous self-healing software pipeline implementing a strict Maker-Checker split. Eliminates AI reward hacking where models inject narrow shortcut bypasses to trick unit tests. Deploys Agent 1 (Maker) in an isolated Git worktree sandbox (`wt-bugfix-mode`) and Agent 2 (Checker) as a read-only auditor executing adversarial edge-case probes before triggering fast-forward merges to main.
+- **Stack:** Python 3.12+, FastAPI, Loop Engineering, Git Worktrees, Pytest, Adversarial Probes, Tailwind CSS, Vercel Edge
+- **Live Deployment:** [https://bugfix-loop.vercel.app/](https://bugfix-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/bugfix-loop](https://github.com/SainBux-HadiSeelro/bugfix-loop)
 
 ---
 

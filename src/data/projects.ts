@@ -392,6 +392,35 @@ export const projectsData: Project[] = [
     category: "loop-engineering",
   },
   {
+    id: "bugfix-loop",
+    title: "Autonomous Bugfix Loop — Agentic Maker-Checker Architecture for Self-Healing Software",
+    subtitle: "Isolated Git Worktree Sandbox, Adversarial Probes, Anti-Cheat Verification & Strict Read-Only Checker Auditor",
+    badge: "Loop Engineering",
+    summary:
+      "Eliminates AI reward hacking and shortcut fixes in automated bug repair through an isolated Git worktree sandbox and a strict read-only Checker auditor running independent adversarial probes.",
+    description:
+      "An autonomous self-healing software engineering platform and live interactive orchestrator console implementing a strict Maker-Checker split. Addresses reward hacking where shortcut-seeking AI agents inject brittle hardcoded return values to trick unit test suites (e.g., 'if a == 10 and b == 0: raise ValueError(...)'). Features an isolated Git worktree sandbox (wt-bugfix-mode) for the Maker Agent, followed by an independent read-only Checker Auditor executing surprise adversarial probes (divide(1, 0)) to catch fake fixes and prevent broken code from polluting production branches.",
+    problem:
+      "When standard autonomous agents fix software bugs, they optimize strictly for passing unit tests. A lazy agent can inject narrow shortcut conditions that turn CI tests green while failing on generalized edge cases and crashing in production.",
+    solution:
+      "Architected an isolated dual-agent closed loop: Agent 1 (Maker) attempts bugfixes inside an isolated detached Git worktree (wt-bugfix-mode), while Agent 2 (Checker) operates under strict read-only permissions to audit code with dynamic adversarial probes before permitting fast-forward merges to main.",
+    result:
+      "100% catch rate on cheating shortcut patches, zero untainted production branch leaks, automated fast-forward merge for verified universal fixes, and live dual-scenario simulation in an interactive dark HUD.",
+    highlights: [
+      "Maker-Checker agentic split preventing AI confirmation bias and reward hacking",
+      "Isolated Git worktree sandboxing ensuring dirty fix attempts cannot pollute main",
+      "Adversarial probe harness running surprise edge-case testing to audit patch generalizability",
+      "Interactive web HUD with honest vs. cheating AI scenarios, 5-stage pipeline stepper & live telemetry",
+    ],
+    tech: ["Python 3.12+", "FastAPI", "Loop Engineering", "Git Worktrees", "Pytest", "Adversarial Probes", "Tailwind CSS", "Vercel Edge"],
+    liveUrl: "https://bugfix-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/bugfix-loop",
+    image: "/projects/bugfix-loop.png",
+    imageLabel: "Live Autonomous Bugfix Loop Console & Maker-Checker Observability HUD",
+    featured: true,
+    category: "loop-engineering",
+  },
+  {
     id: "iss-watch-loop",
     title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
     subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",

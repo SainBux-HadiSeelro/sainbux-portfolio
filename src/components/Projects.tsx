@@ -38,6 +38,7 @@ import {
   Calculator,
   Scale,
   BellRing,
+  Bug,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project, ProjectCategory } from "@/data/projects";
@@ -66,6 +67,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "orbit-iq": Satellite,
   "iss-watch-loop": Satellite,
   "maker-checker-loop": Scale,
+  "bugfix-loop": Bug,
   "doorbell-loop": BellRing,
   "scheduled-memory-loop": Brain,
   "agentic-story-studio": BookOpen,
