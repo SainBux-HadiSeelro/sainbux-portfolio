@@ -421,6 +421,35 @@ export const projectsData: Project[] = [
     category: "loop-engineering",
   },
   {
+    id: "workflow-fixloop",
+    title: "FixLoop AI — Autonomous Multi-Agent Self-Healing Code Engine",
+    subtitle: "Parallel Isolated Git Worktrees, Independent Reviewer Subagents, Pytest Regression Gates & Stateless Atomic Beat Engine",
+    badge: "Loop Engineering",
+    summary:
+      "Executes parallel AI bugfixers in isolated Git worktrees and grades each candidate with an independent reviewer subagent before safe automated merge into production.",
+    description:
+      "An autonomous multi-agent code repair engine and interactive developer visualizer executing the body of one beat. Dispatches three specialized AI developer agents (Math, Text, and Data specialists) in parallel inside isolated Git worktrees (wt-candidate_a, wt-candidate_b, wt-candidate_c) using the fix-bug skill. Operates an independent read-only Reviewer Subagent under the Evaluator-Optimizer pattern to grade pytest assertions, catch cheat/hardcoded test literals, and verify test suite integrity before permitting automated fast-forward merges into main. Designed as an atomic, stateless beat engine with zero memory between runs.",
+    problem:
+      "Autonomous code fixers can introduce regressions or game test suites by hardcoding return values, while running fixes sequentially or in shared directories risks race conditions, dirty working trees, and context contamination.",
+    solution:
+      "Architected a parallel multi-agent execution engine utilizing isolated Git worktree sandboxes, strict author-vs-reviewer separation (Evaluator-Optimizer pattern), automated Pytest regression gates, and a dual-view (Simple vs. Dev & Logs) Next.js observability console.",
+    result:
+      "Zero main branch contamination, parallel multi-candidate repair with isolated failure handling, 100% intercept on cheating patches via independent reviewer subagents, and an interactive live web visualizer with safety test simulations.",
+    highlights: [
+      "Parallel Git worktree sandboxing isolating candidate branches and preventing cross-agent contamination",
+      "Independent Reviewer Subagent enforcing strict Evaluator-Optimizer pattern (authors never grade their own work)",
+      "3-point automated inspection: full pytest pass, git diff generality audit, and test suite anti-tampering verification",
+      "Dual-mode Next.js interactive visualizer: Plain-English visual pipeline vs. deep technical monospace log streamer",
+    ],
+    tech: ["Next.js 14", "Python 3.12", "Git Worktrees", "Loop Engineering", "Multi-Agent Systems", "Pytest", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://workflow-fixloop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/workflow-fixloop",
+    image: "/projects/workflow-fixloop.png",
+    imageLabel: "Live FixLoop AI Autonomous Multi-Agent Code Repair Visualizer",
+    featured: true,
+    category: "loop-engineering",
+  },
+  {
     id: "iss-watch-loop",
     title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
     subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",

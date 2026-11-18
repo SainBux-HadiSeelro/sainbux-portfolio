@@ -170,6 +170,7 @@ d:\portfolio
 │       ├── iss-watch-loop.png             # ISS Watch Loop live tracker preview
 │       ├── doorbell-loop.png              # Doorbell Loop autonomous code-review HUD preview
 │       ├── bugfix-loop.png                # Autonomous Bugfix Loop maker-checker HUD preview
+│       ├── workflow-fixloop.png           # FixLoop AI autonomous multi-agent code engine preview
 │       ├── scheduled-memory-loop.png      # Scheduled Memory Loop episodic spine & agent HUD preview
 │       ├── maker-checker-loop.png         # Maker-Checker autonomous loop live orchestrator preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
@@ -406,6 +407,14 @@ The portfolio aggregates **28 flagship production systems** categorized into 4 c
 - **Stack:** Python 3.12+, FastAPI, Loop Engineering, Git Worktrees, Pytest, Adversarial Probes, Tailwind CSS, Vercel Edge
 - **Live Deployment:** [https://bugfix-loop.vercel.app/](https://bugfix-loop.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/bugfix-loop](https://github.com/SainBux-HadiSeelro/bugfix-loop)
+
+#### 16. FixLoop AI — Autonomous Multi-Agent Self-Healing Code Engine
+- **Designation:** Parallel Isolated Git Worktrees, Independent Reviewer Subagents, Pytest Regression Gates & Stateless Atomic Beat Engine
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Autonomous multi-agent self-healing software execution engine demonstrating the body of one beat. Concurrently dispatches three domain-specialist AI developer agents across isolated Git worktree sandboxes to repair failing test suites. Grades each patch using an independent, read-only Reviewer Subagent under the Evaluator-Optimizer pattern to audit pytest assertions, catch brittle hardcoded test cheats, and verify test suite integrity before enabling automated fast-forward merges to main. Features an interactive Next.js visualizer with dual simple and dev views.
+- **Stack:** Next.js 14, Python 3.12, Git Worktrees, Loop Engineering, Multi-Agent Systems, Pytest, Tailwind CSS, Vercel
+- **Live Deployment:** [https://workflow-fixloop.vercel.app/](https://workflow-fixloop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/workflow-fixloop](https://github.com/SainBux-HadiSeelro/workflow-fixloop)
 
 ---
 
