@@ -22,7 +22,7 @@
 
 Most AI developers build simple prompt wrappers that fail unpredictably in production. **I engineer contract-bound, self-correcting AI systems and mission-critical web applications designed for enterprise resilience:**
 
-- 🔁 **Loop Engineering & Self-Correction:** Proven architectures with evaluator-optimizer loops achieving **96.4% autonomous error recovery** without manual intervention.
+- 🔁 **Loop Engineering & Self-Correction:** Proven architectures with evaluator-optimizer loops, scheduled episodic memory spines, and sabotage-tested failure diagnosis achieving **96.4%+ autonomous error recovery** without manual intervention.
 - 🔌 **Enterprise MCP & Multi-Agent Systems:** Production Model Context Protocol (MCP) servers orchestrating role-specialized agents with real-world CRMs, databases, and event queues.
 - 📊 **High-Stakes Domain Rigor:** From aerospace orbital telemetry (**OrbitIQ**, modeling $\$35\text{M}+$ reusability savings) to zero-drift financial ledgers (**FinPulse** with 64-bit integer paisa arithmetic).
 - ⚡ **Full-Lifecycle Execution:** From mathematical formulation and ML model training to high-performance Next.js 16 App Router frontends and edge deployments.

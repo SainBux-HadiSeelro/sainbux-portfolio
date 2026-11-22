@@ -1,12 +1,12 @@
 # 📐 Sain Bux Portfolio — System & Engineering Specifications
 
-**Document Version:** `3.0.0`  
+**Document Version:** `3.1.0`  
 **Classification:** Enterprise System Architecture & Engineering Specification  
 **System Designation:** `Sain Bux Flagship Engineering Portfolio & Agentic Platform Hub`  
 **Author:** Sain Bux (Forward Deployed & Agentic AI Engineer)  
 **Production Endpoint:** [https://sainbux.vercel.app/](https://sainbux.vercel.app/)  
 **Primary Repository:** [https://github.com/SainBux-HadiSeelro/sainbux-portfolio](https://github.com/SainBux-HadiSeelro/sainbux-portfolio)  
-**Last System Audit:** October 2026  
+**Last System Audit:** November 2026  
 
 ---
 
@@ -17,7 +17,7 @@ This document establishes the official technical architecture, system benchmarks
 The platform is designed not merely as a resume showcase, but as a live, high-performance reference application demonstrating modern web engineering, deterministic state-driven UI patterns, zero layout-shift animations, strict type governance, and secure embedded execution sandboxes for deployed AI applications.
 
 ### Core Architectural Pillars
-1. **Deterministic Agentic Taxonomy:** Modular categorization dividing 25 flagship projects across four specialized groups: Featured Agentic Systems, AI-Integrated Applications, Client Demos & Commercial Web, and Data Science & Utilities.
+1. **Deterministic Agentic Taxonomy:** Modular categorization dividing 30+ production projects across five specialized groups: Featured Agentic Systems, Loop Engineering & Deterministic Systems, AI-Integrated Applications, Client Demos & Commercial Web, and Data Science & Utilities.
 2. **Zero Runtime Bloat & Edge Speed:** Static Site Generation (SSG) with Next.js 16 App Router and Turbopack, delivering sub-second TTFB and zero client-side database latency.
 3. **Secure Iframe Execution Sandbox:** Isolated iframe execution layer enabling visitors to run live external Streamlit, Vite, and Next.js applications directly within modal viewports without cross-origin leakage or top-level navigation interference.
 4. **Strict TypeScript & Contract Safety:** 100% type-safe schemas across all project entities, category routers, navigation states, and interactive filter tabs.
@@ -38,7 +38,7 @@ The platform is designed not merely as a resume showcase, but as a live, high-pe
 |                              NEXT.JS 16 APPLICATION ROUTER                              |
 |   / (Main Hub SPA)                                                                      |
 |   ├── Hero (Live Loop Phase Ticker)      ├── Skills (5-Domain Competency Matrix)        |
-|   ├── Projects (25-Project Multi-Group)  ├── Experience (Chronological Engineering)     |
+|   ├── Projects (30+ Projects Multi-Group)├── Experience (Chronological Engineering)     |
 |   ├── About (Architectural Philosophy)   ├── Education & Academic Credentials           |
 |   └── Contact (Direct Channel Funnel)    └── Footer & Route Navigation                  |
 |                                                                                         |
@@ -50,7 +50,7 @@ The platform is designed not merely as a resume showcase, but as a live, high-pe
                                              v
 +-----------------------------------------------------------------------------------------+
 |                             DATA & STATE CONTRACT LAYER                                 |
-|   - src/data/projects.ts (25 Projects, 4 Categories, Sub-Project Collections)           |
+|   - src/data/projects.ts (37 Projects, 5 Categories, Sub-Project Collections)           |
 |   - src/data/socials.ts (Verified Public Communication Channels & Endpoints)            |
 |   - src/lib/utils.ts (Tailwind Merge & Conditional Class Synthesis)                     |
 +-----------------------------------------------------------------------------------------+
@@ -232,10 +232,11 @@ export interface SubProject {
 }
 
 export type ProjectCategory = 
-  | "agentic"        // Group A: Featured Agentic Systems
-  | "ai-integrated"   // Group B: AI-Integrated Applications
-  | "client-demo"     // Group C: Client Demos & Commercial Web
-  | "data-utility";   // Group D: Data Science, Machine Learning & Utilities
+  | "agentic"          // Group A: Featured Agentic Systems
+  | "loop-engineering" // Group B: Loop Engineering & Deterministic Systems
+  | "ai-integrated"    // Group C: AI-Integrated Applications
+  | "client-demo"      // Group D: Client Demos & Commercial Web
+  | "data-utility";    // Group E: Data Science, Machine Learning & Utilities
 
 export interface Project {
   id: string;
