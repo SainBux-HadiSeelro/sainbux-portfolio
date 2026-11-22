@@ -507,6 +507,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "loop-engineering",
   },
+  {
+    id: "break-it-on-purpose-loop",
+    title: "Break-It-On-Purpose — Autonomous Loop Observability & Sabotage-Tested Diagnostic Spine",
+    subtitle: "Concepts 13 & 14 Loop Engineering, Real Token Cost Guard, Deliberate Sabotage Testing & Needs-A-Human Alarm",
+    badge: "Loop Engineering",
+    summary:
+      "Measures real-time token expenses per beat, deliberately sabotages loop executions to eliminate silent failures, and proves failure root cause is diagnosable directly from the spine.",
+    description:
+      "An autonomous loop observability platform and interactive developer visualizer implementing Loop Engineering Concepts 13 and 14. Real-time token economics telemetry calculates exact prompt and completion costs per beat against API budget thresholds. Features a deliberate sabotage test harness (missing TODO paths, corrupted dependencies) proving that failures trigger explicit, unambiguous 'NEEDS HUMAN' alerts in immutable progress.md and digest.log files without guessing or silent crashes.",
+    problem:
+      "Unattended autonomous loops risk silent background failures or infinite retry loops that silently exhaust API token budgets without providing human operators clear forensic diagnostics.",
+    solution:
+      "Architected a dual-pillar loop engineering system: a deterministic per-beat token cost and financial budget guard (Concept 13) paired with an immutable diagnostic failure spine (Concept 14) that logs unambiguous 'NEEDS HUMAN' signals and full forensic traces during deliberate sabotage testing.",
+    result:
+      "Zero silent failures, 100% human-actionable fault attribution from log files alone, deterministic sub-penny cost tracking per loop beat, and interactive dual-mode web HUD with 5 specialized telemetry tabs.",
+    highlights: [
+      "Concept 13 Token Cost Guard tracking prompt, completion, and cumulative spend per loop beat",
+      "Concept 14 Needs-A-Human Spine guaranteeing explicit, readable failure traces in progress.md and digest.log",
+      "Deliberate sabotage test harness demonstrating fault injection and automated failure attribution",
+      "Interactive 5-tab developer console featuring AI Agent Playground, Cost Guard, Safety HUD, Task Matrix, and Architecture Telemetry",
+    ],
+    tech: ["Next.js 14", "TypeScript", "Loop Engineering", "Tailwind CSS", "Lucide React", "Failure Injection", "Token Economics", "Vercel"],
+    liveUrl: "https://break-it-on-purpose-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/break-it-on-purpose-loop",
+    image: "/projects/break-it-on-purpose-loop.png",
+    imageLabel: "Live Sentinel AI Autonomous Loop Observability & Sabotage Test Console",
+    featured: true,
+    category: "loop-engineering",
+  },
 
   // =========================================================================
   // GROUP C: AI-Integrated Apps

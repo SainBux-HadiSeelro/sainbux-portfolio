@@ -45,6 +45,7 @@ import {
   BellRing,
   Bug,
   Workflow,
+  ShieldAlert,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project } from "@/data/projects";
@@ -77,6 +78,7 @@ const projectIcons: Record<string, React.ElementType> = {
   "workflow-fixloop": Workflow,
   "doorbell-loop": BellRing,
   "scheduled-memory-loop": Brain,
+  "break-it-on-purpose-loop": ShieldAlert,
   "agentic-story-studio": BookOpen,
   "nexus-mind-platform": Brain,
   "apex-game": Swords,

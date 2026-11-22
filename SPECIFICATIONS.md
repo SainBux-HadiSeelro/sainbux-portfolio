@@ -172,6 +172,7 @@ d:\portfolio
 │       ├── bugfix-loop.png                # Autonomous Bugfix Loop maker-checker HUD preview
 │       ├── workflow-fixloop.png           # FixLoop AI autonomous multi-agent code engine preview
 │       ├── scheduled-memory-loop.png      # Scheduled Memory Loop episodic spine & agent HUD preview
+│       ├── break-it-on-purpose-loop.png   # Sentinel AI Loop Observability & Sabotage HUD preview
 │       ├── maker-checker-loop.png         # Maker-Checker autonomous loop live orchestrator preview
 │       ├── lumiere-hotel-reservation.png  # Lumière Palace Paris luxury hotel preview
 │       ├── lumina-beauty-parlour.png      # Lumina Beauty Parlour luxury sanctuary preview
@@ -415,6 +416,14 @@ The portfolio aggregates **28 flagship production systems** categorized into 4 c
 - **Stack:** Next.js 14, Python 3.12, Git Worktrees, Loop Engineering, Multi-Agent Systems, Pytest, Tailwind CSS, Vercel
 - **Live Deployment:** [https://workflow-fixloop.vercel.app/](https://workflow-fixloop.vercel.app/)
 - **Repository:** [https://github.com/SainBux-HadiSeelro/workflow-fixloop](https://github.com/SainBux-HadiSeelro/workflow-fixloop)
+
+#### 17. Break-It-On-Purpose — Autonomous Loop Observability & Sabotage-Tested Diagnostic Spine
+- **Designation:** Concepts 13 & 14 Loop Engineering, Real Token Cost Guard, Deliberate Sabotage Testing & Needs-A-Human Alarm
+- **Badge:** `Loop Engineering` | **Category:** `loop-engineering`
+- **Technical Summary:** Autonomous loop observability platform and developer visualizer implementing Loop Engineering Concepts 13 and 14. Calculates real prompt and completion token expenditures per beat against API budget thresholds. Features a deliberate sabotage test harness (missing task files, corrupted paths) demonstrating that failures produce explicit, human-actionable "NEEDS HUMAN" signals in immutable progress.md and digest.log files without guessing or silent crashes.
+- **Stack:** Next.js 14, TypeScript, Loop Engineering, Tailwind CSS, Lucide React, Failure Injection, Token Economics, Vercel
+- **Live Deployment:** [https://break-it-on-purpose-loop.vercel.app/](https://break-it-on-purpose-loop.vercel.app/)
+- **Repository:** [https://github.com/SainBux-HadiSeelro/break-it-on-purpose-loop](https://github.com/SainBux-HadiSeelro/break-it-on-purpose-loop)
 
 ---
 
