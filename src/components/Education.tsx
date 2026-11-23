@@ -63,16 +63,16 @@ export default function Education() {
       topics: ["Generative AI", "Next.js App Router", "TypeScript", "LLM Pipelines"],
     },
     {
-      title: "Presidential Initiative for AI & Computing (PIAIC)",
-      organization: "PIAIC National Program",
+      title: "Agentic AI, Modern AI Tools & Applied AI",
+      organization: "Presidential Initiative for AI & Computing (PIAIC)",
       period: "Nov 2024 – Sep 2026",
-      badge: "AI & Cloud Systems",
+      badge: "Agentic AI & Tools",
       status: "Active Fellow",
       isActive: true,
       icon: Cpu,
       description:
-        "Foundational and advanced artificial intelligence, cloud-native computing, microservices architecture, and scalable Python distributed systems.",
-      topics: ["Cloud-Native AI", "Microservices", "Python Systems", "Model Inference"],
+        "Practical study and continuous research in Agentic AI architectures, modern AI developer tools (Claude Code, Antigravity, Gemini CLI), intelligent reasoning workflows, and emerging LLM technologies.",
+      topics: ["Agentic AI", "Modern AI Tools", "AI Research", "Reasoning Workflows"],
     },
     {
       title: "Advance Python Specialist",
