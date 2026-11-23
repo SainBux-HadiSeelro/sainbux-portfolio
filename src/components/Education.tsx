@@ -51,8 +51,8 @@ export default function Education() {
       topics: ["Multi-Agent Loops", "Tool Calling", "MCP Protocol", "Autonomous Runtimes"],
     },
     {
-      title: "Governor Sindh IT Initiative (GIAIC)",
-      organization: "GenAI, Web3 & Metaverse Program",
+      title: "GenAI, Web3 & Metaverse Program",
+      organization: "Governor Sindh IT Initiative (GIAIC)",
       period: "Feb 2024 – Present",
       badge: "GenAI & Cloud",
       status: "Active Cohort",
