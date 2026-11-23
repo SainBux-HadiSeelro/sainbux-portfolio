@@ -25,18 +25,18 @@ export default function Experience() {
       tag: "Current Role",
       tagColor: "text-emerald-700 bg-emerald-50 border-emerald-200",
       description:
-        "Architecting production-grade agentic AI architectures, autonomous multi-agent orchestration pipelines, and deterministic tool-calling workflows for enterprise automation.",
+        "Designing and deploying reliable AI systems, automated workflows, and smart tool integrations that solve enterprise operational challenges.",
       highlights: [
-        "Architect multi-agent workflows in Python and the OpenAI SDK with async runtime graphs for enterprise automation.",
-        "Develop custom MCP server endpoints connecting LLM reasoning engines to databases and external APIs.",
-        "Build loop-engineered tool-calling pipelines with Pydantic schema validation and self-healing on API errors.",
-        "Work on latency optimization and token budgeting for high-throughput LLM agent pipelines.",
+        "Build automated workflows where multiple AI agents work together to execute business operations end-to-end.",
+        "Connect AI models directly to databases and company APIs for real-time data access and automated actions.",
+        "Implement automated self-checking loops that catch errors and fix them before delivering results to users.",
+        "Optimize system speed and reduce token costs for high-volume commercial AI applications.",
       ],
       impactMetrics: [
-        "Enterprise Async Graphs",
-        "Custom MCP Endpoints",
-        "Pydantic Self-Healing",
-        "Token Budget Optimization",
+        "Automated Workflows",
+        "Live Data Integrations",
+        "Self-Healing Reliability",
+        "Cost & Speed Optimization",
       ],
       skills: [
         "Python",
@@ -57,18 +57,18 @@ export default function Experience() {
       tag: "Forward Deployed",
       tagColor: "text-[#1553C7] bg-[#EAF4FF] border-[#CFE6FF]",
       description:
-        "Forward-deployed engineering designing and shipping end-to-end autonomous agent solutions, reactive web dashboards, and deterministic feedback loops for commercial use cases.",
+        "Designing and delivering custom AI agents, interactive dashboards, and automated systems for real-world commercial clients.",
       highlights: [
-        "Engineered autonomous AI and automation projects spanning multi-agent swarms, RAG architectures, and custom tool-calling agents.",
-        "Engineered coordinated multi-agent platforms with live biometrics tool calling, Markov decision telemetry, and real-time reasoning traces.",
-        "Built bilingual (English & Roman Urdu) spreadsheet automation agents with deterministic undo snapshots and confirmation guards.",
-        "Automated multi-stage lead qualification pipelines integrating conversational AI with calendar scheduling and webhook event handlers.",
+        "Built full-stack AI applications featuring multi-agent collaboration, intelligent search (RAG), and custom tools.",
+        "Engineered smart fitness and clinic platforms with real-time biometric calculations and instant appointment bookings.",
+        "Built bilingual (English & Roman Urdu) spreadsheet automation tools that allow non-technical staff to query and edit data naturally.",
+        "Automated lead qualification and customer onboarding pipelines combining AI chatbots with calendar bookings.",
       ],
       impactMetrics: [
-        "Autonomous Agent Swarms",
-        "Multi-Agent Swarm Orchestration",
-        "Bilingual Agent Intelligence",
-        "Closed-Loop Automations",
+        "Multi-Agent Systems",
+        "Live Biometric Tools",
+        "Bilingual AI Solutions",
+        "Full-Loop Automation",
       ],
       skills: [
         "Python",
@@ -85,27 +85,27 @@ export default function Experience() {
 
   const highlightsSummary = [
     {
-      title: "Current Engineering Role",
+      title: "Current Role",
       value: "AI Engineer @ Morphelabs",
-      sub: "Enterprise Multi-Agent Systems & MCP",
+      sub: "Enterprise AI & Smart Automations",
       icon: Briefcase,
       color: "text-[#1553C7]",
       bg: "bg-[#EAF4FF]",
       border: "border-[#CFE6FF]",
     },
     {
-      title: "Architecture & Delivery",
-      value: "Autonomous AI Systems",
-      sub: "Pipelines, Swarms & Automations",
+      title: "What I Build",
+      value: "Smart AI Assistants",
+      sub: "Automations, Workflows & Apps",
       icon: Sparkles,
       color: "text-[#1EA7FF]",
       bg: "bg-[#F0F7FF]",
       border: "border-[#CFE6FF]",
     },
     {
-      title: "Engineering Core",
-      value: "Loop Engineering & MCP",
-      sub: "Pydantic Contracts & Zero-Hallucination",
+      title: "Core Standard",
+      value: "Reliable & Verified",
+      sub: "Built-in Error Checking & Self-Healing",
       icon: Cpu,
       color: "text-emerald-600",
       bg: "bg-emerald-50",
@@ -133,7 +133,7 @@ export default function Experience() {
               Work Experience &amp; Track Record
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Forward-deployed engineering across enterprise multi-agent workflows, MCP servers, and production-ready automation systems.
+              Building practical AI solutions, automated workflows, and enterprise systems that deliver tangible business value.
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">

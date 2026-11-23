@@ -19,23 +19,23 @@ export default function About() {
   const tenets = [
     {
       icon: Workflow,
-      title: "Autonomous Multi-Agent Workflows",
-      desc: "Async runtime graphs and orchestrated agent swarms built with Python and the OpenAI SDK for resilient enterprise automation.",
+      title: "Smart AI Teamwork",
+      desc: "Coordinating multiple specialized AI agents that collaborate like a team to complete multi-step business tasks from start to finish.",
     },
     {
       icon: Cpu,
-      title: "Model Context Protocol (MCP) Servers",
-      desc: "Custom MCP server endpoints connecting LLM reasoning engines directly to SQL/NoSQL databases, webhooks, and external APIs.",
+      title: "Direct Data & Tool Integration",
+      desc: "Connecting AI securely to live databases, spreadsheets, and web services so it can access real company data and take automated action.",
     },
     {
       icon: Layers,
-      title: "Loop Engineering & Self-Correction",
-      desc: "Strict Plan → Act → Verify → Self-Correct pipelines with Pydantic schema validation and closed-loop error recovery.",
+      title: "Self-Checking & Error Correction",
+      desc: "Built-in safety loops where AI plans its steps, verifies its own answers, and fixes any mistakes automatically before responding.",
     },
     {
       icon: Zap,
-      title: "Latency & Token Budgeting",
-      desc: "Architecting high-throughput LLM pipelines with proactive context budgeting, streaming structured outputs, and sub-second execution.",
+      title: "Fast, Reliable & Cost-Efficient",
+      desc: "Optimizing AI pipelines for quick responses and efficient token usage, keeping operational costs low and performance high.",
     },
   ];
 
@@ -109,7 +109,7 @@ export default function About() {
         {/* Section Heading */}
         <div className="mb-12 max-w-4xl">
           <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0B1F5C] leading-[1.15]">
-            Engineering autonomous multi-agent pipelines and loop-engineered systems.
+            Building intelligent AI systems that think, take action, and automate work.
           </h2>
           <div className="flex flex-wrap items-center gap-2 mt-4 text-xs font-mono text-[#5B6B8C]">
             <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-[#EAF4FF] text-[#1553C7] font-semibold border border-[#CFE6FF]">
@@ -160,21 +160,20 @@ export default function About() {
           {/* Main narrative */}
           <div className="lg:col-span-7 space-y-6 text-[#1E2A44] text-base leading-relaxed">
             <p>
-              I am an <strong className="text-[#0B1F5C] font-bold">Agentic AI Engineer</strong> and{" "}
-              <strong className="text-[#1553C7] font-bold">Forward Deployed Engineer</strong> who builds autonomous multi-agent pipelines, custom Model Context Protocol (MCP) tool servers, and loop-engineered systems that{" "}
-              <strong className="text-[#0B1F5C] font-semibold">plan, act, verify, and self-correct</strong> using Python and the OpenAI SDK.
+              I am an <strong className="text-[#0B1F5C] font-bold">AI Engineer</strong> and{" "}
+              <strong className="text-[#1553C7] font-bold">Forward Deployed Builder</strong> who creates smart AI systems that go far beyond simple chatbots. I build AI assistants that can <strong className="text-[#0B1F5C] font-semibold">plan steps, use business tools, verify their own work, and correct mistakes automatically</strong>.
             </p>
 
             <p>
-              My engineering approach prioritizes <strong className="text-[#0B1F5C] font-semibold">deterministic agent behavior</strong> over probabilistic drift. By enforcing strict Pydantic schema contracts, type boundaries, and closed-loop error recovery, I ensure agentic pipelines execute tool calls reliably and autonomously heal on API or schema failures.
+              Instead of unpredictable answers, I build AI systems designed for <strong className="text-[#0B1F5C] font-semibold">accuracy and reliability</strong>. Every AI action passes through strict safety checks, ensuring your business workflows run predictably, handle errors gracefully, and deliver dependable results every single time.
             </p>
 
             <p>
-              Currently serving as an <strong className="text-[#0B1F5C] font-semibold">AI Engineer at Morphelabs (Remote)</strong>, I architect async runtime graphs for enterprise automation, develop MCP server endpoints connecting LLM reasoning engines to live databases and external APIs, and optimize token budgeting for high-throughput agent workflows.
+              Currently working as an <strong className="text-[#0B1F5C] font-semibold">AI Engineer at Morphelabs (Remote)</strong>, I build automated workflows for businesses, connect AI models directly to live company databases and services, and make sure these systems run fast and cost-effectively.
             </p>
 
             <p>
-              Specializing in autonomous agent architectures and production automation, I am also a daily power user of modern agentic CLI tools—including Claude Code, OpenCode, Antigravity, and Gemini CLI—integrating them into my forward-deployed delivery workflows.
+              From customer support concierges to complex data automations, I specialize in turning everyday business challenges into smooth, autonomous digital workflows using modern AI tools and developer environments.
             </p>
 
             {/* Tech Badges Strip */}
@@ -201,10 +200,10 @@ export default function About() {
               <div className="flex items-center justify-between pb-3.5 border-b border-[#E8F1FC]">
                 <div className="text-xs font-mono uppercase tracking-wider text-[#0B1F5C] font-bold flex items-center gap-2">
                   <ShieldCheck className="w-4 h-4 text-[#1553C7]" />
-                  <span>Engineering Tenets</span>
+                  <span>What I Focus On</span>
                 </div>
                 <span className="text-[11px] font-mono font-semibold text-[#1553C7] bg-[#EAF4FF] px-2.5 py-0.5 rounded-full border border-[#CFE6FF]">
-                  System Architecture
+                  Core Strengths
                 </span>
               </div>
 
@@ -231,10 +230,10 @@ export default function About() {
               </div>
 
               <div className="pt-3 border-t border-[#E8F1FC] flex items-center justify-between text-xs font-mono text-[#5B6B8C]">
-                <span>Pipeline Verification</span>
+                <span>System Reliability</span>
                 <span className="text-emerald-600 font-bold flex items-center gap-1">
                   <CheckCircle2 className="w-3.5 h-3.5" />
-                  Pydantic Schema Enforced
+                  Verified &amp; Error-Tested
                 </span>
               </div>
             </div>

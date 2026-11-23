@@ -22,7 +22,7 @@ export default function Education() {
     period: "2023 – 2027",
     status: "Degree Candidate",
     details:
-      "Comprehensive 4-year curriculum grounding practical AI engineering in formal computer science principles, distributed systems architecture, algorithmic efficiency, and object-oriented paradigms.",
+      "Comprehensive 4-year degree focusing on computer science foundations, software engineering, databases, and practical artificial intelligence.",
     coreFocus: [
       "Distributed Systems Architecture",
       "Data Structures & Algorithms",
@@ -106,7 +106,7 @@ export default function Education() {
               Education &amp; Specializations
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Formal software engineering academia paired with premier national AI fellowships and production agent specializations.
+              Formal degree in software engineering alongside specialized training programs in modern AI and development.
             </p>
           </div>
 

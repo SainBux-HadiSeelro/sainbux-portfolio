@@ -102,10 +102,10 @@ export default function Contact() {
         {/* Big Bold Headline */}
         <div className="mb-16">
           <h2 className="font-heading text-4xl sm:text-5xl lg:text-6xl font-extrabold tracking-tight text-white max-w-2xl leading-[1.08]">
-            Let&apos;s build next-generation AI agents together.
+            Let&apos;s build smart AI solutions for your business.
           </h2>
           <p className="text-[#CFE6FF] text-base mt-4 max-w-xl">
-            Available for Agentic AI Engineer &amp; Forward Deployed roles, production agent consulting, and multi-agent systems engineering.
+            Available for full-time AI Engineer roles, project consulting, and custom AI automation development.
           </p>
         </div>
 
@@ -120,10 +120,10 @@ export default function Contact() {
               </div>
 
               <h3 className="font-heading text-xl font-bold text-white">
-                Ready to deploy autonomous AI agents to production?
+                Ready to bring smart AI automations to your business?
               </h3>
               <p className="text-xs text-[#EAF4FF] leading-relaxed">
-                Targeting roles as <strong className="text-white font-bold">Agentic AI Engineer</strong> or <strong className="text-white font-bold">Forward Deployed Engineer</strong>. Experienced in multi-agent pipelines, MCP, and self-healing loop systems.
+                Looking for roles as an <strong className="text-white font-bold">AI Engineer</strong> or <strong className="text-white font-bold">Forward Deployed Builder</strong>. Experienced in designing AI assistants, automated workflows, and direct database integrations.
               </p>
 
               <div className="pt-3 border-t border-white/10 space-y-2 text-xs font-mono text-[#CFE6FF]">

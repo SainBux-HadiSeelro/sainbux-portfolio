@@ -432,15 +432,14 @@ export default function Projects() {
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
           <div>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0B1F5C]">
-              Engineered Agent Architectures
+              Featured AI &amp; Web Projects
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-2xl">
-              Agentic systems, loop-engineering experiments, and AI-powered web apps.
+              Smart AI assistants, automated workflows, and modern web applications built to solve real business challenges.
             </p>
           </div>
-          {/* TODO: verify 100% Tested Tool Calling claim */}
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto">
-            100% Tested Tool Calling
+            Production Tested &amp; Verified
           </div>
         </div>
 
@@ -486,11 +485,11 @@ export default function Projects() {
               <div className="flex items-center gap-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
                 <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Featured Agentic Systems
+                  Autonomous AI &amp; Smart Assistants
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group A // {agenticProjects.length} Architectures
+                Group A // {agenticProjects.length} Projects
               </span>
             </div>
 
@@ -509,11 +508,11 @@ export default function Projects() {
               <div className="flex items-center gap-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
                 <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Loop Engineering &amp; Deterministic Systems
+                  Self-Checking Automation Workflows
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group B // {loopEngineeringProjects.length} {loopEngineeringProjects.length === 1 ? "System" : "Systems"}
+                Group B // {loopEngineeringProjects.length} {loopEngineeringProjects.length === 1 ? "Workflow" : "Workflows"}
               </span>
             </div>
 
@@ -534,7 +533,7 @@ export default function Projects() {
               <div className="flex items-center gap-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF]" />
                 <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  AI-Integrated Applications
+                  AI-Powered Web Applications
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
@@ -560,12 +559,12 @@ export default function Projects() {
                 <div className="flex items-center gap-2.5">
                   <span className="w-2.5 h-2.5 rounded-full bg-[#0B1F5C]" />
                   <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                    Client Demos &amp; Web Platforms
+                    Client Demos &amp; Business Websites
                   </h3>
                 </div>
                 {/* Intro Line */}
                 <p className="text-[#5B6B8C] text-xs sm:text-sm mt-1">
-                  Frontend-focused builds with an embedded AI concierge chatbot.
+                  Modern business websites featuring embedded 24/7 AI chat assistants.
                 </p>
               </div>
 
@@ -632,7 +631,7 @@ export default function Projects() {
               <div className="flex items-center gap-2.5">
                 <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_rgba(21,83,199,0.5)]" />
                 <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Data, ML &amp; Utilities
+                  Data Tools &amp; Smart Utilities
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">

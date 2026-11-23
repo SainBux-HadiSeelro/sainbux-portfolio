@@ -24,7 +24,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Agentic AI & LLM Systems",
     icon: Bot,
-    description: "Multi-agent pipelines, deterministic loop engineering, structured outputs, and schema evaluation.",
+    description: "Smart AI systems that plan steps, use tools, collaborate as a team, and check their own answers.",
     skills: [
       "OpenAI SDK",
       "Multi-Agent Systems",
@@ -39,7 +39,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Protocols & Integration",
     icon: Network,
-    description: "Standardized MCP tool servers, enterprise APIs, webhooks, and database bridges.",
+    description: "Secure bridges connecting AI directly to company databases, spreadsheets, APIs, and real-time events.",
     skills: [
       "Model Context Protocol (MCP)",
       "REST & GraphQL APIs",
@@ -50,7 +50,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Agentic CLI Tools",
     icon: Terminal,
-    description: "Daily hands-on production tooling with cutting-edge agentic runtimes and interactive coding CLIs.",
+    description: "Modern interactive AI developer environments used daily for rapid building and deployment.",
     skills: [
       "Claude Code",
       "OpenCode",
@@ -65,13 +65,13 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Languages & Runtimes",
     icon: Code2,
-    description: "Core programming languages, async engines, and data modeling frameworks.",
+    description: "Core programming languages and reliable frameworks powering fast, asynchronous backends.",
     skills: ["Python", "TypeScript", "JavaScript", "AsyncIO", "Pydantic"],
   },
   {
     title: "Web & Full-Stack",
     icon: Globe,
-    description: "Full-stack web architectures, reactive client dashboards, and high-performance backends.",
+    description: "Interactive web applications, client dashboards, and responsive digital interfaces.",
     skills: [
       "Next.js (App Router)",
       "FastAPI",
@@ -85,7 +85,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Automation & Infrastructure",
     icon: Workflow,
-    description: "Automated event pipelines, containerized deployments, and cloud platform environments.",
+    description: "Automated workflow triggers, container systems, and reliable cloud hosting.",
     skills: [
       "n8n Workflows",
       "Docker",
@@ -116,11 +116,11 @@ export default function Skills() {
               Technical Skills &amp; Stack
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Production-grade technologies utilized across deployed agentic workflows and full-stack systems.
+              The modern tools, languages, and frameworks I use to build reliable AI solutions.
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">
-            Focus: Deterministic Loop Engineering
+            Focus: Smart &amp; Reliable Automations
           </div>
         </div>
 
