@@ -149,8 +149,8 @@ export default function Projects() {
 
   const filterTabs: { id: FilterCategory; label: string; count: number }[] = [
     { id: "all", label: "All", count: projectsData.length },
-    { id: "agentic", label: "Agentic", count: agenticProjects.length },
     { id: "loop-engineering", label: "Loop Engineering", count: loopEngineeringProjects.length },
+    { id: "agentic", label: "Agentic", count: agenticProjects.length },
     { id: "ai-integrated", label: "AI-Integrated", count: aiIntegratedProjects.length },
     { id: "client-demo", label: "Client Demos", count: clientDemoProjects.length },
     { id: "data-utility", label: "Data & Utilities", count: dataUtilityProjects.length },
@@ -477,30 +477,7 @@ export default function Projects() {
         </div>
 
         {/* ========================================================================= */}
-        {/* GROUP A: Featured Agentic Systems (Large Cards)                           */}
-        {/* ========================================================================= */}
-        {(activeFilter === "all" || activeFilter === "agentic") && (
-          <div className="mb-16">
-            <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
-                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Autonomous AI &amp; Smart Assistants
-                </h3>
-              </div>
-              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group A // {agenticProjects.length} Projects
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {agenticProjects.map((project, idx) => renderProjectCard(project, "large", idx))}
-            </div>
-          </div>
-        )}
-
-        {/* ========================================================================= */}
-        {/* GROUP B: Loop Engineering & Deterministic Systems (Large Cards)           */}
+        {/* GROUP A: Loop Engineering & Deterministic Systems (Large Cards)           */}
         {/* ========================================================================= */}
         {(activeFilter === "all" || activeFilter === "loop-engineering") && (
           <div className="mb-16">
@@ -512,7 +489,7 @@ export default function Projects() {
                 </h3>
               </div>
               <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group B // {loopEngineeringProjects.length} {loopEngineeringProjects.length === 1 ? "Workflow" : "Workflows"}
+                Group A // {loopEngineeringProjects.length} {loopEngineeringProjects.length === 1 ? "Workflow" : "Workflows"}
               </span>
             </div>
 
@@ -520,6 +497,29 @@ export default function Projects() {
               {loopEngineeringProjects.map((project, idx) =>
                 renderProjectCard(project, "large", idx)
               )}
+            </div>
+          </div>
+        )}
+
+        {/* ========================================================================= */}
+        {/* GROUP B: Featured Agentic Systems (Large Cards)                           */}
+        {/* ========================================================================= */}
+        {(activeFilter === "all" || activeFilter === "agentic") && (
+          <div className="mb-16">
+            <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+              <div className="flex items-center gap-2.5">
+                <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
+                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                  Autonomous AI &amp; Smart Assistants
+                </h3>
+              </div>
+              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
+                Group B // {agenticProjects.length} Projects
+              </span>
+            </div>
+
+            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+              {agenticProjects.map((project, idx) => renderProjectCard(project, "large", idx))}
             </div>
           </div>
         )}
