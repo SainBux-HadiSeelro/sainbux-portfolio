@@ -1,7 +1,8 @@
 "use client";
 
-import { useState } from "react";
-import { motion } from "framer-motion";
+import { useState, useEffect } from "react";
+import Image from "next/image";
+import { motion, AnimatePresence } from "framer-motion";
 import {
   Mail,
   Send,
@@ -12,6 +13,9 @@ import {
   Phone,
   Clock,
   ArrowUpRight,
+  Eye,
+  X,
+  CreditCard,
 } from "lucide-react";
 import { GithubIcon, LinkedinIcon } from "./Icons";
 import { SectionPill, CircuitLineDecoration, CurvedWave } from "./SignatureElements";
@@ -19,6 +23,7 @@ import { socialLinks } from "@/data/socials";
 
 export default function Contact() {
   const [copied, setCopied] = useState(false);
+  const [isCardModalOpen, setIsCardModalOpen] = useState(false);
   const [formState, setFormState] = useState({
     name: "",
     email: "",
@@ -31,6 +36,20 @@ export default function Contact() {
   const emailAddress = socialLinks.email;
   const phoneNumber = socialLinks.phone;
   const location = socialLinks.location;
+
+  useEffect(() => {
+    const handleKeyDown = (e: KeyboardEvent) => {
+      if (e.key === "Escape") setIsCardModalOpen(false);
+    };
+    if (isCardModalOpen) {
+      window.addEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "hidden";
+    }
+    return () => {
+      window.removeEventListener("keydown", handleKeyDown);
+      document.body.style.overflow = "auto";
+    };
+  }, [isCardModalOpen]);
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(emailAddress);
@@ -186,6 +205,60 @@ export default function Contact() {
                     {location}
                   </div>
                 </div>
+              </div>
+            </div>
+
+            {/* Digital Visiting Card Showcase Block */}
+            <div className="p-5 rounded-2xl bg-white/10 backdrop-blur-md border border-white/15 space-y-3.5 shadow-xl">
+              <div className="flex items-center justify-between">
+                <div className="flex items-center gap-2 text-xs font-mono font-bold text-[#1EA7FF]">
+                  <CreditCard className="w-4 h-4 text-[#1EA7FF]" />
+                  <span className="uppercase tracking-wider">Digital Visiting Card</span>
+                </div>
+                <span className="text-[10px] font-mono text-[#CFE6FF] bg-white/10 px-2.5 py-0.5 rounded-full border border-white/10">
+                  Preview &amp; Save
+                </span>
+              </div>
+
+              {/* Card Image Thumbnail with Click-to-Enlarge */}
+              <div
+                onClick={() => setIsCardModalOpen(true)}
+                className="group relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/20 bg-slate-900 cursor-pointer shadow-lg transition-all hover:border-[#1EA7FF] hover:shadow-[0_0_20px_rgba(30,167,255,0.25)]"
+                title="Click to view full card"
+              >
+                <Image
+                  src="/sainbux_visiting_card.jpg"
+                  alt="Sain Bux - Agentic AI Engineer Visiting Card"
+                  fill
+                  sizes="(max-width: 768px) 100vw, 420px"
+                  className="object-cover transition-transform duration-500 group-hover:scale-105"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center">
+                  <span className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-full text-xs font-mono font-bold text-white bg-black/60 backdrop-blur-md border border-white/25 shadow-lg">
+                    <Eye className="w-3.5 h-3.5 text-[#1EA7FF]" />
+                    Click to View Full Size
+                  </span>
+                </div>
+              </div>
+
+              {/* Action Buttons for Visiting Card */}
+              <div className="grid grid-cols-2 gap-2.5 pt-1">
+                <button
+                  type="button"
+                  onClick={() => setIsCardModalOpen(true)}
+                  className="p-2.5 rounded-xl border border-white/15 bg-white/10 hover:bg-white/20 text-white font-mono text-xs flex items-center justify-center gap-2 transition-all cursor-pointer"
+                >
+                  <Eye className="w-3.5 h-3.5 text-[#1EA7FF]" />
+                  <span>View Card</span>
+                </button>
+                <a
+                  href="/sainbux_visiting_card.jpg"
+                  download="sainbux_visiting_card.jpg"
+                  className="p-2.5 rounded-xl border border-[#1EA7FF]/40 bg-[#1553C7] hover:bg-[#0B1F5C] text-white font-mono text-xs font-bold flex items-center justify-center gap-2 transition-all shadow-md shadow-[#1553C7]/30 hover:border-[#1EA7FF]"
+                >
+                  <Download className="w-3.5 h-3.5 text-[#1EA7FF]" />
+                  <span>Download Card</span>
+                </a>
               </div>
             </div>
 
@@ -366,6 +439,77 @@ export default function Contact() {
           </div>
         </div>
       </div>
+
+      {/* Visiting Card Full Screen Modal */}
+      <AnimatePresence>
+        {isCardModalOpen && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 flex items-center justify-center p-4 bg-black/80 backdrop-blur-md"
+            onClick={() => setIsCardModalOpen(false)}
+          >
+            <motion.div
+              initial={{ scale: 0.92, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.92, opacity: 0 }}
+              transition={{ duration: 0.2 }}
+              className="relative max-w-3xl w-full bg-[#0B1F5C] border border-[#1EA7FF]/40 rounded-2xl overflow-hidden shadow-2xl shadow-[#1EA7FF]/20"
+              onClick={(e) => e.stopPropagation()}
+            >
+              {/* Modal Header */}
+              <div className="flex items-center justify-between px-5 py-3.5 border-b border-white/15 bg-white/5">
+                <div className="flex items-center gap-2">
+                  <CreditCard className="w-4 h-4 text-[#1EA7FF]" />
+                  <span className="text-xs font-mono font-bold uppercase tracking-wider text-white">
+                    Sain Bux — Digital Visiting Card
+                  </span>
+                </div>
+                <button
+                  type="button"
+                  onClick={() => setIsCardModalOpen(false)}
+                  className="p-1 rounded-lg text-white/70 hover:text-white hover:bg-white/10 transition-colors cursor-pointer"
+                  aria-label="Close modal"
+                >
+                  <X className="w-5 h-5" />
+                </button>
+              </div>
+
+              {/* Modal Body: Card Image */}
+              <div className="p-4 sm:p-6 bg-gradient-to-b from-[#0A2A6B]/50 to-[#0B1F5C]">
+                <div className="relative w-full aspect-[16/9] rounded-xl overflow-hidden border border-white/20 shadow-2xl bg-black">
+                  <Image
+                    src="/sainbux_visiting_card.jpg"
+                    alt="Sain Bux - Agentic AI Engineer Visiting Card"
+                    fill
+                    sizes="(max-width: 1024px) 95vw, 768px"
+                    priority
+                    className="object-contain"
+                  />
+                </div>
+              </div>
+
+              {/* Modal Footer: Action Buttons */}
+              <div className="flex flex-col sm:flex-row items-center justify-between gap-3 px-5 py-3.5 border-t border-white/15 bg-white/5">
+                <span className="text-[11px] font-mono text-[#CFE6FF]">
+                  Forward Deployed &amp; Agentic AI Engineer
+                </span>
+                <div className="flex items-center gap-2 w-full sm:w-auto">
+                  <a
+                    href="/sainbux_visiting_card.jpg"
+                    download="sainbux_visiting_card.jpg"
+                    className="w-full sm:w-auto inline-flex items-center justify-center gap-2 px-5 py-2.5 rounded-xl font-mono text-xs font-bold text-white bg-[#1553C7] hover:bg-[#1EA7FF] hover:text-[#0B1F5C] shadow-lg transition-all"
+                  >
+                    <Download className="w-4 h-4" />
+                    <span>Download Card</span>
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   );
 }
