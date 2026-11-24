@@ -8,10 +8,6 @@ import { TaglineBlock, CircuitLineDecoration } from "./SignatureElements";
 export default function Hero() {
   return (
     <section className="relative pt-28 sm:pt-36 pb-0 overflow-hidden bg-gradient-to-b from-white via-[#F0F7FF] to-[#DCEBFC]/60">
-      {/* Subtle background tech accents */}
-      <div className="absolute top-20 right-0 w-96 h-96 bg-[#1EA7FF]/10 rounded-full blur-3xl pointer-events-none" />
-      <div className="absolute top-40 left-0 w-80 h-80 bg-[#1553C7]/5 rounded-full blur-3xl pointer-events-none" />
-
       {/* Circuit line corner decorations */}
       <div className="absolute top-24 right-6 hidden md:block">
         <CircuitLineDecoration orientation="right" />
@@ -79,34 +75,25 @@ export default function Hero() {
 
           {/* Right Column: Prominent Robot & Human Hand Image */}
           <div className="lg:col-span-5 relative flex items-center justify-center w-full">
-            {/* Soft Cyan/White Spark Glow Layer behind the hands */}
+            {/* Sleek aesthetic frame with floating motion */}
             <motion.div
               animate={{
-                scale: [1, 1.12, 1],
-                opacity: [0.35, 0.65, 0.35],
+                y: [0, -8, 0],
               }}
               transition={{
-                duration: 4,
+                duration: 5,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="absolute inset-0 bg-radial from-[#1EA7FF]/35 via-[#1553C7]/15 to-transparent rounded-full blur-2xl pointer-events-none"
-            />
-
-            {/* Floating hands visual with interactive hover */}
-            <motion.div
-              animate={{
-                y: [0, -10, 0],
-                rotate: [0, 0.5, -0.5, 0],
-              }}
-              transition={{
-                duration: 6,
-                repeat: Infinity,
-                ease: "easeInOut",
-              }}
-              whileHover={{ scale: 1.025 }}
-              className="relative w-full max-w-[540px] aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl shadow-[#1553C7]/20 border border-[#CFE6FF] bg-gradient-to-tr from-white via-[#EAF4FF] to-white group transition-shadow hover:shadow-[0_0_35px_rgba(30,167,255,0.35)]"
+              whileHover={{ scale: 1.02 }}
+              className="relative w-full max-w-[540px] aspect-[16/9] rounded-2xl overflow-hidden shadow-xl shadow-[#0B1F5C]/10 border border-[#CFE6FF] bg-white group transition-all"
             >
+              {/* Top-left subtle pill badge: HUMAN x AI */}
+              <div className="absolute top-3 left-3 z-10 px-2.5 py-1 rounded-full bg-white/95 border border-[#CFE6FF] shadow-xs text-[10px] font-mono font-bold text-[#1553C7] flex items-center gap-1.5 pointer-events-none">
+                <span className="w-1.5 h-1.5 rounded-full bg-[#1EA7FF] animate-pulse" />
+                <span>HUMAN &times; AI SYNERGY</span>
+              </div>
+
               <Image
                 src="/hero-hands.png"
                 alt="AI Robot and Human Hand Touching with Glowing Energy Spark"
@@ -116,42 +103,42 @@ export default function Hero() {
                 className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
 
-              {/* Spark Glow Pulse Overlay at exact coordinates: left-[50.2%] top-[45%] */}
-              <div className="absolute top-[45%] left-[50.2%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                {/* Expanding energy ping wave */}
-                <div className="absolute -inset-3.5 w-9 h-9 rounded-full bg-[#1EA7FF]/60 blur-md animate-ping" />
-                
-                {/* Concentric expanding shockwave ring */}
+              {/* Crisp Star Glint (Zero blur!) */}
+              <div className="absolute top-[57.6%] left-[51.7%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                {/* Clean Expanding Shockwave Ring (Sharp hairline border, no blur) */}
                 <motion.div
                   animate={{
-                    scale: [0.8, 2.4, 0.8],
-                    opacity: [0.9, 0, 0.9],
+                    scale: [0.8, 2.2, 0.8],
+                    opacity: [0.85, 0, 0.85],
                   }}
                   transition={{
-                    duration: 2.4,
+                    duration: 2.2,
                     repeat: Infinity,
                     ease: "easeOut",
                   }}
-                  className="absolute -inset-2.5 w-7 h-7 rounded-full border border-[#38BDF8] blur-[0.5px]"
+                  className="absolute -inset-3 w-8 h-8 rounded-full border border-[#1EA7FF]"
                 />
 
-                {/* Bright white/cyan core with spark flare */}
+                {/* Rotating 4-Point Star Glint */}
                 <motion.div
                   animate={{
-                    scale: [1, 1.3, 1],
-                    boxShadow: [
-                      "0 0 15px #1EA7FF, 0 0 30px #38BDF8",
-                      "0 0 25px #1EA7FF, 0 0 50px #38BDF8, 0 0 70px #0284C7",
-                      "0 0 15px #1EA7FF, 0 0 30px #38BDF8",
-                    ],
+                    scale: [0.9, 1.25, 0.9],
+                    rotate: [0, 90, 180],
                   }}
                   transition={{
-                    duration: 2,
+                    duration: 3,
                     repeat: Infinity,
                     ease: "easeInOut",
                   }}
-                  className="w-3.5 h-3.5 rounded-full bg-white relative"
-                />
+                  className="relative flex items-center justify-center"
+                >
+                  {/* Horizontal ray */}
+                  <div className="absolute w-8 h-[1.5px] bg-gradient-to-r from-transparent via-white to-transparent" />
+                  {/* Vertical ray */}
+                  <div className="absolute h-8 w-[1.5px] bg-gradient-to-b from-transparent via-white to-transparent" />
+                  {/* Diamond glint core */}
+                  <div className="w-2.5 h-2.5 bg-white rotate-45 border border-[#1EA7FF]" />
+                </motion.div>
               </div>
             </motion.div>
           </div>
