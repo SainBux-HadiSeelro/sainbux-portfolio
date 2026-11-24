@@ -52,7 +52,7 @@ export default function Education() {
     },
     {
       title: "GenAI, Web3 & Metaverse Program",
-      organization: "Governor Sindh IT Initiative (GIAIC)",
+      organization: "Governor Sindh's Initiative for Artificial Intelligence and Computing (GIAIC)",
       period: "Feb 2024 – Present",
       badge: "GenAI & Cloud",
       status: "Active Cohort",
