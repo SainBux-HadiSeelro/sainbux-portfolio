@@ -116,8 +116,8 @@ export default function Hero() {
                 className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
 
-              {/* Spark Glow Pulse Overlay at exact coordinates: left-[50.2%] top-[59.2%] */}
-              <div className="absolute top-[59.2%] left-[50.2%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+              {/* Spark Glow Pulse Overlay at exact coordinates: left-[50.2%] top-[45%] */}
+              <div className="absolute top-[45%] left-[50.2%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
                 {/* Expanding energy ping wave */}
                 <div className="absolute -inset-3.5 w-9 h-9 rounded-full bg-[#1EA7FF]/60 blur-md animate-ping" />
                 
