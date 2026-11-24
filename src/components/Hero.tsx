@@ -80,19 +80,32 @@ export default function Hero() {
           {/* Right Column: Prominent Robot & Human Hand Image */}
           <div className="lg:col-span-5 relative flex items-center justify-center w-full">
             {/* Soft Cyan/White Spark Glow Layer behind the hands */}
-            <div className="absolute inset-0 bg-radial from-[#1EA7FF]/25 via-transparent to-transparent rounded-full blur-2xl pointer-events-none" />
-
-            {/* Floating hands visual */}
             <motion.div
               animate={{
-                y: [0, -8, 0],
+                scale: [1, 1.12, 1],
+                opacity: [0.35, 0.65, 0.35],
               }}
               transition={{
-                duration: 5,
+                duration: 4,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              className="relative w-full max-w-[540px] aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl shadow-[#1553C7]/15 border border-[#CFE6FF] bg-gradient-to-tr from-white via-[#EAF4FF] to-white group"
+              className="absolute inset-0 bg-radial from-[#1EA7FF]/35 via-[#1553C7]/15 to-transparent rounded-full blur-2xl pointer-events-none"
+            />
+
+            {/* Floating hands visual with interactive hover */}
+            <motion.div
+              animate={{
+                y: [0, -10, 0],
+                rotate: [0, 0.5, -0.5, 0],
+              }}
+              transition={{
+                duration: 6,
+                repeat: Infinity,
+                ease: "easeInOut",
+              }}
+              whileHover={{ scale: 1.025 }}
+              className="relative w-full max-w-[540px] aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl shadow-[#1553C7]/20 border border-[#CFE6FF] bg-gradient-to-tr from-white via-[#EAF4FF] to-white group transition-shadow hover:shadow-[0_0_35px_rgba(30,167,255,0.35)]"
             >
               <Image
                 src="/hero-hands.png"
@@ -103,9 +116,43 @@ export default function Hero() {
                 className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
 
-              {/* Spark Glow Pulse Overlay */}
-              <div className="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#1EA7FF]/50 blur-md animate-ping pointer-events-none" />
-              <div className="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white shadow-[0_0_20px_#1EA7FF] pointer-events-none" />
+              {/* Spark Glow Pulse Overlay at exact coordinates: left-[50.2%] top-[59.2%] */}
+              <div className="absolute top-[59.2%] left-[50.2%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
+                {/* Expanding energy ping wave */}
+                <div className="absolute -inset-3.5 w-9 h-9 rounded-full bg-[#1EA7FF]/60 blur-md animate-ping" />
+                
+                {/* Concentric expanding shockwave ring */}
+                <motion.div
+                  animate={{
+                    scale: [0.8, 2.4, 0.8],
+                    opacity: [0.9, 0, 0.9],
+                  }}
+                  transition={{
+                    duration: 2.4,
+                    repeat: Infinity,
+                    ease: "easeOut",
+                  }}
+                  className="absolute -inset-2.5 w-7 h-7 rounded-full border border-[#38BDF8] blur-[0.5px]"
+                />
+
+                {/* Bright white/cyan core with spark flare */}
+                <motion.div
+                  animate={{
+                    scale: [1, 1.3, 1],
+                    boxShadow: [
+                      "0 0 15px #1EA7FF, 0 0 30px #38BDF8",
+                      "0 0 25px #1EA7FF, 0 0 50px #38BDF8, 0 0 70px #0284C7",
+                      "0 0 15px #1EA7FF, 0 0 30px #38BDF8",
+                    ],
+                  }}
+                  transition={{
+                    duration: 2,
+                    repeat: Infinity,
+                    ease: "easeInOut",
+                  }}
+                  className="w-3.5 h-3.5 rounded-full bg-white relative"
+                />
+              </div>
             </motion.div>
           </div>
         </div>
