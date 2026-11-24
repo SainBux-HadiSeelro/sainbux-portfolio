@@ -39,7 +39,7 @@ export default function Education() {
   // 4. Aptech: Core programming foundation
   const certifications = [
     {
-      title: "SMIT Agentic AI Specialized Course",
+      title: "Agentic AI Specialized Course",
       organization: "Saylani Mass IT Training (SMIT)",
       period: "Feb 2025 – Dec 2025",
       badge: "Agentic AI",
