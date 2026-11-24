@@ -8,6 +8,10 @@ import { TaglineBlock, CircuitLineDecoration } from "./SignatureElements";
 export default function Hero() {
   return (
     <section className="relative pt-28 sm:pt-36 pb-0 overflow-hidden bg-gradient-to-b from-white via-[#F0F7FF] to-[#DCEBFC]/60">
+      {/* Subtle background tech accents */}
+      <div className="absolute top-20 right-0 w-96 h-96 bg-[#1EA7FF]/10 rounded-full blur-3xl pointer-events-none" />
+      <div className="absolute top-40 left-0 w-80 h-80 bg-[#1553C7]/5 rounded-full blur-3xl pointer-events-none" />
+
       {/* Circuit line corner decorations */}
       <div className="absolute top-24 right-6 hidden md:block">
         <CircuitLineDecoration orientation="right" />
@@ -73,82 +77,35 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* Right Column: High-Tech Card (Clean Artwork without Fonts) */}
+          {/* Right Column: Prominent Robot & Human Hand Image */}
           <div className="lg:col-span-5 relative flex items-center justify-center w-full">
-            {/* Aesthetic Floating Card with 3D Float Motion */}
+            {/* Soft Cyan/White Spark Glow Layer behind the hands */}
+            <div className="absolute inset-0 bg-radial from-[#1EA7FF]/25 via-transparent to-transparent rounded-full blur-2xl pointer-events-none" />
+
+            {/* Floating hands visual */}
             <motion.div
               animate={{
-                y: [0, -10, 0],
-                rotateZ: [0, 0.6, -0.6, 0],
+                y: [0, -8, 0],
               }}
               transition={{
-                duration: 6,
+                duration: 5,
                 repeat: Infinity,
                 ease: "easeInOut",
               }}
-              whileHover={{ scale: 1.03, y: -5 }}
-              className="relative w-full max-w-[540px] aspect-[16/9] rounded-2xl overflow-hidden shadow-[0_16px_36px_rgba(11,31,92,0.14),0_4px_12px_rgba(30,167,255,0.1)] border border-[#CFE6FF] bg-white group transition-all"
+              className="relative w-full max-w-[540px] aspect-[16/9] rounded-2xl overflow-hidden shadow-2xl shadow-[#1553C7]/15 border border-[#CFE6FF] bg-gradient-to-tr from-white via-[#EAF4FF] to-white group"
             >
               <Image
                 src="/hero-hands.png"
-                alt="Agentic AI & Engineering Cyber Card Art"
+                alt="AI Robot and Human Hand Touching with Glowing Energy Spark"
                 fill
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 540px"
                 priority
-                className="object-cover object-center transform group-hover:scale-102 transition-transform duration-700"
+                className="object-cover object-center transform group-hover:scale-105 transition-transform duration-700"
               />
 
-              {/* Aesthetic Light Sheen Sweep Animation */}
-              <motion.div
-                animate={{
-                  x: ["-150%", "250%"],
-                }}
-                transition={{
-                  duration: 4,
-                  repeat: Infinity,
-                  repeatDelay: 3.5,
-                  ease: "easeInOut",
-                }}
-                className="absolute inset-0 w-1/3 h-full bg-gradient-to-r from-transparent via-white/25 to-transparent skew-x-12 pointer-events-none"
-              />
-
-              {/* Electric Cyan Touch Spark at exact coordinates: left-[50.2%] top-[59.2%] */}
-              <div className="absolute top-[59.2%] left-[50.2%] -translate-x-1/2 -translate-y-1/2 pointer-events-none">
-                {/* Clean Expanding Shockwave Ring (Sharp hairline border, no blur) */}
-                <motion.div
-                  animate={{
-                    scale: [0.7, 2.4, 0.7],
-                    opacity: [0.9, 0, 0.9],
-                  }}
-                  transition={{
-                    duration: 2.2,
-                    repeat: Infinity,
-                    ease: "easeOut",
-                  }}
-                  className="absolute -inset-3 w-8 h-8 rounded-full border border-[#1EA7FF]"
-                />
-
-                {/* Rotating 4-Point Star Glint */}
-                <motion.div
-                  animate={{
-                    scale: [0.9, 1.3, 0.9],
-                    rotate: [0, 90, 180],
-                  }}
-                  transition={{
-                    duration: 3,
-                    repeat: Infinity,
-                    ease: "easeInOut",
-                  }}
-                  className="relative flex items-center justify-center"
-                >
-                  {/* Horizontal ray */}
-                  <div className="absolute w-8 h-[1.5px] bg-gradient-to-r from-transparent via-white to-transparent" />
-                  {/* Vertical ray */}
-                  <div className="absolute h-8 w-[1.5px] bg-gradient-to-b from-transparent via-white to-transparent" />
-                  {/* Diamond glint core */}
-                  <div className="w-2.5 h-2.5 bg-white rotate-45 border border-[#1EA7FF] shadow-[0_0_6px_#1EA7FF]" />
-                </motion.div>
-              </div>
+              {/* Spark Glow Pulse Overlay */}
+              <div className="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 w-8 h-8 rounded-full bg-[#1EA7FF]/50 blur-md animate-ping pointer-events-none" />
+              <div className="absolute top-[48%] left-[49%] -translate-x-1/2 -translate-y-1/2 w-4 h-4 rounded-full bg-white shadow-[0_0_20px_#1EA7FF] pointer-events-none" />
             </motion.div>
           </div>
         </div>
