@@ -28,85 +28,85 @@ interface ServiceItem {
 const servicesList: ServiceItem[] = [
   {
     id: "agentic-swarms",
-    title: "Autonomous Multi-Agent Swarms",
-    badge: "Core Architecture",
+    title: "AI Worker Teams",
+    badge: "Multi-Agent",
     icon: Bot,
     description:
-      "Collaborative AI agent teams that plan, delegate, and execute multi-step business workflows with autonomous error-correction.",
+      "Multiple AI bots working together like a human team (Researcher, Writer, Reviewer) to finish complex tasks faster.",
     deliverables: [
-      "Multi-agent swarms (Researcher → Analyst → Writer)",
-      "ReAct reasoning & dynamic task decomposition",
-      "Human-in-the-loop intervention safeguards",
+      "Collaborative multi-bot teams",
+      "Automatic task breakdown & planning",
+      "Human review & approval controls",
     ],
     projectTag: "agentic",
   },
   {
     id: "workflow-automation",
-    title: "Enterprise Workflow Automation",
-    badge: "Operations",
+    title: "Business Automation",
+    badge: "Auto-Pilot",
     icon: Workflow,
     description:
-      "Automated end-to-end pipelines connecting AI models directly to CRMs, databases, and internal tooling to eliminate manual tasks.",
+      "Connect your CRMs, emails, and databases with AI to put repetitive daily business operations on autopilot.",
     deliverables: [
-      "Custom n8n & Python workflow orchestration",
-      "Real-time webhook listeners & event triggers",
-      "Automated client qualification & calendar booking",
+      "Auto lead qualification & calendar booking",
+      "Instant WhatsApp & email responses",
+      "Automatic data syncing across apps",
     ],
     projectTag: "ai-integrated",
   },
   {
     id: "ai-web-apps",
-    title: "Full-Stack AI Web Applications",
-    badge: "Production Web",
+    title: "Custom AI Web Apps",
+    badge: "Web & Mobile",
     icon: Globe,
     description:
-      "Production-grade Next.js web applications featuring responsive UI, client-side biometrics, and embedded 24/7 AI concierges.",
+      "Fast, modern websites and client portals with built-in 24/7 AI concierges and instant smart search.",
     deliverables: [
-      "Next.js App Router & React 19 architecture",
-      "Embedded 24/7 AI chat concierges with state",
-      "Sub-second catalog search & instant checkout",
+      "Clean, mobile-responsive web apps",
+      "24/7 smart customer chat assistants",
+      "Fast product search & secure accounts",
     ],
     projectTag: "client-demo",
   },
   {
     id: "mcp-tools",
-    title: "Custom Tool & Protocol Integration",
+    title: "Data & Tool Connections",
     badge: "Integration",
     icon: Network,
     description:
-      "Secure bridges connecting LLMs to live company databases, spreadsheets, and APIs using Model Context Protocol (MCP).",
+      "Connect AI safely to your live Google Sheets, Excel files, and internal databases so you can chat with your data.",
     deliverables: [
-      "Model Context Protocol (MCP) server development",
-      "Bilingual (English & Roman Urdu) spreadsheet agents",
-      "Snapshot backup guards for zero data loss",
+      "Chat with spreadsheets in English & Urdu",
+      "Direct & secure database connections",
+      "Automatic backups for zero data loss",
     ],
     projectTag: "agentic",
   },
   {
     id: "loop-engineering",
-    title: "Deterministic Loop Engineering",
-    badge: "Self-Healing",
+    title: "Self-Checking AI Systems",
+    badge: "Reliability",
     icon: RefreshCw,
     description:
-      "Closed-loop self-healing code repair engines with strict Maker-Checker verification and token budget protection.",
+      "AI that automatically double-checks its work, catches mistakes, and fixes errors before anyone sees them.",
     deliverables: [
-      "Maker-Checker dual-agent repair protocols",
-      "Adversarial anti-cheat edge-case probes",
-      "Token budget guards & spending circuit-breakers",
+      "Maker-Checker automatic double-check",
+      "Instant error detection & auto-repair",
+      "Strict cost & spending limit controls",
     ],
     projectTag: "loop-engineering",
   },
   {
     id: "data-analytics",
-    title: "Data Science & Telemetry Dashboards",
-    badge: "Analytics & ML",
+    title: "Smart Dashboards & Insights",
+    badge: "Analytics",
     icon: TrendingUp,
     description:
-      "Predictive machine learning dashboards, zero-database financial systems, and real-time telemetry streaming platforms.",
+      "Clear visual dashboards that track business health, predict sales trends, and turn messy data into actionable steps.",
     deliverables: [
-      "Scikit-Learn ML classifiers & outcome predictors",
-      "Exact integer math ledgers (zero rounding drift)",
-      "Interactive Streamlit & Plotly telemetry HUDs",
+      "Live sales & business metrics HUDs",
+      "AI customer & outcome forecasting",
+      "Simple visual charts & exportable reports",
     ],
     projectTag: "data-utility",
   },
@@ -133,31 +133,31 @@ export default function Services() {
               What I Build &amp; Deliver
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Turnkey AI systems, autonomous agent swarms, and full-stack web platforms engineered for business reliability.
+              Smart AI assistants, business automations, and modern web apps built to save time and grow revenue.
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">
-            Scope: Architecture &bull; Automation &bull; Deployment
+            Scope: AI Automations &bull; Web Apps &bull; Integrations
           </div>
         </div>
 
         {/* Value Chips Strip */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">Multi-Agent</div>
-            <div className="text-[11px] font-mono text-[#5B6B8C]">Autonomous Swarms</div>
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">AI Teams</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Work Together</div>
           </div>
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">MCP Protocols</div>
-            <div className="text-[11px] font-mono text-[#5B6B8C]">Live Tool Calling</div>
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">Auto-Pilots</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Zero Manual Work</div>
           </div>
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">Self-Healing</div>
-            <div className="text-[11px] font-mono text-[#5B6B8C]">Loop Engineering</div>
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">Self-Checking</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Auto-Fixes Errors</div>
           </div>
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">Full-Stack</div>
-            <div className="text-[11px] font-mono text-[#5B6B8C]">Next.js &amp; React 19</div>
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">Web Apps</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Fast &amp; Modern</div>
           </div>
         </div>
 
@@ -234,13 +234,13 @@ export default function Services() {
           <div>
             <div className="flex items-center gap-2 text-[#1EA7FF] font-mono text-xs font-bold uppercase tracking-wider mb-1">
               <Sparkles className="w-3.5 h-3.5" />
-              <span>Tailored Engagements</span>
+              <span>Tailored Solutions</span>
             </div>
             <h4 className="font-heading text-lg sm:text-xl font-extrabold text-white">
-              Have a custom AI workflow or automation in mind?
+              Have a project or automation idea?
             </h4>
             <p className="text-xs text-[#CFE6FF] mt-1 max-w-lg">
-              From standalone agent prototypes to enterprise multi-agent integrations, let&apos;s build a reliable solution.
+              From simple AI assistants to complete business automations, let&apos;s build something that works for you.
             </p>
           </div>
           <Link
