@@ -22,21 +22,17 @@ export default function Education() {
     period: "2023 – 2027",
     status: "Degree Candidate",
     details:
-      "Comprehensive 4-year degree focusing on computer science foundations, software engineering, databases, and practical artificial intelligence.",
+      "Core focus on software architecture, distributed computing, algorithms, and practical AI systems.",
     coreFocus: [
-      "Distributed Systems Architecture",
+      "Distributed Systems",
       "Data Structures & Algorithms",
-      "Software Design Patterns",
+      "Design Patterns",
       "Applied Machine Learning",
-      "Database Engineering",
+      "Database Systems",
     ],
   };
 
   // Structured by strategic relevance and chronology:
-  // 1. SMIT: Core agentic AI specialization (portfolio anchor)
-  // 2. GIAIC: Active GenAI & Modern Web cohort
-  // 3. PIAIC: Cloud-native AI & systems
-  // 4. Aptech: Core programming foundation
   const certifications = [
     {
       title: "Agentic AI Specialized Course",
@@ -47,7 +43,7 @@ export default function Education() {
       isHighlighted: true,
       icon: Brain,
       description:
-        "Intensive hands-on track covering autonomous agents, multi-agent coordination, deterministic loop engineering, and production tool execution pipelines.",
+        "Autonomous agent architectures, multi-agent swarms, deterministic loop engineering, and tool execution.",
       topics: ["Multi-Agent Loops", "Tool Calling", "MCP Protocol", "Autonomous Runtimes"],
     },
     {
@@ -59,7 +55,7 @@ export default function Education() {
       isActive: true,
       icon: Sparkles,
       description:
-        "Applied Generative AI development, modern Next.js ecosystem, TypeScript, LLM application engineering, and vector database retrieval.",
+        "Applied GenAI engineering, Next.js App Router, TypeScript, and vector database retrieval.",
       topics: ["Generative AI", "Next.js App Router", "TypeScript", "LLM Pipelines"],
     },
     {
@@ -71,7 +67,7 @@ export default function Education() {
       isActive: true,
       icon: Cpu,
       description:
-        "Practical study and continuous research in Agentic AI architectures, modern AI developer tools (Claude Code, Antigravity, Gemini CLI), intelligent reasoning workflows, and emerging LLM technologies.",
+        "Agentic systems, modern CLI workflows (Claude Code, Antigravity, Gemini CLI), and automated reasoning loops.",
       topics: ["Agentic AI", "Modern AI Tools", "AI Research", "Reasoning Workflows"],
     },
     {
@@ -82,7 +78,7 @@ export default function Education() {
       status: "Foundational Certified",
       icon: Terminal,
       description:
-        "Rigorous training in advanced Python paradigms, object-oriented design, modular architecture, concurrency, and backend automation.",
+        "Advanced Python paradigms, object-oriented architecture, concurrency, and backend automation.",
       topics: ["OOP & Design Patterns", "Concurrency", "Backend Automation", "Data Pipelines"],
     },
   ];
@@ -106,7 +102,7 @@ export default function Education() {
               Education &amp; Specializations
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Formal degree in software engineering alongside specialized training programs in modern AI and development.
+              Software engineering degree paired with advanced specializations in Agentic AI.
             </p>
           </div>
 
@@ -201,7 +197,7 @@ export default function Education() {
                 Academic Theory &times; Production AI Runtimes
               </h5>
               <p className="text-xs text-[#DCEBFC] leading-relaxed font-normal">
-                Combining classic software architecture, memory safety, and algorithmic rigor with modern agent orchestration, deterministic tool protocols, and live LLM reasoning loops.
+                Bridging software engineering rigor with autonomous agent swarms, deterministic tool protocols, and live reasoning loops.
               </p>
             </motion.div>
           </div>

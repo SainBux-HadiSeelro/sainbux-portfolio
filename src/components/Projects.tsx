@@ -508,7 +508,7 @@ export default function Projects() {
               Production AI &amp; Web Showcase
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-2xl leading-relaxed">
-              36 production systems across Autonomous Multi-Agent Swarms, Self-Healing Code Loops, and High-Performance Web Platforms. Every project includes live interactive deployments, public source code, and verified metrics.
+              36 live systems across Autonomous Agent Swarms, Loop Engineering, and Modern Web Apps. All projects feature live deployments and public source code.
             </p>
           </div>
           <div className="flex items-center gap-2 self-start md:self-auto flex-wrap">
@@ -806,7 +806,7 @@ export default function Projects() {
                       </h3>
                     </div>
                     <p className="text-[#5B6B8C] text-xs sm:text-sm mt-1">
-                      High-converting commercial platforms featuring embedded 24/7 AI chat concierges, appointment funnels, and responsive UI.
+                      Commercial web platforms featuring embedded 24/7 AI concierges and automated booking funnels.
                     </p>
                   </div>
                   <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF] self-start sm:self-auto">

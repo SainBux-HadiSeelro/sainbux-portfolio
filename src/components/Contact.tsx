@@ -124,7 +124,7 @@ export default function Contact() {
             Let&apos;s build smart AI solutions for your business.
           </h2>
           <p className="text-[#CFE6FF] text-base mt-4 max-w-xl">
-            Available for full-time AI Engineer roles, project consulting, and custom AI automation development.
+            Available for full-time AI Engineer roles and select consulting engagements.
           </p>
         </div>
 
@@ -139,10 +139,10 @@ export default function Contact() {
               </div>
 
               <h3 className="font-heading text-xl font-bold text-white">
-                Ready to bring smart AI automations to your business?
+                Ready to automate your workflows?
               </h3>
               <p className="text-xs text-[#EAF4FF] leading-relaxed">
-                Looking for roles as an <strong className="text-white font-bold">AI Engineer</strong> or <strong className="text-white font-bold">Forward Deployed Builder</strong>. Experienced in designing AI assistants, automated workflows, and direct database integrations.
+                Open to <strong className="text-white font-bold">AI Engineer</strong> and <strong className="text-white font-bold">Forward Deployed</strong> roles. Specializing in autonomous multi-agent systems, tool integrations, and enterprise automations.
               </p>
 
               <div className="pt-3 border-t border-white/10 space-y-2 text-xs font-mono text-[#CFE6FF]">
@@ -329,7 +329,7 @@ export default function Contact() {
                 Send a Message
               </h3>
               <p className="text-xs text-[#5B6B8C] mb-6">
-                Fill out the form below or reach out directly at{" "}
+                Send a message below or email directly at{" "}
                 <a href={`mailto:${emailAddress}`} className="text-[#1553C7] font-semibold hover:underline">
                   {emailAddress}
                 </a>

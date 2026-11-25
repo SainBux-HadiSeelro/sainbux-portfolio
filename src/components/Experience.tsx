@@ -25,12 +25,12 @@ export default function Experience() {
       tag: "Current Role",
       tagColor: "text-emerald-700 bg-emerald-50 border-emerald-200",
       description:
-        "Designing and deploying reliable AI systems, automated workflows, and smart tool integrations that solve enterprise operational challenges.",
+        "Designing and deploying multi-agent workflows, tool integrations, and autonomous enterprise systems.",
       highlights: [
-        "Build automated workflows where multiple AI agents work together to execute business operations end-to-end.",
-        "Connect AI models directly to databases and company APIs for real-time data access and automated actions.",
-        "Implement automated self-checking loops that catch errors and fix them before delivering results to users.",
-        "Optimize system speed and reduce token costs for high-volume commercial AI applications.",
+        "Architect multi-agent pipelines for end-to-end task execution.",
+        "Integrate LLMs with live databases, APIs, and Model Context Protocol (MCP).",
+        "Implement self-healing feedback loops that auto-correct errors before delivery.",
+        "Optimize prompt pipelines to minimize latency and token expenditure.",
       ],
       impactMetrics: [
         "Automated Workflows",
@@ -57,12 +57,12 @@ export default function Experience() {
       tag: "Forward Deployed",
       tagColor: "text-[#1553C7] bg-[#EAF4FF] border-[#CFE6FF]",
       description:
-        "Designing and delivering custom AI agents, interactive dashboards, and automated systems for real-world commercial clients.",
+        "Delivering custom AI agents, full-stack web platforms, and automated business workflows.",
       highlights: [
-        "Built full-stack AI applications featuring multi-agent collaboration, intelligent search (RAG), and custom tools.",
-        "Engineered smart fitness and clinic platforms with real-time biometric calculations and instant appointment bookings.",
-        "Built bilingual (English & Roman Urdu) spreadsheet automation tools that allow non-technical staff to query and edit data naturally.",
-        "Automated lead qualification and customer onboarding pipelines combining AI chatbots with calendar bookings.",
+        "Built full-stack AI applications with multi-agent orchestration and RAG.",
+        "Engineered industry platforms with real-time biometrics and instant booking.",
+        "Developed bilingual (English & Roman Urdu) spreadsheet automation tools.",
+        "Automated lead qualification and onboarding funnels with direct calendar sync.",
       ],
       impactMetrics: [
         "Multi-Agent Systems",
@@ -133,7 +133,7 @@ export default function Experience() {
               Work Experience &amp; Track Record
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              Building practical AI solutions, automated workflows, and enterprise systems that deliver tangible business value.
+              Production AI systems, agent swarms, and enterprise workflow automation.
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">

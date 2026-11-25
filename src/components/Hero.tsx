@@ -49,7 +49,7 @@ export default function Hero() {
 
             {/* Intro tagline paragraph */}
             <p className="text-sm sm:text-base text-[#1E2A44] leading-relaxed max-w-xl mb-8">
-              I build smart AI assistants and automated systems that help businesses save time, handle repetitive tasks, and get real work done with high accuracy.
+              I build autonomous AI agents and automated workflows that eliminate repetitive tasks and execute real work with high reliability.
             </p>
 
             {/* 2 Focused Buttons: Primary (Royal Blue) & Secondary (Outline) */}

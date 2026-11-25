@@ -24,7 +24,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Agentic AI & LLM Systems",
     icon: Bot,
-    description: "Smart AI systems that plan steps, use tools, collaborate as a team, and check their own answers.",
+    description: "Multi-agent orchestration, tool calling, and self-correcting loops.",
     skills: [
       "OpenAI SDK",
       "Multi-Agent Systems",
@@ -39,7 +39,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Protocols & Integration",
     icon: Network,
-    description: "Secure bridges connecting AI directly to company databases, spreadsheets, APIs, and real-time events.",
+    description: "MCP protocol, live database connectors, REST/GraphQL APIs, and webhooks.",
     skills: [
       "Model Context Protocol (MCP)",
       "REST & GraphQL APIs",
@@ -50,7 +50,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Agentic CLI Tools",
     icon: Terminal,
-    description: "Modern interactive AI developer environments used daily for rapid building and deployment.",
+    description: "Daily CLI environments for rapid agent development and deployment.",
     skills: [
       "Claude Code",
       "OpenCode",
@@ -65,13 +65,13 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Languages & Runtimes",
     icon: Code2,
-    description: "Core programming languages and reliable frameworks powering fast, asynchronous backends.",
+    description: "Core languages powering asynchronous, type-safe backends.",
     skills: ["Python", "TypeScript", "JavaScript", "AsyncIO", "Pydantic"],
   },
   {
     title: "Web & Full-Stack",
     icon: Globe,
-    description: "Interactive web applications, client dashboards, and responsive digital interfaces.",
+    description: "Interactive client dashboards and modern responsive web apps.",
     skills: [
       "Next.js (App Router)",
       "FastAPI",
@@ -85,7 +85,7 @@ const skillCategories: SkillCategory[] = [
   {
     title: "Automation & Infrastructure",
     icon: Workflow,
-    description: "Automated workflow triggers, container systems, and reliable cloud hosting.",
+    description: "Automated workflows, Docker containers, and CI/CD pipelines.",
     skills: [
       "n8n Workflows",
       "Docker",
@@ -116,7 +116,7 @@ export default function Skills() {
               Technical Skills &amp; Stack
             </h2>
             <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-xl">
-              The modern tools, languages, and frameworks I use to build reliable AI solutions.
+              Modern tools, languages, and frameworks powering production AI systems.
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">

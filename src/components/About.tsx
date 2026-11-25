@@ -20,22 +20,22 @@ export default function About() {
     {
       icon: Workflow,
       title: "Smart AI Teamwork",
-      desc: "Coordinating multiple specialized AI agents that collaborate like a team to complete multi-step business tasks from start to finish.",
+      desc: "Specialized AI agents collaborating on complex end-to-end tasks.",
     },
     {
       icon: Cpu,
       title: "Direct Data & Tool Integration",
-      desc: "Connecting AI securely to live databases, spreadsheets, and web services so it can access real company data and take automated action.",
+      desc: "Securely connecting LLMs to databases, APIs, and real-time tools.",
     },
     {
       icon: Layers,
       title: "Self-Checking & Error Correction",
-      desc: "Built-in safety loops where AI plans its steps, verifies its own answers, and fixes any mistakes automatically before responding.",
+      desc: "Closed-loop safety systems that auto-verify and correct errors.",
     },
     {
       icon: Zap,
       title: "Fast, Reliable & Cost-Efficient",
-      desc: "Optimizing AI pipelines for quick responses and efficient token usage, keeping operational costs low and performance high.",
+      desc: "Optimized pipelines for low latency and minimal token spend.",
     },
   ];
 
@@ -158,22 +158,14 @@ export default function About() {
         {/* Content Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 lg:gap-12 items-start">
           {/* Main narrative */}
-          <div className="lg:col-span-7 space-y-6 text-[#1E2A44] text-base leading-relaxed">
+          <div className="lg:col-span-7 space-y-5 text-[#1E2A44] text-base leading-relaxed">
             <p>
               I am an <strong className="text-[#0B1F5C] font-bold">AI Engineer</strong> and{" "}
-              <strong className="text-[#1553C7] font-bold">Forward Deployed Builder</strong> who creates smart AI systems that go far beyond simple chatbots. I build AI assistants that can <strong className="text-[#0B1F5C] font-semibold">plan steps, use business tools, verify their own work, and correct mistakes automatically</strong>.
+              <strong className="text-[#1553C7] font-bold">Forward Deployed Builder</strong> designing autonomous systems that go far beyond basic chatbots. I specialize in multi-agent workflows that <strong className="text-[#0B1F5C] font-semibold">plan, call tools, and auto-correct errors</strong> with deterministic reliability.
             </p>
 
             <p>
-              Instead of unpredictable answers, I build AI systems designed for <strong className="text-[#0B1F5C] font-semibold">accuracy and reliability</strong>. Every AI action passes through strict safety checks, ensuring your business workflows run predictably, handle errors gracefully, and deliver dependable results every single time.
-            </p>
-
-            <p>
-              Currently working as an <strong className="text-[#0B1F5C] font-semibold">AI Engineer at Morphelabs (Remote)</strong>, I build automated workflows for businesses, connect AI models directly to live company databases and services, and make sure these systems run fast and cost-effectively.
-            </p>
-
-            <p>
-              From customer support concierges to complex data automations, I specialize in turning everyday business challenges into smooth, autonomous digital workflows using modern AI tools and developer environments.
+              Currently engineering AI at <strong className="text-[#0B1F5C] font-semibold">Morphelabs (Remote)</strong>, connecting models directly to enterprise databases, APIs, and client-facing interfaces with minimal latency and strict cost efficiency.
             </p>
 
             {/* Tech Badges Strip */}

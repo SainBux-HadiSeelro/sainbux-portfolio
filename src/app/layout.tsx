@@ -31,7 +31,7 @@ export const metadata: Metadata = {
     template: "%s | Sain Bux",
   },
   description:
-    "I build AI agents that plan, act, and correct themselves. Explore autonomous AI & automation projects, 12 Loop Engineering repositories, and production multi-agent systems.",
+    "Autonomous AI agents, multi-agent swarms, and deterministic loop engineering built by Sain Bux.",
   keywords: [
     "Sain Bux",
     "Agentic AI Engineer",
