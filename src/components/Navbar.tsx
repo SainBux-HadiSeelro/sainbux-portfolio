@@ -16,8 +16,8 @@ import { socialLinks } from "@/data/socials";
 // Navigation links with Projects positioned at the end
 const navLinks = [
   { id: "services", label: "Services", href: "/#services" },
-  { id: "skills", label: "Skills", href: "/#skills" },
   { id: "experience", label: "Experience", href: "/#experience" },
+  { id: "skills", label: "Skills", href: "/#skills" },
   { id: "education", label: "Education", href: "/#education" },
   { id: "about", label: "About", href: "/#about" },
   { id: "contact", label: "Contact", href: "/#contact" },
@@ -43,7 +43,7 @@ export default function Navbar() {
       return () => window.removeEventListener("scroll", handleProjectsScroll);
     }
 
-    const sectionIds = ["services", "skills", "experience", "education", "about", "contact"];
+    const sectionIds = ["services", "experience", "skills", "education", "about", "contact"];
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -197,21 +197,6 @@ export default function Navbar() {
             </Link>
 
             <Link
-              href="/#skills"
-              onClick={() => setMobileMenuOpen(false)}
-              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
-                activeSection === "skills"
-                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
-                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
-              }`}
-            >
-              <span>Skills</span>
-              {activeSection === "skills" && (
-                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
-              )}
-            </Link>
-
-            <Link
               href="/#experience"
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
@@ -222,6 +207,21 @@ export default function Navbar() {
             >
               <span>Experience</span>
               {activeSection === "experience" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
+            </Link>
+
+            <Link
+              href="/#skills"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "skills"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
+            >
+              <span>Skills</span>
+              {activeSection === "skills" && (
                 <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
               )}
             </Link>

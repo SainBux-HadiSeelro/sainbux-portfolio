@@ -34,11 +34,11 @@ export default function Footer() {
             <a href="/#services" className="hover:text-white transition-colors">
               Services
             </a>
-            <a href="/#skills" className="hover:text-white transition-colors">
-              Skills
-            </a>
             <a href="/#experience" className="hover:text-white transition-colors">
               Experience
+            </a>
+            <a href="/#skills" className="hover:text-white transition-colors">
+              Skills
             </a>
             <a href="/#education" className="hover:text-white transition-colors">
               Education

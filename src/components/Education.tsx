@@ -86,8 +86,8 @@ export default function Education() {
   return (
     <section id="education" className="py-24 md:py-32 relative bg-white border-b border-[#DCEBFC]">
       {/* Decorative Circuit Lines */}
-      <div className="absolute top-12 right-6 hidden md:block">
-        <CircuitLineDecoration orientation="right" />
+      <div className="absolute top-12 left-6 hidden md:block">
+        <CircuitLineDecoration orientation="left" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
