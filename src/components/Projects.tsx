@@ -41,6 +41,9 @@ import {
   Bug,
   Workflow,
   ShieldAlert,
+  Search,
+  Star,
+  RotateCcw,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { projectsData, Project, ProjectCategory } from "@/data/projects";
@@ -94,12 +97,25 @@ const getEmbedUrl = (url: string) => {
   return url;
 };
 
-type FilterCategory = "all" | ProjectCategory;
+type FilterCategory = "all" | "flagship" | ProjectCategory;
+
+const techOptions = [
+  "All",
+  "Multi-Agent",
+  "Python",
+  "Next.js",
+  "Gemini API",
+  "TypeScript",
+  "React 19",
+  "Streamlit",
+  "Loop Engineering",
+];
 
 export default function Projects() {
   const [activeFilter, setActiveFilter] = useState<FilterCategory>("all");
+  const [searchQuery, setSearchQuery] = useState<string>("");
+  const [selectedTech, setSelectedTech] = useState<string>("All");
   const [expandedCollection, setExpandedCollection] = useState<string | null>(null);
-  const [showClientDemos, setShowClientDemos] = useState<boolean>(false);
   const [previewProject, setPreviewProject] = useState<Project | null>(null);
   const [iframeLoading, setIframeLoading] = useState<boolean>(true);
   const [iframeError, setIframeError] = useState<boolean>(false);
@@ -141,6 +157,7 @@ export default function Projects() {
   };
 
   // Group projects dynamically by category field
+  const flagshipProjects = projectsData.filter((p) => p.isFlagship);
   const agenticProjects = projectsData.filter((p) => p.category === "agentic");
   const loopEngineeringProjects = projectsData.filter((p) => p.category === "loop-engineering");
   const aiIntegratedProjects = projectsData.filter((p) => p.category === "ai-integrated");
@@ -148,13 +165,53 @@ export default function Projects() {
   const dataUtilityProjects = projectsData.filter((p) => p.category === "data-utility");
 
   const filterTabs: { id: FilterCategory; label: string; count: number }[] = [
-    { id: "all", label: "All", count: projectsData.length },
+    { id: "all", label: "All Projects", count: projectsData.length },
+    { id: "flagship", label: "⭐ Flagships", count: flagshipProjects.length },
+    { id: "agentic", label: "Autonomous AI", count: agenticProjects.length },
     { id: "loop-engineering", label: "Loop Engineering", count: loopEngineeringProjects.length },
-    { id: "agentic", label: "Agentic", count: agenticProjects.length },
-    { id: "ai-integrated", label: "AI-Integrated", count: aiIntegratedProjects.length },
-    { id: "client-demo", label: "Client Demos", count: clientDemoProjects.length },
-    { id: "data-utility", label: "Data & Utilities", count: dataUtilityProjects.length },
+    { id: "ai-integrated", label: "AI Web Apps", count: aiIntegratedProjects.length },
+    { id: "client-demo", label: "Client Websites", count: clientDemoProjects.length },
+    { id: "data-utility", label: "Data & ML", count: dataUtilityProjects.length },
   ];
+
+  // Search & Tech Filtering logic
+  const isFiltering = searchQuery.trim().length > 0 || selectedTech !== "All";
+
+  const filteredProjects = projectsData.filter((p) => {
+    if (activeFilter !== "all" && activeFilter !== "flagship" && p.category !== activeFilter) {
+      return false;
+    }
+    if (activeFilter === "flagship" && !p.isFlagship) {
+      return false;
+    }
+    if (selectedTech !== "All") {
+      const techLower = selectedTech.toLowerCase();
+      const matchesTech =
+        p.tech.some((t) => t.toLowerCase().includes(techLower)) ||
+        (selectedTech === "Multi-Agent" &&
+          (p.tech.some((t) => /agent|swarm/i.test(t)) || /swarm|agent/i.test(p.title))) ||
+        (selectedTech === "Loop Engineering" &&
+          (p.category === "loop-engineering" || p.tech.some((t) => /loop/i.test(t))));
+      if (!matchesTech) return false;
+    }
+    if (searchQuery.trim()) {
+      const q = searchQuery.toLowerCase().trim();
+      const matchesQuery =
+        p.title.toLowerCase().includes(q) ||
+        (p.subtitle && p.subtitle.toLowerCase().includes(q)) ||
+        p.summary.toLowerCase().includes(q) ||
+        p.description.toLowerCase().includes(q) ||
+        p.tech.some((t) => t.toLowerCase().includes(q)) ||
+        p.id.toLowerCase().includes(q);
+      if (!matchesQuery) return false;
+    }
+    return true;
+  });
+
+  const resetSearch = () => {
+    setSearchQuery("");
+    setSelectedTech("All");
+  };
 
   const renderProjectCard = (
     project: Project,
@@ -214,11 +271,19 @@ export default function Projects() {
                     {project.id}
                   </span>
                 </div>
-                {project.badge && (
-                  <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white/95 shadow-2xs backdrop-blur-xs flex-shrink-0">
-                    {project.badge}
-                  </span>
-                )}
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {project.isFlagship && (
+                    <span className="pill-badge text-[10px] font-bold px-2 py-0.5 rounded-full text-amber-800 border border-amber-300 bg-amber-50 shadow-2xs backdrop-blur-xs flex-shrink-0 inline-flex items-center gap-1">
+                      <Star className="w-2.5 h-2.5 fill-amber-500 text-amber-500" />
+                      <span>Flagship</span>
+                    </span>
+                  )}
+                  {project.badge && (
+                    <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white/95 shadow-2xs backdrop-blur-xs flex-shrink-0">
+                      {project.badge}
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="absolute bottom-3 left-4 right-4 z-10">
@@ -241,11 +306,19 @@ export default function Projects() {
                   </div>
                   <span className="text-xs text-[#0B1F5C] font-bold">{project.id}</span>
                 </div>
-                {project.badge && (
-                  <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white shadow-2xs">
-                    {project.badge}
-                  </span>
-                )}
+                <div className="flex items-center gap-1.5 flex-wrap">
+                  {project.isFlagship && (
+                    <span className="pill-badge text-[10px] font-bold px-2 py-0.5 rounded-full text-amber-800 border border-amber-300 bg-amber-50 shadow-2xs flex-shrink-0 inline-flex items-center gap-1">
+                      <Star className="w-2.5 h-2.5 fill-amber-500 text-amber-500" />
+                      <span>Flagship</span>
+                    </span>
+                  )}
+                  {project.badge && (
+                    <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white shadow-2xs">
+                      {project.badge}
+                    </span>
+                  )}
+                </div>
               </div>
 
               <div className="z-10 p-3 rounded-xl bg-white/90 backdrop-blur-xs border border-[#CFE6FF] font-mono text-[11px] text-[#1E2A44] shadow-xs space-y-1">
@@ -383,7 +456,7 @@ export default function Projects() {
           </a>
 
           <div className="flex items-center gap-2">
-            {/* Live Preview Modal Button (Omitted for loop-engineering-series and GitHub links) */}
+            {/* Live Preview Modal Button */}
             {!isLoopSeries &&
               project.liveUrl.startsWith("https://") &&
               !project.liveUrl.includes("github.com") && (
@@ -397,7 +470,7 @@ export default function Projects() {
                 </button>
               )}
 
-            {/* Live Demo Button (Explicitly omitted for Loop Engineering Series as requested) */}
+            {/* Live Demo Button */}
             {!isLoopSeries && (
               <a
                 href={project.liveUrl}
@@ -425,26 +498,111 @@ export default function Projects() {
       <div className="max-w-6xl mx-auto px-4 sm:px-6">
         {/* Section Pill Label */}
         <div className="mb-4">
-          <SectionPill title="PROJECTS" />
+          <SectionPill title="PROJECTS & ARCHITECTURES" />
         </div>
 
-        {/* Section Heading & Intro */}
+        {/* Section Heading & Recruiter-Focused Value Proposition */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-8 gap-4">
           <div>
             <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-extrabold tracking-tight text-[#0B1F5C]">
-              Featured AI &amp; Web Projects
+              Production AI &amp; Web Showcase
             </h2>
-            <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-2xl">
-              Smart AI assistants, automated workflows, and modern web applications built to solve real business challenges.
+            <p className="text-[#5B6B8C] text-sm sm:text-base mt-2.5 max-w-2xl leading-relaxed">
+              36 production systems across Autonomous Multi-Agent Swarms, Self-Healing Code Loops, and High-Performance Web Platforms. Every project includes live interactive deployments, public source code, and verified metrics.
             </p>
           </div>
-          <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto">
-            Production Tested &amp; Verified
+          <div className="flex items-center gap-2 self-start md:self-auto flex-wrap">
+            <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF]">
+              36 Verified Deployments
+            </span>
           </div>
         </div>
 
-        {/* Filter Tabs */}
-        <div className="flex flex-wrap items-center gap-2 mb-12 pb-4 border-b border-[#E8F1FC]">
+        {/* Recruiter Value Badges */}
+        <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-8">
+          <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#E2EEFC] text-center">
+            <div className="font-heading font-extrabold text-base sm:text-lg text-[#0B1F5C]">100% Live</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Interactive Demos</div>
+          </div>
+          <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#E2EEFC] text-center">
+            <div className="font-heading font-extrabold text-base sm:text-lg text-[#1553C7]">Open Source</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">GitHub Repositories</div>
+          </div>
+          <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#E2EEFC] text-center">
+            <div className="font-heading font-extrabold text-base sm:text-lg text-[#0B1F5C]">Agentic &amp; Swarms</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Tool-Calling &amp; DAGs</div>
+          </div>
+          <div className="p-3 rounded-xl bg-[#F8FBFF] border border-[#E2EEFC] text-center">
+            <div className="font-heading font-extrabold text-base sm:text-lg text-[#1553C7]">Next.js &amp; React 19</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">Full-Stack Modern UI</div>
+          </div>
+        </div>
+
+        {/* Search & Technology Filter Toolbar */}
+        <div className="p-4 sm:p-5 rounded-2xl bg-[#F8FBFF] border border-[#DCEBFC] mb-8 space-y-4">
+          <div className="flex flex-col sm:flex-row items-stretch sm:items-center gap-3">
+            {/* Search Input */}
+            <div className="relative flex-1">
+              <Search className="w-4 h-4 text-[#5B6B8C] absolute left-3.5 top-1/2 -translate-y-1/2" />
+              <input
+                type="text"
+                value={searchQuery}
+                onChange={(e) => setSearchQuery(e.target.value)}
+                placeholder="Search by project name, tech (e.g., Python, Next.js, Gemini API, Swarm)..."
+                className="w-full pl-10 pr-9 py-2.5 rounded-full border border-[#CFE6FF] bg-white text-xs font-mono text-[#0B1F5C] placeholder:text-[#8899B5] focus:outline-none focus:border-[#1553C7] focus:ring-2 focus:ring-[#1553C7]/15 shadow-2xs transition-all"
+              />
+              {searchQuery && (
+                <button
+                  type="button"
+                  onClick={() => setSearchQuery("")}
+                  className="absolute right-3 top-1/2 -translate-y-1/2 text-[#5B6B8C] hover:text-[#0B1F5C] p-1"
+                  aria-label="Clear search"
+                >
+                  <X className="w-3.5 h-3.5" />
+                </button>
+              )}
+            </div>
+
+            {/* Reset Button (visible when filtering) */}
+            {(searchQuery || selectedTech !== "All") && (
+              <button
+                type="button"
+                onClick={resetSearch}
+                className="inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-full text-xs font-mono font-bold text-red-600 bg-red-50 hover:bg-red-100 border border-red-200 transition-all shadow-2xs cursor-pointer"
+              >
+                <RotateCcw className="w-3.5 h-3.5" />
+                <span>Reset Filters</span>
+              </button>
+            )}
+          </div>
+
+          {/* Quick Technology Chips */}
+          <div className="flex flex-wrap items-center gap-1.5 pt-1 border-t border-[#E8F1FC]">
+            <span className="text-[11px] font-mono text-[#5B6B8C] font-semibold mr-1.5">
+              Filter by Tech:
+            </span>
+            {techOptions.map((tech) => {
+              const isSelected = selectedTech === tech;
+              return (
+                <button
+                  key={tech}
+                  type="button"
+                  onClick={() => setSelectedTech(isSelected ? "All" : tech)}
+                  className={`px-3 py-1 rounded-full text-[11px] font-mono font-medium transition-all cursor-pointer ${
+                    isSelected
+                      ? "bg-[#1553C7] text-white shadow-2xs border border-[#1553C7]"
+                      : "bg-white text-[#0B1F5C] hover:bg-[#EAF4FF] hover:border-[#1553C7] border border-[#CFE6FF]"
+                  }`}
+                >
+                  {tech}
+                </button>
+              );
+            })}
+          </div>
+        </div>
+
+        {/* Category Navigation Tabs */}
+        <div className="flex flex-wrap items-center gap-2 mb-10 pb-4 border-b border-[#E8F1FC]">
           {filterTabs.map((tab) => {
             const isActive = activeFilter === tab.id;
             return (
@@ -453,11 +611,8 @@ export default function Projects() {
                 type="button"
                 onClick={() => {
                   setActiveFilter(tab.id);
-                  if (tab.id === "client-demo") {
-                    setShowClientDemos(true);
-                  }
                 }}
-                className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-bold transition-all ${
+                className={`inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-bold transition-all cursor-pointer ${
                   isActive
                     ? "bg-[#1553C7] text-white shadow-sm shadow-[#1553C7]/25 border border-[#1553C7]"
                     : "bg-[#F0F7FF] text-[#0B1F5C] hover:bg-[#E4F1FF] border border-[#CFE6FF]"
@@ -477,174 +632,221 @@ export default function Projects() {
         </div>
 
         {/* ========================================================================= */}
-        {/* GROUP A: Loop Engineering & Deterministic Systems (Large Cards)           */}
+        {/* FILTERED VIEW: Displayed when search query or tech filter is active       */}
         {/* ========================================================================= */}
-        {(activeFilter === "all" || activeFilter === "loop-engineering") && (
+        {isFiltering && (
           <div className="mb-16">
             <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
-                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Self-Checking Automation Workflows
-                </h3>
+              <div className="text-sm font-mono text-[#0B1F5C]">
+                Found <span className="font-bold text-[#1553C7]">{filteredProjects.length}</span> matching{" "}
+                {filteredProjects.length === 1 ? "project" : "projects"}
+                {searchQuery && (
+                  <span>
+                    {" "}for &ldquo;<span className="text-[#1553C7] font-semibold">{searchQuery}</span>&rdquo;
+                  </span>
+                )}
+                {selectedTech !== "All" && (
+                  <span>
+                    {" "}with stack &ldquo;<span className="text-[#1553C7] font-semibold">{selectedTech}</span>&rdquo;
+                  </span>
+                )}
               </div>
-              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group A // {loopEngineeringProjects.length} {loopEngineeringProjects.length === 1 ? "Workflow" : "Workflows"}
-              </span>
+              <button
+                type="button"
+                onClick={resetSearch}
+                className="text-xs font-mono font-bold text-[#1553C7] hover:underline"
+              >
+                Clear filters
+              </button>
             </div>
 
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {loopEngineeringProjects.map((project, idx) =>
-                renderProjectCard(project, "large", idx)
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* ========================================================================= */}
-        {/* GROUP B: Featured Agentic Systems (Large Cards)                           */}
-        {/* ========================================================================= */}
-        {(activeFilter === "all" || activeFilter === "agentic") && (
-          <div className="mb-16">
-            <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
-                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Autonomous AI &amp; Smart Assistants
-                </h3>
+            {filteredProjects.length > 0 ? (
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                {filteredProjects.map((project, idx) =>
+                  renderProjectCard(project, "medium", idx)
+                )}
               </div>
-              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group B // {agenticProjects.length} Projects
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
-              {agenticProjects.map((project, idx) => renderProjectCard(project, "large", idx))}
-            </div>
-          </div>
-        )}
-
-        {/* ========================================================================= */}
-        {/* GROUP C: AI-Integrated Apps (Medium Cards)                                */}
-        {/* ========================================================================= */}
-        {(activeFilter === "all" || activeFilter === "ai-integrated") && (
-          <div className="mb-16">
-            <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF]" />
-                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  AI-Powered Web Applications
-                </h3>
-              </div>
-              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group C // {aiIntegratedProjects.length} Apps
-              </span>
-            </div>
-
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              {aiIntegratedProjects.map((project, idx) =>
-                renderProjectCard(project, "medium", idx)
-              )}
-            </div>
-          </div>
-        )}
-
-        {/* ========================================================================= */}
-        {/* GROUP D: Client Demos & Web Platforms (Compact Cards, Collapsible)         */}
-        {/* ========================================================================= */}
-        {(activeFilter === "all" || activeFilter === "client-demo") && (
-          <div className="mb-16">
-            <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-2 border-b border-[#EAF4FF]">
-              <div>
-                <div className="flex items-center gap-2.5">
-                  <span className="w-2.5 h-2.5 rounded-full bg-[#0B1F5C]" />
-                  <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                    Client Demos &amp; Business Websites
-                  </h3>
-                </div>
-                {/* Intro Line */}
-                <p className="text-[#5B6B8C] text-xs sm:text-sm mt-1">
-                  Modern business websites featuring embedded 24/7 AI chat assistants.
+            ) : (
+              <div className="p-12 text-center rounded-2xl bg-[#F8FBFF] border border-[#CFE6FF]">
+                <p className="text-[#0B1F5C] font-semibold text-base mb-2">
+                  No projects match your current search criteria.
                 </p>
-              </div>
-
-              {/* Show / Hide toggle button if on "all" tab */}
-              {activeFilter === "all" && (
+                <p className="text-xs font-mono text-[#5B6B8C] mb-4">
+                  Try searching for keywords like &ldquo;Python&rdquo;, &ldquo;Next.js&rdquo;, &ldquo;Gemini&rdquo;, or &ldquo;Agent&rdquo;.
+                </p>
                 <button
                   type="button"
-                  onClick={() => setShowClientDemos(!showClientDemos)}
-                  className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-bold bg-[#EAF4FF] hover:bg-[#D8EBFF] text-[#1553C7] border border-[#CFE6FF] transition-all self-start sm:self-auto shadow-2xs cursor-pointer"
+                  onClick={resetSearch}
+                  className="inline-flex items-center gap-1.5 px-4 py-2 rounded-full text-xs font-mono font-bold bg-[#1553C7] text-white hover:bg-[#0B1F5C] transition-all"
                 >
-                  <span>
-                    {showClientDemos
-                      ? "Hide client demos"
-                      : `Show all ${clientDemoProjects.length} demos`}
-                  </span>
-                  {showClientDemos ? (
-                    <ChevronUp className="w-3.5 h-3.5 text-[#1553C7]" />
-                  ) : (
-                    <ChevronDown className="w-3.5 h-3.5 text-[#1553C7]" />
-                  )}
+                  <RotateCcw className="w-3.5 h-3.5" />
+                  <span>Show All Projects</span>
                 </button>
-              )}
-            </div>
-
-            {/* Demos Grid: rendered when expanded or when activeFilter === "client-demo" */}
-            <AnimatePresence initial={false}>
-              {(showClientDemos || activeFilter === "client-demo") && (
-                <motion.div
-                  initial={{ opacity: 0, height: 0 }}
-                  animate={{ opacity: 1, height: "auto" }}
-                  exit={{ opacity: 0, height: 0 }}
-                  transition={{ duration: 0.3 }}
-                  className="overflow-hidden"
-                >
-                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-1">
-                    {clientDemoProjects.map((project, idx) =>
-                      renderProjectCard(project, "compact", idx)
-                    )}
-                  </div>
-                  {activeFilter === "all" && (
-                    <div className="mt-6 text-center">
-                      <button
-                        type="button"
-                        onClick={() => setShowClientDemos(false)}
-                        className="inline-flex items-center gap-2 px-4 py-2 rounded-full text-xs font-mono font-bold bg-white hover:bg-[#F0F7FF] text-[#5B6B8C] hover:text-[#0B1F5C] border border-[#CFE6FF] transition-all shadow-2xs cursor-pointer"
-                      >
-                        <span>Collapse client demos</span>
-                        <ChevronUp className="w-3.5 h-3.5" />
-                      </button>
-                    </div>
-                  )}
-                </motion.div>
-              )}
-            </AnimatePresence>
+              </div>
+            )}
           </div>
         )}
 
         {/* ========================================================================= */}
-        {/* GROUP E: Data, ML & Utilities (Compact Cards)                              */}
+        {/* STANDARD STRUCTURED CATEGORY VIEWS (When not filtering via search/chip)   */}
         {/* ========================================================================= */}
-        {(activeFilter === "all" || activeFilter === "data-utility") && (
-          <div className="mb-14">
-            <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
-              <div className="flex items-center gap-2.5">
-                <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_rgba(21,83,199,0.5)]" />
-                <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
-                  Data Tools &amp; Smart Utilities
-                </h3>
-              </div>
-              <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
-                Group E // {dataUtilityProjects.length} Systems
-              </span>
-            </div>
+        {!isFiltering && (
+          <>
+            {/* ========================================================================= */}
+            {/* RECRUITER SPOTLIGHT: Top Flagship Systems (Visible on All or Flagship)    */}
+            {/* ========================================================================= */}
+            {(activeFilter === "all" || activeFilter === "flagship") && (
+              <div className="mb-16">
+                <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-amber-500 shadow-[0_0_8px_#f59e0b]" />
+                    <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                      ⭐ Recruiter Priority: Featured Flagship Systems
+                    </h3>
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-amber-800 bg-amber-50 px-3 py-1 rounded-full border border-amber-200">
+                    Top Tier // {flagshipProjects.length} Flagships
+                  </span>
+                </div>
 
-            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
-              {dataUtilityProjects.map((project, idx) =>
-                renderProjectCard(project, "compact", idx)
-              )}
-            </div>
-          </div>
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {flagshipProjects.map((project, idx) =>
+                    renderProjectCard(project, "large", idx)
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* ========================================================================= */}
+            {/* GROUP A: Featured Agentic Systems (Autonomous AI & Swarms)                */}
+            {/* ========================================================================= */}
+            {(activeFilter === "all" || activeFilter === "agentic") && (
+              <div className="mb-16">
+                <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
+                    <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                      Autonomous AI &amp; Smart Multi-Agent Systems
+                    </h3>
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
+                    Group A // {agenticProjects.length} Projects
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {agenticProjects.map((project, idx) =>
+                    renderProjectCard(project, "large", idx)
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* ========================================================================= */}
+            {/* GROUP B: Loop Engineering & Deterministic Systems                         */}
+            {/* ========================================================================= */}
+            {(activeFilter === "all" || activeFilter === "loop-engineering") && (
+              <div className="mb-16">
+                <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF]" />
+                    <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                      Deterministic Self-Healing &amp; Loop Engineering
+                    </h3>
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
+                    Group B // {loopEngineeringProjects.length} Workflows
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                  {loopEngineeringProjects.map((project, idx) =>
+                    renderProjectCard(project, "large", idx)
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* ========================================================================= */}
+            {/* GROUP C: AI-Integrated Web Applications                                   */}
+            {/* ========================================================================= */}
+            {(activeFilter === "all" || activeFilter === "ai-integrated") && (
+              <div className="mb-16">
+                <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_#1553C7]" />
+                    <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                      Full-Stack AI Web Applications
+                    </h3>
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
+                    Group C // {aiIntegratedProjects.length} Apps
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+                  {aiIntegratedProjects.map((project, idx) =>
+                    renderProjectCard(project, "medium", idx)
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* ========================================================================= */}
+            {/* GROUP D: Client Demos & Commercial Web Platforms                          */}
+            {/* ========================================================================= */}
+            {(activeFilter === "all" || activeFilter === "client-demo") && (
+              <div className="mb-16">
+                <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4 mb-6 pb-2 border-b border-[#EAF4FF]">
+                  <div>
+                    <div className="flex items-center gap-2.5">
+                      <span className="w-2.5 h-2.5 rounded-full bg-[#0B1F5C]" />
+                      <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                        Commercial Client Demos &amp; Business Websites
+                      </h3>
+                    </div>
+                    <p className="text-[#5B6B8C] text-xs sm:text-sm mt-1">
+                      High-converting commercial platforms featuring embedded 24/7 AI chat concierges, appointment funnels, and responsive UI.
+                    </p>
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF] self-start sm:self-auto">
+                    Group D // {clientDemoProjects.length} Platforms
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5 pt-1">
+                  {clientDemoProjects.map((project, idx) =>
+                    renderProjectCard(project, "compact", idx)
+                  )}
+                </div>
+              </div>
+            )}
+
+            {/* ========================================================================= */}
+            {/* GROUP E: Data Science, ML & Utilities                                     */}
+            {/* ========================================================================= */}
+            {(activeFilter === "all" || activeFilter === "data-utility") && (
+              <div className="mb-14">
+                <div className="flex items-center justify-between mb-6 pb-2 border-b border-[#EAF4FF]">
+                  <div className="flex items-center gap-2.5">
+                    <span className="w-2.5 h-2.5 rounded-full bg-[#1553C7] shadow-[0_0_8px_rgba(21,83,199,0.5)]" />
+                    <h3 className="font-heading font-extrabold text-xl sm:text-2xl text-[#0B1F5C] tracking-tight">
+                      Data Science, ML &amp; Engineering Utilities
+                    </h3>
+                  </div>
+                  <span className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3 py-1 rounded-full border border-[#CFE6FF]">
+                    Group E // {dataUtilityProjects.length} Systems
+                  </span>
+                </div>
+
+                <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-5">
+                  {dataUtilityProjects.map((project, idx) =>
+                    renderProjectCard(project, "compact", idx)
+                  )}
+                </div>
+              </div>
+            )}
+          </>
         )}
       </div>
 
@@ -690,7 +892,7 @@ export default function Projects() {
                   <button
                     type="button"
                     onClick={() => setPreviewProject(null)}
-                    className="p-1.5 rounded-full text-[#5B6B8C] hover:text-[#0B1F5C] hover:bg-slate-100 transition-colors"
+                    className="p-1.5 rounded-full text-[#5B6B8C] hover:text-[#0B1F5C] hover:bg-slate-100 transition-colors cursor-pointer"
                     aria-label="Close modal"
                   >
                     <X className="w-5 h-5" />

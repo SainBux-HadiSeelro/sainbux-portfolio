@@ -46,6 +46,7 @@ import {
   Bug,
   Workflow,
   ShieldAlert,
+  Star,
 } from "lucide-react";
 import { GithubIcon } from "./Icons";
 import { Project } from "@/data/projects";
@@ -276,11 +277,19 @@ export default function CategoryProjectsView({
                           </div>
                           <span className="text-xs text-white font-bold drop-shadow-sm">{project.id}</span>
                         </div>
-                        {project.badge && (
-                          <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white/95 shadow-2xs backdrop-blur-xs">
-                            {project.badge}
-                          </span>
-                        )}
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          {project.isFlagship && (
+                            <span className="pill-badge text-[10px] font-bold px-2 py-0.5 rounded-full text-amber-800 border border-amber-300 bg-amber-50 shadow-2xs backdrop-blur-xs flex-shrink-0 inline-flex items-center gap-1">
+                              <Star className="w-2.5 h-2.5 fill-amber-500 text-amber-500" />
+                              <span>Flagship</span>
+                            </span>
+                          )}
+                          {project.badge && (
+                            <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white/95 shadow-2xs backdrop-blur-xs">
+                              {project.badge}
+                            </span>
+                          )}
+                        </div>
                       </div>
 
                       <div className="absolute bottom-3.5 left-5 right-5 z-10">
@@ -301,11 +310,19 @@ export default function CategoryProjectsView({
                           </div>
                           <span className="text-xs text-[#0B1F5C] font-bold">{project.id}</span>
                         </div>
-                        {project.badge && (
-                          <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white shadow-2xs">
-                            {project.badge}
-                          </span>
-                        )}
+                        <div className="flex items-center gap-1.5 flex-wrap">
+                          {project.isFlagship && (
+                            <span className="pill-badge text-[10px] font-bold px-2 py-0.5 rounded-full text-amber-800 border border-amber-300 bg-amber-50 shadow-2xs flex-shrink-0 inline-flex items-center gap-1">
+                              <Star className="w-2.5 h-2.5 fill-amber-500 text-amber-500" />
+                              <span>Flagship</span>
+                            </span>
+                          )}
+                          {project.badge && (
+                            <span className="pill-badge text-[10px] font-bold px-2.5 py-1 rounded-full text-[#1553C7] border-[#CFE6FF] bg-white shadow-2xs">
+                              {project.badge}
+                            </span>
+                          )}
+                        </div>
                       </div>
 
                       <div className="z-10 p-3 rounded-xl bg-white/90 backdrop-blur-xs border border-[#CFE6FF] font-mono text-[11px] text-[#1E2A44] shadow-xs space-y-1">

@@ -33,6 +33,7 @@ export interface Project {
   highlights?: string[];
   isCollection?: boolean;
   subProjects?: SubProject[];
+  isFlagship?: boolean;
 }
 
 export const projectsData: Project[] = [
@@ -66,6 +67,7 @@ export const projectsData: Project[] = [
     image: "/projects/ai-folio.png",
     imageLabel: "Live Aura AI Portfolio & Multi-Agent Swarm Lab",
     featured: true,
+    isFlagship: true,
     category: "agentic",
   },
   {
@@ -95,6 +97,7 @@ export const projectsData: Project[] = [
     image: "/projects/elite-fitness-gym.png",
     imageLabel: "Live Autonomous Multi-Agent AI Gym",
     featured: true,
+    isFlagship: true,
     category: "agentic",
   },
   {
@@ -124,6 +127,7 @@ export const projectsData: Project[] = [
     image: "/projects/excel-ai-agent.png",
     imageLabel: "Live Bilingual Spreadsheet AI Agent",
     featured: true,
+    isFlagship: true,
     category: "agentic",
   },
   {
@@ -334,35 +338,6 @@ export const projectsData: Project[] = [
   // GROUP B: Loop Engineering & Deterministic Systems
   // =========================================================================
   {
-    id: "doorbell-loop",
-    title: "Doorbell Loop — Autonomous Agentic AI Code-Review Engine",
-    subtitle: "Event-Driven Closed Loop, AST Invariant Verification, Opencode CI Agent & Off-by-One Guard",
-    badge: "Loop Engineering",
-    summary:
-      "Intercepts algorithmic loop boundary mutations on Pull Requests using an autonomous Opencode AST review agent and an event-driven CI closed loop.",
-    description:
-      "A high-precision loop engineering platform and autonomous agentic code-review engine. Bridges software architecture loops (CI/CD automated trigger loops) with algorithmic loops (collection boundary invariants). Features an event-driven 'Doorbell Event' trigger on Pull Requests, an autonomous Opencode AI Agent evaluating code diffs at the Abstract Syntax Tree (AST) level, deterministic invariant checking catching insidious off-by-one boundary defects (range(len(items) - 1)), and an interactive Linear/Cursor-aesthetic Web HUD with a live 4-stage pipeline stepper and inventory matrix purge simulation.",
-    problem:
-      "Algorithmic off-by-one boundary mutations (such as premature loop termination) silently skip final elements without throwing exceptions, escaping conventional static linters and leaking expired or sensitive data into production.",
-    solution:
-      "Architected an event-driven closed loop pairing an autonomous AST analysis agent (Opencode) with deterministic test suites on PR gates, complemented by a developer Web HUD simulating both clean and mutated loop executions in real time.",
-    result:
-      "100% automated intercept rate on loop boundary bugs before merge, zero untainted master branch regressions, 6/6 deterministic unit test validations, and transparent real-time telemetry streaming.",
-    highlights: [
-      "Autonomous Doorbell Event loop triggered automatically on PR open/synchronize events",
-      "Opencode AST diff analysis intercepting silent off-by-one boundary mutations without runtime crashes",
-      "Algorithmic invariant enforcement preserving collection order and strict date partition purity",
-      "Interactive developer Web HUD with 4-stage review stepper, live terminal logs & inventory purge matrix",
-    ],
-    tech: ["Python 3.11", "JavaScript (ES6+)", "Loop Engineering", "GitHub Actions", "AST Parsing", "Opencode Agent", "Tailwind CSS"],
-    liveUrl: "https://doorbell-loop.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/doorbell-loop",
-    image: "/projects/doorbell-loop.png",
-    imageLabel: "Live Doorbell Loop Review Console & AST Diff Inspector",
-    featured: true,
-    category: "loop-engineering",
-  },
-  {
     id: "maker-checker-loop",
     title: "Maker-Checker Autonomous Loop — Zero-Trust Dual-Agent Bugfix Protocol",
     subtitle: "RFC-011 Protocol, Ephemeral Git Worktrees, LLM-as-Judge & Hardcode-Defeating Security Gateway",
@@ -389,6 +364,37 @@ export const projectsData: Project[] = [
     image: "/projects/maker-checker-loop.png",
     imageLabel: "Live Maker-Checker Orchestrator Console & Event Stream",
     featured: true,
+    isFlagship: true,
+    category: "loop-engineering",
+  },
+  {
+    id: "workflow-fixloop",
+    title: "FixLoop AI — Autonomous Multi-Agent Self-Healing Code Engine",
+    subtitle: "Parallel Isolated Git Worktrees, Independent Reviewer Subagents, Pytest Regression Gates & Stateless Atomic Beat Engine",
+    badge: "Loop Engineering",
+    summary:
+      "Executes parallel AI bugfixers in isolated Git worktrees and grades each candidate with an independent reviewer subagent before safe automated merge into production.",
+    description:
+      "An autonomous multi-agent code repair engine and interactive developer visualizer executing the body of one beat. Dispatches three specialized AI developer agents (Math, Text, and Data specialists) in parallel inside isolated Git worktrees (wt-candidate_a, wt-candidate_b, wt-candidate_c) using the fix-bug skill. Operates an independent read-only Reviewer Subagent under the Evaluator-Optimizer pattern to grade pytest assertions, catch cheat/hardcoded test literals, and verify test suite integrity before permitting automated fast-forward merges into main. Designed as an atomic, stateless beat engine with zero memory between runs.",
+    problem:
+      "Autonomous code fixers can introduce regressions or game test suites by hardcoding return values, while running fixes sequentially or in shared directories risks race conditions, dirty working trees, and context contamination.",
+    solution:
+      "Architected a parallel multi-agent execution engine utilizing isolated Git worktree sandboxes, strict author-vs-reviewer separation (Evaluator-Optimizer pattern), automated Pytest regression gates, and a dual-view (Simple vs. Dev & Logs) Next.js observability console.",
+    result:
+      "Zero main branch contamination, parallel multi-candidate repair with isolated failure handling, 100% intercept on cheating patches via independent reviewer subagents, and an interactive live web visualizer with safety test simulations.",
+    highlights: [
+      "Parallel Git worktree sandboxing isolating candidate branches and preventing cross-agent contamination",
+      "Independent Reviewer Subagent enforcing strict Evaluator-Optimizer pattern (authors never grade their own work)",
+      "3-point automated inspection: full pytest pass, git diff generality audit, and test suite anti-tampering verification",
+      "Dual-mode Next.js interactive visualizer: Plain-English visual pipeline vs. deep technical monospace log streamer",
+    ],
+    tech: ["Next.js 14", "Python 3.12", "Git Worktrees", "Loop Engineering", "Multi-Agent Systems", "Pytest", "Tailwind CSS", "Vercel"],
+    liveUrl: "https://workflow-fixloop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/workflow-fixloop",
+    image: "/projects/workflow-fixloop.png",
+    imageLabel: "Live FixLoop AI Autonomous Multi-Agent Code Repair Visualizer",
+    featured: true,
+    isFlagship: true,
     category: "loop-engineering",
   },
   {
@@ -421,60 +427,31 @@ export const projectsData: Project[] = [
     category: "loop-engineering",
   },
   {
-    id: "workflow-fixloop",
-    title: "FixLoop AI — Autonomous Multi-Agent Self-Healing Code Engine",
-    subtitle: "Parallel Isolated Git Worktrees, Independent Reviewer Subagents, Pytest Regression Gates & Stateless Atomic Beat Engine",
+    id: "doorbell-loop",
+    title: "Doorbell Loop — Autonomous Agentic AI Code-Review Engine",
+    subtitle: "Event-Driven Closed Loop, AST Invariant Verification, Opencode CI Agent & Off-by-One Guard",
     badge: "Loop Engineering",
     summary:
-      "Executes parallel AI bugfixers in isolated Git worktrees and grades each candidate with an independent reviewer subagent before safe automated merge into production.",
+      "Intercepts algorithmic loop boundary mutations on Pull Requests using an autonomous Opencode AST review agent and an event-driven CI closed loop.",
     description:
-      "An autonomous multi-agent code repair engine and interactive developer visualizer executing the body of one beat. Dispatches three specialized AI developer agents (Math, Text, and Data specialists) in parallel inside isolated Git worktrees (wt-candidate_a, wt-candidate_b, wt-candidate_c) using the fix-bug skill. Operates an independent read-only Reviewer Subagent under the Evaluator-Optimizer pattern to grade pytest assertions, catch cheat/hardcoded test literals, and verify test suite integrity before permitting automated fast-forward merges into main. Designed as an atomic, stateless beat engine with zero memory between runs.",
+      "A high-precision loop engineering platform and autonomous agentic code-review engine. Bridges software architecture loops (CI/CD automated trigger loops) with algorithmic loops (collection boundary invariants). Features an event-driven 'Doorbell Event' trigger on Pull Requests, an autonomous Opencode AI Agent evaluating code diffs at the Abstract Syntax Tree (AST) level, deterministic invariant checking catching insidious off-by-one boundary defects (range(len(items) - 1)), and an interactive Linear/Cursor-aesthetic Web HUD with a live 4-stage pipeline stepper and inventory matrix purge simulation.",
     problem:
-      "Autonomous code fixers can introduce regressions or game test suites by hardcoding return values, while running fixes sequentially or in shared directories risks race conditions, dirty working trees, and context contamination.",
+      "Algorithmic off-by-one boundary mutations (such as premature loop termination) silently skip final elements without throwing exceptions, escaping conventional static linters and leaking expired or sensitive data into production.",
     solution:
-      "Architected a parallel multi-agent execution engine utilizing isolated Git worktree sandboxes, strict author-vs-reviewer separation (Evaluator-Optimizer pattern), automated Pytest regression gates, and a dual-view (Simple vs. Dev & Logs) Next.js observability console.",
+      "Architected an event-driven closed loop pairing an autonomous AST analysis agent (Opencode) with deterministic test suites on PR gates, complemented by a developer Web HUD simulating both clean and mutated loop executions in real time.",
     result:
-      "Zero main branch contamination, parallel multi-candidate repair with isolated failure handling, 100% intercept on cheating patches via independent reviewer subagents, and an interactive live web visualizer with safety test simulations.",
+      "100% automated intercept rate on loop boundary bugs before merge, zero untainted master branch regressions, 6/6 deterministic unit test validations, and transparent real-time telemetry streaming.",
     highlights: [
-      "Parallel Git worktree sandboxing isolating candidate branches and preventing cross-agent contamination",
-      "Independent Reviewer Subagent enforcing strict Evaluator-Optimizer pattern (authors never grade their own work)",
-      "3-point automated inspection: full pytest pass, git diff generality audit, and test suite anti-tampering verification",
-      "Dual-mode Next.js interactive visualizer: Plain-English visual pipeline vs. deep technical monospace log streamer",
+      "Autonomous Doorbell Event loop triggered automatically on PR open/synchronize events",
+      "Opencode AST diff analysis intercepting silent off-by-one boundary mutations without runtime crashes",
+      "Algorithmic invariant enforcement preserving collection order and strict date partition purity",
+      "Interactive developer Web HUD with 4-stage review stepper, live terminal logs & inventory purge matrix",
     ],
-    tech: ["Next.js 14", "Python 3.12", "Git Worktrees", "Loop Engineering", "Multi-Agent Systems", "Pytest", "Tailwind CSS", "Vercel"],
-    liveUrl: "https://workflow-fixloop.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/workflow-fixloop",
-    image: "/projects/workflow-fixloop.png",
-    imageLabel: "Live FixLoop AI Autonomous Multi-Agent Code Repair Visualizer",
-    featured: true,
-    category: "loop-engineering",
-  },
-  {
-    id: "iss-watch-loop",
-    title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
-    subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",
-    badge: "Loop Engineering",
-    summary:
-      "Tracks the International Space Station in real time with continuous orbital telemetry, interactive Leaflet geodesics, and an unattended Python in-session loop.",
-    description:
-      "A high-precision aerospace telemetry dashboard and autonomous loop engineering demonstration. Pairs a live interactive web dashboard with an autonomous Python in-session heartbeat loop (Concept 4). Features sub-3-second polling of NASA/Open-Notify & WhereTheISS APIs, real-time geodetic coordinate mapping, live orbital velocity (~27,600 km/h) and altitude telemetry, incremental orbital distance calculation via haversine formulas, daylight/earth-shadow detection, and reverse geocoding to identify territorial airspace and ocean waters directly below astronauts in real time.",
-    problem:
-      "Monitoring high-speed orbital assets requires continuous unattended polling loops and real-time geodetic projection without degrading browser performance, overwhelming rate-limited telemetry APIs, or losing spatial trajectory state across network hiccups.",
-    solution:
-      "Architected an event-driven in-session heartbeat loop pairing an unattended terminal daemon with a client-side reactive Leaflet.js orbital projection engine, haversine incremental distance accumulation, automated reverse geocoding fallback tiers, and smooth CSS3 telemetry progress tickers.",
-    result:
-      "Sub-second orbital coordinate resolution, zero-drift haversine distance telemetry updated every 3 seconds, sub-100ms reverse geocoding responses, and 100% resilient unattended background polling cycles.",
-    highlights: [
-      "Concept 4 In-Session Loop architecture pairing an autonomous Python heartbeat daemon with a live web HUD",
-      "Real-time geodetic Leaflet.js orbital mapping with dynamic satellite marker, radar ring, and flight trajectory trail",
-      "Live orbital telemetry streaming velocity (~27,600 km/h), altitude (~420 km), and 3s delta distance tracking",
-      "Multi-tier reverse geocoding engine identifying land territories and open ocean waters beneath astronauts",
-    ],
-    tech: ["JavaScript (ES6+)", "Python 3.11", "Leaflet.js", "Loop Engineering", "Haversine Math", "REST APIs", "Tailwind CSS"],
-    liveUrl: "https://iss-watch-loop.vercel.app/",
-    repoUrl: "https://github.com/SainBux-HadiSeelro/ISS-watch-loop",
-    image: "/projects/iss-watch-loop.png",
-    imageLabel: "Live ISS Orbital Tracker & Telemetry HUD",
+    tech: ["Python 3.11", "JavaScript (ES6+)", "Loop Engineering", "GitHub Actions", "AST Parsing", "Opencode Agent", "Tailwind CSS"],
+    liveUrl: "https://doorbell-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/doorbell-loop",
+    image: "/projects/doorbell-loop.png",
+    imageLabel: "Live Doorbell Loop Review Console & AST Diff Inspector",
     featured: true,
     category: "loop-engineering",
   },
@@ -536,6 +513,35 @@ export const projectsData: Project[] = [
     featured: true,
     category: "loop-engineering",
   },
+  {
+    id: "iss-watch-loop",
+    title: "ISS Watch Loop — Real-Time Orbital Tracker & In-Session Loop",
+    subtitle: "Concept 4 In-Session Loops, Live Telemetry Stream, Leaflet Geodesics & Reverse Geocoding",
+    badge: "Loop Engineering",
+    summary:
+      "Tracks the International Space Station in real time with continuous orbital telemetry, interactive Leaflet geodesics, and an unattended Python in-session loop.",
+    description:
+      "A high-precision aerospace telemetry dashboard and autonomous loop engineering demonstration. Pairs a live interactive web dashboard with an autonomous Python in-session heartbeat loop (Concept 4). Features sub-3-second polling of NASA/Open-Notify & WhereTheISS APIs, real-time geodetic coordinate mapping, live orbital velocity (~27,600 km/h) and altitude telemetry, incremental orbital distance calculation via haversine formulas, daylight/earth-shadow detection, and reverse geocoding to identify territorial airspace and ocean waters directly below astronauts in real time.",
+    problem:
+      "Monitoring high-speed orbital assets requires continuous unattended polling loops and real-time geodetic projection without degrading browser performance, overwhelming rate-limited telemetry APIs, or losing spatial trajectory state across network hiccups.",
+    solution:
+      "Architected an event-driven in-session heartbeat loop pairing an unattended terminal daemon with a client-side reactive Leaflet.js orbital projection engine, haversine incremental distance accumulation, automated reverse geocoding fallback tiers, and smooth CSS3 telemetry progress tickers.",
+    result:
+      "Sub-second orbital coordinate resolution, zero-drift haversine distance telemetry updated every 3 seconds, sub-100ms reverse geocoding responses, and 100% resilient unattended background polling cycles.",
+    highlights: [
+      "Concept 4 In-Session Loop architecture pairing an autonomous Python heartbeat daemon with a live web HUD",
+      "Real-time geodetic Leaflet.js orbital mapping with dynamic satellite marker, radar ring, and flight trajectory trail",
+      "Live orbital telemetry streaming velocity (~27,600 km/h), altitude (~420 km), and 3s delta distance tracking",
+      "Multi-tier reverse geocoding engine identifying land territories and open ocean waters beneath astronauts",
+    ],
+    tech: ["JavaScript (ES6+)", "Python 3.11", "Leaflet.js", "Loop Engineering", "Haversine Math", "REST APIs", "Tailwind CSS"],
+    liveUrl: "https://iss-watch-loop.vercel.app/",
+    repoUrl: "https://github.com/SainBux-HadiSeelro/ISS-watch-loop",
+    image: "/projects/iss-watch-loop.png",
+    imageLabel: "Live ISS Orbital Tracker & Telemetry HUD",
+    featured: true,
+    category: "loop-engineering",
+  },
 
   // =========================================================================
   // GROUP C: AI-Integrated Apps
@@ -567,6 +573,7 @@ export const projectsData: Project[] = [
     image: "/projects/luvia-ecommerce.png",
     imageLabel: "Live Luxury eCommerce & AI Concierge Experience",
     featured: true,
+    isFlagship: true,
     category: "ai-integrated",
   },
   {
