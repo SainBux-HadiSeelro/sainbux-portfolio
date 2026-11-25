@@ -94,10 +94,10 @@ export default function About() {
   ];
 
   return (
-    <section id="about" className="py-24 md:py-32 relative bg-white border-b border-[#DCEBFC]">
+    <section id="about" className="py-24 md:py-32 relative bg-gradient-to-b from-[#F8FBFF] via-white to-[#F8FBFF] border-b border-[#DCEBFC]">
       {/* Circuit accent decoration */}
-      <div className="absolute top-12 right-6 hidden md:block pointer-events-none">
-        <CircuitLineDecoration orientation="right" />
+      <div className="absolute top-12 left-6 hidden md:block pointer-events-none">
+        <CircuitLineDecoration orientation="left" />
       </div>
 
       <div className="max-w-6xl mx-auto px-4 sm:px-6">

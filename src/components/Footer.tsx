@@ -31,9 +31,6 @@ export default function Footer() {
 
           {/* Nav links */}
           <nav className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-[#CFE6FF]">
-            <a href="/#about" className="hover:text-white transition-colors">
-              About
-            </a>
             <a href="/#skills" className="hover:text-white transition-colors">
               Skills
             </a>
@@ -42,6 +39,9 @@ export default function Footer() {
             </a>
             <a href="/#education" className="hover:text-white transition-colors">
               Education
+            </a>
+            <a href="/#about" className="hover:text-white transition-colors">
+              About
             </a>
             <a href="/#contact" className="hover:text-white transition-colors">
               Contact

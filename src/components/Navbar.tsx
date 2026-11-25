@@ -15,10 +15,10 @@ import { socialLinks } from "@/data/socials";
 
 // Navigation links with Projects positioned at the end
 const navLinks = [
-  { id: "about", label: "About", href: "/#about" },
   { id: "skills", label: "Skills", href: "/#skills" },
   { id: "experience", label: "Experience", href: "/#experience" },
   { id: "education", label: "Education", href: "/#education" },
+  { id: "about", label: "About", href: "/#about" },
   { id: "contact", label: "Contact", href: "/#contact" },
   { id: "projects", label: "Projects", href: "/projects" },
 ];
@@ -42,7 +42,7 @@ export default function Navbar() {
       return () => window.removeEventListener("scroll", handleProjectsScroll);
     }
 
-    const sectionIds = ["about", "skills", "experience", "education", "contact"];
+    const sectionIds = ["skills", "experience", "education", "about", "contact"];
 
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 20);
@@ -181,21 +181,6 @@ export default function Navbar() {
         <div className="lg:hidden bg-white border-b border-[#DCEBFC] px-6 py-6 space-y-4 shadow-xl">
           <nav className="flex flex-col space-y-2 font-mono text-xs">
             <Link
-              href="/#about"
-              onClick={() => setMobileMenuOpen(false)}
-              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
-                activeSection === "about"
-                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
-                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
-              }`}
-            >
-              <span>About</span>
-              {activeSection === "about" && (
-                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
-              )}
-            </Link>
-
-            <Link
               href="/#skills"
               onClick={() => setMobileMenuOpen(false)}
               className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
@@ -236,6 +221,21 @@ export default function Navbar() {
             >
               <span>Education</span>
               {activeSection === "education" && (
+                <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
+              )}
+            </Link>
+
+            <Link
+              href="/#about"
+              onClick={() => setMobileMenuOpen(false)}
+              className={`flex items-center justify-between py-2 px-3 rounded-xl transition-all ${
+                activeSection === "about"
+                  ? "bg-[#EAF4FF] text-[#1553C7] font-bold border-l-4 border-[#1EA7FF]"
+                  : "text-[#1E2A44] hover:text-[#1553C7] hover:bg-[#F8FBFF] font-semibold"
+              }`}
+            >
+              <span>About</span>
+              {activeSection === "about" && (
                 <span className="w-2 h-2 rounded-full bg-[#1EA7FF] shadow-[0_0_8px_#1EA7FF] animate-pulse" />
               )}
             </Link>
