@@ -82,14 +82,9 @@ export default function Footer() {
           </div>
         </div>
 
-        {/* Bottom copyright & credits */}
-        <div className="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left text-[#5B6B8C] font-mono text-[11px]">
-          <div>
-            &copy; 2026 Sain Bux. All rights reserved. Clifton, Karachi.
-          </div>
-          <div>
-            Crafted with Next.js, TypeScript &amp; Tailwind CSS.
-          </div>
+        {/* Bottom copyright */}
+        <div className="pt-8 text-center text-[#5B6B8C] font-mono text-[11px]">
+          &copy; 2026 Sain Bux. All rights reserved. Clifton, Karachi.
         </div>
       </div>
     </footer>
