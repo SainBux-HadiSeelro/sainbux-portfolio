@@ -11,6 +11,7 @@ import {
   ArrowUpRight,
   CheckCircle2,
   Sparkles,
+  MessageSquare,
 } from "lucide-react";
 import Link from "next/link";
 import { SectionPill, CircuitLineDecoration } from "./SignatureElements";
@@ -39,6 +40,20 @@ const servicesList: ServiceItem[] = [
       "Human review & approval controls",
     ],
     projectTag: "agentic",
+  },
+  {
+    id: "ai-chatbots",
+    title: "Smart AI Chatbots",
+    badge: "24/7 Support",
+    icon: MessageSquare,
+    description:
+      "Intelligent customer support and sales bots trained on your business data to answer queries in English & Roman Urdu.",
+    deliverables: [
+      "WhatsApp, Website & Telegram bot setup",
+      "Custom trained on your FAQs, PDFs & products",
+      "24/7 automated lead capture & support booking",
+    ],
+    projectTag: "client-demo",
   },
   {
     id: "workflow-automation",
@@ -137,23 +152,23 @@ export default function Services() {
             </p>
           </div>
           <div className="font-mono text-xs font-semibold text-[#1553C7] bg-[#EAF4FF] px-3.5 py-1.5 rounded-full border border-[#CFE6FF] self-start md:self-auto shadow-2xs">
-            Scope: AI Automations &bull; Web Apps &bull; Integrations
+            Scope: AI Chatbots &bull; Automations &bull; Web Apps &bull; Integrations
           </div>
         </div>
 
         {/* Value Chips Strip */}
         <div className="grid grid-cols-2 sm:grid-cols-4 gap-3 mb-10">
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">AI Teams</div>
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">AI Chatbots</div>
+            <div className="text-[11px] font-mono text-[#5B6B8C]">24/7 Smart Support</div>
+          </div>
+          <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">AI Teams</div>
             <div className="text-[11px] font-mono text-[#5B6B8C]">Work Together</div>
           </div>
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">Auto-Pilots</div>
+            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">Auto-Pilots</div>
             <div className="text-[11px] font-mono text-[#5B6B8C]">Zero Manual Work</div>
-          </div>
-          <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
-            <div className="font-heading font-extrabold text-sm sm:text-base text-[#0B1F5C]">Self-Checking</div>
-            <div className="text-[11px] font-mono text-[#5B6B8C]">Auto-Fixes Errors</div>
           </div>
           <div className="p-3 rounded-xl bg-white border border-[#DCEBFC] text-center shadow-2xs">
             <div className="font-heading font-extrabold text-sm sm:text-base text-[#1553C7]">Web Apps</div>
@@ -165,6 +180,7 @@ export default function Services() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {servicesList.map((service, idx) => {
             const Icon = service.icon;
+            const isLast = idx === servicesList.length - 1;
 
             return (
               <motion.div
@@ -173,7 +189,9 @@ export default function Services() {
                 whileInView={{ opacity: 1, y: 0 }}
                 viewport={{ once: true, margin: "80px" }}
                 transition={{ duration: 0.25, delay: idx * 0.04 }}
-                className="tech-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group hover:-translate-y-1 hover:border-[#1EA7FF] hover:shadow-[0_12px_28px_-6px_rgba(21,83,199,0.1)] transition-all bg-white border border-[#DCEBFC]"
+                className={`tech-card rounded-2xl p-6 sm:p-7 flex flex-col justify-between group hover:-translate-y-1 hover:border-[#1EA7FF] hover:shadow-[0_12px_28px_-6px_rgba(21,83,199,0.1)] transition-all bg-white border border-[#DCEBFC] ${
+                  isLast ? "md:col-span-2 md:max-w-md md:mx-auto lg:max-w-none lg:mx-0 lg:col-span-1 lg:col-start-2" : ""
+                }`}
               >
                 <div>
                   {/* Card Header: Icon & Badge */}
