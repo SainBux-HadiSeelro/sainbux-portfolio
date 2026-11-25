@@ -31,6 +31,9 @@ export default function Footer() {
 
           {/* Nav links */}
           <nav className="flex flex-wrap items-center justify-center gap-6 text-xs font-mono text-[#CFE6FF]">
+            <a href="/#services" className="hover:text-white transition-colors">
+              Services
+            </a>
             <a href="/#skills" className="hover:text-white transition-colors">
               Skills
             </a>
